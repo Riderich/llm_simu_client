@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"7277192512bd9a12","type":"file","file":"🧠 共情对话系统与阻抗建模研究笔记(内含数据集的整理）.md","x":-1360,"y":160,"width":1020,"height":1280},
+		{"id":"ca87772ccfa30972","type":"file","file":"有关于前人工作的整理，和BDI理论对我们的启发.md","x":-1260,"y":-605,"width":920,"height":620},
+		{"id":"32c3e5c1bc590140","type":"file","file":"PsyFIRE 阻抗分类体系.md","x":-120,"y":-605,"width":780,"height":910},
+		{"id":"68288abb62fc29b0","x":-120,"y":418,"width":1010,"height":1022,"type":"file","file":"基于动力学破裂与BDI架构的心理咨询模拟or检测框架.md"}
+	],
+	"edges":[]
+}

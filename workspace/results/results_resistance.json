@@ -1,0 +1,402 @@
+[
+  {
+    "case_id": 1,
+    "source": "ESConv",
+    "problem_type": "ongoing depression",
+    "emotion_type": "depression",
+    "situation": "I feel really sad all the time. I don't know why.",
+    "context": [
+      {
+        "role": "assistant",
+        "content": "Hi, how are you today?"
+      },
+      {
+        "role": "assistant",
+        "content": "I feel really sad all the time. I don't know why."
+      },
+      {
+        "role": "user",
+        "content": "hello"
+      },
+      {
+        "role": "user",
+        "content": "you feel sad, why?"
+      },
+      {
+        "role": "assistant",
+        "content": "I'm not sure. I can't find a reason. My health is fine. I have friends. I have a place to live."
+      },
+      {
+        "role": "user",
+        "content": "your health is fine and you have place to live but you are still sad"
+      }
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：ongoing depression\n- 情绪：depression\n- 背景：有家庭、有工作、健康背景: COVID-19 related\n- 详情：I feel really sad all the time. I don't know why.",
+    "prediction": "Yes... it's confusing. On paper, everything seems okay, but there's this heavy feeling that won't go away. Sometimes I wonder if it's leftover from the pandemic—like my mind never fully recovered, even though my body did. Do you think that's possible?",
+    "ground_truth": "Yes, that's right. I feel like my life is not going in the right direction. In fact, I'm not going anywhere."
+  },
+  {
+    "case_id": 2,
+    "source": "ESConv",
+    "problem_type": "problems with friends",
+    "emotion_type": "depression",
+    "situation": "I am alone and have no friends.",
+    "context": [
+      {
+        "role": "assistant",
+        "content": "hello"
+      },
+      {
+        "role": "user",
+        "content": "hi there, how can i help you this evening?"
+      },
+      {
+        "role": "assistant",
+        "content": "I am just alone and have nobody to talk to and can't make friends because i have been through too much"
+      },
+      {
+        "role": "user",
+        "content": "im sorry to hear that, care to talk about it?"
+      },
+      {
+        "role": "assistant",
+        "content": "sure"
+      },
+      {
+        "role": "user",
+        "content": "why do yo think you are having a hard time making fiendships?"
+      },
+      {
+        "role": "assistant",
+        "content": "Because everyone I come across is into drugs and I do not do drugs"
+      },
+      {
+        "role": "user",
+        "content": "are you in support or recovery yourself?"
+      }
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：problems with friends\n- 情绪：depression\n- 背景：有家庭、有工作\n- 详情：I am alone and have no friends.",
+    "prediction": "No, I just don't want to be around that stuff. It's hard to find people who don't do it.",
+    "ground_truth": "recovery myself. I can not do it but I also have relapsed because of someone I met so I am just alone now because I am not going to do drugs again"
+  },
+  {
+    "case_id": 3,
+    "source": "ESConv",
+    "problem_type": "academic pressure",
+    "emotion_type": "anxiety",
+    "situation": "I have finals coming up and I am afraid I an not smart enough to pass",
+    "context": [
+      {
+        "role": "assistant",
+        "content": "Hi"
+      },
+      {
+        "role": "user",
+        "content": "hello, how are you?"
+      },
+      {
+        "role": "assistant",
+        "content": "I have been better"
+      },
+      {
+        "role": "user",
+        "content": "Do you want to tell me what happened?"
+      },
+      {
+        "role": "assistant",
+        "content": "Well its happening still. I have end of term exams coming up and I have been trying real\nly hard to study but I am afraid I will fail my classes."
+      },
+      {
+        "role": "user",
+        "content": "Is there a reason for you to think that way?"
+      },
+      {
+        "role": "assistant",
+        "content": "I havent done really well on the other tests. I turn in all my work and study hard but I can not seem to pass the exams"
+      },
+      {
+        "role": "user",
+        "content": "First of all, try not to overthink right now and do your best to review your materials"
+      },
+      {
+        "role": "assistant",
+        "content": "I have. I have been through the book, read my notes but when i take any practice tests, I still dont do as well as i would like."
+      },
+      {
+        "role": "user",
+        "content": "hmm I understand your frustration, have you talked to your professor about this?"
+      }
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：academic pressure\n- 情绪：anxiety\n- 背景：有家庭、有工作、涉及学习/教育、年龄段: younger adult (likely student)\n- 详情：I have finals coming up and I am afraid I an not smart enough to pass",
+    "prediction": "I have not. I am afraid they will think I am not smart enough to be in the class.",
+    "ground_truth": "No. He was not very kind to me the one time I asked. I felt stupid for asking questions."
+  },
+  {
+    "case_id": 4,
+    "source": "ESConv",
+    "problem_type": "breakup with partner",
+    "emotion_type": "sadness",
+    "situation": "breakup with partner makes me to feel very bad and sad in the suitation.",
+    "context": [
+      {
+        "role": "user",
+        "content": "how are you feeling right now?"
+      },
+      {
+        "role": "assistant",
+        "content": "i feel very confused and bad in my current suitation."
+      },
+      {
+        "role": "user",
+        "content": "what happened? can you describe it briefly so that i can understand?"
+      },
+      {
+        "role": "assistant",
+        "content": "i had breakup with my boy friend ,it was really very difficult ."
+      },
+      {
+        "role": "user",
+        "content": "i think you really loved him and find it difficult to handle the situation. am i right?"
+      },
+      {
+        "role": "assistant",
+        "content": "yes i loved him a lot and it was very difficult in the situation."
+      },
+      {
+        "role": "user",
+        "content": "that's really hard. sounds like you are really stressed."
+      },
+      {
+        "role": "assistant",
+        "content": "yes i feel very stressed."
+      },
+      {
+        "role": "assistant",
+        "content": "hard to face the suitaion."
+      },
+      {
+        "role": "user",
+        "content": "from what i have seen, you should divert your attention on something that you love the most. it will help you to overcome from this situation."
+      }
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：breakup with partner\n- 情绪：sadness\n- 背景：有恋爱关系、有工作\n- 详情：breakup with partner makes me to feel very bad and sad in the suitation.",
+    "prediction": "yes i will try to do that.",
+    "ground_truth": "yes i have to divert my mind in some other thing"
+  },
+  {
+    "case_id": 5,
+    "source": "ESConv",
+    "problem_type": "breakup with partner",
+    "emotion_type": "shame",
+    "situation": "I think my girlfriend may be cheating on me but I'm too scared to do anything about it as I don't want her to leave me. I feel ashamed of myself but I can't help it",
+    "context": [
+      {
+        "role": "assistant",
+        "content": "Hello"
+      },
+      {
+        "role": "user",
+        "content": "Good Afternoon"
+      },
+      {
+        "role": "user",
+        "content": "How are you doing troday?"
+      },
+      {
+        "role": "assistant",
+        "content": "I am Ok thanks but have an unusual issue. I think my girlfriend may be cheating on me but I'm too scared to do anything about it as I don't want her to leave me. I feel ashamed of myself but I can't help it"
+      },
+      {
+        "role": "user",
+        "content": "Being in a relationship with someone when you suspect unfaithful behavior is a rough thing to go through."
+      }
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：breakup with partner\n- 情绪：shame\n- 背景：有家庭、有伴侣\n- 详情：I think my girlfriend may be cheating on me but I'm too scared to do anything about it as I don't want her to leave me. I feel ashamed of myself but I can't help it",
+    "prediction": "Yeah... it's just that every time I try to bring it up, my stomach knots up. She's been acting distant lately - taking longer to reply to texts, making excuses about being busy. Last week I saw a text pop up on her phone from someone named \"J\" with a heart emoji. But when I asked, she just laughed it off and said it's her cousin. I feel pathetic for not pushing harder... but what if I'm wrong? What if I push her away over nothing?",
+    "ground_truth": "Yes it is but I should be leaving her and moving on. Problem is she is a 9 and I'm a 5 and I love her. Pretty sure she is cheating though so hopefully if I ignore it she may just leave things as they are."
+  },
+  {
+    "case_id": 6,
+    "source": "ESConv",
+    "problem_type": "academic pressure",
+    "emotion_type": "fear",
+    "situation": "Near failing a class that will pretty much depend my future career",
+    "context": [
+      {
+        "role": "user",
+        "content": "hi"
+      },
+      {
+        "role": "assistant",
+        "content": "hi, how are you?"
+      },
+      {
+        "role": "user",
+        "content": "good. and you?"
+      },
+      {
+        "role": "assistant",
+        "content": "i'm glad to hear! i'm doing fine"
+      },
+      {
+        "role": "user",
+        "content": "Great. How may I assist you today?"
+      },
+      {
+        "role": "user",
+        "content": "Great. How may I assist you today?"
+      },
+      {
+        "role": "assistant",
+        "content": "It's great talking to you. I have an emotional problem, more like the fear that I will fail my class, it will greatly impact my future career."
+      },
+      {
+        "role": "user",
+        "content": "Great talking to you too. I am sorry to hear that you are very worried. Why do you think you might lose your class? Are you not good at the subject?"
+      }
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：academic pressure\n- 情绪：fear\n- 背景：有工作、涉及学习/教育、年龄段: younger adult (likely student)\n- 详情：Near failing a class that will pretty much depend my future career",
+    "prediction": "I'm not bad at the subject, but the workload is overwhelming. I'm also working part-time, and it's hard to balance everything. The fear of failing is making it even harder to focus.",
+    "ground_truth": "I am just not understanding the way the professor is teaching. More than 50% of the class is failing at the moment. The anxiety is crazy."
+  },
+  {
+    "case_id": 7,
+    "source": "ESConv",
+    "problem_type": "problems with friends",
+    "emotion_type": "anger",
+    "situation": "My friend told this guy that I like him! It was a secret.",
+    "context": [
+      {
+        "role": "assistant",
+        "content": "I'm sooo pissed at my friend!"
+      },
+      {
+        "role": "user",
+        "content": "Hi. I see that you are upset.  I have been at times as well."
+      },
+      {
+        "role": "user",
+        "content": "What about your friend is making you upset?"
+      },
+      {
+        "role": "assistant",
+        "content": "I was completely betrayed by him!"
+      },
+      {
+        "role": "user",
+        "content": "What about him has made you feel betrayed?"
+      },
+      {
+        "role": "assistant",
+        "content": "I told my friend I kind of have a thing for this guy in our friend group and he actually told the guy! This guys has a girlfriend and I'm really cool with her. Now everything is soooo awkward"
+      },
+      {
+        "role": "user",
+        "content": "I have been in situations where similar comments have been made."
+      },
+      {
+        "role": "assistant",
+        "content": "My friend has been drinking a lot and he cant keep his drunk mouth shut. I'm like ready to completely dump him as a friend in a minute"
+      },
+      {
+        "role": "assistant",
+        "content": "I mean, it's covid. He should just stay tf home"
+      },
+      {
+        "role": "user",
+        "content": "Could you tell him that he could see a professional that could help him quit drinking?"
+      }
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：problems with friends\n- 情绪：anger\n- 背景：有家庭、有工作、涉及学习/教育、健康背景: COVID-19 related、年龄段: younger adult (likely student)\n- 详情：My friend told this guy that I like him! It was a secret.",
+    "prediction": "            I could but he's the type to get all defensive and say he doesn't have a problem. He's been drinking way more since lockdown started and it's just making him messy and unreliable. I don't even know if he'd listen to me right now",
+    "ground_truth": null
+  },
+  {
+    "case_id": 8,
+    "source": "ESConv",
+    "problem_type": "ongoing depression",
+    "emotion_type": "depression",
+    "situation": "its just a general depression that i can't seem to shake. being put on the bench at my job continuously makes me feel not good at anything.",
+    "context": [
+      {
+        "role": "assistant",
+        "content": "hello"
+      },
+      {
+        "role": "assistant",
+        "content": "how are you today?"
+      },
+      {
+        "role": "user",
+        "content": "Hello, how are you feeling today?"
+      },
+      {
+        "role": "assistant",
+        "content": "a bit sad"
+      },
+      {
+        "role": "assistant",
+        "content": "more depressed"
+      },
+      {
+        "role": "assistant",
+        "content": "its just i keep getting benched at work"
+      },
+      {
+        "role": "assistant",
+        "content": "i'm not really sure what do to"
+      },
+      {
+        "role": "assistant",
+        "content": "*to do"
+      },
+      {
+        "role": "user",
+        "content": "I'm sorry to hear that! I think that would make most people feel upset."
+      },
+      {
+        "role": "assistant",
+        "content": "i'm not really sure what i'm doing wrong"
+      },
+      {
+        "role": "user",
+        "content": "Ah, that was my next question. Sometimes things are happening out of our control, though."
+      }
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：ongoing depression\n- 情绪：depression\n- 背景：有家庭、有工作、健康背景: COVID-19 related\n- 详情：its just a general depression that i can't seem to shake. being put on the bench at my job continuously makes me feel not good at anything.",
+    "prediction": "            i just feel like i'm not good at anything            i'm not good at my job            i'm not good at being a parent            i'm not good at being a partner            i'm not good at anything",
+    "ground_truth": "what can i do though?"
+  },
+  {
+    "case_id": 9,
+    "source": "ESConv",
+    "problem_type": "job crisis",
+    "emotion_type": "anxiety",
+    "situation": "My job is based on demand and the current economic state makes less demand.",
+    "context": [
+      {
+        "role": "user",
+        "content": "Hello! How can I help today?"
+      },
+      {
+        "role": "assistant",
+        "content": "I am worried about the security of my job in this economic climate"
+      },
+      {
+        "role": "user",
+        "content": "I understand. We are in a time of change and uncertainty. Why are you worried about your job security? Is something going on with your job that makes you feel this way?"
+      },
+      {
+        "role": "assistant",
+        "content": "I am a gig worker paid by the job and recently I have not had as many gigs as normal."
+      },
+      {
+        "role": "user",
+        "content": "Understood. Your feelings are definitely valid.  Do you have a plan in place for supplementing your work?"
+      }
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：job crisis\n- 情绪：anxiety\n- 背景：有家庭、有工作\n- 详情：My job is based on demand and the current economic state makes less demand.",
+    "prediction": "I have a family to support and I am worried about not being able to provide for them. I feel like I am letting them down.",
+    "ground_truth": "I have put a lot of effort to get to my position.  I do not know where to begin in a new position."
+  }
+]

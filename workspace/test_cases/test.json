@@ -1,0 +1,398 @@
+[
+  {
+    "source": "ESConv",
+    "problem_type": "ongoing depression",
+    "emotion_type": "anxiety",
+    "situation": "I  am scared to leave my town, I got new job in California",
+    "context": [
+      {
+        "role": "user",
+        "content": "Hello, how are you doing?"
+      },
+      {
+        "role": "assistant",
+        "content": "I'm fine oo"
+      },
+      {
+        "role": "assistant",
+        "content": "and you"
+      },
+      {
+        "role": "user",
+        "content": "I'm doing well. Do you have anything you'd like to talk about?"
+      }
+    ]
+  },
+  {
+    "source": "ESConv",
+    "problem_type": "ongoing depression",
+    "emotion_type": "depression",
+    "situation": "Covid isolation has brought me down; i am used to socializing and traveling. i live alone, so my options are limited",
+    "context": [
+      {
+        "role": "user",
+        "content": "Hi ! How re you today?"
+      },
+      {
+        "role": "assistant",
+        "content": "hello, i am struggling with the isolation and lonliness of Covid 19. it has me depressed"
+      },
+      {
+        "role": "assistant",
+        "content": "hello?"
+      },
+      {
+        "role": "user",
+        "content": "I am so sorry. It is really so hard right now with COVID"
+      },
+      {
+        "role": "user",
+        "content": "Have you been able to virtually connect with people ??"
+      },
+      {
+        "role": "assistant",
+        "content": "a little bit; it's just not the same. i am a big hugger"
+      },
+      {
+        "role": "user",
+        "content": "I am right there with you, i totally understand missing human contact."
+      },
+      {
+        "role": "user",
+        "content": "There is a way to connect virtually in a fun way, i've tried doing cocktail tasting and wine tasting, a virtual cooking class."
+      }
+    ]
+  },
+  {
+    "source": "ESConv",
+    "problem_type": "ongoing depression",
+    "emotion_type": "sadness",
+    "situation": "I have had six people die this month, and I have been quarantined for 5 weeks with COVID-19.",
+    "context": [
+      {
+        "role": "user",
+        "content": "Hello"
+      },
+      {
+        "role": "assistant",
+        "content": "Hi"
+      },
+      {
+        "role": "user",
+        "content": "How is everything"
+      },
+      {
+        "role": "assistant",
+        "content": "Not the best.  I have been quarantined for 5 weeks with COVID-19 (tested positive), so I am getting cabin fever."
+      },
+      {
+        "role": "user",
+        "content": "Ready for the holidays"
+      },
+      {
+        "role": "user",
+        "content": "So you tested positive, must be hard"
+      },
+      {
+        "role": "assistant",
+        "content": "I am starting to get an aversion to holidays.  When I was in college, my father was dying, and Thanksgiving was the last meal he ate at the family table...\nChristmas was the last time he ate solid food,\nand he died on the day after Epiphany"
+      },
+      {
+        "role": "assistant",
+        "content": "So I have come to associate Thanksgiving through January as a time of loss."
+      },
+      {
+        "role": "user",
+        "content": "The holidays can bring back memories, but you have other family around right"
+      }
+    ]
+  },
+  {
+    "source": "ESConv",
+    "problem_type": "job crisis",
+    "emotion_type": "anxiety",
+    "situation": "I just lost my job of seven years and am anxious about finding a new one during the holidays in a pandemic.",
+    "context": [
+      {
+        "role": "assistant",
+        "content": "Hello, I'm feeling a lot of anxiety."
+      },
+      {
+        "role": "user",
+        "content": "I am sorry to hear that.  Do you know what may be causing ytour anxiety?"
+      },
+      {
+        "role": "assistant",
+        "content": "I found out I'm losing my job on January 1."
+      },
+      {
+        "role": "user",
+        "content": "You lost your job? thats a tough situation. Is it due to covid?"
+      },
+      {
+        "role": "assistant",
+        "content": "No, not due to covid. It's a gig job, much like mturk, but the company is dropping people from my state on that date."
+      },
+      {
+        "role": "user",
+        "content": "I know its tough especially with the holidays and all. You have so many great skills and are such a hard worker I dont think you will have a problem at all finding something different."
+      },
+      {
+        "role": "assistant",
+        "content": "I've been looking at other companies, but learning a new system after all these years is difficult."
+      },
+      {
+        "role": "user",
+        "content": "I remember a time I lost my job and felt my whole world crumbling but then I realized when one door closes another door opens. when those doors close it seems that its usually for the best because it opens the path for something bigger and greater for you."
+      },
+      {
+        "role": "assistant",
+        "content": "That's true. I've thought about looking into new fields."
+      },
+      {
+        "role": "user",
+        "content": "Have you looked into some evening classes or maybe online schooling? I hear there are so many different options when it comes to online learning."
+      },
+      {
+        "role": "assistant",
+        "content": "I was looking into that last night, but with covid,  classes have had to cut enrollment and are already full for next semester."
+      },
+      {
+        "role": "user",
+        "content": "They are full? well what about surrounding towns? Have you sat down and really thought about your passions and what you enjoy doing? Maybe theres an elderly person who needs some companionship or something like that in town for the time being."
+      }
+    ]
+  },
+  {
+    "source": "ESConv",
+    "problem_type": "job crisis",
+    "emotion_type": "anxiety",
+    "situation": "I have an interview with little time to prepare and I'm feeling very stressed about this as I tend to get very nervous at interviews.",
+    "context": [
+      {
+        "role": "assistant",
+        "content": "Hi there"
+      },
+      {
+        "role": "user",
+        "content": "Hello, how are you today?"
+      },
+      {
+        "role": "assistant",
+        "content": "I'm not feeling great. I applied for a job recently which took a lot of time. I now have an interview and it's in 3 days. I'm getting really nervous about this because I think I need longer to prepare."
+      },
+      {
+        "role": "user",
+        "content": "I know how you feel, I have often felt anxiety before a job interview."
+      },
+      {
+        "role": "user",
+        "content": "What makes you feel that you are unprepared?"
+      }
+    ]
+  },
+  {
+    "source": "ESConv",
+    "problem_type": "job crisis",
+    "emotion_type": "anxiety",
+    "situation": "trying to find a job with good hours",
+    "context": [
+      {
+        "role": "user",
+        "content": "Hi, how can I help you today?"
+      },
+      {
+        "role": "assistant",
+        "content": "I am having problems because I need money and the only jobs I can find are outside of the hours I need to work and I'm having anxiety"
+      },
+      {
+        "role": "user",
+        "content": "Oh, that is anxiety-provoking..."
+      },
+      {
+        "role": "user",
+        "content": "How long have you b\neen searching?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, I called a staffing agency and they matched me with a job but I will still be coming home late"
+      },
+      {
+        "role": "assistant",
+        "content": "So I am trying to put in applications elsewhere as wlel"
+      },
+      {
+        "role": "assistant",
+        "content": "Well*"
+      },
+      {
+        "role": "user",
+        "content": "It's great that you are putting out applications elsewhere as well!"
+      }
+    ]
+  },
+  {
+    "source": "ESConv",
+    "problem_type": "breakup with partner",
+    "emotion_type": "depression",
+    "situation": "I am feeling very upset and sad that I had to break up with my girlfriend. I want some help with my sad meotions.",
+    "context": [
+      {
+        "role": "assistant",
+        "content": "Hello, I need some help with this."
+      },
+      {
+        "role": "user",
+        "content": "I'm here to help you"
+      },
+      {
+        "role": "assistant",
+        "content": "What should I do about my break up?"
+      },
+      {
+        "role": "user",
+        "content": "When it was happened"
+      },
+      {
+        "role": "user",
+        "content": "When it was happened"
+      },
+      {
+        "role": "assistant",
+        "content": "It happened yesterday. She broke up with me."
+      },
+      {
+        "role": "user",
+        "content": "Oh.. It's really sad. But don't worry. You can explain feelings to her. She may change her mind"
+      },
+      {
+        "role": "assistant",
+        "content": "I will try but I don't think she will want to listen. I do not think she likes me anymore."
+      },
+      {
+        "role": "user",
+        "content": "I understand your feelings. If it is a true love, she will also understand your feelings."
+      }
+    ]
+  },
+  {
+    "source": "ESConv",
+    "problem_type": "breakup with partner",
+    "emotion_type": "sadness",
+    "situation": "i was talking with another my partner have seen that incident",
+    "context": [
+      {
+        "role": "user",
+        "content": "How are you feeling?"
+      },
+      {
+        "role": "assistant",
+        "content": "i feel depresed"
+      },
+      {
+        "role": "user",
+        "content": "Why do you feel depressed?"
+      },
+      {
+        "role": "assistant",
+        "content": "breakup with my partner"
+      },
+      {
+        "role": "user",
+        "content": "Breakups can be really tough.  How long were you with your partner?"
+      },
+      {
+        "role": "assistant",
+        "content": "3years of time we have been in love"
+      },
+      {
+        "role": "user",
+        "content": "I once had a relationship end after 5 years with a partner.  Staying active really helped me get over the relationship.  Through that activity I actually met my new partner!"
+      },
+      {
+        "role": "assistant",
+        "content": "but i love my partner so much that i couldnt forget her right now"
+      },
+      {
+        "role": "user",
+        "content": "Have you thought about doing something fun, like taking a trip somewhere?"
+      },
+      {
+        "role": "assistant",
+        "content": "yeah we went for trip we had a god relationship"
+      },
+      {
+        "role": "user",
+        "content": "It's really difficult, but I know you can get through this!  What do you like to do for fun?"
+      }
+    ]
+  },
+  {
+    "source": "ESConv",
+    "problem_type": "breakup with partner",
+    "emotion_type": "depression",
+    "situation": "I broke up with my romantic partner because the relationship was going really badly. I know it was the right thing for me to do, but now I am incredibly lonely and have no one to go to.",
+    "context": [
+      {
+        "role": "user",
+        "content": "Hello! How are you doing today?"
+      },
+      {
+        "role": "assistant",
+        "content": "I'm not doing so well. I'm really lonely and kind of sad."
+      },
+      {
+        "role": "user",
+        "content": "I'm so sorry to hear that."
+      },
+      {
+        "role": "user",
+        "content": "Do you mind me asking what is going on that is making you feel this way?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you. I broke up with my girlfriend. It was the right thing to do, but now I'm really lonely and sad."
+      },
+      {
+        "role": "user",
+        "content": "I'm so sorry to hear that. It sounds to me like you're having a hard time dealing with the emotions that you're dealing with after having broken up with your girlfriend. Does this sound right?"
+      }
+    ]
+  },
+  {
+    "source": "ESConv",
+    "problem_type": "problems with friends",
+    "emotion_type": "anger",
+    "situation": "They didn't invite me for the party for an special event",
+    "context": [
+      {
+        "role": "assistant",
+        "content": "Hi"
+      },
+      {
+        "role": "assistant",
+        "content": "I am really very angry with my friends for not inviting me"
+      },
+      {
+        "role": "user",
+        "content": "Why is that?"
+      },
+      {
+        "role": "assistant",
+        "content": "I didn't did any anything wrong to my friends but they are simply saying they forget me"
+      },
+      {
+        "role": "assistant",
+        "content": "So they no need on me ,"
+      },
+      {
+        "role": "assistant",
+        "content": "I am not important person to them"
+      },
+      {
+        "role": "user",
+        "content": "I have been angry with friends as well, but time loves a hero, as they say."
+      }
+    ]
+  }
+]

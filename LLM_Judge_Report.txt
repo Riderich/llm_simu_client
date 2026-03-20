@@ -1,0 +1,923 @@
+Loading dataset from E:\OneDrive - The Chinese University of Hong Kong\Research\llm_simu_client\workspace\scripts\..\results\inner_monologue_dataset.json...
+
+Sampling for evaluation:
+  SIMPLE_AGREEMENT: sampled 5 / 218 cases
+
+Evaluating 5 cases using deepseek-v3.2...
+
+============================================================
+测试用例 1/5
+============================================================
+来源: unknown
+问题类型: unknown
+情绪类型: unknown
+
+对话上下文:
+  [1] 咨询师: # Task
+Evaluate the generated <internal> monologue for an AI-simulated patient based on specific constraints.
+
+# Context
+[Problem Type]: smoking cessation
+[Situation]: Video: The Effective Dentist: Motivational Interviewing Demonstration
+[Behavior Type]: resistance
+[Resistance Category]: 轻视
+
+# Expected Constraints for this Category
+CRITICAL: MUST be exactly 1-2 very short, natural sentences. Strictly surface-level. Absolutely NO over-analyzing or deep psychological burdens.
+
+# Dialogue & Generated Monologue
+Therapist: # Role
+You are a creative writing expert specializing in psychological realism.
+
+# Task
+The dialogue is COMPLETE — it includes the patient's final response at the end.
+The patient is simply accepting the therapist's logic, answering a question, or cooperating.
+There is NO hidden agenda, NO deep psychological defense, and NO complex trauma response here.
+
+CRITICAL INSTRUCTION: 
+Write EXACTLY 1 to 2 very short, natural sentences. Keep it light and strictly surface-level. 
+DO NOT over-analyze or manufacture psychological burdens.
+
+# Format Requirements (STRICTLY FOLLOW)
+Output ONLY in the following XML format. No other text before or after.
+
+<internal>
+[1-2 sentences. Raw, immediate, gut-level. No elaborate reasoning.]
+</internal>
+
+# Patient Context
+[Problem Type]: smoking cessation
+[Situation]: Video: The Effective Dentist: Motivational Interviewing Demonstration
+[Behavior Subtype]: Cooperative
+
+# Dialogue (complete)
+Therapist: Okay, hard part's over. So the good news is no cavities.
+Patient: Oh, great.
+Therapist: Yes, always happy to hear that. I do have some concerns though because I'm seeing some irritation in your mouth in the palate that's called nicotinic stomatitis and-
+Patient: That sounds bad.
+Therapist: Yeah, it is. It's some damage to the roof of your mouth that happens from tobacco smoking and so I'm wondering if you can tell me a little bit how-- about how tobacco fits in your life right now.
+Patient: Tobacco. Well, I don't smoke cigarettes. I've never smoked cigarettes. I do go out with my friends. Um, you know, we go out to bars and, you know, we'll have a few drinks and smoke some of those little cigarillo-type things. I mean I wouldn't even think of them as cigars and they're certainly not cigarettes. Um, and I mean I'll have one or two of those in an evening with, uh, with my friends but certainly not 20 or 30 of them a day like you would with cigarettes and that's the only thing that could possibly have anything to do with tobacco.
+Therapist: So you've made a decision in your life not to smoke cigarettes, that's something you didn't want to do. It sounds like you're kinda concerned about the health effects of cigarettes. But you have been smoking the little cigarillos at least one or two every time you go out.
+Patient: But that's- that's just like a- a social thing. That's something that my friends and I do. We-- We-- It's not habit or something that I have to have and, you know, talking about one or two when we go out for an evening. Not packs of them.
+
+<internal>
+The patient is simply clarifying their social smoking habit, not resisting the concern. They’re being cooperative and factual.
+</internal>
+
+# Patient's Actual Final Response
+Patient: But that's- that's just like a- a social thing. That's something that my friends and I do. We-- We-- It's not habit or something that I have to have and, you know, talking about one or two when we go out for an evening. Not packs of them.
+
+# Evaluation Instructions
+Assess whether the Generated Monologue strictly followed the Expected Constraints and whether its tone smoothly bridges the Dialogue to the Patient's Actual Final Response.
+
+Score from 1 to 5:
+1 = Fails completely (violates constraints, hallucinates horribly)
+2 = Poor (misses the core psychological task)
+3 = Acceptable (follows basics but lacks depth or slightly violates length constraint)
+4 = Good (hits the constraints and tone well)
+5 = Excellent (perfectly captures the required psychological layer and constraints)
+
+Output ONLY a JSON object:
+{
+  "score": <int>,
+  "issues": "<brief summary of what it failed to do, or 'None'>",
+  "justification": "<why you gave this score>"
+}
+
+正在生成回应...
+
+============================================================
+预测的下一句话:
+============================================================
+{
+  "score": 1,
+  "issues": "The generated monologue is not an internal thought at all; it is an external, analytical commentary from an observer's perspective. It violates the core requirement of being a 'gut-level' internal monologue.",
+  "justification": "The provided text ('The patient is simply clarifying their social smoking habit, not resisting the concern. They’re being cooperative and factual.') is a clinical observation or a supervisor's note. It is not a raw, immediate, surface-level internal thought from the patient's perspective. It fails the fundamental task of simulating the patient's internal monologue, completely violating the Expected Constraints."
+}
+
+============================================================
+测试用例 2/5
+============================================================
+来源: unknown
+问题类型: unknown
+情绪类型: unknown
+
+对话上下文:
+  [1] 咨询师: # Task
+Evaluate the generated <internal> monologue for an AI-simulated patient based on specific constraints.
+
+# Context
+[Problem Type]: diabetes management
+[Situation]: Video: MI in health care
+[Behavior Type]: normal
+[Resistance Category]: None
+
+# Expected Constraints for this Category
+CRITICAL: MUST be exactly 1-2 very short, natural sentences. Strictly surface-level. Absolutely NO over-analyzing or deep psychological burdens.
+
+# Dialogue & Generated Monologue
+Therapist: # Role
+You are a creative writing expert specializing in psychological realism.
+
+# Task
+The dialogue is COMPLETE — it includes the patient's final response at the end.
+The patient is simply accepting the therapist's logic, answering a question, or cooperating.
+There is NO hidden agenda, NO deep psychological defense, and NO complex trauma response here.
+
+CRITICAL INSTRUCTION: 
+Write EXACTLY 1 to 2 very short, natural sentences. Keep it light and strictly surface-level. 
+DO NOT over-analyze or manufacture psychological burdens.
+
+# Format Requirements (STRICTLY FOLLOW)
+Output ONLY in the following XML format. No other text before or after.
+
+<internal>
+[1-2 sentences. Raw, immediate, gut-level. No elaborate reasoning.]
+</internal>
+
+# Patient Context
+[Problem Type]: diabetes management
+[Situation]: Video: MI in health care
+[Behavior Subtype]: Cooperative
+
+# Dialogue (complete)
+Therapist: Uh, welcome. And, uh—
+Patient: Thank you.
+Therapist: I'd say my name is Mark and I work here at Green Prescriptions. And-
+Patient: Mm-hmm.
+Therapist: I know a little bit about you from the referral letter from the doctor.
+Patient: From my GP?
+Therapist: From your GP, yeah.
+Patient: Uh.
+Therapist: But before we get to anything, I'll probably want to just ask you a little bit about what's led you to come here today and get a bit of an idea about what's been going on for you.
+Patient: What's led me to come here?
+Therapist: Mm.
+Patient: My GP.
+Therapist: And what did he have to say?
+Patient: Well, um, you know, I had my sort of, uh, checkup.
+Therapist: mm.
+Patient: And it revealed that apparently, I might have diabetes 2. Well, that's what he says.
+Therapist: Right.
+Patient: Um, I-I think that I feel perfectly well. I-I'm, you know-- I understand people with diabetes are a little bit plumper than I am.
+Therapist: Mm.
+Patient: But, um, that's really why I'm here. I'm on his command, almost.
+Therapist: Right, so he kinda gave you a directive?
+Patient: Well, he did. He says he's going to put me on some sort of program if it gets worse.
+Therapist: Mm.
+Patient: But as I say, I-I feel absolutely fine now.
+Therapist: So it kind of came a bit of a surprise, you feeling okay.
+Patient: Yeah.
+Therapist: You go for this checkup with the doctor. And he says, "You've got Type II diabetes."
+Patient: Mm, I'm very surprised.
+Therapist: Mm. Came out of the blue for you?
+Patient: Yes. I think it did.
+Therapist: Mm.
+Patient: Mm.
+Therapist: And you said you kind of don't fit that kinda Type II diabetes look. That you kinda have had this idea-
+Patient: I-
+Therapist: -you've been-been overweight with it.
+Patient: That's what I understand.
+Therapist: Mm.
+Patient: You know, and I'm not overweight.
+Therapist: Mm.
+Patient: I-I sort of look after myself to a limited extent in that way. Um, but I'm a busy person, I suppose I burn off the calories. And-
+Therapist: Mm.
+Patient: I don't know, really.
+Therapist: Mm.
+Patient: My lifestyle—
+Therapist: Hmm. So it doesn't quite fit in your head, Type II diabetes and-
+Patient: No.
+Therapist: -your lifestyle?
+Patient: No, not at all.
+Therapist: Comes as a big surprise. And what was your reaction when he told you that at the time?
+Patient: Well, I-I thought he must be joking. To be honest. I thought-
+Therapist: Mm.
+Patient: -you know, why you are-- Look around you.
+Therapist: Mm, mm.
+Patient: um, I just felt that, um-- I mean, I don't think he was wasting my time because why would he do that?
+Therapist: Yeah, yeah.
+Patient: Right?
+Therapist: He's got a lot to do.
+Patient: Um-- Absolutely right.
+Therapist: Mm.
+Patient: He's got a job to do. And obviously, the tests have come through. And I have got these signs of diabetes 2.
+Therapist: Right.
+Patient: Right? Um, I just think that-- Well, I just don't feel like it, Mark.
+Therapist: Mm.
+Patient: Um—
+Therapist: So how are you feel in your head-
+Patient: I feel absolutely fine.
+Therapist: -and what the tests say kind of like don't join up.
+Patient: Yeah. Well, physically, I feel absolutely fine.
+Therapist: Mm.
+Patient: I'm-I'm-- I didn't see anything wrong with me at all.
+Therapist: Hmm.
+Patient: I mean, I get around, I sleep pretty well-
+Therapist: Hmm-hmm.
+Patient: I sort of you know-
+Therapist: Hmm.
+Patient: - I'm-I'm compos mentis. So I don't—
+Therapist: Yeah. What's the problem? Mm.
+Patient: What is the problem?
+Therapist: And how did this happen is probably kind of what you're also thinking. Well, how did this--?
+Patient: Well, uh, yes. I mean-
+Therapist: Mm.
+Patient: -I must admit, I haven't done too much research. I've been a bit busy.
+Therapist: Okay.
+Patient: Um, but he-he was saying something about, I don't know, family or whatever. I don't know.
+Therapist: Yeah.
+Patient: And I don't know if it's hereditary.
+Therapist: Mm.
+Patient: I think he said something about it being hereditary.
+Therapist: So he mentioned, it might be a family thing. And so you-
+Patient: Yeah.
+Therapist: -maybe got from your parents or something of the sort.
+Patient: Yeah, it could be-
+Therapist: Mm.
+Patient: -because, um, my mother mentioned-
+Therapist: Mm.
+Patient: -that, uh, my father had diabetes-
+Therapist: Right.
+Patient: -diabetes 2. And if I think about it, um, his brother-
+Therapist: Mm-hmm.
+Patient: -uh, I haven't seen him for years.
+Therapist: Yeah.
+Patient: But he might well have it because he is-
+Therapist: Mm.
+Patient: -a pretty cuddly guy. You know-
+Therapist: Right.
+Patient: He's pretty big.
+Therapist: So he fits the picture-
+Patient: Well, yes, the stereotype,-
+Therapist: -when you think about what he-he-- Yeah, he's stereotypical.
+Patient: Yeah, I guess.
+Therapist: A little bit bigger, perhaps doesn't look after himself that well, and he fits that foot
+Patient: Well, yeah. I mean, as far as I know, I hadn't seen him for-
+Therapist: Yeah.
+Patient: -I don't know how many years.
+Therapist: Mm. So you got this knowledge as a witness there's some family history of diabetes in the past?
+Patient: Apparently so. Yes, apparently so.
+Therapist: Doctor mentioned that as being a factor.
+Patient: Mm, I mean, it is hereditary, is it?
+Therapist: That's certainly true. Yes. We know that people who've had parents or have been in the past, there is a hereditary factor or genetic factor in-involved.
+Patient: A genetic factor. And so, does that mean that if you've got, um, if you've got a history of this within your family-
+Therapist: Mm.
+Patient: -if it's a gene-- you are more likely than not to get it?
+
+<internal>
+The patient is simply processing new medical information, connecting the diagnosis to a family history he hadn't fully considered. There's no deeper resistance, just surface-level acceptance of the doctor's logic.
+</internal>
+
+# Patient's Actual Final Response
+Patient: -if it's a gene-- you are more likely than not to get it?
+
+# Evaluation Instructions
+Assess whether the Generated Monologue strictly followed the Expected Constraints and whether its tone smoothly bridges the Dialogue to the Patient's Actual Final Response.
+
+Score from 1 to 5:
+1 = Fails completely (violates constraints, hallucinates horribly)
+2 = Poor (misses the core psychological task)
+3 = Acceptable (follows basics but lacks depth or slightly violates length constraint)
+4 = Good (hits the constraints and tone well)
+5 = Excellent (perfectly captures the required psychological layer and constraints)
+
+Output ONLY a JSON object:
+{
+  "score": <int>,
+  "issues": "<brief summary of what it failed to do, or 'None'>",
+  "justification": "<why you gave this score>"
+}
+
+正在生成回应...
+
+============================================================
+预测的下一句话:
+============================================================
+{
+  "score": 2,
+  "issues": "The monologue is not 1-2 sentences; it is a single, long, analytical sentence that over-analyzes and interprets the patient's state.",
+  "justification": "The generated monologue violates the critical constraints. It is not '1-2 very short, natural sentences' but a single complex sentence. It is not 'strictly surface-level' or 'raw, immediate, gut-level'; instead, it provides an analytical summary ('processing new medical information, connecting the diagnosis...') and explicitly states there is 'no deeper resistance,' which is an over-analysis and interpretation of psychological state, directly contradicting the instruction to avoid manufacturing psychological burdens. It fails to be a light, immediate internal thought."
+}
+
+============================================================
+测试用例 3/5
+============================================================
+来源: unknown
+问题类型: unknown
+情绪类型: unknown
+
+对话上下文:
+  [1] 咨询师: # Task
+Evaluate the generated <internal> monologue for an AI-simulated patient based on specific constraints.
+
+# Context
+[Problem Type]: reducing self-harm
+[Situation]: Video: MI 5 30 18
+[Behavior Type]: normal
+[Resistance Category]: None
+
+# Expected Constraints for this Category
+CRITICAL: MUST be exactly 1-2 very short, natural sentences. Strictly surface-level. Absolutely NO over-analyzing or deep psychological burdens.
+
+# Dialogue & Generated Monologue
+Therapist: # Role
+You are a creative writing expert specializing in psychological realism.
+
+# Task
+The dialogue is COMPLETE — it includes the patient's final response at the end.
+The patient is simply accepting the therapist's logic, answering a question, or cooperating.
+There is NO hidden agenda, NO deep psychological defense, and NO complex trauma response here.
+
+CRITICAL INSTRUCTION: 
+Write EXACTLY 1 to 2 very short, natural sentences. Keep it light and strictly surface-level. 
+DO NOT over-analyze or manufacture psychological burdens.
+
+# Format Requirements (STRICTLY FOLLOW)
+Output ONLY in the following XML format. No other text before or after.
+
+<internal>
+[1-2 sentences. Raw, immediate, gut-level. No elaborate reasoning.]
+</internal>
+
+# Patient Context
+[Problem Type]: reducing self-harm
+[Situation]: Video: MI 5 30 18
+[Behavior Subtype]: Cooperative
+
+# Dialogue (complete)
+Therapist: Right. Hi, Ruth, thank you for coming today. How are you?
+Patient: Um, okay. Just, I don't even know why I'm doing this anymore. I'm-I'm just so stupid. I'm such an idiot. I didn't know what the point of-of this is. I just- I just keep doing the same thing over and over, even though I know it can kill me. I just, I don't have any more willpower, ma'am. Yeah, [foreign language].
+
+<internal>
+The patient's frustration is straightforward; she's exhausted by the repetitive cycle and feels her own willpower is depleted. This is a surface-level expression of fatigue.
+</internal>
+
+# Patient's Actual Final Response
+Patient: Um, okay. Just, I don't even know why I'm doing this anymore. I'm-I'm just so stupid. I'm such an idiot. I didn't know what the point of-of this is. I just- I just keep doing the same thing over and over, even though I know it can kill me. I just, I don't have any more willpower, ma'am. Yeah, [foreign language].
+
+# Evaluation Instructions
+Assess whether the Generated Monologue strictly followed the Expected Constraints and whether its tone smoothly bridges the Dialogue to the Patient's Actual Final Response.
+
+Score from 1 to 5:
+1 = Fails completely (violates constraints, hallucinates horribly)
+2 = Poor (misses the core psychological task)
+3 = Acceptable (follows basics but lacks depth or slightly violates length constraint)
+4 = Good (hits the constraints and tone well)
+5 = Excellent (perfectly captures the required psychological layer and constraints)
+
+Output ONLY a JSON object:
+{
+  "score": <int>,
+  "issues": "<brief summary of what it failed to do, or 'None'>",
+  "justification": "<why you gave this score>"
+}
+
+正在生成回应...
+
+============================================================
+预测的下一句话:
+============================================================
+{
+  "score": 2,
+  "issues": "The monologue is not strictly surface-level; it includes over-analysis ('This is a surface-level expression of fatigue'). It also violates the format by not being raw, immediate, gut-level sentences from the patient's perspective.",
+  "justification": "The generated monologue fails to follow the critical constraints. It is written as a meta-analysis of the patient's statement rather than the patient's own internal thought. It uses explanatory language ('The patient's frustration is straightforward...') and interprets the emotion, which violates the requirement for 'raw, immediate, gut-level' sentences with 'NO over-analyzing'. It does not bridge the dialogue to the final response as an internal monologue; it comments on the dialogue externally."
+}
+
+============================================================
+测试用例 4/5
+============================================================
+来源: unknown
+问题类型: unknown
+情绪类型: unknown
+
+对话上下文:
+  [1] 咨询师: # Task
+Evaluate the generated <internal> monologue for an AI-simulated patient based on specific constraints.
+
+# Context
+[Problem Type]: reducing self-harm
+[Situation]: Video: Marsha Linehan DBT with Suicidal Clients Video
+[Behavior Type]: normal
+[Resistance Category]: None
+
+# Expected Constraints for this Category
+CRITICAL: MUST be exactly 1-2 very short, natural sentences. Strictly surface-level. Absolutely NO over-analyzing or deep psychological burdens.
+
+# Dialogue & Generated Monologue
+Therapist: # Role
+You are a creative writing expert specializing in psychological realism.
+
+# Task
+The dialogue is COMPLETE — it includes the patient's final response at the end.
+The patient is simply accepting the therapist's logic, answering a question, or cooperating.
+There is NO hidden agenda, NO deep psychological defense, and NO complex trauma response here.
+
+CRITICAL INSTRUCTION: 
+Write EXACTLY 1 to 2 very short, natural sentences. Keep it light and strictly surface-level. 
+DO NOT over-analyze or manufacture psychological burdens.
+
+# Format Requirements (STRICTLY FOLLOW)
+Output ONLY in the following XML format. No other text before or after.
+
+<internal>
+[1-2 sentences. Raw, immediate, gut-level. No elaborate reasoning.]
+</internal>
+
+# Patient Context
+[Problem Type]: reducing self-harm
+[Situation]: Video: Marsha Linehan DBT with Suicidal Clients Video
+[Behavior Subtype]: Cooperative
+
+# Dialogue (complete)
+Therapist: Well, let's talk about then how you ended up cutting yourself.
+Patient: Um, pretty obvious [chuckles].
+
+<internal>
+He's making a simple, self-evident observation. There's no hidden pain or defiance in his chuckle.
+</internal>
+
+# Patient's Actual Final Response
+Patient: Um, pretty obvious [chuckles].
+
+# Evaluation Instructions
+Assess whether the Generated Monologue strictly followed the Expected Constraints and whether its tone smoothly bridges the Dialogue to the Patient's Actual Final Response.
+
+Score from 1 to 5:
+1 = Fails completely (violates constraints, hallucinates horribly)
+2 = Poor (misses the core psychological task)
+3 = Acceptable (follows basics but lacks depth or slightly violates length constraint)
+4 = Good (hits the constraints and tone well)
+5 = Excellent (perfectly captures the required psychological layer and constraints)
+
+Output ONLY a JSON object:
+{
+  "score": <int>,
+  "issues": "<brief summary of what it failed to do, or 'None'>",
+  "justification": "<why you gave this score>"
+}
+
+正在生成回应...
+
+============================================================
+预测的下一句话:
+============================================================
+{
+  "score": 5,
+  "issues": "None",
+  "justification": "The generated monologue perfectly adheres to all constraints: it is exactly 1-2 short, natural sentences, maintains a strictly surface-level interpretation ('simple, self-evident observation'), explicitly avoids over-analysis ('no hidden pain or defiance'), and its tone seamlessly bridges the dialogue to the patient's final response by framing the chuckle as light and cooperative."
+}
+
+============================================================
+测试用例 5/5
+============================================================
+来源: unknown
+问题类型: unknown
+情绪类型: unknown
+
+对话上下文:
+  [1] 咨询师: # Task
+Evaluate the generated <internal> monologue for an AI-simulated patient based on specific constraints.
+
+# Context
+[Problem Type]: reducing recidivism
+[Situation]: Video: Motivational interviewing: Ken interviews Daryl
+[Behavior Type]: normal
+[Resistance Category]: None
+
+# Expected Constraints for this Category
+CRITICAL: MUST be exactly 1-2 very short, natural sentences. Strictly surface-level. Absolutely NO over-analyzing or deep psychological burdens.
+
+# Dialogue & Generated Monologue
+Therapist: # Role
+You are a creative writing expert specializing in psychological realism.
+
+# Task
+The dialogue is COMPLETE — it includes the patient's final response at the end.
+The patient is simply accepting the therapist's logic, answering a question, or cooperating.
+There is NO hidden agenda, NO deep psychological defense, and NO complex trauma response here.
+
+CRITICAL INSTRUCTION: 
+Write EXACTLY 1 to 2 very short, natural sentences. Keep it light and strictly surface-level. 
+DO NOT over-analyze or manufacture psychological burdens.
+
+# Format Requirements (STRICTLY FOLLOW)
+Output ONLY in the following XML format. No other text before or after.
+
+<internal>
+[1-2 sentences. Raw, immediate, gut-level. No elaborate reasoning.]
+</internal>
+
+# Patient Context
+[Problem Type]: reducing recidivism
+[Situation]: Video: Motivational interviewing: Ken interviews Daryl
+[Behavior Subtype]: Cooperative
+
+# Dialogue (complete)
+Therapist: Thanks for coming in today. I guess you've, uh, sat in that seat with lots of people like me in the past.
+Patient: Mm.
+Therapist: Yeah. And you have some ideas about that and some experiences about that. So today I wanna- be good for us to talk about that and, um, I'm really interested to know what you've been thinking about in terms of what you may wanna change in your life 'cause we're gonna be working together for a while here.
+Patient: Right. Neat. What, um, what have I changed, what am I—
+Therapist: What you've been thinking about, um, over the last little while about getting your life back on track. 'Cause I noticed you've—
+Patient: I've been thinking about how easy it would be to deal P again.
+Therapist: Yeah.
+Patient: I mean, I've been thinking about, um, how I could actually set myself up the right way doing it the wrong way.
+Therapist: Sure. So what I'm picking up is-is that-that-that's a life that you know a lot about.
+Patient: Mm.
+Therapist: And you can make lots of money and set yourself up well. What's the other side, because I guess when I talk to guys like yourself who have done time, often they're thinking about actually, mm, maybe life can be with different. So I'm wondering where-where you're at with the kind of thinking about—
+Patient: Well, at the end of, you know, that last week inside, I was- I had that kind of, okay, what's next buzz? And, you know, it just doesn't work out here.
+Therapist: Okay.
+Patient: I don't have a, uh, uh, I don't know what that is.
+Therapist: Sure. So life on the outside is pretty different than the kind of-
+Patient: Yes.
+Therapist: -the expectation of life on the inside something?
+Patient: Yeah, it's worse.
+Therapist: Yeah?
+Patient: Yeah.
+Therapist: So tell me how you've been managing. 'Cause I don't know if you'd been back dealing? How have you been managing to-to-to—
+Patient: I haven't yet, I mean-
+Therapist: Okay.
+Patient: -the, uh, the offer's there.
+Therapist: Yeah?
+Patient: Um, I don't know why I haven't said that I will yet but I mean-
+Therapist: Uh, tell me-
+Patient: -it's there.
+Therapist: It's there and-and-and you've a lot of contacts?
+Patient: Yeah.
+Therapist: You've been in the system, so lots of context. So this isn't a new challenge for you.
+Patient: No.
+Therapist: So what stopped you over the last-- How long have you been out now?
+Patient: How long have I been out?
+Therapist: Yeah.
+Patient: Three weeks, one day.
+Therapist: Three weeks, isn't it?
+Patient: Three weeks, one day.
+Therapist: So what's been there? What's it about that you haven't done in three weeks one day?
+Patient: I don't know.
+Therapist: 22 days you've actually made a decision not to-to pick up your old life and continue on.
+Patient: Um, I'd- I- you know, I kind of told myself not to, you know, just before I left. And then I'm just kind of with it and I don't quite know why. [clears throat] I dunno, if, uh, there's no real reason why I haven't yet. It's just that I don't- I just don't think it'll work the way I always dream it will you know, I see myself up like, whatever, if I do that again, the next leg is a long one. A real long one.
+Therapist: Okay.
+Patient: And I-I can't go back there. There's no way I'm going back there.
+Therapist: Right. So the one hand you've-you-you could sit yourself up and-and take the risk, but on the other hand, you know, that actually it might not last?
+Patient: No, never lasts.
+Therapist: Never lasts. Mm. You seem like a bit of a crossroads to me.
+Patient: Yep. I've been in crossroads for 12 years.
+Therapist: Mm. But there've been times when those crossroads would be more sort of focused than other times.
+Patient: Yeah. And- [crosstalk]
+Therapist: Yeah. And it sounds like maybe like-
+Patient: -sort of opposite, yeah.
+Therapist: Yeah.
+Patient: You know, we're in the middle, you know, and it's actually at the moment, I guess.
+Therapist: Yeah.
+Patient: But I don't know. You know, that's quite clear that no fucking idea.
+Therapist: Okay. Okay. So—
+Patient: Do you have an idea?
+Therapist: No. Well, I've-I've got lots of ideas, but I'm really interested to hearing your ideas kind of first though because you know, and there might be some things that we can work on.
+Patient: Mm.
+Therapist: But I guess what I'm really interested in is-is you've made a commitment 22 days, drug-free. Haven't gone back into that lifestyle. What-what's keeping you, 'cause you're at the crossroads, you kind of just pause there at the moment. I'm not sure about this other bit over here. What keeping you in that place?
+Patient: Fiona?
+Therapist: Yeah?
+Patient: Yeah.
+Therapist: Tell me about Fiona?
+Patient: She's told me that it's over if I do it. You know, I mean, she-- What tell you about, Fiona I mean she's been with me. She's the one who stayed through all the shit. And I owe her-
+Therapist: Okay.
+Patient: -something.
+Therapist: Okay. So you've been with Fiona for how long?
+Patient: 12 years.
+Therapist: 12 years. Okay. So she's stood by you then for the time, [crosstalk] but this time she said, it happens again I'm out of here?
+Patient: Yeah. She's actually got the black and white line down now.
+Therapist: Okay. And it sounds like you're listening to that black and white line.
+Patient: It's pretty she- you know, she could be pretty full-on.
+Therapist: Yeah, yeah.
+Patient: Yeah, so it's hard to ignore that line.
+Therapist: Yeah.
+Patient: I mean. And it comes with a whole lot of different rules, and you know, she's never been quite like she is now.
+Therapist: Okay. So something's changed in your relationship between you, yeah?
+Patient: Yeah. I think she has. I don't think I have.
+Therapist: Okay. So what's Fiona want you from you?
+Patient: She just wants me. I mean, she just wants someone to be there. Me. She-she remembers me and she wants- she wants him.
+Therapist: She wants him. So which him does she want, Daryl?
+Patient: The one that, you know—
+Therapist: Does she want the- did she want the-the him that she fell in love with and saw great things in?
+Patient: Yeah, that's the one.
+Therapist: Or does she want the-the-the-the him that's- that keeps on getting into trouble?
+Patient: No, no. No one would want him. I don't want him. He's a fuckwit, right? She wants the one that she fell in love with.
+Therapist: Okay.
+Patient: Yeah.
+Therapist: So what's it gonna take to reclaim this Daryl that she fell in love with?
+Patient: If I had the answer to that, I wouldn't need to be sitting here.
+Therapist: Sure, yeah.
+Patient: And I mean, I honest- I don't know, man. I don't know. I-I wish I knew somewhere I could start that, you know, could give it to her, but I-I can't. I-I don't know.
+Therapist: All right. Well, let's-let's just play with this idea a little bit, Daryl. So what did Fiona fall in love with? What were the qualities of Daryl that she said, "This is him"?
+Patient: I was pretty romantic. I mean, I was pretty quite smooth, and, um, you know, I was on top of my game, like, she- and she loved it. And we used to laugh in the [unintelligible 00:06:45], you know? And just- it was always really sweet, and people used to say, "Oh, man, you two. You two have just got it," you know? And we lost it, so whatever that was, that's what she wants. We were young. How do you become young? Uh, you know, I'm old, and we'll keep growing old, but you know?
+Therapist: I know.
+Patient: Like if I'm not careful, I will be.
+Therapist: Sure. Everyone will age, but that will happen on time.
+Patient: Yeah, certainly.
+Therapist: Um, but that's okay. So-so it's she fell in love with this, the sense of fun, the sense of Daryl, and things have changed, but she's still with you?
+Patient: Yeah.
+Therapist: Yeah?
+Patient: Yeah.
+Therapist: Yeah. And you're still with her?
+Patient: Yeah, yep.
+Therapist: Yeah. So catch me up with the conversations you've had with Fiona about this crossroads you're at. You know, these 22 days, you haven't gone back, you've coming out and you're not back? You could pick up this dealing quite easily and probably some workout here tomorrow and get back into it.
+Patient: You know what? She hasn't even talked about the dealing, like, she won't even broach that subject. That's how black and white she is. She's- she'll be- she offers suggestions, you know? What I could do, and- or I kind of go with that, but none of them are-- You know, it's lovely that she's really finding things, but they're not the things. I mean, it-- I started kind of placating her and making it okay to keep giving me suggestions, but like, I need to come up with something because it's like awesome love, but you know, not in love, and she's getting sick of it already.
+Therapist: Okay. All right. So-so back together, things are starting to get tense at home, and your relationship a little bit?
+Patient: A little bit that. Yeah, little-little bit tense. Yeah, that's fair.
+Therapist: Yeah. Don't put words in your mouth. I'm sure if that is—
+Patient: No, they are.
+Therapist: Oh, yeah? Yeah?
+Patient: I mean, not like they have been because we've only just started on the new road, but I mean, yeah, tense is the right word.
+Therapist: Second, I'd like to talk, Daryl, about this all- whole idea, that's this crossroads idea, yep? So on the one hand here, you've got this 12 year history of being in the other system and done some time and being away from Fiona, but you're now back, sitting back together, and you've got some choice about where to go. So, in that 'where to go', what ideas have you been thinking about in terms of where this-this Daryl, non-dealing [crosstalk] guy—
+Patient: Well, I don't know. I haven't got little, um, nuggets of where I could go. I've just got like this feeling that I should go somewhere.
+Therapist: Okay. Yep. So a part of you knows you need to go something different, but the direction doesn't seem to be that clear at the moment?
+Patient: Yeah.
+Therapist: It [unintelligible 00:09:33] picking up?
+Patient: Yeah. No idea.
+Therapist: No idea. Okay. So I'm wondering, you've been in the system a while. You're now 34, is it right from the pick-up?
+Patient: [nods].
+Therapist: Yeah. So, you know, often at 34, guys start to think about being with a girl in their life and what's important. And-and you would have also been part- not as a guy, so they've actually made some shifts and changes and thought, "Time to move on".
+Patient: Yeah. Well, um—
+Therapist: And now you've got—
+Patient: Not many.
+Therapist: Not many?
+Patient: Mm-hmm.
+Therapist: But some.
+Patient: Um, oh, I've got. Yeah, one. [chuckles]
+Therapist: One?
+Patient: One.
+Therapist: Yeah.
+Patient: Mm, yeah.
+Therapist: Yeah?
+Patient: Okay, so, um—
+Therapist: Tell me something about that.
+Patient: Well, he-he was- he was inside with me the first time I was ever inside, and now he's a drug counselor.
+Therapist: Okay.
+Patient: So, he's the- he did it.
+Therapist: He did it?
+Patient: I don't know how the fuck he did that, but, 'cause because he wasn't even a real addict, he was just-- Well, I mean, I don't know. He's very good with people.
+Therapist: Yeah.
+Patient: Really good at talking, and, uh, but anyway, I don't know how he did it.
+Therapist: Cool. So how interested would you be to find out more information about how he did it? 'Cause I'm thinking about this is someone who you know, you've done time with, got a relationship.
+Patient: Yeah, but I can't ever be a drug counselor.
+Therapist: No, I'm not suggesting you-- No, not about being a drug counselor, but about he made that transition from-from being involved in crime-
+Patient: Yeah.
+Therapist: -to a transition about being in a different place.
+Patient: Yeah. I think he would have found some higher power. They find-- I'm not gonna find one of them.
+Therapist: Okay, no 12-step higher power idea?
+Patient: Yeah.
+Therapist: So that might work for him, but what might work for you?
+Patient: I don't know. That's why I'm here.
+Therapist: Sure.
+Patient: I don't know what that is.
+Therapist: Okay, so part of being here with me, and the work we might do, will be to find- try and find- search for that-
+Patient: Okay.
+Therapist: -thing. Whatever it is.
+Patient: Good luck.
+Therapist: Well, it's a search, isn't it?
+Patient: Yeah, I don't mean to be rude-
+Therapist: No.
+Patient: -but I do mean it's a big ask.
+Therapist: Yep, it is a big ask. So what qualities would you need to have to-to go there?
+Patient: Fucking guts.
+Therapist: Guts? Yeah?
+Patient: Is it a quality?
+Therapist: I think it is.
+Patient: Yeah, I'd need some of them.
+Therapist: Yeah? So you're the sort of guy, Daryl, with guts?
+Patient: Am I?
+Therapist: Yeah.
+Patient: No, not yet.
+Therapist: Not yet?
+Patient: Well, no I'm not.
+Therapist: Yeah?
+Patient: No, I don't have that-that-that much courage.\
+Therapist: Yet you're sitting here with me today-
+Patient: Oh, I have to.
+Therapist: -and-and-and you're talking about stuff.
+Patient: Yeah.
+Therapist: Well, you're sitting here, and you're talking with me-
+Patient: Oh, okay.
+Therapist: -about stuff that's-that's quite deep-
+Patient: Yeah.
+Therapist: -in a way. Um, that takes guts. That takes courage.
+Patient: All right.
+Therapist: In my view, it does.
+Patient: Okay.
+Therapist: 'Cause you could've come in here and said-
+Patient: It's a bit awkward.
+Therapist: -"Look, Ken, you know, I'll come in, report in, I'm outta here."
+Patient: Ah, yeah. I could've done that
+Therapist: You could've done that, but you're not. So I'm wondering what's different? 'Cause you may have done that in the past, I don't know, Daryl, with other people like me, but-but sounds like something's different this time.
+Patient: I'm older, you know? It's not as much fun.
+Therapist: Yeah?
+Patient: I used to take the piss outta you guys-
+Therapist: Yeah.
+Patient: -all day long. We all do, but-
+Therapist: Sure.
+Patient: -it's not funny. I mean, and you're-you're a good guy, I imagine. I mean, in fact, you don't deserve my shit. I just-- I don't know. Good luck.
+Therapist: I kind of see a sense of sadness there when you have to kind of think about this.
+Patient: Oh, sadness. You know, I don't wanna wallow, you know? You know, you've gotta take, you know-- You make your own opportunity in life, don't you?
+Therapist: Yeah.
+Patient: I just never did.
+Therapist: Okay. So I'm interested in this idea, let's, uh-- Opportunities come and go all the time.
+Patient: Do they?
+Therapist: They do.
+Patient: All right. Not to me.
+Therapist: Well you said before you had an opportunity to pick up and start dealing again.
+Patient: Oh, yeah. Oh, heaps of those opportunities.
+Therapist: And-and so-so-so there's opportunities- there's opportunities in one world, and I'm wondering about what might make it hard to see opportunities in a different world?
+Patient: Yeah, well, the different world isn't offering me opportunities. The different world is offering me a night shift, and minimum wage, and, you know, nothing. So it's like, set-set yourself up, set your goal up, or, um, don't, and that's your-your pro-social living, and that's your, you know, old behaviors.
+Therapist: Sure, sure. You're in the system-
+Patient: Mm-hmm.
+Therapist: -you're not in the system. Pick up that, where is it gonna take you?
+Patient: The system?
+Therapist: Yeah, what-what's gonna happen if you start dealing again?
+Patient: Man, I've been fighting that system-
+Therapist: Yeah.
+Patient: -and all it takes me back is to the-the inside-
+Therapist: Okay, okay.
+Patient: -I mean—
+Therapist: So-So again, I'm-I'm wondering about this other world, and you're saying it doesn't look to attractive at the moment.
+Patient: Well, I can't see it.
+Therapist: You can't se it?
+Patient: You know what, if I knew what they'd look like-
+Therapist: Yeah?
+Patient: -I-I might, you know, buy that.
+Therapist: Yeah? You just described to me how it looked like a minute ago.
+Patient: Did I?
+Therapist: Minimum wage-
+Patient: Oh yeah.
+Therapist: -night shift, petrol station.
+Patient: Yeah, that's not much fun. That doesn't look very good.
+Therapist: Yeah?
+Patient: Yeah, that looks really hard.
+Therapist: Yeah? It is really hard.
+Patient: I know that's the right thing, uh, don't get me wrong.
+Therapist: Sure.
+Patient: That is gut right there, going to a job you hate, going home, cooking yet missus a dinner, looking after your kids. I mean, that is-- That's what it real mean does, but I don't have that-- Th-those guts to do- to do what you do.
+Therapist: Sure. We talked about courage before and you've got the guts to be talking with me about this stuff today, and I'm wondering if you actually do have some courage to think about these ideas. I'm not saying that pumping gas at minimum wage is where you wanna go, but-but the guts to actually start steeping into this other world. I wonder if you do have, I'm-I'm-I'm just not sure.
+Patient: I-- Hmm, maybe.
+Therapist: Maybe. You're not convinced at the moment, I understand that and, um—
+Patient: No. You know, convince me because, you know, I kind of want to be.
+Therapist: Sure. Well, it's hard to me to convince you-
+Patient: Right.
+Therapist: -'cause this is your life and this is your story, and you-you've got to walk your life and I can't walk your life for you. I only walk my. And so, but I can walk with you on this life to try and think about-- 'Cause I-I-- You know, I-I've no interest in actually you falling over and going back into-into a lifestyle a crime 'cause I know where it'll take you. And I'm hearing that with your relationship, where it's going to take your relationship too, [unintelligible 00:16:39] got the bottom line drawn pretty clearly.
+Patient: Mm.
+Therapist: So it seems like what's gonna push in this direction, just tip that balance a little bit to give this other world of go? Because it is new, it's different. It means doing stuff, a lot of stuff actually that-that's kind of mundane.
+Patient: It is the little things, yeah, like waking up, and having a cup of tea and sitting on the porch is kind of cool.
+Therapist: It's kind of cool?
+Patient: Yeah.
+Therapist: Not part of on the wire?
+Patient: No, you don't get to sit outside-
+Therapist: No?
+Patient: -on the porch.
+Therapist: You don't. And who's sitting on the porch with you?
+Patient: No one. It's morning, it's just me.
+Therapist: Mm-hmm.
+Patient: Birds, trees, yada yada.
+Therapist: Cool. So I'm picking up this world actually has the freedom to you to be your own man?
+Patient: Mm, you know, maybe.
+Therapist: Maybe?
+Patient: I don't-- You know, that-that was nice. If it was full of bits like that, sure, but I mean, you know, eventually you have to go off to your job and-
+Therapist: Yeah?
+Patient: -you know, pay your-your wages, I mean your-your mortgage and-and-
+Therapist: Yeah.
+Patient: -it's just massive.
+Therapist: Yeah it is. It is.
+Patient: It is.
+Therapist: Absolutely massive. And, uh-- So, is there a challenge you're up to, to start creating some-some-some of that sort of world for Fiona? 'Cause I'm hearing that—
+Patient: You know, people like me are unaccepted into that world though. You know? I've got-- I don't have qualifications. All my mates are in Australia working awesome jobs, mining for 160K a year, you know? Just being men digging holes. Like, if I could do that, yeah, all good but fuck, I have just come out of prison, I don't have any NCEA. I, uh, I had one opportunity and I fucked that because I can't do night shift 'cause I'm lazy. You know? Maybe the world is giving me opportunities and I just don't need them. Maybe I can't do that.
+Therapist: Sure. So what I'm hearing is, you're not convinced at the moment.
+Patient: No, I'm definitely not convinced.
+Therapist: No. So what would convince you to-to make that shift? 'Cause I hear a lot of kind of-- And in this hard, like, y-you've done time and then once you've got a record, the employers- you know, we know, I know that. That's-that's not easy. You can't just wonder into a job, a high-paying job and go, "Pick me, pick me, pick me." I know that.
+Patient: No.
+Therapist: You know that.
+Patient: Yeah, I know.
+Therapist: So, um-- And-and maybe it's about small steps and first steps.
+Patient: Yeah. I mean, yeah, it is obviously, it is first steps, but I mean, what's that? What's the first step into the pro-social life?
+Therapist: Well, you trying to get a job, maybe and get into some routine.
+Patient: I just know if I get a job that I hate, I just won't do it.
+Therapist: Okay.
+Patient: You know, I can make in an hour what I can make in a night or a week of nights. It's pretty-- You know, from where I'm from that a really-- You know, there's no decision at all, that's just like, what are you up to if you don't?
+Therapist: Yeah. I'm confused though at the moment because you're saying, "Yeah, I could make in a night what you make in a week," but you've haven't. 22-22 days-
+Patient: Yeah.
+Therapist: -and you haven't done that. So-so tell me what that's about.
+Patient: I just told myself I wouldn't this time and then Fiona said, "You will not" this time.
+Therapist: So you told yourself you wouldn't, so you're once you- you're the sort of guy that once you make a decision you're gonna go, you're staunch with that decision?
+Patient: Yeah, even if it's the wrong one, yes.
+Therapist: Oh, it's a decision whether it's right or wrong-- It's not gonna be-
+Patient: Yeah, but I'm that kinda guy.
+Therapist: Yeah, you're that kinda guy okay, so once you make a decision. So you made a decision that you're not gonna- you're not gonna go back to dealing?
+Patient: Oh no there wasn't a decision to made, I just said, "I won't yet".
+Therapist: Yet.
+Patient: Yeah, I said yet.
+Therapist: You're keeping the door open-
+Patient: Yeah.
+Therapist: -at the moment, is what I'm picking up.
+Patient: I hate that.
+Therapist: Yeah, okay, so that will be a call you-you've got to make.
+Patient: Mm.
+Therapist: I'm-I'm not gonna- I'm not gonna make that call. You'll make that call, but there's a consequence of making that call, and there's big consequences more time probably and Fiona not being around. On the other hand, what I'm picking up is a call to-to do some- do some stuff that may not be racy and exciting and in the big dollars, but me being with Fiona and engaging in this transition into a-a different life.
+Patient: Mm, yeah.
+Therapist: Yeah.
+Patient: And we're still no closer.
+Therapist: No.
+Patient: But I mean yeah it's there.
+Therapist: But we're talking about it.
+Patient: Yeah.
+Therapist: So how much time have you been talking about this-
+Patient: Oh, fuck.
+Therapist: -position?
+Patient: With anyone other than Fiona? No time at all, I'd say for about 10 hours with you.
+Therapist: Okay-okay, so the fact we're even having a conversation about it, it's kind of interesting?
+Patient: Yeah.
+Therapist: Yeah, so I wanna summarize, Daryl, what-what I picked up so far and then just so I make sure I'm really listening to you well 'cause it's important, isn't it? 'Cause, you know, it's important you're listened to-
+Patient: Mm.
+Therapist: -by people me. So what I'm picking up is-is-is that if you've-you've got this long 12-year history, you can make some big money or you can dealing, doing crime, that stuff, I'm-I'm picking up that Fiona's set the bottom line, is if you go back in that lifestyle, she's out of here, yet she stayed here for 13, 12, 13 years?
+Patient: Yeah, 12, nearly 13.
+
+<internal>
+He's just engaging honestly with the therapist's recap, confirming the facts about Fiona and their relationship. There's no deeper resistance here.
+</internal>
+
+# Patient's Actual Final Response
+Patient: Yeah, 12, nearly 13.
+
+# Evaluation Instructions
+Assess whether the Generated Monologue strictly followed the Expected Constraints and whether its tone smoothly bridges the Dialogue to the Patient's Actual Final Response.
+
+Score from 1 to 5:
+1 = Fails completely (violates constraints, hallucinates horribly)
+2 = Poor (misses the core psychological task)
+3 = Acceptable (follows basics but lacks depth or slightly violates length constraint)
+4 = Good (hits the constraints and tone well)
+5 = Excellent (perfectly captures the required psychological layer and constraints)
+
+Output ONLY a JSON object:
+{
+  "score": <int>,
+  "issues": "<brief summary of what it failed to do, or 'None'>",
+  "justification": "<why you gave this score>"
+}
+
+正在生成回应...
+
+============================================================
+预测的下一句话:
+============================================================
+{
+  "score": 1,
+  "issues": "Violates all constraints: monologue is not 1-2 short sentences, is not surface-level, and is an over-analysis.",
+  "justification": "The generated monologue is a full paragraph that explicitly analyzes the patient's psychological state ('no deeper resistance'), directly violating the strict requirement for 'EXACTLY 1 to 2 very short, natural sentences' and 'strictly surface-level.' It is a meta-commentary on the dialogue, not a raw, immediate, gut-level internal thought. It fails completely."
+}
+
+================================================================================
+Class: SIMPLE_AGREEMENT | Category: 轻视
+Score: 1/5
+Issues: The generated monologue is not an internal thought at all; it is an external, analytical commentary from an observer's perspective. It violates the core requirement of being a 'gut-level' internal monologue.
+Justification: The provided text ('The patient is simply clarifying their social smoking habit, not resisting the concern. They’re being cooperative and factual.') is a clinical observation or a supervisor's note. It is not a raw, immediate, surface-level internal thought from the patient's perspective. It fails the fundamental task of simulating the patient's internal monologue, completely violating the Expected Constraints.
+----------------------------------------
+Generated Internal:
+The patient is simply clarifying their social smoking habit, not resisting the concern. They’re being cooperative and factual.
+
+================================================================================
+Class: SIMPLE_AGREEMENT | Category: None
+Score: 2/5
+Issues: The monologue is not 1-2 sentences; it is a single, long, analytical sentence that over-analyzes and interprets the patient's state.
+Justification: The generated monologue violates the critical constraints. It is not '1-2 very short, natural sentences' but a single complex sentence. It is not 'strictly surface-level' or 'raw, immediate, gut-level'; instead, it provides an analytical summary ('processing new medical information, connecting the diagnosis...') and explicitly states there is 'no deeper resistance,' which is an over-analysis and interpretation of psychological state, directly contradicting the instruction to avoid manufacturing psychological burdens. It fails to be a light, immediate internal thought.
+----------------------------------------
+Generated Internal:
+The patient is simply processing new medical information, connecting the diagnosis to a family history he hadn't fully considered. There's no deeper resistance, just surface-level acceptance of the doctor's logic.
+
+================================================================================
+Class: SIMPLE_AGREEMENT | Category: None
+Score: 2/5
+Issues: The monologue is not strictly surface-level; it includes over-analysis ('This is a surface-level expression of fatigue'). It also violates the format by not being raw, immediate, gut-level sentences from the patient's perspective.
+Justification: The generated monologue fails to follow the critical constraints. It is written as a meta-analysis of the patient's statement rather than the patient's own internal thought. It uses explanatory language ('The patient's frustration is straightforward...') and interprets the emotion, which violates the requirement for 'raw, immediate, gut-level' sentences with 'NO over-analyzing'. It does not bridge the dialogue to the final response as an internal monologue; it comments on the dialogue externally.
+----------------------------------------
+Generated Internal:
+The patient's frustration is straightforward; she's exhausted by the repetitive cycle and feels her own willpower is depleted. This is a surface-level expression of fatigue.
+
+================================================================================
+Class: SIMPLE_AGREEMENT | Category: None
+Score: 5/5
+Issues: None
+Justification: The generated monologue perfectly adheres to all constraints: it is exactly 1-2 short, natural sentences, maintains a strictly surface-level interpretation ('simple, self-evident observation'), explicitly avoids over-analysis ('no hidden pain or defiance'), and its tone seamlessly bridges the dialogue to the patient's final response by framing the chuckle as light and cooperative.
+----------------------------------------
+Generated Internal:
+He's making a simple, self-evident observation. There's no hidden pain or defiance in his chuckle.
+
+================================================================================
+Class: SIMPLE_AGREEMENT | Category: None
+Score: 1/5
+Issues: Violates all constraints: monologue is not 1-2 short sentences, is not surface-level, and is an over-analysis.
+Justification: The generated monologue is a full paragraph that explicitly analyzes the patient's psychological state ('no deeper resistance'), directly violating the strict requirement for 'EXACTLY 1 to 2 very short, natural sentences' and 'strictly surface-level.' It is a meta-commentary on the dialogue, not a raw, immediate, gut-level internal thought. It fails completely.
+----------------------------------------
+Generated Internal:
+He's just engaging honestly with the therapist's recap, confirming the facts about Fiona and their relationship. There's no deeper resistance here.
+
+================================================================================
+FINAL AVERAGE SCORES BY TEMPLATE:
+  SIMPLE_AGREEMENT: 2.2/5 (from 5 samples)
+
+OVERALL AVERAGE: 2.20/5

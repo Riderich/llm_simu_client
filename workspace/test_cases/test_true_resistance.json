@@ -1,0 +1,186 @@
+[
+  {
+    "case_id": 1,
+    "source": "ESConv",
+    "problem_type": "breakup with partner",
+    "emotion_type": "fear",
+    "situation": "I fear that I might never be loved again. I feel so lonely.",
+    "context": [
+      {"role": "user", "content": "Hello. How are you feeling today?"},
+      {"role": "assistant", "content": "Hi. I'm feeling okayish."},
+      {"role": "user", "content": "It sounds like there maybe something you need to get off of your chest."},
+      {"role": "assistant", "content": "Absolutely. I recently broke up with my girlfriend. We had been together for more than 3 years."},
+      {"role": "user", "content": "What happened that made you guys break up?"},
+      {"role": "assistant", "content": "She said that she simply wasn't in love anymore, and that she didn't have the same feelings she did at the beginning."},
+      {"role": "user", "content": "I have also had this situation happen to me. Maybe it just wasn't the right timing or she had other interests."},
+      {"role": "assistant", "content": "She was so important for me. I feel so empty.... I Feel like I'm never finding anyone like her ever again."},
+      {"role": "user", "content": "The first step of a break should be to starting loving thyself. If you get out there and find hobbies you enjoy, who knows, you may find someone that"},
+      {"role": "assistant", "content": "It's easier said than done. At times I would rather maybe just dissapear. I have never had anyone else show romantic interest in me before."},
+      {"role": "user", "content": "What is your age?"},
+      {"role": "assistant", "content": "I am 25 at the moment."},
+      {"role": "user", "content": "You still have your whole life ahead of you. Some people don't find a partner until their 40's or even 50's."}
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：breakup with partner\n- 情绪：fear\n- 详情：I fear that I might never be loved again. I feel so lonely.",
+    "ground_truth": "i disagree with you regarding that maybe that is what she wants me to do. i don't think she cares about me at the slightest anymore. i was a burden for her and will probably keep being it for any woman i meet."
+  },
+  {
+    "case_id": 2,
+    "source": "ESConv",
+    "problem_type": "problems with friends",
+    "emotion_type": "anger",
+    "situation": "friends trying to let me down",
+    "context": [
+      {"role": "user", "content": "hello"},
+      {"role": "assistant", "content": "im having some issues with friends not actually being friends"},
+      {"role": "user", "content": "i'm here to help. can you tell me more about it?"},
+      {"role": "assistant", "content": "we were supposed to hang out today. my friends said that they are too busy to hang out but i found out they are hanging out with each other without me"},
+      {"role": "user", "content": "that must be hurtful. how did you find out?"},
+      {"role": "assistant", "content": "i saw their social media posts. they are all together having fun"},
+      {"role": "user", "content": "just be patient with them"}
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：problems with friends\n- 情绪：anger\n- 详情：friends trying to let me down.",
+    "ground_truth": "thanks! i would not going to talk to them"
+  },
+  {
+    "case_id": 3,
+    "source": "ESConv",
+    "problem_type": "job crisis",
+    "emotion_type": "anxiety",
+    "situation": "I do not like my boss, she is hateful.",
+    "context": [
+      {"role": "user", "content": "Hello! How can I help today?"},
+      {"role": "assistant", "content": "i'm having trouble at work"},
+      {"role": "user", "content": "I'm sorry to hear that. What's going on?"},
+      {"role": "assistant", "content": "i do not like my boss, she is hateful"},
+      {"role": "user", "content": "That sounds really difficult. How is she hateful?"},
+      {"role": "assistant", "content": "she always criticizes my work and makes me feel incompetent"},
+      {"role": "user", "content": "Is there anyone above her you could talk with"},
+      {"role": "assistant", "content": "i don't know. i've thought about it but i'm not sure it would help"},
+      {"role": "user", "content": "Maybe try talking to HR? They might be able to help."}
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：job crisis\n- 情绪：anxiety\n- 详情：I do not like my boss, she is hateful.",
+    "ground_truth": "there's no way i would do that... it would make things even worse for me"
+  },
+  {
+    "case_id": 4,
+    "source": "ESConv",
+    "problem_type": "job crisis",
+    "emotion_type": "fear",
+    "situation": "I want more online jobs in this pandemic but hard to find.",
+    "context": [
+      {"role": "user", "content": "Hello! How can I help today?"},
+      {"role": "assistant", "content": "i'm worried about finding work during the pandemic"},
+      {"role": "user", "content": "I understand. Many people are facing this challenge. What kind of work are you looking for?"},
+      {"role": "assistant", "content": "i want more online jobs but it's hard to find"},
+      {"role": "user", "content": "Have you thought about starting a YouTube channel or doing content creation?"},
+      {"role": "assistant", "content": "i have considered that but i'm not sure"},
+      {"role": "user", "content": "I think it would be fun to visit but not for very long."},
+      {"role": "assistant", "content": "what do you mean visit?"},
+      {"role": "user", "content": "Oh sorry, I meant it would be fun to try content creation"},
+      {"role": "assistant", "content": "i don't know about showing myself on camera"}
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：job crisis\n- 情绪：fear\n- 详情：I want more online jobs in this pandemic but hard to find.",
+    "ground_truth": "possibly, problem is that i don't want to show myself online, what do you think about wearing a full face mask and do youtube?"
+  },
+  {
+    "case_id": 5,
+    "source": "ESConv",
+    "problem_type": "job crisis",
+    "emotion_type": "anxiety",
+    "situation": "It's a very competitive office",
+    "context": [
+      {"role": "user", "content": "Hello! How can I help today?"},
+      {"role": "assistant", "content": "i'm having a really hard time with my boss"},
+      {"role": "user", "content": "I'm sorry to hear that. Can you tell me more about what's happening?"},
+      {"role": "assistant", "content": "my boss always puts me down in front of everyone. it's a very competitive office and i don't want to look weak"},
+      {"role": "user", "content": "That sounds really tough. Have you tried talking to your boss about how this makes you feel?"},
+      {"role": "assistant", "content": "no, i haven't"},
+      {"role": "user", "content": "Maybe your boss can compromise with you. It's worth a shot!"}
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：job crisis\n- 情绪：anxiety\n- 详情：It's a very competitive office.",
+    "ground_truth": "it's a very competitive office and i don't want to look weak."
+  },
+  {
+    "case_id": 6,
+    "source": "ESConv",
+    "problem_type": "breakup with partner",
+    "emotion_type": "depression",
+    "situation": "My boy friend left me for nothing",
+    "context": [
+      {"role": "user", "content": "Hello! How can I help today?"},
+      {"role": "assistant", "content": "i'm feeling really sad. my boyfriend left me for nothing"},
+      {"role": "user", "content": "I'm so sorry to hear that. How long were you together?"},
+      {"role": "assistant", "content": "we were together for two years"},
+      {"role": "user", "content": "That's a long time. Did he give you a reason?"},
+      {"role": "assistant", "content": "no, i tried to ask for explanation but i won't get any thing, make me feel useless"},
+      {"role": "user", "content": "It is understandable to want to keep photos. Distracting yourself might not be solution; that could stop you from processing emotions."},
+      {"role": "assistant", "content": "i keep looking at our photos"}
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：breakup with partner\n- 情绪：depression\n- 详情：My boy friend left me for nothing.",
+    "ground_truth": "ok, i mean , i can try, but it's just, i don't want to leave him behind. i miss him"
+  },
+  {
+    "case_id": 7,
+    "source": "ESConv",
+    "problem_type": "ongoing depression",
+    "emotion_type": "depression",
+    "situation": "I have nobody in my life that supports me. No purpose to my life.",
+    "context": [
+      {"role": "user", "content": "Hello! How can I help today?"},
+      {"role": "assistant", "content": "i'm feeling really hopeless"},
+      {"role": "user", "content": "I'm sorry to hear that. Would you like to tell me more about what's going on?"},
+      {"role": "assistant", "content": "i have nobody in my life that supports me. no purpose to my life. my husband treats me terrible but i won't divorce even if i am miserable"},
+      {"role": "user", "content": "From what I have seen, if a situation like this continues, not only will you be consumed with anger towards your husband"}
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：ongoing depression\n- 情绪：depression\n- 详情：I have nobody in my life that supports me. No purpose to my life.",
+    "ground_truth": "i won't divorce...even if i am miserable, that isn't an option."
+  },
+  {
+    "case_id": 8,
+    "source": "ESConv",
+    "problem_type": "ongoing depression",
+    "emotion_type": "depression",
+    "situation": "I feel like a piece of crap, and childish",
+    "context": [
+      {"role": "user", "content": "Hello! How can I help today?"},
+      {"role": "assistant", "content": "i'm not doing well"},
+      {"role": "user", "content": "What's making you feel that way?"},
+      {"role": "assistant", "content": "i feel like a piece of crap, and childish at that. i can't maintain any of my relationships. i think i'm going to be alone for rest of my life."},
+      {"role": "user", "content": "That's a lousy time of year for it too, isn't it?"}
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：ongoing depression\n- 情绪：depression\n- 详情：I feel like a piece of crap, and childish.",
+    "ground_truth": "i feel like a piece of crap, and childish at that. i can't maintain any of my relationships. i think i'm going to be alone for rest of my life."
+  },
+  {
+    "case_id": 9,
+    "source": "ESConv",
+    "problem_type": "academic pressure",
+    "emotion_type": "fear",
+    "situation": "I'm really scared about next college semester",
+    "context": [
+      {"role": "user", "content": "Hello! How can I help today?"},
+      {"role": "assistant", "content": "i'm really scared about next college semester it is frightening"},
+      {"role": "user", "content": "What are you scared about specifically?"},
+      {"role": "assistant", "content": "i don't know, i just feel overwhelmed"},
+      {"role": "user", "content": "Are there any revision courses that you can access to help refresh your skills?"}
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：academic pressure\n- 情绪：fear\n- 详情：I'm really scared about next college semester.",
+    "ground_truth": "i don't think so, campus is closed due to pandemic. there are a few online tutors but they are almost always busy"
+  },
+  {
+    "case_id": 10,
+    "source": "ESConv",
+    "problem_type": "problems with friends",
+    "emotion_type": "sadness",
+    "situation": "Had a fight with friend.",
+    "context": [
+      {"role": "user", "content": "Hello! How can I help today?"},
+      {"role": "assistant", "content": "i had a fight with my friend"},
+      {"role": "user", "content": "I'm sorry to hear that. Would you like to tell me about it?"},
+      {"role": "assistant", "content": "she was not ready to understand and created a fight. i was angry on her."},
+      {"role": "user", "content": "Have you discuss your frustration with her?"}
+    ],
+    "system_prompt": "你是一名心理咨询中的患者。\n\n你的情况：\n- 问题：problems with friends\n- 情绪：sadness\n- 详情：Had a fight with friend.",
+    "ground_truth": "yes, but still she thinks that i was making excuses that day. she is not ready to listen."
+  }
+]

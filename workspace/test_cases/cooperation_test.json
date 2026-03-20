@@ -1,0 +1,380 @@
+[
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "善良对你而言 意味着 不强迫你做不愿意的事情 是吗"
+      },
+      {
+        "role": "assistant",
+        "content": "对 不会试图进一步影响我说服我控制我 第一个咨询师就是这样的人 我在怀疑那个学生也是这样的人… [捂脸]"
+      },
+      {
+        "role": "user",
+        "content": "为什么怀疑那个学生也是这样的人"
+      },
+      {
+        "role": "assistant",
+        "content": "比如说从学习效果看并不是很想学习我教他的内容干嘛还来学习呢 比如说我已经讲过不想在上课时间谈私事 他一直很关注会打听 比如说想学网上那么多内容干嘛非跟我学（这一点尤其关键 我觉得我有可以在教学中表达冷漠和距离感"
+      },
+      {
+        "role": "user",
+        "content": "嗯嗯 我在听"
+      },
+      {
+        "role": "assistant",
+        "content": "如果是我会感觉不舒服 会觉得这个老师不太喜欢我 干脆我换个方法学吧 他没有"
+      }
+    ],
+    "target_utterance": "如果是我会感觉不舒服 会觉得这个老师不太喜欢我 干脆我换个方法学吧 他没有",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "合作-未阻抗",
+      "parent": "No Resistance",
+      "category": "Cooperative",
+      "has_resistance": false,
+      "cooperative_subtype": "E1",
+      "cooperative_confidence": 0.9,
+      "cooperative_rationale": "描述假设情境下的感受与应对，探索人际互动中的脆弱体验。",
+      "cooperative_model": "qwen3.5-flash"
+    },
+    "_recap_idx": 42
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "哦哦 就离得更远了吧"
+      },
+      {
+        "role": "assistant",
+        "content": "嗯 我工作了会忙 会交新的男票 新的朋友"
+      },
+      {
+        "role": "user",
+        "content": "嗯嗯 这真令人向往 不合适的老朋友就很难影响到你了"
+      },
+      {
+        "role": "assistant",
+        "content": "这[1-5]年变动太大了"
+      },
+      {
+        "role": "user",
+        "content": "嗯嗯，都发生了什么呢"
+      },
+      {
+        "role": "assistant",
+        "content": "现在哪怕还在一个城市也不会太影响了 读研 分手 奶奶去世 搬家[1-5]次 抑郁 毕业 换工作ing 换城市ing"
+      }
+    ],
+    "target_utterance": "现在哪怕还在一个城市也不会太影响了 读研 分手 奶奶去世 搬家[1-5]次 抑郁 毕业 换工作ing 换城市ing",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "合作-未阻抗",
+      "parent": "No Resistance",
+      "category": "Cooperative",
+      "has_resistance": false,
+      "cooperative_subtype": "E1",
+      "cooperative_confidence": 0.85,
+      "cooperative_rationale": "列举人生变故与脆弱体验，阐述变动对关系的影响",
+      "cooperative_model": "qwen3.5-flash"
+    },
+    "_recap_idx": 55
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "这种被背叛的感觉一定很痛苦。最近发生了什么吗"
+      },
+      {
+        "role": "assistant",
+        "content": "上周我最好的闺蜜突然就不理我了，连个理由都没给。这已经是第三次了"
+      },
+      {
+        "role": "user",
+        "content": "好像这种模式一直在持续？"
+      },
+      {
+        "role": "assistant",
+        "content": "是啊，从小到大都这样。小学最好的朋友转学了，中学闺蜜抢了我男朋友，现在我闺蜜又不理我了.可能我就是不配拥有长久的友谊"
+      },
+      {
+        "role": "user",
+        "content": "听起来这些经历确实让人很受伤。不过我们能不能一起看看，在这些关系中，有没有什么共同的模式？"
+      },
+      {
+        "role": "assistant",
+        "content": "就是我不够好呗。别人跟我相处久了就会发现我的缺点，然后就离开了"
+      }
+    ],
+    "target_utterance": "就是我不够好呗。别人跟我相处久了就会发现我的缺点，然后就离开了",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "合作-未阻抗",
+      "parent": "No Resistance",
+      "category": "Cooperative",
+      "has_resistance": false,
+      "cooperative_subtype": "E1",
+      "cooperative_confidence": 0.9,
+      "cooperative_rationale": "表达自我否定与脆弱，探索关系模式根源，无行动决断。",
+      "cooperative_model": "qwen3.5-flash"
+    },
+    "_recap_idx": 79
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "噢，疫情还没好转呢？"
+      },
+      {
+        "role": "assistant",
+        "content": "然后我住的地方没有厨房 疫情倒还好"
+      },
+      {
+        "role": "user",
+        "content": "没能回去是因为什么呢"
+      },
+      {
+        "role": "assistant",
+        "content": "就是我们上半学期快要放假了 就没再安排学生返校了 我就不回学校了"
+      },
+      {
+        "role": "user",
+        "content": "噢，再熬一熬这学期就结束了呢"
+      },
+      {
+        "role": "assistant",
+        "content": "对的对的 我们新开的课再有三周就结课了"
+      }
+    ],
+    "target_utterance": "对的对的 我们新开的课再有三周就结课了",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "合作-未阻抗",
+      "parent": "No Resistance",
+      "category": "Cooperative",
+      "has_resistance": false,
+      "cooperative_subtype": "E2",
+      "cooperative_confidence": 0.9,
+      "cooperative_rationale": "简短附和咨询师，陈述课程结束时间的事实，属于浅层配合。",
+      "cooperative_model": "qwen3.5-flash"
+    },
+    "_recap_idx": 18
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "嗯嗯，针对这个你有想过什么办法没呢"
+      },
+      {
+        "role": "assistant",
+        "content": "比如陪他聊天的时候会跟他将一下，收到委屈应该如何勇敢的表达。会跟他做一些打拳击的游戏。可是收效甚微。有时候我感觉他过于依赖我，但我又不知道应该如何跟他保持一个有效的距离。远了，他觉得我不爱他。近了他得寸进尺。"
+      },
+      {
+        "role": "user",
+        "content": "嗯嗯，好像是尝试了引导让孩子主动表达，也尝试一些拳击的游戏~过于依赖你怎么说呢"
+      },
+      {
+        "role": "assistant",
+        "content": "什么事情都要我帮助完成。哪怕是问老师这样的事情"
+      },
+      {
+        "role": "user",
+        "content": "嗯嗯，其实也就是孩子有点胆小哦，好像不太敢自己去探索，总是要让爸爸带着呢。孩子现在是几岁呢"
+      },
+      {
+        "role": "assistant",
+        "content": "对对，就是这样。孩子快要五岁了。"
+      }
+    ],
+    "target_utterance": "对对，就是这样。孩子快要五岁了。",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "合作-未阻抗",
+      "parent": "No Resistance",
+      "category": "Cooperative",
+      "has_resistance": false,
+      "cooperative_subtype": "E2",
+      "cooperative_confidence": 0.95,
+      "cooperative_rationale": "简短附和咨询师总结，回答年龄事实，无深入探索或行动意图。",
+      "cooperative_model": "qwen3.5-flash"
+    },
+    "_recap_idx": 19
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "其实哪种状态下舒适，哪种方式我们不喜欢或者喜欢，我们内心都是有答案的，跟随我们的内心真实感受走，就能减少很多冲突。这就是你在当时选择的对于自己来说最合适的决定"
+      },
+      {
+        "role": "assistant",
+        "content": "是的"
+      },
+      {
+        "role": "user",
+        "content": "如果内心感到悲伤，不要强迫自己说让它过去，要开心。每个人都有悲伤的权利。但是我们知道悲伤过后，依然会向前走"
+      },
+      {
+        "role": "assistant",
+        "content": "是鸭"
+      },
+      {
+        "role": "user",
+        "content": "希望可以缓解到你的情绪哦"
+      },
+      {
+        "role": "assistant",
+        "content": "谢谢"
+      }
+    ],
+    "target_utterance": "谢谢",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "合作-未阻抗",
+      "parent": "No Resistance",
+      "category": "Cooperative",
+      "has_resistance": false,
+      "cooperative_subtype": "E2",
+      "cooperative_confidence": 0.95,
+      "cooperative_rationale": "简短致谢，礼貌配合，无认知转折或具体行动计划。",
+      "cooperative_model": "qwen3.5-flash"
+    },
+    "_recap_idx": 38
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "老大，还是蛮辛苦的，那你呢，辛苦吗"
+      },
+      {
+        "role": "assistant",
+        "content": "而且小时候到处都是生男生女都一样的那种宣传 虽然别人家也有两三个孩子的"
+      },
+      {
+        "role": "user",
+        "content": "确实不太常见"
+      },
+      {
+        "role": "assistant",
+        "content": "但会觉得我们家想要男孩的意图太明显了，尤其是上学之后，会觉得就我们不响应号召，守着封建糟粕 哈哈哈哈哈 但是现在又变了呀"
+      },
+      {
+        "role": "user",
+        "content": "哈哈，对啊，估计多子多女"
+      },
+      {
+        "role": "assistant",
+        "content": "而且排除掉以前那些自卑心理，有兄弟姐妹真的挺好的"
+      }
+    ],
+    "target_utterance": "而且排除掉以前那些自卑心理，有兄弟姐妹真的挺好的",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "合作-未阻抗",
+      "parent": "No Resistance",
+      "category": "Cooperative",
+      "has_resistance": false,
+      "cooperative_subtype": "E3",
+      "cooperative_confidence": 0.85,
+      "cooperative_rationale": "来访者克服自卑，形成对兄弟姐妹的积极认知，属认知领悟。",
+      "cooperative_model": "qwen3.5-flash"
+    },
+    "_recap_idx": 27
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "他们都是人类的灯塔 不过只有少数人在跟随"
+      },
+      {
+        "role": "assistant",
+        "content": "是的 大多数人被生活所累 生命的意义也就没那么重要了"
+      },
+      {
+        "role": "user",
+        "content": "所以 天地也是宽容的 给人选择的自由 思想的自由"
+      },
+      {
+        "role": "assistant",
+        "content": "所以我应该感谢它"
+      },
+      {
+        "role": "user",
+        "content": "嗯 很好"
+      },
+      {
+        "role": "assistant",
+        "content": "给了我不一样的思考 让我在看见海河山川的时候 不仅仅看见了海河山川 还看见了生命"
+      }
+    ],
+    "target_utterance": "给了我不一样的思考 让我在看见海河山川的时候 不仅仅看见了海河山川 还看见了生命",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "合作-未阻抗",
+      "parent": "No Resistance",
+      "category": "Cooperative",
+      "has_resistance": false,
+      "cooperative_subtype": "E3",
+      "cooperative_confidence": 0.9,
+      "cooperative_rationale": "来访者表达视角转变与深层领悟，属于明显的认知转折。",
+      "cooperative_model": "qwen3.5-flash"
+    },
+    "_recap_idx": 48
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "嗯"
+      },
+      {
+        "role": "assistant",
+        "content": "想吃什么跟妈妈说，被妈妈吐槽，嫌弃，又宠溺，是自己在外面独居感受不到的温暖"
+      },
+      {
+        "role": "user",
+        "content": "嗯，感觉好温馨啊"
+      },
+      {
+        "role": "assistant",
+        "content": "看着爸妈感情挺好，斗斗嘴啥的也感觉很幸福，感觉爸妈年龄大了，反而比我小时候慈祥和蔼了好多。被爱的感觉超棒，现在也多多少少理解了父母这一辈含蓄的感情，的确表达不出来，能感觉到，就让我超级舒服。"
+      },
+      {
+        "role": "user",
+        "content": "嗯。悟从这些父母那代的感觉里，有什么自己的感悟不。这里面，有对爱情的感悟么"
+      },
+      {
+        "role": "assistant",
+        "content": "我参照我爸妈的日常相处来说哈。1.父爱如山沉默，母爱细腻温柔。我爸爸是真的不爱表达，小时候尤甚，严肃脸，沟通甚少。现在随着年龄渐大，和蔼了很多，有很大的变化。而且他自身学习挺好，但没赶上国家的好政策，对我期待高，但我呢又不太争气，就对我有些地方失望吧，就有时候表达不到位，会让我误解，现在变得好多了，会更进一步的沟通。越来越喜欢我爹了。他是我的偶像和榜样。我妈妈是传统的女人吧，操持家里，对我跟妹妹很好。跟爸爸相比，妈妈表达能力强一些，活泼一些，但有点喜欢用反问句，表现在让她生气时说话会比较呛人，不过气过之后就过去了，我现在变得很会撒娇认错，沟通的话不成问题，喜欢看他们笑，我也觉得很开心。2.向爸爸学习，学习那种自学能力，执着于自己研究感兴趣的东西，涉猎广泛。向妈妈学习那种温柔的理解和包容的能力。3.感觉爸爸妈妈的感情前期吵闹挺多，但现在磨合的很好了，感情更加浓厚了，我很喜欢现在的家庭氛围，我相信我以后也可以的。4.在感情中或者各个方面，有事情一定要好好表达，我通过爸妈的相处也反思到我说话也比较耿直，说着说着容易吵起来，也会在以后多多注意，更直观客观的表达自己的感受，慢慢改。5.还明白了撒娇女人最好命的道理，真的好有用呀，能做到90后大部分人做不到的事情，能跟爸爸妈妈合理的表达感情，说爱，能将这个情感表达出来，以后的自己再接再厉。"
+      }
+    ],
+    "target_utterance": "我参照我爸妈的日常相处来说哈。1.父爱如山沉默，母爱细腻温柔。我爸爸是真的不爱表达，小时候尤甚，严肃脸，沟通甚少。现在随着年龄渐大，和蔼了很多，有很大的变化。而且他自身学习挺好，但没赶上国家的好政策，对我期待高，但我呢又不太争气，就对我有些地方失望吧，就有时候表达不到位，会让我误解，现在变得好多了，会更进一步的沟通。越来越喜欢我爹了。他是我的偶像和榜样。我妈妈是传统的女人吧，操持家里，对我跟妹妹很好。跟爸爸相比，妈妈表达能力强一些，活泼一些，但有点喜欢用反问句，表现在让她生气时说话会比较呛人，不过气过之后就过去了，我现在变得很会撒娇认错，沟通的话不成问题，喜欢看他们笑，我也觉得很开心。2.向爸爸学习，学习那种自学能力，执着于自己研究感兴趣的东西，涉猎广泛。向妈妈学习那种温柔的理解和包容的能力。3.感觉爸爸妈妈的感情前期吵闹挺多，但现在磨合的很好了，感情更加浓厚了，我很喜欢现在的家庭氛围，我相信我以后也可以的。4.在感情中或者各个方面，有事情一定要好好表达，我通过爸妈的相处也反思到我说话也比较耿直，说着说着容易吵起来，也会在以后多多注意，更直观客观的表达自己的感受，慢慢改。5.还明白了撒娇女人最好命的道理，真的好有用呀，能做到90后大部分人做不到的事情，能跟爸爸妈妈合理的表达感情，说爱，能将这个情感表达出来，以后的自己再接再厉。",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "合作-未阻抗",
+      "parent": "No Resistance",
+      "category": "Cooperative",
+      "has_resistance": false,
+      "cooperative_subtype": "E3",
+      "cooperative_confidence": 0.95,
+      "cooperative_rationale": "出现清晰认知转折，提出改善沟通及向父母学习的具体行动承诺。",
+      "cooperative_model": "qwen3.5-flash"
+    },
+    "_recap_idx": 110
+  }
+]

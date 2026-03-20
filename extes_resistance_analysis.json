@@ -1,0 +1,2454 @@
+{
+  "config": {
+    "sample_size": 40,
+    "seed": 42,
+    "model": "deepseek-v3.2"
+  },
+  "stats": {
+    "total_utterances": 351,
+    "resistance_utterances": 21,
+    "resistance_ratio": 5.98,
+    "dialogues_with_resistance": 17,
+    "category_breakdown": {
+      "Denying": 7,
+      "Pessimism": 1,
+      "Reluctance": 2,
+      "Unwillingness": 1,
+      "Denying (Pessimism)": 3,
+      "Denying (Excusing)": 2,
+      "Avoiding": 1,
+      "Denying: Excusing": 1,
+      "Denying: Pessimism": 1,
+      "Denying (Reluctance)": 1,
+      "Denying - Excusing": 1
+    }
+  },
+  "dialogues": [
+    {
+      "scene": "Breakups or Divorce",
+      "description": "I recently went through a painful divorce. It was a long-term marriage, and I'm struggling to cope with the emotional aftermath and the sudden change in my life.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares distress and seeks help, showing engagement."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on emotions and situation, demonstrating cooperation."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses self-doubt but is reflective and not blaming others."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges difficulty but accepts support and expresses grief openly."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses willingness to try and actively requests practical advice."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": true,
+          "category": "Denying",
+          "reasoning": "User expresses pessimism about feeling optimistic for the future due to current hurt."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and acknowledges the value of support."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User shows appreciation and reports positive effect from the conversation."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees to continue the conversation and thanks the supporter."
+        },
+        {
+          "utterance_id": "U10",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and acknowledges the supporter's meaning."
+        },
+        {
+          "utterance_id": "U11",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees to stay strong and thanks the supporter again."
+        },
+        {
+          "utterance_id": "U12",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User reciprocates warmth and indicates future engagement."
+        },
+        {
+          "utterance_id": "U13",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User provides a polite closing, showing no resistance."
+        }
+      ],
+      "resistance_count": 1,
+      "total_user_utterances": 13
+    },
+    {
+      "scene": "Unemployment-related stress",
+      "description": "Feeling overwhelmed and unmotivated after being laid off from a job in the tech industry",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User initiates conversation with a polite greeting, showing no resistance."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares feelings of being down and overwhelmed, indicating cooperation."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User provides detailed explanation of job loss, showing engagement and no resistance."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User honestly expresses struggle with motivation, demonstrating vulnerability and acceptance."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User shares feelings of uncertainty and self-doubt, showing openness and no resistance."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User describes challenge of standing out in job market, engaging with the topic without resistance."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User considers suggestion about online presence, showing willingness to explore ideas."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses interest in software development roles, indicating positive engagement."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges fixation on previous job type and shows openness to new perspectives."
+        },
+        {
+          "utterance_id": "U10",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude for encouragement, showing positive reception of support."
+        },
+        {
+          "utterance_id": "U11",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User finds conversation helpful and thanks supporter, indicating full cooperation."
+        },
+        {
+          "utterance_id": "U12",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses appreciation and ends conversation politely, showing no resistance."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 12
+    },
+    {
+      "scene": "Adjusting to a New Job or Role",
+      "description": "I recently started a new job and I'm feeling overwhelmed with the workload and the new responsibilities.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user initiates a polite greeting, showing no resistance."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user openly shares feelings of being overwhelmed, indicating cooperation."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user expresses effort and challenges, but does not resist the supporter's approach."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user acknowledges fears and concerns without arguing, denying, or avoiding."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user explains hesitation but does not reject the supporter's perspective or suggestions."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user accepts advice and actively seeks further guidance, showing positive engagement."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user agrees to the plan and expresses gratitude, demonstrating acceptance and willingness."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 7
+    },
+    {
+      "scene": "Breakups or Divorce",
+      "description": "After getting divorced, I'm struggling to rebuild my life and find happiness again.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user openly shares their emotional struggle without challenging or avoiding the supporter."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user elaborates on their feelings in response to the supporter's prompt, showing engagement."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": true,
+          "category": "Denying",
+          "reasoning": "The user expresses pessimism about ever being happy again, indicating a sense of hopelessness."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": true,
+          "category": "Denying",
+          "reasoning": "The user shows reluctance by doubting whether seeking support will help, despite the supporter's suggestion."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user acknowledges the advice and considers focusing on themselves, showing acceptance and willingness."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user expresses gratitude and commits to trying the supporter's suggestions, demonstrating positive cooperation."
+        }
+      ],
+      "resistance_count": 2,
+      "total_user_utterances": 6
+    },
+    {
+      "scene": "Conflicts or Communication Problems",
+      "description": "I'm feeling really frustrated with my coworker because they keep taking credit for my ideas and not giving me the recognition I deserve. It's causing a lot of tension in our working relationship.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User is openly seeking advice and willing to discuss the problem."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User is describing the problem clearly without challenging or avoiding."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User is providing additional information about attempts to resolve the issue."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User is expressing emotions and validating the supporter's understanding."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": true,
+          "category": "Pessimism",
+          "reasoning": "User expresses helplessness and uncertainty about further action."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": true,
+          "category": "Reluctance",
+          "reasoning": "User shows hesitation about involving others while acknowledging it might be necessary."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts the suggestion and makes a concrete plan to address the issue."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and positive engagement with the supporter."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User shows commitment to follow through and maintain the therapeutic relationship."
+        },
+        {
+          "utterance_id": "U10",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses appreciation and shows increased confidence to address the problem."
+        }
+      ],
+      "resistance_count": 2,
+      "total_user_utterances": 10
+    },
+    {
+      "scene": "Communication Challenges",
+      "description": "A user is feeling overwhelmed and stressed due to a heavy workload at their new job and is seeking emotional support.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "Simple greeting with no resistance indicators."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares feelings and situation without challenging or avoiding."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on specific stressors in a cooperative manner."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": true,
+          "category": "Unwillingness",
+          "reasoning": "User expresses reluctance to communicate concerns due to fear of negative perception."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts supporter's perspective and shows willingness to try."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and shows positive engagement with the plan."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses appreciation and closes conversation cooperatively."
+        }
+      ],
+      "resistance_count": 1,
+      "total_user_utterances": 7
+    },
+    {
+      "scene": "Dealing with the Loss of a Pet",
+      "description": "My dog passed away unexpectedly",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares feelings and describes the situation without challenging or avoiding."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and elaborates on emotional state, showing engagement."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": true,
+          "category": "Denying (Pessimism)",
+          "reasoning": "User expresses guilt and regret, showing a sense of helplessness about preventing the loss."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges supporter's point and shares vulnerable feelings, showing acceptance."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and describes coping efforts, demonstrating cooperation."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses appreciation for support, showing positive engagement with the process."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User shares positive memories when prompted, showing willingness to engage in therapeutic discussion."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses emotional pain but continues to share openly about the loss."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts supporter's guidance and expresses intention to follow self-care advice."
+        },
+        {
+          "utterance_id": "U10",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and shows acceptance of the supportive interaction."
+        },
+        {
+          "utterance_id": "U11",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses appreciation for the support received."
+        },
+        {
+          "utterance_id": "U12",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User concludes the conversation politely without signs of resistance."
+        }
+      ],
+      "resistance_count": 1,
+      "total_user_utterances": 12
+    },
+    {
+      "scene": "Breakups or Divorce",
+      "description": "After breaking up with my long-term boyfriend, I'm struggling with feelings of loneliness and uncertainty about the future.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares distress and seeks understanding, showing engagement."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on feelings and context, demonstrating cooperation."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User describes emotional experience without challenging or avoiding the supporter."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses a desire to change and acknowledges efforts, showing willingness."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User considers therapy and shares a fear, indicating openness and vulnerability."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with the supporter's perspective while expressing current difficulty, showing acceptance."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude, acceptance of support, and commitment to healing."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 7
+    },
+    {
+      "scene": "Academic Stress",
+      "description": "Struggling to balance online classes and part-time job",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares their problem and emotional state."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on their feelings, showing engagement."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses self-doubt but is receptive to validation."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with the supporter and expresses a willingness to change."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": true,
+          "category": "Denying (Excusing)",
+          "reasoning": "User provides an external reason (difficulty saying no) for why a previous suggestion failed."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with the supporter's point about prioritization."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and shows acceptance of a reframed perspective."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses appreciation and states a plan to act on the advice."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User commits to self-care and thanks the supporter, showing full cooperation."
+        }
+      ],
+      "resistance_count": 1,
+      "total_user_utterances": 9
+    },
+    {
+      "scene": "Conflicts or Communication Problems",
+      "description": "I'm feeling frustrated because my roommate keeps leaving their dirty dishes in the sink and refusing to clean up after themselves, which is causing tension in our living arrangement.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User initiates conversation seeking advice, showing openness to support."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User describes problem factually and expresses frustration without challenging or avoiding."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User confirms supporter's understanding and elaborates on feelings, showing engagement."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": true,
+          "category": "Avoiding",
+          "reasoning": "User expresses reluctance to have direct conversation due to fear of argument, showing avoidance of suggested action."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts supporter's perspective and expresses willingness to take action."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and hope, showing positive engagement with the process."
+        }
+      ],
+      "resistance_count": 1,
+      "total_user_utterances": 6
+    },
+    {
+      "scene": "Communication Challenges",
+      "description": "A student is feeling overwhelmed and stressed due to a heavy workload and upcoming exams.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user initiates the conversation with a neutral greeting."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user openly shares their stress and workload, showing engagement."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user elaborates on specific stressors, indicating cooperation."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": true,
+          "category": "Denying: Excusing",
+          "reasoning": "The user provides an excuse for not adhering to a previous schedule suggestion."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user reflects on personal distractions, showing self-awareness and openness."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user accepts the suggestion positively and expresses willingness to try it."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": true,
+          "category": "Denying: Pessimism",
+          "reasoning": "The user expresses feelings of being overwhelmed and difficulty staying motivated."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user expresses gratitude and a positive intent to stay focused."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user thanks the supporter and reports feeling better, showing positive engagement."
+        },
+        {
+          "utterance_id": "U10",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user expresses appreciation and ends the conversation politely."
+        }
+      ],
+      "resistance_count": 2,
+      "total_user_utterances": 10
+    },
+    {
+      "scene": "Breakups or Divorce",
+      "description": "My partner and I recently went through a painful breakup after being together for five years. We had been arguing constantly, and it took a toll on our relationship.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User initiates contact and requests support, showing openness to engage."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User shares core problem directly without deflection or challenge."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses vulnerable emotions and accepts the supporter's validation."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User shares self-blame but does not reject the supporter's perspective."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges the supporter's point while expressing ongoing difficulty, showing engagement rather than refusal."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User asks for guidance, indicating willingness to consider next steps."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts advice but expresses a common emotional doubt, not rejecting the supporter's input."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User shares fears and uncertainties openly, continuing to engage with the therapeutic process."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and appreciation, showing positive engagement with the supporter."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 9
+    },
+    {
+      "scene": "Communication Challenges",
+      "description": "I'm feeling really overwhelmed with planning my wedding. I have so many decisions to make, and it's causing a lot of stress.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User initiates conversation openly about their stress, showing willingness to engage."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on their stress and expresses uncertainty, indicating cooperation and sharing."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges having ideas but feels overwhelmed, continuing to engage without resistance."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User specifies stressors (venue, caterer) and shares challenges, showing active participation."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts the suggestion positively and expresses intent to act on it."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with the advice, plans to seek help, and thanks the supporter, showing acceptance."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and appreciation, indicating a positive and cooperative response."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 7
+    },
+    {
+      "scene": "Surviving and Recovering from Physical or Emotional Abuse",
+      "description": "Alice has recently ended an emotionally abusive relationship with her partner of three years. She is struggling with low self-esteem and is finding it difficult to trust others.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User initiates conversation politely without any signs of resistance."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares their emotional state and situation, showing engagement."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User describes coping efforts and expresses vulnerability, but does not resist the supporter's approach."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User considers the suggestion of therapy and expresses a common fear after abuse, not a refusal to engage."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with the supporter's point, shares a difficult feeling, and shows openness to the process."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User positively engages with the suggestion and asks for an example, showing cooperation."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and acceptance of the support, indicating a positive therapeutic alliance."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User concludes the conversation with thanks and no signs of disagreement or avoidance."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 8
+    },
+    {
+      "scene": "Academic Stress or Pressure",
+      "description": "I have a final exam coming up and I'm feeling overwhelmed with studying and the pressure to do well.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User initiates conversation with a polite greeting, showing no resistance."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares feelings of stress and anxiety, indicating engagement."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges self-doubt but does not argue, deny, or avoid the supporter's input."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses concern about the exam's importance, which is a normal emotional response, not resistance."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with the supporter's perspective and shows willingness to focus on effort."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and acceptance of support, indicating positive engagement."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User appreciates encouragement and commits to moving forward, showing cooperation."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees to keep self-care in mind and thanks the supporter, demonstrating receptiveness."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User commits to self-care and expresses gratitude again, showing no signs of resistance."
+        },
+        {
+          "utterance_id": "U10",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User responds positively to well wishes and expresses determination, indicating full cooperation."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 10
+    },
+    {
+      "scene": "Conflicts or Communication Problems",
+      "description": "I'm feeling frustrated and upset because my coworker and I had a disagreement during a team meeting, and now there's tension between us. I don't know how to resolve this issue and it's affecting my productivity at work.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User initiates contact without any indication of resistance."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares the problem and expresses distress, showing cooperation."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on emotional impact, engaging with the therapeutic process."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": true,
+          "category": "Denying (Reluctance)",
+          "reasoning": "User expresses hesitation and fear about directly addressing the issue with the coworker."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts the supporter's perspective and asks for constructive advice."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with the suggestion and expresses a positive, collaborative intent."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": true,
+          "category": "Denying (Pessimism)",
+          "reasoning": "User expresses doubt and worry about the coworker's potential unwillingness to engage."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges the need for patience and expresses hope for resolution."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and commitment to applying the advice."
+        },
+        {
+          "utterance_id": "U10",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User appreciates support and shows willingness to prioritize well-being."
+        },
+        {
+          "utterance_id": "U11",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude without any signs of resistance."
+        }
+      ],
+      "resistance_count": 2,
+      "total_user_utterances": 11
+    },
+    {
+      "scene": "Conflicts or Communication Problems",
+      "description": "I recently had an argument with my best friend about a sensitive topic, and it has caused a strain in our relationship.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly seeks advice about a strained relationship."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User provides detailed context about the argument without defensiveness."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User honestly describes the escalation of the political discussion."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses concern about the friendship, showing engagement."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": true,
+          "category": "Reluctance",
+          "reasoning": "User expresses hesitation and fear about addressing the issue directly."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares feelings of anxiety and uncertainty about the dilemma."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User actively seeks suggestions for resolution, showing cooperation."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts the suggestion and plans to implement it."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with the ground rules idea and shows willingness to proceed."
+        },
+        {
+          "utterance_id": "U10",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User shares personal self-care practices and commits to using them."
+        },
+        {
+          "utterance_id": "U11",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and concludes the session positively."
+        },
+        {
+          "utterance_id": "U12",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses appreciation and hope, showing positive engagement."
+        }
+      ],
+      "resistance_count": 1,
+      "total_user_utterances": 12
+    },
+    {
+      "scene": "Communication Challenges",
+      "description": "I recently moved to a new city and I'm having trouble making new friends. I feel lonely and isolated.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user initiates the conversation with a neutral greeting, showing no signs of resistance."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user openly shares their feelings of loneliness and the context, demonstrating cooperation and engagement."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user elaborates on their efforts and frustrations, showing willingness to discuss the issue without avoidance or denial."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user honestly expresses hesitation but does not refuse suggestions or blame others, indicating openness to guidance."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user explicitly requests help and acknowledges uncertainty, showing positive engagement and acceptance of support."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user enthusiastically accepts suggestions, expresses gratitude, and commits to trying new strategies, demonstrating active cooperation."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "The user expresses appreciation and concludes the conversation positively, with no signs of resistance."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 7
+    },
+    {
+      "scene": "Conflicts or Communication Problems",
+      "description": "I'm feeling stressed because I've been having constant arguments with my best friend.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly seeks support and expresses willingness to discuss the issue."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User provides detailed context about the problem without dismissing or avoiding."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges emotional impact and engages with the supporter's inquiry."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User explains past attempts at communication without refusing further suggestions."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts the supporter's suggestion and expresses a positive intention to act."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User shows appreciation and commitment to implementing the discussed plan."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with the normalization and expresses reassurance and willingness to try."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User positively reframes the situation and thanks the supporter, showing openness to growth."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 8
+    },
+    {
+      "scene": "Coping with the illness or death of a loved one",
+      "description": "My uncle recently passed away from a long-term illness, and I'm having a difficult time processing my grief. I feel overwhelmed and don't know how to move forward without him.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses a need for support and initiates conversation openly."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User shares grief and vulnerability without challenging or avoiding the supporter."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges support and expresses emotional pain, showing engagement."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on the loss and feelings of uncertainty, cooperating with the dialogue."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User admits difficulty in discussing grief but does not reject or argue against support suggestions."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User considers the suggestion of therapy positively, showing openness to change."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with not rushing healing and expresses a proactive intention to honor the uncle."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses hope and a desire for peace, aligning with therapeutic goals."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User thanks the supporter, showing appreciation and closure without resistance."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 9
+    },
+    {
+      "scene": "Career Transitions",
+      "description": "I recently started a new job in a different industry, but I'm feeling overwhelmed because I have limited knowledge and experience in this field.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares their emotional state and problem, showing cooperation."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on their concern without challenging or dismissing the supporter's perspective."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": true,
+          "category": "Denying - Excusing",
+          "reasoning": "User provides an external reason (not wanting to appear incompetent) for not following the suggested action of seeking help."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with the supporter's reframe and expresses a positive intention to change behavior."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User explicitly accepts the advice and outlines a concrete plan of action, showing full cooperation."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and indicates closure of the session, showing positive engagement."
+        }
+      ],
+      "resistance_count": 1,
+      "total_user_utterances": 6
+    },
+    {
+      "scene": "Communication Challenges",
+      "description": "I recently moved to a new city and I'm feeling quite lonely. I'm having a hard time making friends and finding a sense of belonging.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares their problem and seeks advice."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on their difficulties but does not challenge or reject the supporter's approach."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses doubt about their decision but does not argue with or deny the supporter's validation."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses uncertainty but does not refuse the supporter's suggestion; they are engaging with the advice."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with the supporter's idea and expresses a positive intention to act."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and commitment, showing cooperation and no resistance."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 6
+    },
+    {
+      "scene": "Communication Challenges",
+      "description": "A user is feeling overwhelmed and stressed about their workload at their new job. They find it difficult to manage their tasks and communicate effectively with their colleagues.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User initiates conversation openly, showing willingness to engage."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User shares their problem directly and descriptively, showing cooperation."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on their feelings and challenges without avoidance or argument."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": true,
+          "category": "Denying",
+          "reasoning": "User expresses reluctance to seek help due to fear of appearing incapable."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges the supporter's point and shows acceptance of the advice."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User responds positively with gratitude and appreciation."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses validation of the support and shows reflective insight."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and commitment to moving forward."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User ends the conversation positively, agreeing to self-care."
+        }
+      ],
+      "resistance_count": 1,
+      "total_user_utterances": 9
+    },
+    {
+      "scene": "Financial Worries and Uncertainty",
+      "description": "I recently lost my job and I'm struggling to pay my rent. I've been feeling overwhelmed and uncertain about my financial future.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User initiates conversation by seeking support, showing willingness to engage."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares their problem and emotional state, demonstrating cooperation."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on their efforts and challenges without blaming, disagreeing, or minimizing the supporter's suggestions."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and acknowledges the value of the support, showing positive engagement."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 4
+    },
+    {
+      "scene": "Conflicts or Communication Problems",
+      "description": "I'm feeling frustrated because my coworker and I are constantly clashing, and it's causing tension in the office. I want to maintain a peaceful work environment, but I'm not sure how to address the issue.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User is openly seeking advice and expressing a need for help."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User is describing the problem and expressing a desire for a solution."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User is openly sharing emotional impact and difficulties."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": true,
+          "category": "Denying",
+          "reasoning": "User expresses reluctance and fear about taking direct action."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges a gap in perspective and asks for constructive guidance."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts the suggestion and asks for further practical advice."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User positively endorses the suggestion and expresses gratitude."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses hope and a positive intention to resolve the conflict."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User shows acceptance of normalization and commitment to communication."
+        },
+        {
+          "utterance_id": "U10",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User reiterates a plan to approach the conversation with an open mind."
+        },
+        {
+          "utterance_id": "U11",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User adopts a positive perspective and expresses gratitude and future engagement."
+        },
+        {
+          "utterance_id": "U12",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with the self-care reminder and plans to implement it."
+        },
+        {
+          "utterance_id": "U13",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts stress management suggestions and expresses appreciation."
+        },
+        {
+          "utterance_id": "U14",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses significant appreciation and positive impact of the support."
+        }
+      ],
+      "resistance_count": 1,
+      "total_user_utterances": 14
+    },
+    {
+      "scene": "Conflicts or Communication Problems",
+      "description": "I'm feeling frustrated because my colleague keeps taking credit for the work I've done. It's causing tension in our workplace and affecting my motivation.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User initiates conversation openly about a problem."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User describes the problem directly without avoidance."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User provides specific details about the situation."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses emotions and describes previous attempts to address the issue."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses uncertainty but continues to engage with the problem."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": true,
+          "category": "Denying (Excusing)",
+          "reasoning": "User expresses reluctance to implement suggestions by citing extra work and potential tension."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts the suggestion about documentation and shows willingness to consider it."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and positive engagement."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses appreciation and commitment to address the issue."
+        },
+        {
+          "utterance_id": "U10",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses motivation and positive engagement."
+        },
+        {
+          "utterance_id": "U11",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses determination to move forward."
+        },
+        {
+          "utterance_id": "U12",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and positive closure."
+        },
+        {
+          "utterance_id": "U13",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses appreciation for support."
+        },
+        {
+          "utterance_id": "U14",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses positive farewell and well-wishes."
+        },
+        {
+          "utterance_id": "U15",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User provides brief, polite closing statement."
+        }
+      ],
+      "resistance_count": 1,
+      "total_user_utterances": 15
+    },
+    {
+      "scene": "Conflicts or Communication Problems",
+      "description": "I've been having trouble communicating with my best friend and it's causing strain in our relationship. I want to find a way to address the issues and improve our communication.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses a clear desire for help and improvement, showing openness to suggestions."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on the problem with emotional disclosure and reaffirms willingness to fix things."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges the supporter's validation and describes challenges without rejecting help."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts the suggestion positively and seeks further guidance on implementation."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses approval of the suggestion and asks for additional supportive strategies."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User shows gratitude and commitment to applying advice to improve the relationship."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses appreciation and indicates ongoing engagement with the supporter."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 7
+    },
+    {
+      "scene": "Communication Challenges",
+      "description": "I've been feeling really anxious about an upcoming job interview. I'm not sure how to prepare and I'm worried about not performing well.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User initiates conversation openly about a concern."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses anxiety and seeks help without challenging or avoiding."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges support and expresses a positive goal."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on concerns in a cooperative manner."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts suggestions and shares a hopeful concern."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and commitment to positive action."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User shows appreciation and plans to follow up."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User concludes politely and agrees to update."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User offers a final polite farewell."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 9
+    },
+    {
+      "scene": "Breakups or Divorce",
+      "description": "After being in a long-distance relationship for three years, my partner and I have recently decided to break up due to the distance becoming too challenging. I am feeling heartbroken and struggling to adjust to the new reality of being single.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares distress and invites discussion about their feelings."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on emotional state without challenging or avoiding the supporter."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User describes coping behavior and emotional response, showing engagement."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User positively considers the supporter's suggestion and offers a constructive idea."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User builds on the dialogue by proposing another adaptive coping strategy."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User continues to engage constructively by specifying a plan for self-care."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and acknowledges the value of the support received."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 7
+    },
+    {
+      "scene": "Breakups or Divorce",
+      "description": "I recently went through a divorce, and now I'm struggling to rebuild my life and find a sense of self-worth and happiness again.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares struggles and feelings, showing willingness to engage."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on emotional experience, indicating openness to discussion."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": true,
+          "category": "Denying",
+          "reasoning": "User expresses pessimism about future happiness and engages in self-blame."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges supporter's point and expresses a wish, showing receptivity."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts the reframing perspective and acknowledges the challenge positively."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User considers the suggestion and expresses willingness to focus on self-growth."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and appreciation for the supporter's encouragement."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges comfort in having support, showing positive engagement."
+        }
+      ],
+      "resistance_count": 1,
+      "total_user_utterances": 8
+    },
+    {
+      "scene": "Academic Stress or Pressure",
+      "description": "I have an important presentation coming up, but I'm feeling extremely nervous and overwhelmed. I'm worried that I won't do well.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User initiates conversation politely without challenging or avoiding the topic."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares feelings of stress and anxiety, showing engagement."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges the importance of the presentation and expresses a desire to do well."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on anxious thoughts, demonstrating self-disclosure and cooperation."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User confirms the supporter's reflection and provides specific worries, showing active participation."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses interest in strategies, indicating openness to suggestions."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts the practice suggestion positively and agrees to try it."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges the effectiveness of relaxation techniques and commits to using them."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and appreciation for the supporter's reassurance."
+        },
+        {
+          "utterance_id": "U10",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User thanks the supporter for being present, showing positive engagement."
+        },
+        {
+          "utterance_id": "U11",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User indicates that the supporter's presence is comforting, demonstrating acceptance."
+        },
+        {
+          "utterance_id": "U12",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses deep appreciation without any signs of disagreement or avoidance."
+        },
+        {
+          "utterance_id": "U13",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User thanks the supporter and agrees to provide updates, showing cooperative behavior."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 13
+    },
+    {
+      "scene": "Communication Challenges",
+      "description": "Lately, I've been feeling really overwhelmed with my workload. I have a lot of projects to handle, and it's getting difficult to keep up with all the deadlines.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User initiates conversation in a neutral, open manner."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares their problem and emotional state."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on their struggle without challenging or dismissing the supporter."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User considers the supporter's suggestion and shares a personal concern, showing engagement."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with the supporter's perspective and reflects on their own difficulty, showing acceptance."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User fully accepts the advice and expresses gratitude, showing positive engagement."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses appreciation and concludes the conversation positively."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 7
+    },
+    {
+      "scene": "Communication Challenges",
+      "description": "Lately, I've been feeling really down and overwhelmed due to financial difficulties. I recently lost my job and I'm struggling to make ends meet. It's causing a lot of stress and affecting my mental well-being.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User initiates conversation with a neutral social greeting."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares their problem and emotional state without challenging or avoiding."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on their difficulties and coping efforts, showing engagement."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges a barrier (embarrassment) but agrees to explore resources."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts the supporter's perspective and commits to taking action."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and openness to future support."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 6
+    },
+    {
+      "scene": "Communication Challenges",
+      "description": "The user is feeling overwhelmed by the constant communication demands at work and is struggling to manage their inbox and respond to messages in a timely manner.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "Utterance is a simple greeting, showing no resistance behavior."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares their problem and emotional state, demonstrating engagement."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on their struggle, agreeing with the supporter's validation and showing no opposition."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User explains challenges with a previous strategy but does not reject help or blame others."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with the supporter's suggestion and expresses a willingness to improve."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User explicitly requests suggestions, showing openness and cooperation."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts the suggestions positively and expresses gratitude."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses appreciation and hope, indicating positive engagement."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User offers a closing thank you, showing no signs of resistance."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 9
+    },
+    {
+      "scene": "Breakups or Divorce",
+      "description": "I recently went through a difficult breakup with my long-term partner. We were engaged and had planned our future together. I am feeling heartbroken and lost, and I'm struggling to envision a future without them.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares their emotional state and problem, showing engagement."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on their feelings without challenging or avoiding the supporter."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and continues to share their emotional struggle cooperatively."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses difficulty but is seeking understanding, not refusing help or blaming."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User shares a pessimistic thought but as an expression of pain, not as a refusal to engage or change."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges feeling overwhelmed but does not argue, deny, or avoid the supporter's perspective."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and acceptance of the supporter's help, showing positive engagement."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User shows appreciation and no signs of arguing, denying, or avoiding."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 8
+    },
+    {
+      "scene": "Adjusting to a New Job or Role",
+      "description": "I recently started a new job as a marketing executive for a well-known company. However, I'm struggling with the pressure to perform and meet tight deadlines. I often feel overwhelmed and anxious about making mistakes or not living up to expectations.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User is openly seeking advice and support."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User is describing their situation and challenges without resistance."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User is elaborating on their feelings and concerns in a cooperative manner."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User is expressing difficulty but accepting the supporter's validation."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User acknowledges the supporter's point while sharing persistent feelings."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with the supporter's perspective and expresses a common struggle."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and acceptance of the supporter's encouragement."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 7
+    },
+    {
+      "scene": "Communication Challenges",
+      "description": "A user is feeling frustrated and anxious because they have to give a presentation at work, but they struggle with public speaking.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "Utterance is a simple greeting, showing no resistance."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares feelings and the problem, showing cooperation."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on challenges, engaging positively with the topic."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User confirms the supporter's reflection, showing agreement."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and a desire to improve, showing willingness."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User actively requests strategies, demonstrating engagement and acceptance."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees to try suggestions, showing positive acceptance."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses appreciation and relief, indicating no resistance."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User commits to working on the issue and thanks the supporter."
+        },
+        {
+          "utterance_id": "U10",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and a positive intention to try."
+        },
+        {
+          "utterance_id": "U11",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User ends the conversation politely, showing no resistance."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 11
+    },
+    {
+      "scene": "Communication Challenges",
+      "description": "I've been feeling anxious and overwhelmed because of a recent argument with my best friend. We had a misunderstanding, and now our friendship feels strained.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User initiates conversation appropriately, showing willingness to engage."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares the problem, demonstrating cooperation."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on emotional distress, continuing to engage with the process."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses a desire for resolution and shares a fear, which is an open expression of concern."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses hope and acknowledges a lack of skill, showing receptivity to guidance."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": true,
+          "category": "Denying (Pessimism)",
+          "reasoning": "User expresses worry that the suggested action will make things worse, indicating doubt about a positive outcome."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees with the supporter's point and reaffirms a commitment to resolving the issue."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and appreciation for the support."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User offers a polite farewell, concluding the interaction cooperatively."
+        }
+      ],
+      "resistance_count": 1,
+      "total_user_utterances": 9
+    },
+    {
+      "scene": "Breakups or Divorce",
+      "description": "After being in a long-distance relationship for two years, my boyfriend and I have decided to break up because of the constant challenges and difficulties that come with maintaining a relationship from afar. I feel heartbroken and unsure of how to navigate this new chapter in my life.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly shares distress and seeks understanding, showing engagement."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User elaborates on the situation cooperatively without challenging or avoiding."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses emotions openly and continues to engage with the therapeutic process."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User considers the supporter's suggestion and shares an honest emotional difficulty, showing collaboration."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses a vulnerable doubt but does so in a way that seeks validation and hope, not rejecting support."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses a commitment to try and thanks the supporter, showing acceptance and positive engagement."
+        }
+      ],
+      "resistance_count": 0,
+      "total_user_utterances": 6
+    },
+    {
+      "scene": "Conflicts or Communication Problems",
+      "description": "I'm feeling really frustrated with my roommate because they constantly leave their belongings all over our shared living space and never clean up after themselves. It's causing a lot of tension and arguments between us.",
+      "labels": [
+        {
+          "utterance_id": "U1",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User initiates sharing a concern in a cooperative manner."
+        },
+        {
+          "utterance_id": "U2",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User openly describes the problem without resistance."
+        },
+        {
+          "utterance_id": "U3",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User reports past attempts to address the issue, showing engagement."
+        },
+        {
+          "utterance_id": "U4",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User agrees and elaborates on the emotional impact, showing cooperation."
+        },
+        {
+          "utterance_id": "U5",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses frustration but remains open to discussion."
+        },
+        {
+          "utterance_id": "U6",
+          "has_resistance": true,
+          "category": "Denying",
+          "reasoning": "User expresses pessimism about the suggested conversation leading to positive change."
+        },
+        {
+          "utterance_id": "U7",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User accepts the advice and shows willingness to try the suggested approach."
+        },
+        {
+          "utterance_id": "U8",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and acceptance of support."
+        },
+        {
+          "utterance_id": "U9",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User responds positively, showing hope and appreciation."
+        },
+        {
+          "utterance_id": "U10",
+          "has_resistance": false,
+          "category": "No Resistance",
+          "reasoning": "User expresses gratitude and acknowledges the support's value."
+        }
+      ],
+      "resistance_count": 1,
+      "total_user_utterances": 10
+    }
+  ]
+}

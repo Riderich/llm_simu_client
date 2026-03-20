@@ -1,0 +1,392 @@
+[
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "撒娇好像被我们定义成一种软弱，尤其家长还要求孩子要更加优秀，更加坚强。是呀~"
+      },
+      {
+        "role": "assistant",
+        "content": "我觉得我和外人基本不会表达一点点的愤怒，委屈登登。等等。和自己的家人又太过了。对外人表达，我好像怕别人承受不了"
+      },
+      {
+        "role": "user",
+        "content": "嗯嗯，是呀，一次这一点点没表达，两次这一点点没表达···火山就是这么爆发的"
+      },
+      {
+        "role": "assistant",
+        "content": "嗯"
+      },
+      {
+        "role": "user",
+        "content": "理解的，撒娇也是个“技能”，需要慢慢联系的~"
+      },
+      {
+        "role": "assistant",
+        "content": "在我看来愤怒就是很大的事…从没觉得有程度，和别人生气是很大的事…没想过一点点愤怒"
+      }
+    ],
+    "target_utterance": "在我看来愤怒就是很大的事…从没觉得有程度，和别人生气是很大的事…没想过一点点愤怒",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "否认-不认同",
+      "parent": "Denying",
+      "category": "Disagreeing",
+      "has_resistance": true
+    },
+    "_recap_idx": 0,
+    "inner_monologue": "她又在说“技能”了，好像什么都能练习就能解决。可愤怒对我来说从来不是技能，是失控，是灾难。我害怕一旦开始表达一点点，就会像打开闸门一样全部涌出来，把所有人都冲走。对外人不敢，对家人又太过——这不就是证明吗？我根本控制不好这个度。"
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "嗯，我在尝试理解你对奔放的定义"
+      },
+      {
+        "role": "assistant",
+        "content": "你很像AI……"
+      },
+      {
+        "role": "user",
+        "content": "像AI？ 你想说，你感觉我有些生硬、没有温度？"
+      },
+      {
+        "role": "assistant",
+        "content": "AI回答不上来之后，只能用兜底话术，你的大部分话术像是兜底话术 和我以前做天猫精灵里的答复一样"
+      },
+      {
+        "role": "user",
+        "content": "兜底话术，这个描述有些意思"
+      },
+      {
+        "role": "assistant",
+        "content": "你这样没办法引导多轮对话…… 对话效率很低"
+      }
+    ],
+    "target_utterance": "你这样没办法引导多轮对话…… 对话效率很低",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "争辩-贬低",
+      "parent": "Arguing",
+      "category": "Discounting",
+      "has_resistance": true
+    },
+    "_recap_idx": 1,
+    "inner_monologue": "我为什么要说这些……又在挑刺了。我知道她只是想理解我，可我就是控制不住。每次她试图靠近，我就开始找茬。AI、话术、效率低——其实我害怕的是，如果我真的让她引导对话，如果我真的敞开心扉，她会发现我根本没什么值得探索的。一个连自己都搞不清楚的人，一堆琐碎的烦恼，根本不值得她这么认真对待。还不如先否定她的方法，这样至少失败是因为“技术问题”，而不是因为我这个人本身无药可救。"
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "这些时候都是你很有能量的时候呀，妈妈也会感受到你的力量从而得到更多的支持，你对她说这些的时候,自己会有什么感受呢?"
+      },
+      {
+        "role": "assistant",
+        "content": "我觉得很自信，有力量"
+      },
+      {
+        "role": "user",
+        "content": "我能感受到你是一个相信自己和有活力的人，也许是最近发生太多事，让你有些累了，那我们就先放松下来等一等，让这些事慢慢过去"
+      },
+      {
+        "role": "assistant",
+        "content": "嗯嗯。但我都缓了两个月了"
+      },
+      {
+        "role": "user",
+        "content": "好像你是想要改变，但是觉得改变的时间太长了。让你有些心力交瘁想快点回到之前的状态"
+      },
+      {
+        "role": "assistant",
+        "content": "你还在吗"
+      }
+    ],
+    "target_utterance": "你还在吗",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "忽视-岔开话题",
+      "parent": "Ignoring",
+      "category": "Topic Shift",
+      "has_resistance": true
+    },
+    "_recap_idx": 2,
+    "inner_monologue": "我其实根本不想谈妈妈的事，一提她我就烦。咨询师总想往这上面引，但我真的受够了。两个月算什么，我这些年不都这么过来的吗？"
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "哦哦 所以之前一直是公平的状态 大家都懂的意思是，好像不管你怎么做，大家达成的共识就是：“你不可能不摸鱼”。"
+      },
+      {
+        "role": "assistant",
+        "content": "就这种人情关系的事情，得拿捏好度 主要不知道要封几天 硬要跑回[国内地点]也能跑"
+      },
+      {
+        "role": "user",
+        "content": "嗯。像是背后有这样一个声音“既然大家都这么认为，我又何必认真工作呢？”"
+      },
+      {
+        "role": "assistant",
+        "content": "不是，是无论大家怎么认为 我都不会在家认真工作 在家没什么氛围，效率低，还不如不工作，发发呆都是好的 工作要有产出，只是走形式，没有意义，浪费时间"
+      },
+      {
+        "role": "user",
+        "content": "哦，听起来你不能接受自己效率低的状态 注重看到结果"
+      },
+      {
+        "role": "assistant",
+        "content": "我只是觉得在家睡觉、打游戏、看电影、看书 都比工作好很多"
+      }
+    ],
+    "target_utterance": "我只是觉得在家睡觉、打游戏、看电影、看书 都比工作好很多",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "否认-最小化",
+      "parent": "Denying",
+      "category": "Minimizing",
+      "has_resistance": true
+    },
+    "_recap_idx": 3,
+    "inner_monologue": "[她又在分析我了。什么效率低不低的，我只是不想被这种形式主义绑架。凭什么在家就必须工作？我偏要证明，不按他们的期待活，我也能过得很好。]"
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "正好啊 是你的兴趣哦"
+      },
+      {
+        "role": "assistant",
+        "content": "对于医学的感觉很微妙"
+      },
+      {
+        "role": "user",
+        "content": "是的 医学再做些跨学科的研究 你的工作也许会解读很多人的困惑哦 所以 潜意识一直照顾着自己哦"
+      },
+      {
+        "role": "assistant",
+        "content": "是这样的吗 我的潜意识在帮我做选择吗"
+      },
+      {
+        "role": "user",
+        "content": "也许当下发生的不知道什么意义 过了之后才能明白都是生命需要的课程"
+      },
+      {
+        "role": "assistant",
+        "content": "或许是的"
+      }
+    ],
+    "target_utterance": "或许是的",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "否认-犹豫",
+      "parent": "Denying",
+      "category": "Reluctance",
+      "has_resistance": true
+    },
+    "_recap_idx": 4,
+    "inner_monologue": "她又在说这些玄乎的东西了。潜意识帮我做选择？说得好像我的人生是被什么神秘力量操控着一样。我选择医学根本不是因为什么潜意识照顾自己，而是因为...因为那是我唯一能抓住的救命稻草。如果连这个都要被美化，那我这些年咬牙坚持的痛苦算什么？"
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "嗯嗯,你很在意工作生活嘛"
+      },
+      {
+        "role": "assistant",
+        "content": "不过以前也有过职业困难的时候，后来过去了就好像提升了一些。我就安慰自己是瓶颈期了。但是好像持续太久了啊。哈哈，挺好玩儿的，你们也是50分钟"
+      },
+      {
+        "role": "user",
+        "content": "嗯嗯，每个人的状态和情况不一样呢。嗯嗯,我们是50分钟"
+      },
+      {
+        "role": "assistant",
+        "content": "是不是一个人后台好几个窗回复。平安医生心理科之前就是那么干的。现在不知道啥样了"
+      },
+      {
+        "role": "user",
+        "content": "嗯嗯,你现在从事这个行业多久了呢"
+      },
+      {
+        "role": "assistant",
+        "content": "话说，你们这边怎么入职啊，有兼职岗位吗。10年了"
+      }
+    ],
+    "target_utterance": "话说，你们这边怎么入职啊，有兼职岗位吗。10年了",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "忽视-岔开话题",
+      "parent": "Ignoring",
+      "category": "Topic Shift",
+      "has_resistance": true
+    },
+    "_recap_idx": 5,
+    "inner_monologue": "[他为什么总问工作的事？我不想谈这个。我只是想找个轻松的话题，比如兼职，这样就不用面对那些让我害怕的东西了。]"
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "听起来你似乎觉得这种压力是正常的？"
+      },
+      {
+        "role": "assistant",
+        "content": "对啊，加班熬夜不是很正常吗？反正说了也没用"
+      },
+      {
+        "role": "user",
+        "content": "如果这种状态让你很疲惫，我们可以试着找些调整的方法"
+      },
+      {
+        "role": "assistant",
+        "content": "调整什么？辞职吗？那更不可能"
+      },
+      {
+        "role": "user",
+        "content": "不一定是辞职，或许可以先从小的改变开始？"
+      },
+      {
+        "role": "assistant",
+        "content": "算了吧，改变也没什么意义，熬着就行了"
+      }
+    ],
+    "target_utterance": "算了吧，改变也没什么意义，熬着就行了",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "否认-不愿改变",
+      "parent": "Denying",
+      "category": "Unwillingness",
+      "has_resistance": true
+    },
+    "_recap_idx": 6,
+    "inner_monologue": "她根本不理解，我说了“熬着就行”不是因为我认命了，是因为我怕。我怕一旦开始调整，就会发现自己连“熬”的力气都快没了，那层硬撑的壳一碎，我可能就真的垮了。维持现状至少看起来我还“正常”，还能应付。改变？万一失败了，岂不是证明我连现在这点事都处理不好？那才是真正的绝望。"
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "嗯嗯 是提到哪个部分的时候，你有有这种感觉"
+      },
+      {
+        "role": "assistant",
+        "content": "具体我不太记得了，但最后咨询快结束的时候会有这样的感觉"
+      },
+      {
+        "role": "user",
+        "content": "嗯嗯，最后我们提到向父母再提一下自己内心的感受 因为之前咨询中提到了父亲就医的事情让你感受到了父母的老去，以及自己想为家人做一些事情的感受 所以觉得其实真是向父母表达自己的感受，让父母体会到自己的孩子长大了，这样他们对你的操心会不会少一些。"
+      },
+      {
+        "role": "assistant",
+        "content": "这个可能是一种方式"
+      },
+      {
+        "role": "user",
+        "content": "嗯嗯"
+      },
+      {
+        "role": "assistant",
+        "content": "不过对于我，感觉会有点困难"
+      }
+    ],
+    "target_utterance": "不过对于我，感觉会有点困难",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "否认-犹豫",
+      "parent": "Denying",
+      "category": "Reluctance",
+      "has_resistance": true
+    },
+    "_recap_idx": 7,
+    "inner_monologue": "又来了，又是这种“表达感受就能解决问题”的建议。他们根本不明白，有些话一旦说出口就收不回来了。万一我说了之后他们觉得我矫情，或者更担心我了怎么办？现在这样至少还能维持表面的平静。"
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "数学是绝对优势 能力需要机会和舞台 可能还没开发哈哈"
+      },
+      {
+        "role": "assistant",
+        "content": "轮滑就是突然放下了，就没再去练习了，游泳是学会了 摄影其实后面还有玩，但是感觉自己没啥天赋，同学拍的很好 摄影老师说我比较适合人文，因为那会儿比较社牛外向乐观 现在因为工作失眠，自己天天没精打采 也不愿意跟别人聊天，看到[App名]消息也不愿意回复，甚至不知道咋回复"
+      },
+      {
+        "role": "user",
+        "content": "嗯 很好啊 自己做了不少尝试 也是对自己的发现吧"
+      },
+      {
+        "role": "assistant",
+        "content": "但是我觉得我数学也就是课本的水平 数学竞赛 小时候那些应用题思维也转不过来"
+      },
+      {
+        "role": "user",
+        "content": "其实 人是全能的很少 能在几个方面做好就行"
+      },
+      {
+        "role": "assistant",
+        "content": "我们单位的工作同事都说不难，大专生高中生都可以 但是我觉得好难，我不会 科长鼓励我啥的，因为我们招不到人，但是我还是自我精神内耗，自我焦虑 失眠"
+      }
+    ],
+    "target_utterance": "我们单位的工作同事都说不难，大专生高中生都可以 但是我觉得好难，我不会 科长鼓励我啥的，因为我们招不到人，但是我还是自我精神内耗，自我焦虑 失眠",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "否认-悲观",
+      "parent": "Denying",
+      "category": "Pessimism",
+      "has_resistance": true
+    },
+    "_recap_idx": 8,
+    "inner_monologue": "又来了，这种“你已经很棒了”的安慰。他们根本不明白，问题不在于我尝试了多少，而在于我什么都做不好。数学、轮滑、摄影、工作...每件事最后都证明我不够格。现在连最简单的回复消息都让我害怕，我到底还能做好什么？"
+  },
+  {
+    "source": "RECAP",
+    "dialogue": [
+      {
+        "role": "user",
+        "content": "明白，也是为了孩子的未来考虑选择了跳槽"
+      },
+      {
+        "role": "assistant",
+        "content": "所以您看，我的路程大概就是这样了。您有什么看法呢"
+      },
+      {
+        "role": "user",
+        "content": "我听下来的感觉确实是一段丰富的人生经历。中间也经历了很多人生的转折，也需要你做出许多的选择。而你也是努力着为了更好的未来奋斗，虽然中间可能也有辛苦想要放弃"
+      },
+      {
+        "role": "assistant",
+        "content": "您可以直说"
+      },
+      {
+        "role": "user",
+        "content": "我觉得你对于自己的追求，自己想要什么是有想法也愿意付出努力去实现它的"
+      },
+      {
+        "role": "assistant",
+        "content": "我想听到的是，我的问题是什么？"
+      }
+    ],
+    "target_utterance": "我想听到的是，我的问题是什么？",
+    "no_context": false,
+    "resistance_label": {
+      "raw": "争辩-挑战",
+      "parent": "Arguing",
+      "category": "Challenging",
+      "has_resistance": true
+    },
+    "_recap_idx": 9,
+    "inner_monologue": "他一直在绕圈子，说些好听但没用的话。我不想听这些赞美，我需要知道哪里出了问题。为什么我总是觉得不对劲？为什么换了工作、做了所有“正确”的事，心里还是空荡荡的？我怕他看出来我其实很迷茫，怕他告诉我，我追求的这一切可能根本就不是我想要的。那太可怕了。"
+  }
+]

@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "6a8055372c864a97",
+    "type": "split",
+    "children": [
+      {
+        "id": "872b6e40b369b667",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "74e8528b638005eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "有关于前人工作的整理，和BDI理论对我们的启发.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "有关于前人工作的整理，和BDI理论对我们的启发"
+            }
+          },
+          {
+            "id": "468558cbce30cc8e",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "白板（总）.canvas",
+                "viewState": {
+                  "x": 36.59864763987591,
+                  "y": 345.20338534254114,
+                  "zoom": -1.539198895434636
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "白板（总）"
+            }
+          },
+          {
+            "id": "afab197095edff1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "心理咨询阻抗识别与模型训练研讨会议纪要.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "心理咨询阻抗识别与模型训练研讨会议纪要"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "db5f06bba9630877",
+    "type": "split",
+    "children": [
+      {
+        "id": "e408eb37f124c1cd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aea5eebc5455285c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "ede9135c88268c02",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "c16567d4b218c6e3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bf8ac35e95a44adc",
+    "type": "split",
+    "children": [
+      {
+        "id": "67b9a818eb8c9ec9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aab7de576ac41f91",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "未命名.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "未命名 的反向链接列表"
+            }
+          },
+          {
+            "id": "f827f720b003561a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "未命名.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "未命名 的出链列表"
+            }
+          },
+          {
+            "id": "4058bcec74acaedc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e3902105aae82af7",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "aa27400140dabf18",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "未命名.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "未命名 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "afab197095edff1c",
+  "lastOpenFiles": [
+    "基于内部动机推理的心理咨询模拟框架设计.md",
+    "白板（总）.canvas",
+    "心理咨询阻抗识别与模型训练研讨会议纪要.md",
+    "全部笔记.base",
+    "基于动力学破裂与BDI架构的心理咨询模拟or检测框架.md",
+    "🧠 共情对话系统与阻抗建模研究笔记(内含数据集的整理）.md",
+    "PsyFIRE 阻抗分类体系.md",
+    "有关于前人工作的整理，和BDI理论对我们的启发.md",
+    "未命名",
+    "欢迎.md",
+    "未命名 1.canvas",
+    "未命名/desktop.ini",
+    "desktop.ini"
+  ]
+}

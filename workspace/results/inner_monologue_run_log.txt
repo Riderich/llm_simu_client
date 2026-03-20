@@ -1,0 +1,2017 @@
+【全量模式】从 AnnoMI-labeled.json 加载全量案例（stride=10）...
+已加载 153 条案例
+  behavior_type 分布: {'resistance': 30, 'normal': 123}
+输出到: /Users/zwang47/research/llm_simu_client/workspace/scripts/../results/inner_monologue_dataset.json
+
+Completed!
+Results saved to: /Users/zwang47/research/llm_simu_client/workspace/scripts/../results/inner_monologue_dataset.json
+Total cases: 153
+
+================================================================================
+Case 1 | Transcript 1 turn 13 | behavior_type=resistance
+Resistance: Denying - Minimizing
+----------------------------------------
+Prediction:
+<internal>
+Okay, here we go again. Another person with a clipboard telling me what's normal. "Guidelines." What do they know about my life, my friends, my weekends? Five or six beers over a few hours on a Saturday isn't getting "fallen down drunk." It's just... how things are. It's fun. It's normal. She's trying to box me into her little medical category. If I admit it's a problem, then what? No more nights out? Have to sit at home counting drinks while everyone else is having a good time? That sounds miserable. I'm not some sad case. I work hard all week. This is my release. She says it's up to me, but I can feel the judgment. That number—14 a week—it's just a number. It doesn't understand context. It doesn't understand that stopping at four feels like... stopping the fun before it even starts. What's the point of going out then? But now she's got me doing the math in my head. Damn it. I don't want to think about this. I just want to enjoy my life without someone making it a project.
+</internal>
+----------------------------------------
+Ground Truth:
+I have five or six beers when I go out with friends to a bar. It's not a problem for me.
+================================================================================
+
+
+================================================================================
+Case 2 | Transcript 1 turn 21 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+I guess I didn't realize it was that serious. I'll have to think about what you've said.
+</internal>
+----------------------------------------
+Ground Truth:
+Well, I didn't know about those things.
+================================================================================
+
+
+================================================================================
+Case 3 | Transcript 107 turn 1 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+I was just so angry at you for not being there. It felt like the only thing I could do.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, pretty obvious [chuckles].
+================================================================================
+
+
+================================================================================
+Case 4 | Transcript 107 turn 15 | behavior_type=resistance
+Resistance: Denying - Blaming
+----------------------------------------
+Prediction:
+<internal>
+There she goes, focusing on the damn cuts again. The depth, the scars, the bandaids. Like that's the point. She wants the gory details, the map of my failure. Fine, look at them. See what you caused. But she doesn't get to steer this. I brought her the real wound. I told her. 'You thought you would help me and you didn't.' That's the cut. That's the one that needs stitches. Now she has to look at it. She has to sit here and see that her promises are just scars on my trust. I'm not letting her hide behind her clinical questions anymore. This is on her.
+</internal>
+----------------------------------------
+Ground Truth:
+I was thinking about killing myself. You thought you would help me and you didn't. That's what I want to talk about. I wanna talk about how it is that my life is not going better and you are not helping me, and you are not available to me when I need help.
+================================================================================
+
+
+================================================================================
+Case 5 | Transcript 109 turn 7 | behavior_type=resistance
+Resistance: Denying - Minimizing
+----------------------------------------
+Prediction:
+<internal>
+Okay, here it comes. The lecture. She's going to lump me in with the pack-a-day people. I'm not one of them. It's just a social prop, a thing we do. It's not a *habit*. I don't *need* it. Saying "one or two" makes it sound small, manageable. It's not like I'm hiding in a bathroom stall smoking alone. That's the line. That's what makes it okay. If I admit it's a habit, then I'm a smoker. And I'm not. I'm really not. So I have to make sure she sees the difference. The difference is everything.
+</internal>
+----------------------------------------
+Ground Truth:
+But that's- that's just like a- a social thing. That's something that my friends and I do. We-- We-- It's not habit or something that I have to have and, you know, talking about one or two when we go out for an evening. Not packs of them.
+================================================================================
+
+
+================================================================================
+Case 6 | Transcript 109 turn 21 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess it's not as harmless as I thought. I should probably cut back.
+</internal>
+----------------------------------------
+Ground Truth:
+Um. Well, there's the expense, you know. Wi-with the economy and all, um, I- I have to be careful about my money and so, um, there is the extra expense of if I'm buying more of them than I used to. So the-the money aspect is also a concern.
+================================================================================
+
+
+================================================================================
+Case 7 | Transcript 109 turn 41 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that makes sense. I can try that.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, I'd really like some more information about quitting. I mean, I've heard there's some-some new medications, there are some new things that can be done to help people make quitting more comfortable and I-I really wanna quit.
+================================================================================
+
+
+================================================================================
+Case 8 | Transcript 11 turn 1 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+I guess the court order is the main thing. I just need to get through this.
+----------------------------------------
+Ground Truth:
+They found a little bag of weed.
+================================================================================
+
+
+================================================================================
+Case 9 | Transcript 11 turn 3 | behavior_type=resistance
+Resistance: Denying - Minimizing
+----------------------------------------
+Prediction:
+<internal>
+Okay, here we go again. Another person asking the same questions. They found a little bag, that's it. It's not like I'm dealing or anything. Everyone does it. Why is this such a big deal? I just need to say what they want to hear, get this box checked, and get out. The faster I answer, the faster this is over. Don't make it a thing. It's just weed.
+</internal>
+----------------------------------------
+Ground Truth:
+It's not a lot though.
+================================================================================
+
+
+================================================================================
+Case 10 | Transcript 11 turn 5 | behavior_type=resistance
+Resistance: Denying - Minimizing
+----------------------------------------
+Prediction:
+<internal>
+Okay, here we go again. She wants me to say something else, something deeper. But there's nothing else. It's just a bag. Everyone does it. She's probably just checking boxes so she can write her report and get paid. I'll say it's not a lot, make that clear. Not a dealer. Just a user. A casual user. That's the important distinction for the court, right? Keep it simple, give the bare minimum. Don't give her an opening to turn this into some big life story. It's a transaction. I provide the required answers, she provides the signature. Let's just get through this.
+</internal>
+----------------------------------------
+Ground Truth:
+It's not like I was gonna sell it or anything. It's like—
+================================================================================
+
+
+================================================================================
+Case 11 | Transcript 11 turn 7 | behavior_type=resistance
+Resistance: Denying - Minimizing
+----------------------------------------
+Prediction:
+<internal>
+Okay, here we go again. Another person who's gonna make a big deal out of nothing. It was a tiny amount, just for me. Why does everyone act like it's some major crime? I just need to get through this, say what they want to hear, and get this requirement checked off. It's a box to tick, that's all. Don't make me talk about feelings or reasons. It's simple. I had it, they found it, now I'm here. Let's just move on.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah, whatever, you know. It's California, no one cares.
+================================================================================
+
+
+================================================================================
+Case 12 | Transcript 11 turn 13 | behavior_type=resistance
+Resistance: Denying - Minimizing
+----------------------------------------
+Prediction:
+<internal>
+Great, she's finally getting it. It's a formality. A box to check. I just need the certificate or the signature or whatever they stamp on me to say I'm "rehabilitated." It's a weed ticket, not a crime spree. Everyone does it. She keeps nodding, but I can feel her trying to dig. She wants some big confession, some tearful realization. There's nothing to dig up. I'm not some messed-up kid. I'm just a guy who got caught with a personal amount in a state where it's basically legal. This whole "work with you over time" thing is the problem. I don't want to "work" with anyone. I want to do the minimum and move on. The faster I give her the answers she wants to hear, the faster I'm out of here. So yeah, I'm focused on what I need to do. That's the only perspective that matters. Getting this behind me.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah
+================================================================================
+
+
+================================================================================
+Case 13 | Transcript 111 turn 22 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, I see what you mean. I guess it's not really helping me fit in, is it?
+</internal>
+----------------------------------------
+Ground Truth:
+I don't know if I feel more accepted, more like I'm trying to fit in by using it.
+================================================================================
+
+
+================================================================================
+Case 14 | Transcript 111 turn 40 | behavior_type=resistance
+Resistance: Denying - Pessimism
+----------------------------------------
+Prediction:
+<internal>
+Okay, here it comes. The suggestion. The counselor thing. I knew it. They always want to send you to someone else, someone you have to pay. Like I can afford that. Like my family would ever understand. "We don't do that kind of thing." That's putting it mildly. It's not just that we don't do it, it's that they'd think I was weak, or crazy, or both. Going to a shrink? That's for rich people with real problems, not for someone like me just trying to keep her head above water. This is just another thing to feel guilty about, another expense, another secret to keep. Great. So now I'm supposed to feel bad about the pot AND feel bad about not being able to get "proper" help. It's just another door closing. What's the point? Nothing ever really changes.
+</internal>
+----------------------------------------
+Ground Truth:
+No. We don't do that kind of thing in my family.
+================================================================================
+
+
+================================================================================
+Case 15 | Transcript 111 turn 42 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, I can see that. Maybe talking to someone would be a better way to handle the anxiety.
+</internal>
+----------------------------------------
+Ground Truth:
+It's just not done. I don't know. It's something for crazy people and we definitely do not have the money for it.
+================================================================================
+
+
+================================================================================
+Case 16 | Transcript 113 turn 37 | behavior_type=resistance
+Resistance: Denying - Reluctance
+----------------------------------------
+Prediction:
+<internal>
+She's pushing again, trying to make it all fit together neatly. It doesn't fit. It can't. Being a good mom is everything to me, but this... this is mine. The one thing that's just for me, that helps me breathe when everything else is suffocating. If I give this up, what do I have left? Just the guilt and the stress with no way out. She wants me to choose, but choosing feels like losing either way. I lose my daughter's respect or I lose my own sanity. I can't even picture a 'me' without a cigarette. That person is a stranger. So I'll just say I can't think of anything. Because the truth is, I'm afraid of what I'd have to become.
+</internal>
+----------------------------------------
+Ground Truth:
+I don't have any plans to quit. It's just something I'm thinking about.
+================================================================================
+
+
+================================================================================
+Case 17 | Transcript 113 turn 41 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that makes sense. I can try that.
+</internal>
+----------------------------------------
+Ground Truth:
+Oh, sure. Sure, I'll come in. Yeah.
+================================================================================
+
+
+================================================================================
+Case 18 | Transcript 114 turn 1 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's all accurate. I just made a stupid call because I was stuck.
+----------------------------------------
+Ground Truth:
+Uh, I guess that sound- that sounds right. I mean, I was- I was kinda drunk and it happened like a week ago. I just, I drove over to my friend's house, um, just to go watch the game and, you know, we're having a couple beers and next thing I know the Vikings are kind of losing pretty big. So we drank a little bit more than usual. And I mean, at the end I had to get home and I couldn't find a ride. So I-I just drove.
+================================================================================
+
+
+================================================================================
+Case 19 | Transcript 114 turn 7 | behavior_type=resistance
+Resistance: Denying - Blaming
+----------------------------------------
+Prediction:
+<internal>
+I know what she wants me to say. She wants me to admit I have a drinking problem. But I don't, not like that. It's just bad luck. Why is she always steering it back to the drinking? I tried to get a ride. I tried to be responsible. It's not fair. My friends do way worse and they're fine. I'm the one who gets singled out. If I just hadn't gotten caught, we wouldn't even be having this conversation. The problem is the cop, the rule, the stupid situation—not me. Saying it's a "getting caught problem" is the truth. If I agree with her, it means I'm the broken one, and I'm not. I'm just unlucky.</internal>
+----------------------------------------
+Ground Truth:
+Um, well, I wanna say I have a drinking problem. I think I'd probably have more of a, like getting caught problem. I mean, my friends, they-they drink like fishes and I-- they don't ever get caught and you got me over here and I get caught and they left.
+================================================================================
+
+
+================================================================================
+Case 20 | Transcript 114 turn 21 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's pretty much it. I guess my values are about doing well and not letting people down.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, I mean education is really important to me and-and also my family. My parents are always talking about it and I really- I really wanna be an international journalist, to be on the news like, I mean, I have the face for it, um. So I guess if I reprioritize my- if I reprioritize what I need to do I and I won't drink so much. I probably wouldn't be disappointing my parents and I'd be able to get a really good education.
+================================================================================
+
+
+================================================================================
+Case 21 | Transcript 121 turn 21 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's right. He said I should come talk to someone about managing it.
+----------------------------------------
+Ground Truth:
+Well, he did. He says he's going to put me on some sort of program if it gets worse.
+================================================================================
+
+
+================================================================================
+Case 22 | Transcript 121 turn 41 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, I see what you're saying. I can give that a go.
+</internal>
+----------------------------------------
+Ground Truth:
+I don't know, really.
+================================================================================
+
+
+================================================================================
+Case 23 | Transcript 121 turn 61 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I suppose you're right. I can see how that makes sense.
+</internal>
+----------------------------------------
+Ground Truth:
+Right? Um, I just think that-- Well, I just don't feel like it, Mark.
+================================================================================
+
+
+================================================================================
+Case 24 | Transcript 121 turn 81 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I suppose the numbers don't lie. I guess I should look into what I can actually do about it.
+</internal>
+----------------------------------------
+Ground Truth:
+-I must admit, I haven't done too much research. I've been a bit busy.
+================================================================================
+
+
+================================================================================
+Case 25 | Transcript 121 turn 101 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, I can see how that fits. I guess it's not just about weight.
+</internal>
+----------------------------------------
+Ground Truth:
+But he might well have it because he is-
+================================================================================
+
+
+================================================================================
+Case 26 | Transcript 121 turn 121 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that makes sense. So it's not just about weight or lifestyle, then.
+</internal>
+----------------------------------------
+Ground Truth:
+-if it's a gene-- you are more likely than not to get it?
+================================================================================
+
+
+================================================================================
+Case 27 | Transcript 121 turn 161 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, that makes sense. So it's about my body not using insulin properly.
+</internal>
+----------------------------------------
+Ground Truth:
+Or-or digesting? Should I say the excessive sugars?
+================================================================================
+
+
+================================================================================
+Case 28 | Transcript 121 turn 181 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, I can see how that fits. So it's about managing the sugar, not my whole life.
+</internal>
+----------------------------------------
+Ground Truth:
+You just do. Um, so you're less demanding, I guess, on your-on your body, you realize, and you don't really want to do these things anyway. You know, you let the youngsters get home.
+================================================================================
+
+
+================================================================================
+Case 29 | Transcript 121 turn 201 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, so it's not just about weight, it's about how my body handles sugar. That actually makes sense. I can see how my energy levels might be connected.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, is it getting worse? I don't know. I-I-I suppose. What worse? Is it-is it increasing? Well, to say, I don't really notice it.
+================================================================================
+
+
+================================================================================
+Case 30 | Transcript 121 turn 221 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, so it's not just about weight, it's about how my body uses sugar. That actually makes sense. I can see how my lifestyle might be part of the picture.
+</internal>
+----------------------------------------
+Ground Truth:
+Well frankly, the only pills I take are sort of paracetamols.
+================================================================================
+
+
+================================================================================
+Case 31 | Transcript 121 turn 241 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Well, if it's about managing sugar and keeping active, I suppose I could look at what I eat when I'm out with the guys. Maybe swap a couple of things.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, and-and being on the run all the time and you know once I get back home, it's, you know, it's time to go down to the rugby club or whatever it might be, uh, we're out with the mates. And, uh, I-I do I suppose my food is not as healthy perhaps as it used to be when she was around. She's moved down to Hamilton to live with her mother, if you've met her mother. Anyway, but, um.
+================================================================================
+
+
+================================================================================
+Case 32 | Transcript 121 turn 281 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, so the food choices and the smoking are part of it. I can see how that fits with what you were explaining about sugar and resistance.
+</internal>
+----------------------------------------
+Ground Truth:
+Well, I used to be quite a heavy smoker, right? I mean, I'd smoke a pack in a half a day. And I knew that wasn't doing me any good.
+================================================================================
+
+
+================================================================================
+Case 33 | Transcript 121 turn 321 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, so the food and the smoking are connected to this. I can see that. Maybe I could start paying a bit more attention to what I'm eating.
+</internal>
+----------------------------------------
+Ground Truth:
+So we cut that down as I say.
+================================================================================
+
+
+================================================================================
+Case 34 | Transcript 121 turn 361 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I suppose I could cut back on the takeaways and maybe cook a meal myself once or twice a week. It doesn’t sound too hard.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah. It was um, and I-I said, well, no. I'm sorry. [coughs] I'm not going to change my lifestyle. I've got to where I am. I'm reasonably happy. Okay, I wish I wasn't separated. Okay, I wish my kids were-were still around, um, you know. One of them is off now in, um, in-- back in Europe playing rugby in France.
+================================================================================
+
+
+================================================================================
+Case 35 | Transcript 121 turn 381 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, cutting the sugar in my coffee seems like a small, manageable first step. I could give that a go.
+</internal>
+----------------------------------------
+Ground Truth:
+I think I could- I think I could probably handle that.
+================================================================================
+
+
+================================================================================
+Case 36 | Transcript 121 turn 421 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, so starting with the coffee makes sense. I could swap my usual for a long black, no sugar. That seems like a small, manageable first step.
+</internal>
+----------------------------------------
+Ground Truth:
+And that gets me going. Yeah.
+================================================================================
+
+
+================================================================================
+Case 37 | Transcript 121 turn 441 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that sounds like a good plan. I think I can start with the black coffee and maybe some squash.
+</internal>
+----------------------------------------
+Ground Truth:
+Well, you see, I mean, I'm thinking, "Actually it might not be a bad idea this," because [chuckles] it would mean I could socialize harder, couldn't I? No, no I'm just joking. Uh, but, um, yeah, I mean, why not? Why not? Why not? It might be fun, it's a new path.
+================================================================================
+
+
+================================================================================
+Case 38 | Transcript 121 turn 461 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I think you're right. I'll have a word with Billy at the club tonight.
+</internal>
+----------------------------------------
+Ground Truth:
+Uh, maybe this is a blessing, actually-
+================================================================================
+
+
+================================================================================
+Case 39 | Transcript 121 turn 481 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that makes sense. I can try that. I'll talk to Billy at the club tonight.
+</internal>
+----------------------------------------
+Ground Truth:
+This is good. And, um—
+================================================================================
+
+
+================================================================================
+Case 40 | Transcript 121 turn 501 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that makes sense. I can try that.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah, but I don't have to give up anything really, do I?
+================================================================================
+
+
+================================================================================
+Case 41 | Transcript 121 turn 521 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I think you're right. I've been a bit stuck, but this feels like a new challenge I can actually get into.</internal>
+----------------------------------------
+Ground Truth:
+Because everything is just f-
+================================================================================
+
+
+================================================================================
+Case 42 | Transcript 121 turn 541 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that sounds like a good plan. I'll start with the coffee and talk to Bill tonight.
+</internal>
+----------------------------------------
+Ground Truth:
+-about the gym but-
+================================================================================
+
+
+================================================================================
+Case 43 | Transcript 121 turn 561 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that makes sense. I'll start with the coffee and talk to Billy about squash.
+</internal>
+----------------------------------------
+Ground Truth:
+But this is what I'm gonna do. All right? And like I said, I'm gonna make the inquiries, I will start there-
+================================================================================
+
+
+================================================================================
+Case 44 | Transcript 122 turn 6 | behavior_type=resistance
+Resistance: Denying - Blaming
+----------------------------------------
+Prediction:
+<internal>
+She's just sitting there, nodding. She probably thinks she gets it, but she doesn't. None of them do. It's all about my mom freaking out, not about me. Why does everyone keep taking her side? I shouldn't have to explain myself. If she hadn't been snooping, none of this would be happening. Now I'm stuck here defending my own room, my own stuff. This is so stupid. I'm not the one who messed up here.
+</internal>
+----------------------------------------
+Ground Truth:
+-and she freaked out, and she's going crazy over it. Um, I don't why she was going through stuff in the first place, but whatever, so, now I'm here.
+================================================================================
+
+
+================================================================================
+Case 45 | Transcript 122 turn 20 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess that's what happened. She shouldn't have been in my room.
+</internal>
+----------------------------------------
+Ground Truth:
+I mean, it's my stuff, I don't know why she's—
+================================================================================
+
+
+================================================================================
+Case 46 | Transcript 129 turn 16 | behavior_type=resistance
+Resistance: Avoiding - Limit Setting
+----------------------------------------
+Prediction:
+<internal>
+He wants me to plan, to be responsible. But if I pick a method, it means admitting this fear will happen again. I can't let that thought in. Saying 'no' is the only way to keep the relief from crumbling.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, I don't really want to go there. I just-- that sort of stuff just weirds me out. Yeah, I take something fun and just makes it really medical.
+================================================================================
+
+
+================================================================================
+Case 47 | Transcript 129 turn 20 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, I hear you. I guess I can think about it a little more.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah, I mean I'm-I'm careful. I do what I can, but I don't wanna take anything for that.
+================================================================================
+
+
+================================================================================
+Case 48 | Transcript 13 turn 1 | behavior_type=resistance
+Resistance: Denying - Reluctance
+----------------------------------------
+Prediction:
+<internal>
+Here we go. She's going to push the shots. My stomach is in knots. I read that article about the aluminum, and the stories from those other moms... what if I say yes and something happens to Lilly? It's my job to protect her. If I just go along with this and it's wrong, I'll never forgive myself. I have to say something. I can't just nod and agree. This is too important.
+</internal>
+----------------------------------------
+Ground Truth:
+Oh, I-I don't know if I'm comfortable with that. I've been reading a bunch of stuff lately about them.
+================================================================================
+
+
+================================================================================
+Case 49 | Transcript 133 turn 21 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+I've been staying clean, just trying to keep my head down and figure things out day by day.
+</internal>
+----------------------------------------
+Ground Truth:
+I haven't yet, I mean-
+================================================================================
+
+
+================================================================================
+Case 50 | Transcript 133 turn 41 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess I have been holding off. Mostly just thinking about Fiona and that next long stretch inside.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, I'd- I- you know, I kind of told myself not to, you know, just before I left. And then I'm just kind of with it and I don't quite know why. [clears throat] I dunno, if, uh, there's no real reason why I haven't yet. It's just that I don't- I just don't think it'll work the way I always dream it will you know, I see myself up like, whatever, if I do that again, the next leg is a long one. A real long one.
+================================================================================
+
+
+================================================================================
+Case 51 | Transcript 133 turn 81 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, she wants the old me. The one before all this. I guess that's something to hold onto.
+</internal>
+----------------------------------------
+Ground Truth:
+She just wants me. I mean, she just wants someone to be there. Me. She-she remembers me and she wants- she wants him.
+================================================================================
+
+
+================================================================================
+Case 52 | Transcript 133 turn 141 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess that's true. He did find a way out.
+</internal>
+----------------------------------------
+Ground Truth:
+I don't know how the fuck he did that, but, 'cause because he wasn't even a real addict, he was just-- Well, I mean, I don't know. He's very good with people.
+================================================================================
+
+
+================================================================================
+Case 53 | Transcript 133 turn 161 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, okay. I guess I can see that. I'm willing to look for it.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah, I don't mean to be rude-
+================================================================================
+
+
+================================================================================
+Case 54 | Transcript 133 turn 201 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, maybe you're right. I guess showing up here is something.
+</internal>
+----------------------------------------
+Ground Truth:
+-it's not funny. I mean, and you're-you're a good guy, I imagine. I mean, in fact, you don't deserve my shit. I just-- I don't know. Good luck.
+================================================================================
+
+
+================================================================================
+Case 55 | Transcript 133 turn 221 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess you're right. I am sitting here talking about it.
+</internal>
+----------------------------------------
+Ground Truth:
+-and all it takes me back is to the-the inside-
+================================================================================
+
+
+================================================================================
+Case 56 | Transcript 133 turn 241 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess you're right. I am sitting here talking about it.
+</internal>
+----------------------------------------
+Ground Truth:
+That is gut right there, going to a job you hate, going home, cooking yet missus a dinner, looking after your kids. I mean, that is-- That's what it real mean does, but I don't have that-- Th-those guts to do- to do what you do.
+================================================================================
+
+
+================================================================================
+Case 57 | Transcript 133 turn 261 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, maybe. I guess sitting out there with my tea is better than sitting inside a cell.
+</internal>
+----------------------------------------
+Ground Truth:
+Birds, trees, yada yada.
+================================================================================
+
+
+================================================================================
+Case 58 | Transcript 133 turn 281 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess it is about small steps. I just don't know what the first one is.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah. I mean, yeah, it is obviously, it is first steps, but I mean, what's that? What's the first step into the pro-social life?
+================================================================================
+
+
+================================================================================
+Case 59 | Transcript 133 turn 321 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, okay. I guess that's a fair summary of where I'm at.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah, 12, nearly 13.
+================================================================================
+
+
+================================================================================
+Case 60 | Transcript 133 turn 361 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, maybe giving him a call wouldn't be the worst idea. I guess it's a step.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah. And I would never admit to that.
+================================================================================
+
+
+================================================================================
+Case 61 | Transcript 19 turn 1 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I am sick of it. I just don't know what else to do with myself.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah. I-I just-- I can't shoplift anymore. You know, I got- I got caught again. And uh, you know, I-I got suspended, I got back to school, so I'm-I'm uh-- I'm gonna mess up my whole life here, unless I can stop this.
+================================================================================
+
+
+================================================================================
+Case 62 | Transcript 19 turn 15 | behavior_type=resistance
+Resistance: Denying - Minimizing
+----------------------------------------
+Prediction:
+<internal>
+She's pushing me to say I'm ready, but she doesn't get it. "Ready to give this up." It sounds so simple when she says it. But it's not just a thing I do, it's everything. It's the only time I feel alive, like I'm part of something with my friends. If I say I'm ready, then what? I'm just supposed to sit in my room and do nothing? Be bored and alone? They're bad news, but they're *my* bad news. Without that thrill, what's left? I'm scared there's just... nothing. An empty space where the fun used to be. So yeah, I want to stop ruining my life, but stopping feels like it might ruin my life too, in a different way. I have to make it sound like it's not that big a deal, that it's just a fun thing, because if I admit how much I need it, how lost I'd be without it, that's way more terrifying.
+</internal>
+----------------------------------------
+Ground Truth:
+Nothing-nothing much else going on that's as fun as this. We go in, we steal these CDs. It was working out fine, but—
+================================================================================
+
+
+================================================================================
+Case 63 | Transcript 21 turn 61 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess I just want to feel like I'm part of the group, you know? It's important to me.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah, just a sense of like fitting in and not-- And like getting accepted-
+================================================================================
+
+
+================================================================================
+Case 64 | Transcript 21 turn 99 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I never drive after drinking. I'm always careful about that.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, like drunk driving?
+================================================================================
+
+
+================================================================================
+Case 65 | Transcript 21 turn 119 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess it just makes it easier to blend in. I don't really like the taste or anything.
+</internal>
+----------------------------------------
+Ground Truth:
+-so, I can't really say that I like that feeling or not, but, it's just like-- I mean, you're just in a good mood.
+================================================================================
+
+
+================================================================================
+Case 66 | Transcript 21 turn 139 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's pretty much it. I just don't want to end up like that.
+</internal>
+----------------------------------------
+Ground Truth:
+-very, like, obnoxious things.
+================================================================================
+
+
+================================================================================
+Case 67 | Transcript 21 turn 143 | behavior_type=resistance
+Resistance: Denying - Minimizing
+----------------------------------------
+Prediction:
+<internal>
+Okay, she's circling back to the risk thing. I already said I know it's illegal. I know it's risky. But she's making it sound like a bigger deal than it is. I have two drinks, max. I'm not like those other kids. I'm in control. I'm doing it to fit in, not to get wasted. If I say it's just to avoid pressure, she might think I'm weak or can't handle myself. But I can. I'm handling it fine. My grades are good, my plans are solid. This is just... social lubrication. A necessary thing to get through the weekend without being the weird one. She doesn't get that. If I don't do this, then what? I sit alone? That feels riskier to my social life than two drinks are to my future. I need her to see I'm pragmatic about this. It's a calculated, minimal thing. Not a problem. Definitely not a problem. So I'll laugh a little, make it seem like 'yeah, we all know, but what can you do?' Keep it light. Don't let her turn this into some huge character flaw.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, I know it's definitely risky, but, I mean, I guess, we still do it. [chuckles]
+================================================================================
+
+
+================================================================================
+Case 68 | Transcript 21 turn 159 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess I don't really see it being a big part of my future, especially with college and everything. It's just a thing I do now to fit in.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, it probably will have a very small role, if any-
+================================================================================
+
+
+================================================================================
+Case 69 | Transcript 21 turn 179 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that sounds about right. I'm not too worried about it, but I can see the point.
+</internal>
+----------------------------------------
+Ground Truth:
+Maybe a five or six.
+================================================================================
+
+
+================================================================================
+Case 70 | Transcript 21 turn 199 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I think I can do that. It seems like a pretty easy first step to take.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, probably to stop, maybe next party I go to, not have a drink at all.
+================================================================================
+
+
+================================================================================
+Case 71 | Transcript 21 turn 239 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's a good idea. I can just hold a soda or something instead.
+</internal>
+----------------------------------------
+Ground Truth:
+No. No, I think I'm okay.
+================================================================================
+
+
+================================================================================
+Case 72 | Transcript 24 turn 1 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that sounds like a practical approach. I'll give the gum a try and see how it goes.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah, I hope so. Um, my workplace has just gone smoke-free. I-I'm not-not very happy about it. I'm gonna keep smoking, but I was wondering if there's anything that-that can help me like get through the day. It's like, you know, go get my beer and smoke cigarettes after work.
+================================================================================
+
+
+================================================================================
+Case 73 | Transcript 24 turn 15 | behavior_type=resistance
+Resistance: Denying - Reluctance
+----------------------------------------
+Prediction:
+<internal>
+She's pushing the quit thing again. I said I'm a two, not a one, just to be polite, to keep this moving. Now she's latching onto it like it's a crack in the door. It's not. I don't need tools. I don't need a plan. I just need to know how to get through the stupid workday without climbing the walls. Why does everyone have to turn this into a project? I like my smoke. It's mine. This feels like another person trying to manage me, just like the workplace policy. I'll take the information, sure, but I'm not signing up for anything. My confidence isn't a challenge for her to test. It's my reality. I could if I wanted to. I just don't want to. That should be the end of it.
+</internal>
+----------------------------------------
+Ground Truth:
+Okay. Well, that’s good information. I mean, I'm not gonna do anything today. I just need to know my options, but that's encouraging. If I decided to quit smoking, I-I do have at least tools to help me.
+================================================================================
+
+
+================================================================================
+Case 74 | Transcript 24 turn 21 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's fair. I'll keep it in mind.
+</internal>
+----------------------------------------
+Ground Truth:
+Okay. Well, thanks a lot.
+================================================================================
+
+
+================================================================================
+Case 75 | Transcript 28 turn 1 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that makes sense. I can try that.
+</internal>
+----------------------------------------
+Ground Truth:
+Thank you, my doctor [unintelligible 00:00:05]
+================================================================================
+
+
+================================================================================
+Case 76 | Transcript 28 turn 21 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that was a few years back now. It just sort of crept up on me.
+</internal>
+----------------------------------------
+Ground Truth:
+I really couldn't tell you, um, I remember when my daughter was like five, um, I was-- it was humid out and I have a problem with humidity-
+================================================================================
+
+
+================================================================================
+Case 77 | Transcript 28 turn 41 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's right. It just didn't work for me at all.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, that was about two to three years ago.
+================================================================================
+
+
+================================================================================
+Case 78 | Transcript 28 turn 81 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's exactly how it felt. It was all I could think about.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah, exactly. Mm-hmm. Yeah. Um, and the first thing when I was able to smoke, I didn't care if I smoke my brand or anybody else's brand, I just wanted that cigarette.
+================================================================================
+
+
+================================================================================
+Case 79 | Transcript 28 turn 121 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's exactly it. It feels like the cigarette is just part of the routine now.
+</internal>
+----------------------------------------
+Ground Truth:
+-and a cigarette, um, for me takes five minutes to smoke.
+================================================================================
+
+
+================================================================================
+Case 80 | Transcript 30 turn 1 | behavior_type=resistance
+Resistance: Denying - Reluctance
+----------------------------------------
+Prediction:
+<internal>
+I don't know, and I still don't wanna charge it. That's what I said. But what I'm thinking is... I know what happened. I just didn't. I left it. I didn't plug it in. I didn't care. She's asking me to explain, but there's no explanation. It's just... nothing. Charging it feels like another thing they're forcing me to do, another little leash. If I don't charge it, maybe they'll finally see that I'm not playing this game. Maybe they'll stop asking. But deeper... it's not even about defiance. It's just... empty. The idea of getting arrested? It doesn't even scare me. It feels like the same nothingness, just in a different room. So why bother? Why move? Why perform this little task? It all feels equally pointless. Charging the battery is a performance of caring, and I don't care. Not about this, not about the consequences, not about sitting here. So I'll just say I don't know. It's easier. It keeps this hollow space inside me intact.</internal>
+----------------------------------------
+Ground Truth:
+I don't know, and I still don't wanna charge it.
+================================================================================
+
+
+================================================================================
+Case 81 | Transcript 30 turn 21 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I heard you. Just do what you have to do.
+</internal>
+----------------------------------------
+Ground Truth:
+I mean, whatever happens happens. I'll deal with it when it happens.
+================================================================================
+
+
+================================================================================
+Case 82 | Transcript 34 turn 1 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, I guess I can talk about it. I'm just really worried about the baby.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, my doctor referred me. He said I had to come because I've- I've been a little irresponsible with this pregnancy. Yeah.
+================================================================================
+
+
+================================================================================
+Case 83 | Transcript 34 turn 21 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess I do want to move into the mom world. It's just hard to let the other part go.
+</internal>
+----------------------------------------
+Ground Truth:
+There's, yeah, there's part of me that still wants to live that out because I'm not going to have another chance, like once this kid comes, it's-it's going to be over. I know I'm gonna- I know I'm going to have to change.
+================================================================================
+
+
+================================================================================
+Case 84 | Transcript 34 turn 61 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's a good way to put it. I do want to go for it.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah, I guess that voice is just a little more stifled by the other one.
+================================================================================
+
+
+================================================================================
+Case 85 | Transcript 34 turn 101 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that makes sense. I can try talking to my parents first.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah, like if there's a- if there's a balance between maybe not the paths, but the worlds, if there's a balance between that-
+================================================================================
+
+
+================================================================================
+Case 86 | Transcript 34 turn 107 | behavior_type=resistance
+Resistance: Denying - Pessimism
+----------------------------------------
+Prediction:
+<internal>
+She's asking for steps, for a plan. But what's the point? I'm already so far along. I've already messed it up. The damage is probably done. I can say I'll cut back, I'll try, but deep down I just feel like it's already a lost cause. Why start now when the worst might have already happened? I want to be hopeful, but it feels like trying to lock the barn door after the horse has bolted. I'm scared that any step I take is just going to highlight how late I am, how irresponsible I've been. Maybe if I don't try too hard, the failure won't hurt as much. If I already ruined my kid's chances, then what difference does it make?
+</internal>
+----------------------------------------
+Ground Truth:
+Um yeah, like I'm so close anyways, that I know I need to now. Um, and I just also, like, have I completely screwed this up, like, is it already too late?
+================================================================================
+
+
+================================================================================
+Case 87 | Transcript 5 turn 41 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's right. She knows I'm not great with the forms, so she just helps out.
+</internal>
+----------------------------------------
+Ground Truth:
+Just-- I-I asked her to fill that out for me because I said I'd be too messy.
+================================================================================
+
+
+================================================================================
+Case 88 | Transcript 5 turn 61 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I should just drop them off. It's the last step.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah. Uh, I think you can post them, but I'll just drop them in.
+================================================================================
+
+
+================================================================================
+Case 89 | Transcript 5 turn 161 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's about it. Someone who's loyal and has your back.
+</internal>
+----------------------------------------
+Ground Truth:
+That's about it. It's-- yeah.
+================================================================================
+
+
+================================================================================
+Case 90 | Transcript 5 turn 181 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess they'd have to see I'm actually trying to do things different now.
+</internal>
+----------------------------------------
+Ground Truth:
+Just they know that I'm serious.
+================================================================================
+
+
+================================================================================
+Case 91 | Transcript 5 turn 185 | behavior_type=resistance
+Resistance: Denying - Excusing
+----------------------------------------
+Prediction:
+<internal>
+She's pushing on the mates again. I know where this is going. She wants me to say they're bad for me, that I should drop them. But it's not that simple. They've always been there. Yeah, they give me shit, but they'd also have my back in a fight. Donna's great, but it's different. She doesn't get that history. I feel guilty even talking about this, like I'm betraying them just by being here. I miss just hanging out, no pressure. But if I say that, she'll think I'm not serious about changing. I am serious. But why does it have to be one or the other? Why can't I have both? The guilt is the worst part. Guilty when I'm with them because of Donna and the polytech stuff, guilty when I'm with Donna because I'm ditching my mates. They'd think I'm a joke if they heard me talking about "goals" and "hopes." Just gotta make her see I'm trying. The forms are at home. I'll do it. I will. But don't make me choose. Don't make me say they're the problem. The problem is me when I drink. Not them.
+</internal>
+----------------------------------------
+Ground Truth:
+But, like I feel guilty if they wanna go and have fun, and I'm not with them.
+================================================================================
+
+
+================================================================================
+Case 92 | Transcript 55 turn 1 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Sure, we can do that. I filled it out honestly.
+</internal>
+----------------------------------------
+Ground Truth:
+Uh, yeah. Yeah, that's fine.
+================================================================================
+
+
+================================================================================
+Case 93 | Transcript 55 turn 29 | behavior_type=resistance
+Resistance: Denying - Minimizing
+----------------------------------------
+Prediction:
+<internal>
+Okay, she's looking at the questionnaire. She's going to ask about the use. I just need to keep it simple. Don't give too much detail. Just say the arm. It's fine. She wants to look at it... why? To check for infection? It's clean, I'm careful. I know she's trying to be helpful, but this feels like she's circling the real question. She's going to ask about withdrawal again. I hate talking about that. It's the worst feeling in the world, and saying it out loud makes it real, makes me weak. I just said it sucks. That's enough. Don't let her see how terrified I am of that feeling. That's the whole reason. If I stop, that happens. So I can't stop. She asked how it impacts my life... I have to say it lets me function. I have to make it sound manageable, like it's a tool, not a problem. Because if it's a problem, then I have to change it, and changing it means facing the sickness. I can't face that. So just say it's about avoiding getting sick. That's the truth. Keep it on that. Don't let her push past that wall.</internal>
+----------------------------------------
+Ground Truth:
+Uh, you know, I get loaded and I-I can- I can function. I can go to work and, you know, do normal things, you know. Uh, I mean, there's been maybe just a couple of times where I wasn't feeling all that well, and I, uh, I was late a couple of times to work or it might overslept from the night before or whatever, but it's about it. Uh, I just want to avoid getting sick right now. That's my main priority.
+================================================================================
+
+
+================================================================================
+Case 94 | Transcript 55 turn 41 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I've got the Narcan. I guess I could hear more about that Suboxone stuff.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah, I got some of that already. I got it from the needle exchange.
+================================================================================
+
+
+================================================================================
+Case 95 | Transcript 55 turn 61 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, I'll talk to him tomorrow. And yeah, getting that email would help.
+</internal>
+----------------------------------------
+Ground Truth:
+Uh, if you could email me that right now, that'd be great.
+================================================================================
+
+
+================================================================================
+Case 96 | Transcript 56 turn 21 | behavior_type=resistance
+Resistance: Denying - Reluctance
+----------------------------------------
+Prediction:
+<internal>
+She's being so gentle, but I can feel the worry underneath. She thinks I'm giving up. I'm not giving up, I'm being smart. If I push too hard and really fall, that's it. They'll say I can't be alone. They'll take my home, my garden, my dog. I can't let that happen. So I have to pull back. It's not quitting, it's surviving. I have to protect what little ground I have left. Please don't make me explain that. Please don't make me admit how terrified I am of being helpless in my own house.
+</internal>
+----------------------------------------
+Ground Truth:
+So I'm-I'm-I cut back, and I-I don't know if I should really even continue the Tai Chi because it's-it's very demanding.
+================================================================================
+
+
+================================================================================
+Case 97 | Transcript 56 turn 41 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that makes sense. I can try that.
+</internal>
+----------------------------------------
+Ground Truth:
+And I'm not sure about the Tai Chi anymore. I-I think the physical therapy, I can understand that, but I'm not so sure about the Tai Chi.
+================================================================================
+
+
+================================================================================
+Case 98 | Transcript 56 turn 61 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's exactly what I'm afraid of. I really want to work on a plan to feel safer.
+</internal>
+----------------------------------------
+Ground Truth:
+-really a little frightened that what if- what if I fall down and-and-and nobody comes around and I'm lying there for two days, you know. I may have heard about that.
+================================================================================
+
+
+================================================================================
+Case 99 | Transcript 56 turn 81 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that does sound like it could help. I'd be willing to look into it.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah. I guess so, feeling a little scared-
+================================================================================
+
+
+================================================================================
+Case 100 | Transcript 56 turn 141 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+No, you're not being a baby. It's just scary, but I want to stay in my home.
+</internal>
+----------------------------------------
+Ground Truth:
+So, am I being a baby?
+================================================================================
+
+
+================================================================================
+Case 101 | Transcript 56 turn 161 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, that sounds good. I'll give the Tai Chi another try.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah. So the-the caseworker is gonna be able to come and refresh-
+================================================================================
+
+
+================================================================================
+Case 102 | Transcript 61 turn 1 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, that sounds like a good plan. I'll give it a try.
+</internal>
+----------------------------------------
+Ground Truth:
+Well, I remember you. Yeah, we met once before.
+================================================================================
+
+
+================================================================================
+Case 103 | Transcript 61 turn 57 | behavior_type=resistance
+Resistance: Denying - Reluctance
+----------------------------------------
+Prediction:
+<internal>
+She's asking if I want to go back. Of course I want to. I want to go home. But she doesn't understand how it feels to be the only one in a chair, clinging to a walker while everyone else flows like water. They're all so graceful, and I'm just... stuck. I feel like a broken statue in the middle of a dance. My friend loves it, and I want that for myself so badly it aches, but the shame is like a wall. What if I never get out of this chair? What if they all just see me as the frail old woman who can't keep up? I'm afraid if I say yes, I'm just setting myself up for another dose of that humiliation. But if I say no, I'm giving up on my garden, on my little dog, on everything. The wobblies win. I'm so tired of being afraid.</internal>
+----------------------------------------
+Ground Truth:
+[sighs] Um, yes-yes I-I do because I-- my friend, I think I told you, really, really loves it and I just, I wish I could go back, and yes I do. I'm not making much sense, but I do.
+================================================================================
+
+
+================================================================================
+Case 104 | Transcript 61 turn 61 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+I guess I should give it another try. I do want to get back to my garden.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah. It's-it's-- I can't make that-- It wouldn't be fair for me to say it does or doesn't. It didn't that one time, but you know.
+================================================================================
+
+
+================================================================================
+Case 105 | Transcript 61 turn 81 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+I know I can figure out the arrangements, it just feels like a lot to manage on my own.
+</internal>
+----------------------------------------
+Ground Truth:
+I-I mean, I know I can, but it's really difficult.
+================================================================================
+
+
+================================================================================
+Case 106 | Transcript 64 turn 21 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's pretty much it. I just looked it up and booked the appointment.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah. I just sort of did a bit of search on the internet and stuff and just read about this place, so I just thought I'll—
+================================================================================
+
+
+================================================================================
+Case 107 | Transcript 64 turn 100 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I can see how it's all tied together like that. It's just become part of my routine.
+</internal>
+----------------------------------------
+Ground Truth:
+I mean, I guess, I'm, let's say I take it for granted but, um, yes, it's just comfortable now. And, um, it's just a sort of what I do really. Yeah, so, I guess that the drugs are linked to that, I suppose. It's j-- Well, it's just a part of it, I don't really think-- I didn't really differentiate it. It's just kinda, "Okay, I'm gonna go hang with my friends," and that sort of thing, you know, that Saturday, Friday night thing. And then it just happens really as part of that.
+================================================================================
+
+
+================================================================================
+Case 108 | Transcript 64 turn 120 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess you're right. It's probably gotten a bit bigger than just the weekend scene.
+</internal>
+----------------------------------------
+Ground Truth:
+-maybe noticing some things that I hadn't noticed but—
+================================================================================
+
+
+================================================================================
+Case 109 | Transcript 64 turn 140 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess the money thing is a problem. And I do worry about how it looks for my acting.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah. Yeah. A little bit.
+================================================================================
+
+
+================================================================================
+Case 110 | Transcript 64 turn 180 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I can see how those things add up. I guess it's worth looking at.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah. Yeah, and I mean part of it, yeah. Part of it I just wonder 'cause, you know, a lot of those friends that set me down are obviously the ones that are not part of that scene. I mean there were a couple there that-that are, but mostly they were the ones that sort of have always sorta been a bit judgy. You know, like when I first started all this stuff, you know. And clearly, there wasn't a problem like-- 'cause I used to be that guy as well you know, like, "No never do that 'cause it's bad," and then you try it the first time and you go, "Actually, it's not that bad." It's not the end of the world if you're sensible with it, then it's not gonna be, you know.
+================================================================================
+
+
+================================================================================
+Case 111 | Transcript 64 turn 199 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, okay. I can see how it's all connected now, and that's a bit worrying.
+</internal>
+----------------------------------------
+Ground Truth:
+I'd like it to be, yeah.
+================================================================================
+
+
+================================================================================
+Case 112 | Transcript 65 turn 20 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's pretty much it. I'm just worried it'll be really hard and I'll be miserable.
+</internal>
+----------------------------------------
+Ground Truth:
+And if I do go through this, I just hope my friends understand and will support me in what I'm trying to do.
+================================================================================
+
+
+================================================================================
+Case 113 | Transcript 66 turn 9 | behavior_type=resistance
+Resistance: Denying - Pessimism
+----------------------------------------
+Prediction:
+<internal>
+He's trying to get me to admit I'm scared. Fine, I am. But scared isn't the half of it. It's this heavy, sinking feeling that I'm already failing. All those things she listed... losing my legs, my eyesight... it's not just fear, it's a sentence. And now he wants me to believe I can do all this "managing"? I can't even keep my garage organized. The list is too long. The mountain's too high. If I say I can't do it, then at least the failure is expected, not a surprise. It's safer to expect the worst than to hope and watch it all fall apart anyway.
+</internal>
+----------------------------------------
+Ground Truth:
+Well, that's, yeah. It's not just being scared, you know. I don't want that to happen to me, but then when I, when-when she reels off all these things I gotta do and I'm sort of going oh, oh, you know, I'm not certain I can even get it done. So it's sort of sitting-- well, you know, I'm sitting here thinking that, oh my God, this is- this is what's gonna happen to me.
+================================================================================
+
+
+================================================================================
+Case 114 | Transcript 66 turn 22 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, focusing on the medicine first does seem manageable. I can handle that part.
+</internal>
+----------------------------------------
+Ground Truth:
+Well, she also mentioned monitoring my blood sugar and all this. And that just seemed like a lot of mumbo jambo to me.
+================================================================================
+
+
+================================================================================
+Case 115 | Transcript 7 turn 1 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, it was just a dumb accident. I guess the shoes and the drinks weren't a great combo.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, it's really stupid. Uh, I was at a pub crawl last night and you know how pub crawls are. You have a few drinks and then I thought it was a really good idea to catch up with my friends who are, yeah, they're in front of me. So I just like jumped off the stairs of the bus and I was wearing these like stilettos 'cause it was a 90s-themed pub crawl. Anyway, and then I just like fell on my ankle. It was really embarrassing.
+================================================================================
+
+
+================================================================================
+Case 116 | Transcript 7 turn 17 | behavior_type=resistance
+Resistance: Denying - Minimizing
+----------------------------------------
+Prediction:
+<internal>
+Okay, here we go. She's asking about a typical week. I can just say it's normal, because it is. Everyone does it. If I make it sound like no big deal, maybe she'll see it's just student life and drop it. I don't want her to think I'm some kind of problem case. It's just a few drinks. It's fun. The ankle thing was just bad luck, the heels were a dumb choice. It's not the drinking's fault. Saying "a few drinks" sounds better. It sounds controlled. It was just a pub crawl. It's fine. It's all totally fine.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, well, me and my friends kinda, uh, we party on the weekend and, you know, we're all university students and so it's just normal, um, to have a few drinks.
+================================================================================
+
+
+================================================================================
+Case 117 | Transcript 7 turn 21 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess that's a lot when you say it like that. It's just what everyone does.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, per night, uh, like if we go out oh, it's a lot. It's like I can drink probably like seven or eight drinks like if I'm going hard. Um, and then, you know, like maybe when I get home from school, a long day at the library, have a beer or two, so.
+================================================================================
+
+
+================================================================================
+Case 118 | Transcript 7 turn 41 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Oh, wow, I'm definitely over that limit. I guess it's not as normal as I thought.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah. Yeah, I guess.
+================================================================================
+
+
+================================================================================
+Case 119 | Transcript 7 turn 61 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that sounds good. I'll come back next week.
+</internal>
+----------------------------------------
+Ground Truth:
+Sure. Yeah, just not on a Saturday morning. [chuckles]
+================================================================================
+
+
+================================================================================
+Case 120 | Transcript 81 turn 3 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+That's a good way to put it. I just need to focus on the next step, like making the appointment.
+</internal>
+----------------------------------------
+Ground Truth:
+Okay. I guess I've been getting bigger.
+================================================================================
+
+
+================================================================================
+Case 121 | Transcript 81 turn 9 | behavior_type=resistance
+Resistance: Denying - Reluctance
+----------------------------------------
+Prediction:
+<internal>
+She's circling back to the doctor again. I know I have to go, I know it's the right thing, but just thinking about picking up the phone makes my chest tight. What if they find something bad? What if it's worse than I'm imagining? It's easier to just keep it as this unknown "something." At least then it's just a scary idea, not a scary fact. I said I'd call, and I meant it when I said it, but now... the thought of actually making the appointment, of having to explain everything, of being poked and prodded... I feel stupid for not doing it yet. She probably thinks I'm lazy or not taking this seriously. I am taking it seriously, that's the problem. It's too serious. I just need a little more time to get my head around it.
+</internal>
+----------------------------------------
+Ground Truth:
+I know you want me to see the doctor, I haven't called yet.
+================================================================================
+
+
+================================================================================
+Case 122 | Transcript 84 turn 1 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+I'm doing okay, just trying to stay out of trouble. My girlfriend's been a good influence.
+----------------------------------------
+Ground Truth:
+Yeah, I'm all right.
+================================================================================
+
+
+================================================================================
+Case 123 | Transcript 84 turn 41 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+I guess I'd put it around a 40. It's not like I'm a monster or anything.
+</internal>
+----------------------------------------
+Ground Truth:
+Well, not too high. It's not like I'm out killing people or anything. It's just-
+================================================================================
+
+
+================================================================================
+Case 124 | Transcript 84 turn 61 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, okay. I guess I don't want to keep doing this.
+</internal>
+----------------------------------------
+Ground Truth:
+Maybe but, mm, yeah, I wanna stop getting into trouble.
+================================================================================
+
+
+================================================================================
+Case 125 | Transcript 84 turn 67 | behavior_type=resistance
+Resistance: Denying - Blaming
+----------------------------------------
+Prediction:
+<internal>
+She's trying to get me to say I'm interested, but I'm not. Not really. It's just stupid stuff. They make it sound like I'm some criminal mastermind. I'm just bored and need a few bucks sometimes. It's not like I hurt anyone. And she's sitting there in her nice clothes, in this clean office, acting like she knows anything about my life. She doesn't. They all don't. They just see the paperwork and think they know me. I don't want to be here again, sure, but that's just because it's annoying. If I say I'm only 25% interested, she'll probably think I'm a jerk, but it's true. Maybe I should have said zero. It feels like if I admit I care, then I'm admitting I'm wrong, and I'm not wrong. I'm just unlucky. The cops target me. That's it. If she pushes me to say more, I'll just shut down. I don't need her understanding. I just need to not get caught next time. That's the real solution.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah, the cops just have it out for me.
+================================================================================
+
+
+================================================================================
+Case 126 | Transcript 84 turn 81 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess I do want to stop. I don't want to lose my girlfriend over this.
+</internal>
+----------------------------------------
+Ground Truth:
+-wanna stop getting in trouble. Don't wanna-
+================================================================================
+
+
+================================================================================
+Case 127 | Transcript 84 turn 101 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess that's true. If I had a proper job, I probably wouldn't need to do the other stuff.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah, yeah, yeah, 'cause it's just small stuff that, you know, just 'cause I don't have any cash.
+================================================================================
+
+
+================================================================================
+Case 128 | Transcript 84 turn 141 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, she's been good for me. She's got a steady job and everything.
+</internal>
+----------------------------------------
+Ground Truth:
+Like she's my new girlfriend.
+================================================================================
+
+
+================================================================================
+Case 129 | Transcript 84 turn 161 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's true. It's been good having something to do.
+</internal>
+----------------------------------------
+Ground Truth:
+Just, uh, just hanging out. Just watching movies and stuff just, I don't know, gives me something to do.
+================================================================================
+
+
+================================================================================
+Case 130 | Transcript 84 turn 181 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess that's true. It's easier to stay out of trouble when I'm not bored and alone.
+</internal>
+----------------------------------------
+Ground Truth:
+So we get to chill on Friday.
+================================================================================
+
+
+================================================================================
+Case 131 | Transcript 85 turn 1 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess that's fair. I do keep saying I hate the pills.
+</internal>
+----------------------------------------
+Ground Truth:
+Well, I'm glad I don't have any of that.[laughter]
+================================================================================
+
+
+================================================================================
+Case 132 | Transcript 85 turn 61 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, she's not happy about it either. It's just another reason the whole thing feels like a bad deal.
+</internal>
+----------------------------------------
+Ground Truth:
+Well, she wants to know who I am and what did I do with her husband.
+================================================================================
+
+
+================================================================================
+Case 133 | Transcript 85 turn 81 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess the hospital is worse than the cotton ball feeling. It's just a bad choice either way.
+</internal>
+----------------------------------------
+Ground Truth:
+Don't like that hospital.
+================================================================================
+
+
+================================================================================
+Case 134 | Transcript 85 turn 113 | behavior_type=resistance
+Resistance: Denying - Excusing
+----------------------------------------
+Prediction:
+<internal>
+She's trying to get me to admit I have a problem with the drinking and the weed. I don't. It's not a problem. It's my solution. The problem is their medicine. She's acting like she gets it, but then she turns it around. "How would you know if it was a problem?" Like she's setting a trap. I'm not some drunk. I just need to feel like myself, not this cotton-ball zombie. They want me to choose between being locked up or being dead inside. That's not a choice. That's a trap. And now she's offering other pills. More experiments. More side effects. What's the point? They're all the same. They all take something from you. At least my way, I'm still me when I need to be. I'm just guarding the one thing they haven't managed to take yet.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, I'm just- yeah I just like to have a few drinks. I mean, you know, obviously, I-I have, uh, this diagnosed condition, and-and I think, you know, if I were able to, you know, maybe take a few hits off of the joint and have a couple of beers, I think that's about the same as taking the medicine.
+================================================================================
+
+
+================================================================================
+Case 135 | Transcript 85 turn 121 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess trying a different pill is worth a shot. Can't be worse than the cotton ball.
+</internal>
+----------------------------------------
+Ground Truth:
+No-no. I'd-I'd like to just be normal as well. I'd real-- I'd like to just be normal where I don't have to take medicine, and I don't end up in the hospital three times a year, and I don't find myself in the neighbor's yard—
+================================================================================
+
+
+================================================================================
+Case 136 | Transcript 95 turn 1 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess you're right. I can see how that would help.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, okay. Just, I don't even know why I'm doing this anymore. I'm-I'm just so stupid. I'm such an idiot. I didn't know what the point of-of this is. I just- I just keep doing the same thing over and over, even though I know it can kill me. I just, I don't have any more willpower, ma'am. Yeah, [foreign language].
+================================================================================
+
+
+================================================================================
+Case 137 | Transcript 95 turn 31 | behavior_type=resistance
+Resistance: Denying - Pessimism
+----------------------------------------
+Prediction:
+<internal>
+She's trying to find a way in. She's saying I care, that this is me trying to help. But she doesn't get it. If I care, then I have to go through with it. That's the proof. Thinking about mom just makes it worse. Every time she points out how much I care, it just tightens the knot. I can't let her turn my love for mom into a reason to stay. That would be the most selfish thing of all. I have to hold onto this. It's the only thing that makes sense. If I agree there's another way, then I'm choosing to keep being the problem. I'm not sure I can... because I'm not sure I should.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, I don't know. I don't know. It's just, um, I'm not sure I can.
+================================================================================
+
+
+================================================================================
+Case 138 | Transcript 96 turn 1 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, I can see why he'd be concerned. I do want a healthy baby.
+</internal>
+----------------------------------------
+Ground Truth:
+Uh, yeah, sure. Um, I guess, well, my doctor referred me to see you. Um, I guess he has some concerns about, um, my- my pregnancy and- and my baby. So, um, yeah, well, I'm doing what I'm told.
+================================================================================
+
+
+================================================================================
+Case 139 | Transcript 96 turn 41 | behavior_type=resistance
+Resistance: Arguing - Discounting
+----------------------------------------
+Prediction:
+<internal>
+Here we go again. Another brochure, another set of rules. It's just words on paper. They can't prove anything to me. My friends were fine. My mom had a glass with dinner when she was pregnant with me. This is just them trying to control me, to tell me what to do with my own body. I'm not some child. I know myself. I know what's right for me. But... part of me is listening. Because of the baby. What if... no. I'm not going to admit that. I'm not going to give in that easily. They have to do better than this. They have to show me real proof, not just scare tactics. I'm not convinced. I'm not.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah. It's just a fancy little brochure saying what I've already known, I've already heard.
+================================================================================
+
+
+================================================================================
+Case 140 | Transcript 96 turn 81 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, if it's the latest research and it's about protecting the baby, I guess I should listen. I'll think about cutting back.
+</internal>
+----------------------------------------
+Ground Truth:
+Um, well, it surprises me that that's based on research from out of 2011, um, and I must have missed that. I guess, you know, if it is, um, you know, I do wanna do what's best for my baby and for myself. And if I have to quit drinking, um, I guess ultimately I have to-I make that decision, um, but, um, that's a lot of, uh, information to take in today.
+================================================================================
+
+
+================================================================================
+Case 141 | Transcript 98 turn 1 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, my lawyer said I had to be here. I guess it's just part of the deal.
+----------------------------------------
+Ground Truth:
+Hi, Kathy, nice to meet you.
+================================================================================
+
+
+================================================================================
+Case 142 | Transcript 98 turn 41 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Okay, yeah, that sounds about right. I wasn't really keeping track.
+</internal>
+----------------------------------------
+Ground Truth:
+Five or six, something like that. Yeah.
+================================================================================
+
+
+================================================================================
+Case 143 | Transcript 98 turn 101 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess I have. It just seems like the practical thing to do.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah, a little bit.
+================================================================================
+
+
+================================================================================
+Case 144 | Transcript 98 turn 121 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+No, of course not. That's just between us.
+</internal>
+----------------------------------------
+Ground Truth:
+And, you know, I-- You're not gonna call my work or anything for this, are you?
+================================================================================
+
+
+================================================================================
+Case 145 | Transcript 98 turn 161 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, it felt like they were only around when I was drinking too. So I just started again to keep the peace.
+</internal>
+----------------------------------------
+Ground Truth:
+Probably 'cause I didn't- I wasn't drinking with them, I guess. I don't really know. I mean, it seemed, uh--
+================================================================================
+
+
+================================================================================
+Case 146 | Transcript 98 turn 181 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess that's true. I don't like being told what to do.
+</internal>
+----------------------------------------
+Ground Truth:
+Well, I guess. Sure. Yeah.
+================================================================================
+
+
+================================================================================
+Case 147 | Transcript 98 turn 201 | behavior_type=resistance
+Resistance: Denying - Blaming
+----------------------------------------
+Prediction:
+<internal>
+Okay, here we go again. She's asking about the good and bad. I just told her I drink to be social. That's it. That's the whole story. Why does she need to dig? The good is my friends are back. The bad is... well, the bad is this. Sitting here. The DUIs. But that's not the drinking's fault, that's just bad luck. She's gonna try and connect it all, I can feel it. She's gonna say the drinking is the problem. But it's not. The problem is getting caught. The problem is my ex trying to control me and keep me from my friends. If she hadn't done that, I wouldn't have felt so isolated. I wouldn't have needed to... No. I don't *need* to. I choose to. Because it's what we do. It's how we are together. Without that, what am I? I'm just alone. That's the real fear. Being alone. If I admit the drinking is the bad thing, then I have to give up the one thing that keeps me from being alone. I can't do that. So I have to keep it simple. Social. Just social. Nothing more to see here.
+</internal>
+----------------------------------------
+Ground Truth:
+I mean, if they wouldn't have gave me those shots, you know, towards the end of the night, I would've been all right. You know, I could have drove, and I wouldn't have, uh- I wouldn't have hit that mailbox.
+================================================================================
+
+
+================================================================================
+Case 148 | Transcript 98 turn 221 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess that's right. It was a pretty bad night.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah, Mary-Mary, just [crosstalk] Well, after-after I got the-the-- After I hit the mailbox-
+================================================================================
+
+
+================================================================================
+Case 149 | Transcript 98 turn 241 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess you could say that. It's easier to look back and see what went wrong.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah. You can blame hindsight a little bit. I mean, that works for me. [laughter]
+================================================================================
+
+
+================================================================================
+Case 150 | Transcript 98 turn 301 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that makes sense. I guess it's up to them to figure out their own ride home.
+</internal>
+----------------------------------------
+Ground Truth:
+Sure, I would think, yeah.
+================================================================================
+
+
+================================================================================
+Case 151 | Transcript 98 turn 321 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, that's a good point. I guess I could try to hang out with them without drinking and see how it goes.
+</internal>
+----------------------------------------
+Ground Truth:
+Yeah, they don't drink that much, but they-they seem to-- You know, like they do drink though, you know.
+================================================================================
+
+
+================================================================================
+Case 152 | Transcript 98 turn 361 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I guess that's what happens. It's just easier to have a drink with them so they stop. I don't like feeling left out.
+</internal>
+----------------------------------------
+Ground Truth:
+-they're just kinda like egging me on, I don't know.
+================================================================================
+
+
+================================================================================
+Case 153 | Transcript 98 turn 381 | behavior_type=normal
+----------------------------------------
+Prediction:
+<internal>
+Yeah, I think that would be a good idea. Is this gonna help like get my license back, like, at this-- Like, the-the plans that I've made, is that gonna really help me like...
+</internal>
+----------------------------------------
+Ground Truth:
+I think that would be a good idea. Uh, is this gonna help like get my license back, like, at this-- Like, the-the plans that I've made, is that gonna really help me like--
+================================================================================
+

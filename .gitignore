@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Results and test data
+results/*.json
+test_cases/*.json
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+.claude/
+
+# LLaMA-Factory 训练输出（不上传模型权重）
+saves/
+logs/
+wandb/
+
+# 数据转换输出（由 prepare_sft_data.py 生成，可重建）
+data/inner_monologue_sft.json
+data/inner_monologue_dpo.json
+
+# Large datasets and raw files
+data/raw/RED/
+data/raw/AnnoMI/
+data/processed/*.csv
+data/processed/*.json
+*.pyc
+__pycache__/
+.DS_Store
