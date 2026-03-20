@@ -1,0 +1,875 @@
+{
+  "summary": {
+    "total_filtered": 32,
+    "average_sustain_ratio": 0.28547689883238936,
+    "average_sustain_count": 17.25,
+    "min_sustain_ratio": 0.06818181818181818,
+    "max_sustain_ratio": 0.7222222222222222
+  },
+  "transcripts": [
+    {
+      "transcript_id": "95",
+      "mi_quality": "high",
+      "topic": "reducing self-harm",
+      "video_title": "MI 5 30 18",
+      "video_url": "https://www.youtube.com/watch?v=BhpTJMKVsmg",
+      "sustain_count": 13,
+      "change_count": 2,
+      "neutral_count": 3,
+      "total_client_utterances": 18,
+      "sustain_ratio": 0.7222222222222222,
+      "total_dialogue_turns": 36,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 1,
+          "text": "Um, okay. Just, I don't even know why I'm doing this anymore. I'm-I'm just so stupid. I'm such an idiot. I didn't know what the point of-of this is. I just- I just keep doing the same thing over and over, even though I know it can kill me. I just, I don't have any more willpower, ma'am. Yeah, [foreign language]."
+        },
+        {
+          "utterance_id": 3,
+          "text": "Mm-hmm."
+        },
+        {
+          "utterance_id": 5,
+          "text": "No, it just seems that cutting myself is the only way out. And I just get suicidal thoughts and [foreign language], I'm just very, very like depressed and what's going on at home."
+        }
+      ]
+    },
+    {
+      "transcript_id": "30",
+      "mi_quality": "high",
+      "topic": "charging battery",
+      "video_title": "MI role play 2",
+      "video_url": "https://www.youtube.com/watch?v=LTHpKc9olmA",
+      "sustain_count": 10,
+      "change_count": 0,
+      "neutral_count": 4,
+      "total_client_utterances": 14,
+      "sustain_ratio": 0.7142857142857143,
+      "total_dialogue_turns": 29,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 1,
+          "text": "I don't know, and I still don't wanna charge it."
+        },
+        {
+          "utterance_id": 3,
+          "text": "No. I got a lot of stuff to do, I don't need to charge it."
+        },
+        {
+          "utterance_id": 5,
+          "text": "No."
+        }
+      ]
+    },
+    {
+      "transcript_id": "24",
+      "mi_quality": "high",
+      "topic": "smoking cessation ",
+      "video_title": "The Effective Pharmacist: Motivational Interviewing Demonstration",
+      "video_url": "https://www.youtube.com/watch?v=5UU63mfNnD4",
+      "sustain_count": 7,
+      "change_count": 3,
+      "neutral_count": 1,
+      "total_client_utterances": 11,
+      "sustain_ratio": 0.6363636363636364,
+      "total_dialogue_turns": 22,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 1,
+          "text": "Yeah, I hope so. Um, my workplace has just gone smoke-free. I-I'm not-not very happy about it. I'm gonna keep smoking, but I was wondering if there's anything that-that can help me like get through the day. It's like, you know, go get my beer and smoke cigarettes after work."
+        },
+        {
+          "utterance_id": 3,
+          "text": "No. I'm not gonna quit smoking. I mean, I like it. It helps me relax. So, I mean, I don't see what the big deal is."
+        },
+        {
+          "utterance_id": 5,
+          "text": "I mean, I smoke a little less than a pack a day. It's not too bad. Um, I've probably smoked for the last five years, but I-I-I mean, could quit if I wanted to, but I don't really want to right now."
+        }
+      ]
+    },
+    {
+      "transcript_id": "1",
+      "mi_quality": "high",
+      "topic": "reducing alcohol consumption",
+      "video_title": "NEW VIDEO: Brief intervention: \"Dave\"",
+      "video_url": "https://www.youtube.com/watch?v=g2v2sfwfQ84",
+      "sustain_count": 9,
+      "change_count": 2,
+      "neutral_count": 7,
+      "total_client_utterances": 18,
+      "sustain_ratio": 0.5,
+      "total_dialogue_turns": 37,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 3,
+          "text": "Yeah, but only on the weekend."
+        },
+        {
+          "utterance_id": 7,
+          "text": "So, uh, are you saying I drink too much?"
+        },
+        {
+          "utterance_id": 9,
+          "text": "Well, I-- If-if I was getting fallen down drunk or if I drink every night. Um, it's not like I get sloppy drunk or anything."
+        }
+      ]
+    },
+    {
+      "transcript_id": "81",
+      "mi_quality": "high",
+      "topic": "taking medicine / following medical procedure",
+      "video_title": "Using Open Ended Questions in Home Visiting/OARS/Motivational Interviewing",
+      "video_url": "https://www.youtube.com/watch?v=x0Vcfmg05kc",
+      "sustain_count": 4,
+      "change_count": 2,
+      "neutral_count": 3,
+      "total_client_utterances": 9,
+      "sustain_ratio": 0.4444444444444444,
+      "total_dialogue_turns": 21,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 5,
+          "text": "Uh, scary I guess."
+        },
+        {
+          "utterance_id": 9,
+          "text": "I know you want me to see the doctor, I haven't called yet."
+        },
+        {
+          "utterance_id": 11,
+          "text": "I don't know. It seems overwhelming to me."
+        }
+      ]
+    },
+    {
+      "transcript_id": "11",
+      "mi_quality": "high",
+      "topic": "reducing recidivism",
+      "video_title": "Motivational Interviewing in Juvenile Justice Settings - 1",
+      "video_url": "https://www.youtube.com/watch?v=M-i6-BNkCTo",
+      "sustain_count": 3,
+      "change_count": 0,
+      "neutral_count": 4,
+      "total_client_utterances": 7,
+      "sustain_ratio": 0.42857142857142855,
+      "total_dialogue_turns": 15,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 3,
+          "text": "It's not a lot though."
+        },
+        {
+          "utterance_id": 5,
+          "text": "It's not like I was gonna sell it or anything. It's like—"
+        },
+        {
+          "utterance_id": 7,
+          "text": "Yeah, whatever, you know. It's California, no one cares."
+        }
+      ]
+    },
+    {
+      "transcript_id": "13",
+      "mi_quality": "high",
+      "topic": "taking medicine / following medical procedure",
+      "video_title": "Using Motivational Interviewing to address vaccine hesitancy (microskills annotated)",
+      "video_url": "https://www.youtube.com/watch?v=8cf8MVgAA7A",
+      "sustain_count": 3,
+      "change_count": 2,
+      "neutral_count": 2,
+      "total_client_utterances": 7,
+      "sustain_ratio": 0.42857142857142855,
+      "total_dialogue_turns": 14,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 1,
+          "text": "Oh, I-I don't know if I'm comfortable with that. I've been reading a bunch of stuff lately about them."
+        },
+        {
+          "utterance_id": 3,
+          "text": "Uh, yeah, well, I was just- I was reading that it's better to let them build up their immunity, like, naturally and stuff in their immune systems."
+        },
+        {
+          "utterance_id": 5,
+          "text": "Well, yeah. I mean, I had chickenpox as a kid, and now I'm immune. Right? So."
+        }
+      ]
+    },
+    {
+      "transcript_id": "28",
+      "mi_quality": "high",
+      "topic": "smoking cessation ",
+      "video_title": "Monkey on My Back - Part 1",
+      "video_url": "https://www.youtube.com/watch?v=DXI2N8kEPAs",
+      "sustain_count": 25,
+      "change_count": 14,
+      "neutral_count": 22,
+      "total_client_utterances": 61,
+      "sustain_ratio": 0.4098360655737705,
+      "total_dialogue_turns": 123,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 29,
+          "text": "-unsuccessfully, uh,--"
+        },
+        {
+          "utterance_id": 31,
+          "text": "Well, um, I don't know if it's my lack of willpower but, um, also had ve-very bad side effects from it so."
+        },
+        {
+          "utterance_id": 33,
+          "text": "Um, I had nightmares-"
+        }
+      ]
+    },
+    {
+      "transcript_id": "19",
+      "mi_quality": "high",
+      "topic": "reducing recidivism",
+      "video_title": "How to Do Motivational Interviewing (MI) Role Play - 3",
+      "video_url": "https://www.youtube.com/watch?v=wcu8oqHIsbc",
+      "sustain_count": 3,
+      "change_count": 4,
+      "neutral_count": 1,
+      "total_client_utterances": 8,
+      "sustain_ratio": 0.375,
+      "total_dialogue_turns": 17,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 9,
+          "text": "Right. I don't know what I'm gonna do, I got some friends. These guys are-- they're bad news, but they're my friends."
+        },
+        {
+          "utterance_id": 11,
+          "text": "And, uh, and it's fun."
+        },
+        {
+          "utterance_id": 15,
+          "text": "Nothing-nothing much else going on that's as fun as this. We go in, we steal these CDs. It was working out fine, but—"
+        }
+      ]
+    },
+    {
+      "transcript_id": "85",
+      "mi_quality": "high",
+      "topic": "taking medicine / following medical procedure",
+      "video_title": "Motivational Interviewing Change Talk: My Meds Make Me Mad",
+      "video_url": "https://www.youtube.com/watch?v=U32rGyGrd90",
+      "sustain_count": 22,
+      "change_count": 9,
+      "neutral_count": 34,
+      "total_client_utterances": 65,
+      "sustain_ratio": 0.3384615384615385,
+      "total_dialogue_turns": 131,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 17,
+          "text": "Oh, that makes me f-- Yeah, that makes me feel-"
+        },
+        {
+          "utterance_id": 19,
+          "text": "-relaxed."
+        },
+        {
+          "utterance_id": 21,
+          "text": "I need that."
+        }
+      ]
+    },
+    {
+      "transcript_id": "107",
+      "mi_quality": "high",
+      "topic": "reducing self-harm",
+      "video_title": "Marsha Linehan DBT with Suicidal Clients Video",
+      "video_url": "https://www.youtube.com/watch?v=x0Iky4NWN2U",
+      "sustain_count": 3,
+      "change_count": 0,
+      "neutral_count": 6,
+      "total_client_utterances": 9,
+      "sustain_ratio": 0.3333333333333333,
+      "total_dialogue_turns": 18,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 13,
+          "text": "I think have you ever been to an ER when you cut yourself, you'd know why I don't go."
+        },
+        {
+          "utterance_id": 15,
+          "text": "I was thinking about killing myself. You thought you would help me and you didn't. That's what I want to talk about. I wanna talk about how it is that my life is not going better and you are not helping me, and you are not available to me when I need help."
+        },
+        {
+          "utterance_id": 17,
+          "text": "I cut myself the first time I called you thinking you would help me, you wouldn't help me so then I figured, what the hell I [chuckles] might as well just go all the way. And so, that's why I cut myself that deep."
+        }
+      ]
+    },
+    {
+      "transcript_id": "129",
+      "mi_quality": "high",
+      "topic": "birth control",
+      "video_title": "Doctor Uses Motivational Interviewing to Discuss Contraception",
+      "video_url": "https://www.youtube.com/watch?v=fX2Frhh-dvk",
+      "sustain_count": 6,
+      "change_count": 0,
+      "neutral_count": 12,
+      "total_client_utterances": 18,
+      "sustain_ratio": 0.3333333333333333,
+      "total_dialogue_turns": 36,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 16,
+          "text": "Um, I don't really want to go there. I just-- that sort of stuff just weirds me out. Yeah, I take something fun and just makes it really medical."
+        },
+        {
+          "utterance_id": 18,
+          "text": "No."
+        },
+        {
+          "utterance_id": 20,
+          "text": "Yeah, I mean I'm-I'm careful. I do what I can, but I don't wanna take anything for that."
+        }
+      ]
+    },
+    {
+      "transcript_id": "65",
+      "mi_quality": "high",
+      "topic": "smoking cessation",
+      "video_title": "Motivational Interviewing for Health Issues Video",
+      "video_url": "https://www.youtube.com/watch?v=wCbYXsQd9u8",
+      "sustain_count": 6,
+      "change_count": 2,
+      "neutral_count": 10,
+      "total_client_utterances": 18,
+      "sustain_ratio": 0.3333333333333333,
+      "total_dialogue_turns": 35,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 6,
+          "text": "Now the downside to that is I'm gonna gain weight."
+        },
+        {
+          "utterance_id": 8,
+          "text": "That means a new wardrobe, which I'd like to have, but I can't afford it."
+        },
+        {
+          "utterance_id": 16,
+          "text": "Um, withdrawal."
+        }
+      ]
+    },
+    {
+      "transcript_id": "122",
+      "mi_quality": "high",
+      "topic": "unidentifiable",
+      "video_title": "Motivational Interviewing for Adolescent Substance Use - 1",
+      "video_url": "https://www.youtube.com/watch?v=K-zJme3RTzM",
+      "sustain_count": 4,
+      "change_count": 0,
+      "neutral_count": 9,
+      "total_client_utterances": 13,
+      "sustain_ratio": 0.3076923076923077,
+      "total_dialogue_turns": 26,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 0,
+          "text": "Well, I'm here because my mom wants me to be here."
+        },
+        {
+          "utterance_id": 2,
+          "text": "I don't really wanna be here, but it-it-- whatever."
+        },
+        {
+          "utterance_id": 8,
+          "text": "Um, I've been hanging out with a new cool crowd of people that I really like."
+        }
+      ]
+    },
+    {
+      "transcript_id": "113",
+      "mi_quality": "high",
+      "topic": "smoking cessation",
+      "video_title": "Dr. Marilyn Herie - MI Skills - Tobacco Cessation - Pre-contemplative Stage www.teachproject.ca",
+      "video_url": "https://www.youtube.com/watch?v=_YOULz-MPaU",
+      "sustain_count": 7,
+      "change_count": 6,
+      "neutral_count": 12,
+      "total_client_utterances": 25,
+      "sustain_ratio": 0.28,
+      "total_dialogue_turns": 50,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 3,
+          "text": "Well, I came today because my daughter's in the hospital as well. I think it's important to quit, but I enjoy smoking. I'm not ready to give it up right now. My life is too much in turmoil."
+        },
+        {
+          "utterance_id": 9,
+          "text": "Well, that's true. It seems so hard. I'm just not ready for this right now."
+        },
+        {
+          "utterance_id": 11,
+          "text": "It's very enjoyable, relaxing, you know, a stress reliever. When I'm at work, we all go out and smoke and chit chat and, you know, talk about things. I would hate to not smoke, really. I'd be left out."
+        }
+      ]
+    },
+    {
+      "transcript_id": "111",
+      "mi_quality": "high",
+      "topic": "reducing drug use; following medical procedure",
+      "video_title": "Anatomy of a Brief Intervention",
+      "video_url": "https://www.youtube.com/watch?v=soBpcZUdSf4",
+      "sustain_count": 8,
+      "change_count": 7,
+      "neutral_count": 14,
+      "total_client_utterances": 29,
+      "sustain_ratio": 0.27586206896551724,
+      "total_dialogue_turns": 59,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 11,
+          "text": "It's not a big deal. It's just like a couple times a week to relax."
+        },
+        {
+          "utterance_id": 13,
+          "text": "Yeah. I mean, I'm here on an academic scholarship so I have to keep my grades up and I'm on the debate team, so there's a lot going on."
+        },
+        {
+          "utterance_id": 17,
+          "text": "I've always been an anxious person. Pot just helps me calm my nerves. I'm I in trouble?"
+        }
+      ]
+    },
+    {
+      "transcript_id": "114",
+      "mi_quality": "high",
+      "topic": "reducing alcohol consumption",
+      "video_title": "A Motivational Interviewing Approach to Student Conduct - 2",
+      "video_url": "https://youtu.be/NSyKhmEG3f4",
+      "sustain_count": 3,
+      "change_count": 5,
+      "neutral_count": 4,
+      "total_client_utterances": 12,
+      "sustain_ratio": 0.25,
+      "total_dialogue_turns": 24,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 3,
+          "text": "Yeah. That's-that's exactly how it happened. I mean, I'm a normal college kid. I like to drink and hanging out with my buddies. I mean, I, it wasn't a big house party or anything and I got busted."
+        },
+        {
+          "utterance_id": 7,
+          "text": "Um, well, I wanna say I have a drinking problem. I think I'd probably have more of a, like getting caught problem. I mean, my friends, they-they drink like fishes and I-- they don't ever get caught and you got me over here and I get caught and they left."
+        },
+        {
+          "utterance_id": 9,
+          "text": "I guess- I guess more problems with police and school and I really don't have like the time or the money for any of that."
+        }
+      ]
+    },
+    {
+      "transcript_id": "96",
+      "mi_quality": "high",
+      "topic": "reducing alcohol consumption",
+      "video_title": "Motivational Interviewing: Talking With a Pregnant Woman About Her Alcohol Use",
+      "video_url": "https://www.youtube.com/watch?v=ZYhtMBUT20A",
+      "sustain_count": 9,
+      "change_count": 3,
+      "neutral_count": 34,
+      "total_client_utterances": 46,
+      "sustain_ratio": 0.1956521739130435,
+      "total_dialogue_turns": 92,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 5,
+          "text": "Uh, no."
+        },
+        {
+          "utterance_id": 9,
+          "text": "Um, okay. Uh, well, I guess I drink like a glass of wine at supper every night, and just to, you know, relax a little with my friends if I go out. So wine has always been a kind of a family tradition with supper. So-"
+        },
+        {
+          "utterance_id": 13,
+          "text": "Yeah, and I, you know, I-I have friends who have drank during pregnancy, and-and I see articles on Facebook and-and, you know, things that show that there isn't really a clear link between, you know, abnormalities or, uh, yeah, I just- I just think it's kind of an old wives' tale. So, you know, I'm independent and I'm gonna- I'm gonna do what I want, it's my body."
+        }
+      ]
+    },
+    {
+      "transcript_id": "66",
+      "mi_quality": "high",
+      "topic": "diabetes management",
+      "video_title": "ComMIt Diabetes Dialogue with MI",
+      "video_url": "https://www.youtube.com/watch?v=k_oGpP-7x6Q&feature=youtu.be",
+      "sustain_count": 29,
+      "change_count": 73,
+      "neutral_count": 48,
+      "total_client_utterances": 150,
+      "sustain_ratio": 0.19333333333333333,
+      "total_dialogue_turns": 310,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 5,
+          "text": "Yeah. I'm supposed to learn how to manage it. I just learned that I got diabetes and apparently, it's pretty bad 'cause, uh, she said my blood sugar was sky high, and then she laid all these huge consequences on things that can happen. That just sounds so disastrous and, uh, and then she told me I gotta do all this stuff. And man, I'm just sort of disappointed right now."
+        },
+        {
+          "utterance_id": 5,
+          "text": "Yeah. I'm supposed to learn how to manage it. I just learned that I got diabetes and apparently, it's pretty bad 'cause, uh, she said my blood sugar was sky high, and then she laid all these huge consequences on things that can happen. That just sounds so disastrous and, uh, and then she told me I gotta do all this stuff. And man, I'm just sort of disappointed right now."
+        },
+        {
+          "utterance_id": 5,
+          "text": "Yeah. I'm supposed to learn how to manage it. I just learned that I got diabetes and apparently, it's pretty bad 'cause, uh, she said my blood sugar was sky high, and then she laid all these huge consequences on things that can happen. That just sounds so disastrous and, uh, and then she told me I gotta do all this stuff. And man, I'm just sort of disappointed right now."
+        }
+      ]
+    },
+    {
+      "transcript_id": "133",
+      "mi_quality": "high",
+      "topic": "reducing recidivism",
+      "video_title": "Motivational interviewing: Ken interviews Daryl",
+      "video_url": "https://www.youtube.com/watch?v=MOVj0FoOxpk&t=279s",
+      "sustain_count": 35,
+      "change_count": 78,
+      "neutral_count": 77,
+      "total_client_utterances": 190,
+      "sustain_ratio": 0.18421052631578946,
+      "total_dialogue_turns": 381,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 5,
+          "text": "I've been thinking about how easy it would be to deal P again."
+        },
+        {
+          "utterance_id": 7,
+          "text": "I mean, I've been thinking about, um, how I could actually set myself up the right way doing it the wrong way."
+        },
+        {
+          "utterance_id": 11,
+          "text": "Well, at the end of, you know, that last week inside, I was- I had that kind of, okay, what's next buzz? And, you know, it just doesn't work out here."
+        }
+      ]
+    },
+    {
+      "transcript_id": "61",
+      "mi_quality": "high",
+      "topic": "increasing activity; taking medicine / following medical procedure",
+      "video_title": "MI Scenario 2 web training",
+      "video_url": "https://www.youtube.com/watch?v=yfUZMICDz5A",
+      "sustain_count": 11,
+      "change_count": 22,
+      "neutral_count": 30,
+      "total_client_utterances": 63,
+      "sustain_ratio": 0.1746031746031746,
+      "total_dialogue_turns": 126,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 7,
+          "text": "Yeah and, um, it was very-very beautiful to see and the instructor was very nice, but I felt kind of self-conscious because I'm still in my walker."
+        },
+        {
+          "utterance_id": 9,
+          "text": "And I had to sit in the chair. I couldn't, you know, do what they were doing."
+        },
+        {
+          "utterance_id": 11,
+          "text": "So, it's-- it was-- I simply felt self-conscious."
+        }
+      ]
+    },
+    {
+      "transcript_id": "109",
+      "mi_quality": "high",
+      "topic": "smoking cessation",
+      "video_title": "The Effective Dentist: Motivational Interviewing Demonstration",
+      "video_url": "https://www.youtube.com/watch?v=f8QSA_5PEFM&t=350s",
+      "sustain_count": 37,
+      "change_count": 101,
+      "neutral_count": 92,
+      "total_client_utterances": 230,
+      "sustain_ratio": 0.1608695652173913,
+      "total_dialogue_turns": 460,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 5,
+          "text": "Tobacco. Well, I don't smoke cigarettes. I've never smoked cigarettes. I do go out with my friends. Um, you know, we go out to bars and, you know, we'll have a few drinks and smoke some of those little cigarillo-type things. I mean I wouldn't even think of them as cigars and they're certainly not cigarettes. Um, and I mean I'll have one or two of those in an evening with, uh, with my friends but certainly not 20 or 30 of them a day like you would with cigarettes and that's the only thing that could possibly have anything to do with tobacco."
+        },
+        {
+          "utterance_id": 5,
+          "text": "Tobacco. Well, I don't smoke cigarettes. I've never smoked cigarettes. I do go out with my friends. Um, you know, we go out to bars and, you know, we'll have a few drinks and smoke some of those little cigarillo-type things. I mean I wouldn't even think of them as cigars and they're certainly not cigarettes. Um, and I mean I'll have one or two of those in an evening with, uh, with my friends but certainly not 20 or 30 of them a day like you would with cigarettes and that's the only thing that could possibly have anything to do with tobacco."
+        },
+        {
+          "utterance_id": 5,
+          "text": "Tobacco. Well, I don't smoke cigarettes. I've never smoked cigarettes. I do go out with my friends. Um, you know, we go out to bars and, you know, we'll have a few drinks and smoke some of those little cigarillo-type things. I mean I wouldn't even think of them as cigars and they're certainly not cigarettes. Um, and I mean I'll have one or two of those in an evening with, uh, with my friends but certainly not 20 or 30 of them a day like you would with cigarettes and that's the only thing that could possibly have anything to do with tobacco."
+        }
+      ]
+    },
+    {
+      "transcript_id": "34",
+      "mi_quality": "high",
+      "topic": "reducing alcohol consumption",
+      "video_title": "Motivational Interviewing: Discussing Alcohol Use With a Pregnant Woman",
+      "video_url": "https://www.youtube.com/watch?v=V2yXX7M8egw",
+      "sustain_count": 9,
+      "change_count": 20,
+      "neutral_count": 29,
+      "total_client_utterances": 58,
+      "sustain_ratio": 0.15517241379310345,
+      "total_dialogue_turns": 117,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 25,
+          "text": "Well, I know, like, they say not to, but I thought because my friends didn't really care, I thought, \"Okay. Like maybe-maybe it doesn't matter. Maybe it's just what they tell you.\" Just like drinking, in general, is bad."
+        },
+        {
+          "utterance_id": 33,
+          "text": "Um, I'm definitely it's not-- I think I could probably do it. It's just- it-it comes hard when you're, like, in that moment. You're around your friends and they're drinking and you don't wanna be- you don't wanna be the mom at that moment. You wanna be yourself. You wanna be who you were before."
+        },
+        {
+          "utterance_id": 35,
+          "text": "And so many people, when they have kids, they just vanish from their friends. And I don't wanna be that person. I don't wanna be that person that just has a kid and they're completely-completely different."
+        }
+      ]
+    },
+    {
+      "transcript_id": "121",
+      "mi_quality": "high",
+      "topic": "diabetes management",
+      "video_title": "MI in health care",
+      "video_url": "https://www.youtube.com/watch?v=dDygm-rh6hk",
+      "sustain_count": 40,
+      "change_count": 92,
+      "neutral_count": 167,
+      "total_client_utterances": 299,
+      "sustain_ratio": 0.13377926421404682,
+      "total_dialogue_turns": 598,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 15,
+          "text": "And it revealed that apparently, I might have diabetes 2. Well, that's what he says."
+        },
+        {
+          "utterance_id": 17,
+          "text": "Um, I-I think that I feel perfectly well. I-I'm, you know-- I understand people with diabetes are a little bit plumper than I am."
+        },
+        {
+          "utterance_id": 19,
+          "text": "But, um, that's really why I'm here. I'm on his command, almost."
+        }
+      ]
+    },
+    {
+      "transcript_id": "56",
+      "mi_quality": "high",
+      "topic": "more exercise / increasing activity",
+      "video_title": "MI Scenario 3 web training",
+      "video_url": "https://www.youtube.com/watch?v=XyqPdDB4dZk",
+      "sustain_count": 111,
+      "change_count": 184,
+      "neutral_count": 575,
+      "total_client_utterances": 870,
+      "sustain_ratio": 0.12758620689655173,
+      "total_dialogue_turns": 1750,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 9,
+          "text": "Well, um. I-I didn't get- go to physical therapy this week, and the- or Tai Chi, actually."
+        },
+        {
+          "utterance_id": 9,
+          "text": "Well, um. I-I didn't get- go to physical therapy this week, and the- or Tai Chi, actually."
+        },
+        {
+          "utterance_id": 9,
+          "text": "Well, um. I-I didn't get- go to physical therapy this week, and the- or Tai Chi, actually."
+        }
+      ]
+    },
+    {
+      "transcript_id": "7",
+      "mi_quality": "high",
+      "topic": "reducing alcohol consumption",
+      "video_title": "Doctor Uses Motivational Interviewing to Discuss Alcohol Use",
+      "video_url": "https://www.youtube.com/watch?v=_HpKn29oCD0",
+      "sustain_count": 41,
+      "change_count": 66,
+      "neutral_count": 223,
+      "total_client_utterances": 330,
+      "sustain_ratio": 0.12424242424242424,
+      "total_dialogue_turns": 660,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 5,
+          "text": "It was a lot of fun but I didn't do any dancing after that."
+        },
+        {
+          "utterance_id": 5,
+          "text": "It was a lot of fun but I didn't do any dancing after that."
+        },
+        {
+          "utterance_id": 7,
+          "text": "Uh, sure, uh, as long as we don't talk too much about like vodka 'cause I'm still, ugh, a little—"
+        }
+      ]
+    },
+    {
+      "transcript_id": "21",
+      "mi_quality": "high",
+      "topic": "reducing alcohol consumption",
+      "video_title": "The Effective School Counselor With a Lower-Risk Teen: Motivational Interviewing Demonstration",
+      "video_url": "https://www.youtube.com/watch?v=v21ZLg8n8do",
+      "sustain_count": 14,
+      "change_count": 38,
+      "neutral_count": 73,
+      "total_client_utterances": 125,
+      "sustain_ratio": 0.112,
+      "total_dialogue_turns": 248,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 67,
+          "text": "Um, not much, maybe like one or two drinks at the most."
+        },
+        {
+          "utterance_id": 83,
+          "text": "Not really much."
+        },
+        {
+          "utterance_id": 89,
+          "text": "Or, even if it's not a party, like a small social gathering, maybe there'll be like a few beers around-"
+        }
+      ]
+    },
+    {
+      "transcript_id": "84",
+      "mi_quality": "high",
+      "topic": "reducing recidivism",
+      "video_title": "Motivational Techniques - Margaret interview Billy - 1",
+      "video_url": "https://www.youtube.com/watch?v=3_KZkxveh70",
+      "sustain_count": 13,
+      "change_count": 13,
+      "neutral_count": 91,
+      "total_client_utterances": 117,
+      "sustain_ratio": 0.1111111111111111,
+      "total_dialogue_turns": 235,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 41,
+          "text": "Well, not too high. It's not like I'm out killing people or anything. It's just-"
+        },
+        {
+          "utterance_id": 43,
+          "text": "-silly stuff."
+        },
+        {
+          "utterance_id": 63,
+          "text": "Yeah, but I don't think what I'm doing is that bad."
+        }
+      ]
+    },
+    {
+      "transcript_id": "98",
+      "mi_quality": "high",
+      "topic": "avoiding DOI",
+      "video_title": "My Lawyer Sent Me",
+      "video_url": "https://www.youtube.com/watch?v=Vc_Hv1xiV4Y",
+      "sustain_count": 21,
+      "change_count": 22,
+      "neutral_count": 154,
+      "total_client_utterances": 197,
+      "sustain_ratio": 0.1065989847715736,
+      "total_dialogue_turns": 394,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 15,
+          "text": "And then, you know, um, I guess I'm here 'cause my lawyer wants me to go through an assessment-"
+        },
+        {
+          "utterance_id": 51,
+          "text": "Um, sometimes I drink, um, you know, maybe one or two, and then I- and then I won't drink for a while, you know. So, it's not really a-- There's not really a pattern-"
+        },
+        {
+          "utterance_id": 53,
+          "text": "-you know, it's not really like a uh- it's not a habit, you know,"
+        }
+      ]
+    },
+    {
+      "transcript_id": "5",
+      "mi_quality": "high",
+      "topic": "reducing recidivism",
+      "video_title": "Motivational Techniques - Margaret interview Billy - 3",
+      "video_url": "https://www.youtube.com/watch?v=3_KZkxveh70",
+      "sustain_count": 9,
+      "change_count": 25,
+      "neutral_count": 67,
+      "total_client_utterances": 101,
+      "sustain_ratio": 0.0891089108910891,
+      "total_dialogue_turns": 203,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 79,
+          "text": "Like like getting on the piss, but with Donna, there kind of keeps me busy."
+        },
+        {
+          "utterance_id": 83,
+          "text": "Yeah. I just wanna have a bit of a laugh and like go smash some windows or go and nick a car or something, but yeah. It's kind of harder to think straight."
+        },
+        {
+          "utterance_id": 91,
+          "text": "I'd probably just go be stupid with my mates."
+        }
+      ]
+    },
+    {
+      "transcript_id": "55",
+      "mi_quality": "high",
+      "topic": "reducing drug use",
+      "video_title": "NEW VIDEO: Brief intervention: \"Miguel\"",
+      "video_url": "https://www.youtube.com/watch?v=7nevSz5-dhc",
+      "sustain_count": 28,
+      "change_count": 73,
+      "neutral_count": 219,
+      "total_client_utterances": 320,
+      "sustain_ratio": 0.0875,
+      "total_dialogue_turns": 650,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 23,
+          "text": "Uh, yeah. Yeah, if it's, uh, you know, if it's been a couple of days like I can go two days, three days tops before I start to feel really sick."
+        },
+        {
+          "utterance_id": 23,
+          "text": "Uh, yeah. Yeah, if it's, uh, you know, if it's been a couple of days like I can go two days, three days tops before I start to feel really sick."
+        },
+        {
+          "utterance_id": 25,
+          "text": "Uh, geez. Yeah, I mean, it's the obvious stuff like my stomach feels sick, I get the body aches, uh, cold, hot, chills. Uh, everything hurts. Everything is in extremes. My emotions are in extremes. Uh, yeah, it sucks. I don't want to do anything. I just want to stay home and just stay in bed."
+        }
+      ]
+    },
+    {
+      "transcript_id": "64",
+      "mi_quality": "high",
+      "topic": "reducing drug use",
+      "video_title": "Ricky and Ian",
+      "video_url": "https://www.youtube.com/watch?v=uH38Bxe3Lzw",
+      "sustain_count": 9,
+      "change_count": 28,
+      "neutral_count": 95,
+      "total_client_utterances": 132,
+      "sustain_ratio": 0.06818181818181818,
+      "total_dialogue_turns": 262,
+      "sample_sustain_utterances": [
+        {
+          "utterance_id": 35,
+          "text": "Yeah, or well, not to that extent, you know what I mean? Like, I-I would-- l didn't think I was at anywhere near a point that I would need to be sat down and intervened with-"
+        },
+        {
+          "utterance_id": 73,
+          "text": "Yeah. It's that sort of- that sorta scene, that kind of, um, gay scene, I guess. And, like, it's not something I'd really thought about before and-- But then kinda hung out there and just met these people that were sort of like you don't really get there much Palmy. Well, I mean I suppose you do, but they're not-- You know, in Auckland bars like that you can just-- Uh, you can just be it out in the open, you know, and I suppose in Palmy you can't as easily. Um, so just to arrive and see that and kind of meet these people that were just really friendly, you know, and-and not judge me into it. I don't know. You know, Palmy often is they're sort of like, \"Oh, you've gotta own a car, and soap it up, and drive up and down the Main Street,\" and I just couldn't give a shit about that, you know, so. Or play rugby and, you know, that didn't interest me at all and sorta come here and have people, you know, talk about interesting stuff and have a good time. I just want to go out and dance and stuff like that. Um, that was quite cool for me to know that that existed because I hadn't seen that before and-and I suppose there's a lot of that that goes on there, you know?"
+        },
+        {
+          "utterance_id": 74,
+          "text": "It's quite a heavy party scene most weekends and stuff. So it kind of goes hand in hand with that really, and just, you know, I guess when I have-have a slight-- I don't know, you just feel really good, I guess. Just feel, like, happy, and excited, and just to be surrounded by people that, you know, really care about you, and love you and-- Coming from a place where y-you didn't-- don't get that as much, it's just really cool, you know, to-to be able to go, \"Okay, on this day I can take this.\" And it's just that instant, like, \"I know- I know I'll feel good.\" I guess that's part of it."
+        }
+      ]
+    }
+  ]
+}

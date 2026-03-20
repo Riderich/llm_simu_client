@@ -35,9 +35,9 @@ wheels/
 *~
 .DS_Store
 
-# Results and test data
-results/*.json
-test_cases/*.json
+# Results and test data (included per user request)
+# results/*.json
+# test_cases/*.json
 
 # Logs
 *.log
@@ -52,15 +52,14 @@ saves/
 logs/
 wandb/
 
-# 数据转换输出（由 prepare_sft_data.py 生成，可重建）
-data/inner_monologue_sft.json
-data/inner_monologue_dpo.json
+# 数据转换输出（已包含）
 
 # Large datasets and raw files
 data/raw/RED/
 data/raw/AnnoMI/
-data/processed/*.csv
-data/processed/*.json
+# 允许处理后的中间数据上传
+# data/processed/*.csv
+# data/processed/*.json
 *.pyc
 __pycache__/
 .DS_Store

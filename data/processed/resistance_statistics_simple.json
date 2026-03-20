@@ -1,0 +1,265 @@
+{
+  "summary": {
+    "total_extracted": 32,
+    "source_full_version": "AnnoMI-high-resistance.json",
+    "extraction_date": "2026-02-08"
+  },
+  "transcripts": [
+    {
+      "transcript_id": "1",
+      "topic": "reducing alcohol consumption",
+      "mi_quality": "high",
+      "total_dialogue_turns": 37,
+      "client_turns": 18,
+      "video_title": "NEW VIDEO: Brief intervention: \"Dave\""
+    },
+    {
+      "transcript_id": "5",
+      "topic": "reducing recidivism",
+      "mi_quality": "high",
+      "total_dialogue_turns": 203,
+      "client_turns": 101,
+      "video_title": "Motivational Techniques - Margaret interview Billy - 3"
+    },
+    {
+      "transcript_id": "7",
+      "topic": "reducing alcohol consumption",
+      "mi_quality": "high",
+      "total_dialogue_turns": 660,
+      "client_turns": 330,
+      "video_title": "Doctor Uses Motivational Interviewing to Discuss Alcohol Use"
+    },
+    {
+      "transcript_id": "11",
+      "topic": "reducing recidivism",
+      "mi_quality": "high",
+      "total_dialogue_turns": 15,
+      "client_turns": 7,
+      "video_title": "Motivational Interviewing in Juvenile Justice Settings - 1"
+    },
+    {
+      "transcript_id": "13",
+      "topic": "taking medicine / following medical procedure",
+      "mi_quality": "high",
+      "total_dialogue_turns": 14,
+      "client_turns": 7,
+      "video_title": "Using Motivational Interviewing to address vaccine hesitancy (microskills annotated)"
+    },
+    {
+      "transcript_id": "19",
+      "topic": "reducing recidivism",
+      "mi_quality": "high",
+      "total_dialogue_turns": 17,
+      "client_turns": 8,
+      "video_title": "How to Do Motivational Interviewing (MI) Role Play - 3"
+    },
+    {
+      "transcript_id": "21",
+      "topic": "reducing alcohol consumption",
+      "mi_quality": "high",
+      "total_dialogue_turns": 248,
+      "client_turns": 125,
+      "video_title": "The Effective School Counselor With a Lower-Risk Teen: Motivational Interviewing Demonstration"
+    },
+    {
+      "transcript_id": "24",
+      "topic": "smoking cessation ",
+      "mi_quality": "high",
+      "total_dialogue_turns": 22,
+      "client_turns": 11,
+      "video_title": "The Effective Pharmacist: Motivational Interviewing Demonstration"
+    },
+    {
+      "transcript_id": "28",
+      "topic": "smoking cessation ",
+      "mi_quality": "high",
+      "total_dialogue_turns": 123,
+      "client_turns": 61,
+      "video_title": "Monkey on My Back - Part 1"
+    },
+    {
+      "transcript_id": "30",
+      "topic": "charging battery",
+      "mi_quality": "high",
+      "total_dialogue_turns": 29,
+      "client_turns": 14,
+      "video_title": "MI role play 2"
+    },
+    {
+      "transcript_id": "34",
+      "topic": "reducing alcohol consumption",
+      "mi_quality": "high",
+      "total_dialogue_turns": 117,
+      "client_turns": 58,
+      "video_title": "Motivational Interviewing: Discussing Alcohol Use With a Pregnant Woman"
+    },
+    {
+      "transcript_id": "55",
+      "topic": "reducing drug use",
+      "mi_quality": "high",
+      "total_dialogue_turns": 650,
+      "client_turns": 320,
+      "video_title": "NEW VIDEO: Brief intervention: \"Miguel\""
+    },
+    {
+      "transcript_id": "56",
+      "topic": "more exercise / increasing activity",
+      "mi_quality": "high",
+      "total_dialogue_turns": 1750,
+      "client_turns": 870,
+      "video_title": "MI Scenario 3 web training"
+    },
+    {
+      "transcript_id": "61",
+      "topic": "increasing activity; taking medicine / following medical procedure",
+      "mi_quality": "high",
+      "total_dialogue_turns": 126,
+      "client_turns": 63,
+      "video_title": "MI Scenario 2 web training"
+    },
+    {
+      "transcript_id": "64",
+      "topic": "reducing drug use",
+      "mi_quality": "high",
+      "total_dialogue_turns": 262,
+      "client_turns": 132,
+      "video_title": "Ricky and Ian"
+    },
+    {
+      "transcript_id": "65",
+      "topic": "smoking cessation",
+      "mi_quality": "high",
+      "total_dialogue_turns": 35,
+      "client_turns": 18,
+      "video_title": "Motivational Interviewing for Health Issues Video"
+    },
+    {
+      "transcript_id": "66",
+      "topic": "diabetes management",
+      "mi_quality": "high",
+      "total_dialogue_turns": 310,
+      "client_turns": 150,
+      "video_title": "ComMIt Diabetes Dialogue with MI"
+    },
+    {
+      "transcript_id": "81",
+      "topic": "taking medicine / following medical procedure",
+      "mi_quality": "high",
+      "total_dialogue_turns": 21,
+      "client_turns": 9,
+      "video_title": "Using Open Ended Questions in Home Visiting/OARS/Motivational Interviewing"
+    },
+    {
+      "transcript_id": "84",
+      "topic": "reducing recidivism",
+      "mi_quality": "high",
+      "total_dialogue_turns": 235,
+      "client_turns": 117,
+      "video_title": "Motivational Techniques - Margaret interview Billy - 1"
+    },
+    {
+      "transcript_id": "85",
+      "topic": "taking medicine / following medical procedure",
+      "mi_quality": "high",
+      "total_dialogue_turns": 131,
+      "client_turns": 65,
+      "video_title": "Motivational Interviewing Change Talk: My Meds Make Me Mad"
+    },
+    {
+      "transcript_id": "95",
+      "topic": "reducing self-harm",
+      "mi_quality": "high",
+      "total_dialogue_turns": 36,
+      "client_turns": 18,
+      "video_title": "MI 5 30 18"
+    },
+    {
+      "transcript_id": "96",
+      "topic": "reducing alcohol consumption",
+      "mi_quality": "high",
+      "total_dialogue_turns": 92,
+      "client_turns": 46,
+      "video_title": "Motivational Interviewing: Talking With a Pregnant Woman About Her Alcohol Use"
+    },
+    {
+      "transcript_id": "98",
+      "topic": "avoiding DOI",
+      "mi_quality": "high",
+      "total_dialogue_turns": 394,
+      "client_turns": 197,
+      "video_title": "My Lawyer Sent Me"
+    },
+    {
+      "transcript_id": "107",
+      "topic": "reducing self-harm",
+      "mi_quality": "high",
+      "total_dialogue_turns": 18,
+      "client_turns": 9,
+      "video_title": "Marsha Linehan DBT with Suicidal Clients Video"
+    },
+    {
+      "transcript_id": "109",
+      "topic": "smoking cessation",
+      "mi_quality": "high",
+      "total_dialogue_turns": 460,
+      "client_turns": 230,
+      "video_title": "The Effective Dentist: Motivational Interviewing Demonstration"
+    },
+    {
+      "transcript_id": "111",
+      "topic": "reducing drug use; following medical procedure",
+      "mi_quality": "high",
+      "total_dialogue_turns": 59,
+      "client_turns": 29,
+      "video_title": "Anatomy of a Brief Intervention"
+    },
+    {
+      "transcript_id": "113",
+      "topic": "smoking cessation",
+      "mi_quality": "high",
+      "total_dialogue_turns": 50,
+      "client_turns": 25,
+      "video_title": "Dr. Marilyn Herie - MI Skills - Tobacco Cessation - Pre-contemplative Stage www.teachproject.ca"
+    },
+    {
+      "transcript_id": "114",
+      "topic": "reducing alcohol consumption",
+      "mi_quality": "high",
+      "total_dialogue_turns": 24,
+      "client_turns": 12,
+      "video_title": "A Motivational Interviewing Approach to Student Conduct - 2"
+    },
+    {
+      "transcript_id": "121",
+      "topic": "diabetes management",
+      "mi_quality": "high",
+      "total_dialogue_turns": 598,
+      "client_turns": 299,
+      "video_title": "MI in health care"
+    },
+    {
+      "transcript_id": "122",
+      "topic": "unidentifiable",
+      "mi_quality": "high",
+      "total_dialogue_turns": 26,
+      "client_turns": 13,
+      "video_title": "Motivational Interviewing for Adolescent Substance Use - 1"
+    },
+    {
+      "transcript_id": "129",
+      "topic": "birth control",
+      "mi_quality": "high",
+      "total_dialogue_turns": 36,
+      "client_turns": 18,
+      "video_title": "Doctor Uses Motivational Interviewing to Discuss Contraception"
+    },
+    {
+      "transcript_id": "133",
+      "topic": "reducing recidivism",
+      "mi_quality": "high",
+      "total_dialogue_turns": 381,
+      "client_turns": 190,
+      "video_title": "Motivational interviewing: Ken interviews Daryl"
+    }
+  ]
+}
