@@ -52,14 +52,20 @@ saves/
 logs/
 wandb/
 
-# 数据转换输出（已包含）
+# 本地模型权重（30GB，不上传）
+ClientResistance-Model-Share/
 
 # Large datasets and raw files
 data/raw/RED/
 data/raw/AnnoMI/
-# 允许处理后的中间数据上传
-# data/processed/*.csv
-# data/processed/*.json
+
+# 中间过程大文件（>50MB）
+workspace/results/archive/
+workspace/results/profiles/logs/
+
+# venv
+.venv/
+
 *.pyc
 __pycache__/
 .DS_Store

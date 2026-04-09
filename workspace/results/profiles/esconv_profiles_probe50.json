@@ -1,0 +1,1436 @@
+[
+  {
+    "sample_id": "esconv_0",
+    "background": "The client works a stressful job that pays well, dealing with people in hard financial situations, often involving potential home loss. They have been with the same company for a long time and consistently receive a yearly bonus.",
+    "self_view_of_problem": "The client frames the problem as having a lot of anxiety about quitting their current job, which is too stressful but pays well. They feel they should put their feelings and health first, but are scared to quit and seek a new career.",
+    "resistance_drivers": [
+      "The job pays well and includes a consistent yearly bonus, which they likely would not match elsewhere.",
+      "They have been with the same company for a long time, suggesting investment and familiarity.",
+      "They acknowledge their role provides a needed service done compassionately, creating a sense of duty or value."
+    ],
+    "ambivalence": {
+      "for_change": "The job is too stressful and upsetting, dealing with people in dire financial situations; they feel they should prioritize their feelings and health.",
+      "against_change": "The job pays well, offers a consistent bonus, and they have long tenure; they help people by providing a needed, compassionate service even if outcomes are not ideal."
+    },
+    "values_and_stakes": [
+      "Their own feelings and health",
+      "Financial stability from a well-paying job with bonuses",
+      "Helping others compassionately in a needed role"
+    ],
+    "key_facts": [
+      "Client hates their job but is scared to quit.",
+      "Job is stressful because they deal with many people in hard financial situations.",
+      "Job pays well.",
+      "Client has been with the same company for a long time.",
+      "Client consistently gets a bonus every year.",
+      "Client feels upset by clients' dire situations, especially at the end of the day.",
+      "Client wonders if the job is really for them."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client works a stressful job that pays well, dealing with people in hard financial situations, often involving potential home loss. They have been with the same company for a long time and consistently receive a yearly bonus.\",\n  \"self_view_of_problem\": \"The client frames the problem as having a lot of anxiety about quitting their current job, which is too stressful but pays well. They feel they should put their feelings and health first, but are scared to quit and seek a new career.\",\n  \"resistance_drivers\": [\"The job pays well and includes a consistent yearly bonus, which they likely would not match elsewhere.\", \"They have been with the same company for a long time, suggesting investment and familiarity.\", \"They acknowledge their role provides a needed service done compassionately, creating a sense of duty or value.\"],\n  \"ambivalence\": {\n    \"for_change\": \"The job is too stressful and upsetting, dealing with people in dire financial situations; they feel they should prioritize their feelings and health.\",\n    \"against_change\": \"The job pays well, offers a consistent bonus, and they have long tenure; they help people by providing a needed, compassionate service even if outcomes are not ideal.\"\n  },\n  \"values_and_stakes\": [\"Their own feelings and health\", \"Financial stability from a well-paying job with bonuses\", \"Helping others compassionately in a needed role\"],\n  \"key_facts\": [\"Client hates their job but is scared to quit.\", \"Job is stressful because they deal with many people in hard financial situations.\", \"Job pays well.\", \"Client has been with the same company for a long time.\", \"Client consistently gets a bonus every year.\", \"Client feels upset by clients' dire situations, especially at the end of the day.\", \"Client wonders if the job is really for them.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_1",
+    "background": "The client is an unemployed person who does not qualify for unemployment benefits. They have friends they used to hang out with all the time when younger, but no longer live in the same city as them.",
+    "self_view_of_problem": "The client believes the problem is that their friends are unsupportive and no longer communicate or interact, likely because the client has financial trouble and normally needs to borrow money, which may have tired the friends out.",
+    "resistance_drivers": [
+      "They are nervous about asking their friends directly why the communication has stopped, fearing it might lead to other problems and the end of friendships.",
+      "They believe the ball is in their friends' court to reciprocate effort in the relationship, so they plan to wait for them to come around."
+    ],
+    "ambivalence": {
+      "for_change": "They acknowledge that to feel better, they will have to speak to their friends about how they feel.",
+      "against_change": "They hope everything will be immediately resolved without confrontation and are considering stopping reaching out so much to give them time."
+    },
+    "values_and_stakes": [
+      "Their friendships, which they do not want to lose.",
+      "Playing the piano, which they had to stop due to a medical condition called trigger finger causing great pain."
+    ],
+    "key_facts": [
+      "Friends do not answer phone calls or text messages.",
+      "This communication issue has been happening on and off for about 4 months.",
+      "The client always pays back any money they borrow.",
+      "The client likes to read and play music.",
+      "The client played the piano in high school but had to stop due to trigger finger.",
+      "The client's sister goes on runs in the morning and says it relaxes her.",
+      "The client is not in shape to run but might start off walking.",
+      "COVID-19 rules affect their ability to visit friends out of town."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is an unemployed person who does not qualify for unemployment benefits. They have friends they used to hang out with all the time when younger, but no longer live in the same city as them.\",\n  \"self_view_of_problem\": \"The client believes the problem is that their friends are unsupportive and no longer communicate or interact, likely because the client has financial trouble and normally needs to borrow money, which may have tired the friends out.\",\n  \"resistance_drivers\": [\n    \"They are nervous about asking their friends directly why the communication has stopped, fearing it might lead to other problems and the end of friendships.\",\n    \"They believe the ball is in their friends' court to reciprocate effort in the relationship, so they plan to wait for them to come around.\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"They acknowledge that to feel better, they will have to speak to their friends about how they feel.\",\n    \"against_change\": \"They hope everything will be immediately resolved without confrontation and are considering stopping reaching out so much to give them time.\"\n  },\n  \"values_and_stakes\": [\n    \"Their friendships, which they do not want to lose.\",\n    \"Playing the piano, which they had to stop due to a medical condition called trigger finger causing great pain.\"\n  ],\n  \"key_facts\": [\n    \"Friends do not answer phone calls or text messages.\",\n    \"This communication issue has been happening on and off for about 4 months.\",\n    \"The client always pays back any money they borrow.\",\n    \"The client likes to read and play music.\",\n    \"The client played the piano in high school but had to stop due to trigger finger.\",\n    \"The client's sister goes on runs in the morning and says it relaxes her.\",\n    \"The client is not in shape to run but might start off walking.\",\n    \"COVID-19 rules affect their ability to visit friends out of town.\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_2",
+    "background": "A person who has been out of work for five weeks due to testing positive for COVID-19. They have a professional background in cooking and are involved with their church community.",
+    "self_view_of_problem": "They are concerned their employer may not take them back after quarantine, and they are frustrated with the unemployment assistance system for not paying out despite approval.",
+    "resistance_drivers": [],
+    "ambivalence": {
+      "for_change": "They are actively seeking assistance through unemployment, food banks, and government outreach, and plan to pursue legal action if wrongfully terminated.",
+      "against_change": "They express a belief that if termination occurs, there is nothing they can do to change the situation, indicating a sense of powerlessness."
+    },
+    "values_and_stakes": [
+      "Their job and financial stability",
+      "Their church community that provides support",
+      "Their professional cooking skills and ability to create nutritious meals",
+      "Justice and legal recourse against wrongful treatment, as shown by past lawsuit"
+    ],
+    "key_facts": [
+      "Out of work for five weeks due to COVID-19",
+      "Approved for Pandemic Unemployment Assistance but has not received any payments",
+      "Received food from church members",
+      "Plans to visit a food bank and explore rent and employment assistance programs",
+      "Lives in an 'at will' employment state",
+      "Successfully sued a previous employer for wrongful termination in 2000 and won back wages, vacation, overtime, holiday pay, and $5000 in damages",
+      "Current employer is aware of the past lawsuit and award letter"
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"A person who has been out of work for five weeks due to testing positive for COVID-19. They have a professional background in cooking and are involved with their church community.\",\n  \"self_view_of_problem\": \"They are concerned their employer may not take them back after quarantine, and they are frustrated with the unemployment assistance system for not paying out despite approval.\",\n  \"resistance_drivers\": [],\n  \"ambivalence\": {\n    \"for_change\": \"They are actively seeking assistance through unemployment, food banks, and government outreach, and plan to pursue legal action if wrongfully terminated.\",\n    \"against_change\": \"They express a belief that if termination occurs, there is nothing they can do to change the situation, indicating a sense of powerlessness.\"\n  },\n  \"values_and_stakes\": [\n    \"Their job and financial stability\",\n    \"Their church community that provides support\",\n    \"Their professional cooking skills and ability to create nutritious meals\",\n    \"Justice and legal recourse against wrongful treatment, as shown by past lawsuit\"\n  ],\n  \"key_facts\": [\n    \"Out of work for five weeks due to COVID-19\",\n    \"Approved for Pandemic Unemployment Assistance but has not received any payments\",\n    \"Received food from church members\",\n    \"Plans to visit a food bank and explore rent and employment assistance programs\",\n    \"Lives in an 'at will' employment state\",\n    \"Successfully sued a previous employer for wrongful termination in 2000 and won back wages, vacation, overtime, holiday pay, and $5000 in damages\",\n    \"Current employer is aware of the past lawsuit and award letter\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_3",
+    "background": "A person who has been staying home since March due to COVID-19. They play musical instruments and were part of a band before the pandemic.",
+    "self_view_of_problem": "They state they are 'getting very depressed' from staying home due to COVID, and that not being able to play with the band contributes to the situation.",
+    "resistance_drivers": [
+      "Skepticism about whether talking to friends would help with their depression.",
+      "Uncertainty about the technical feasibility of playing music together online due to potential sound delays."
+    ],
+    "ambivalence": {
+      "for_change": "They express hope that vaccinations will allow a return to normal and that they can get together with the band again. They are willing to try the therapist's suggestion of a Zoom meeting to play together.",
+      "against_change": "They are staying home and isolated, and are unsure how friends or online alternatives could effectively help their situation."
+    },
+    "values_and_stakes": [
+      "Playing music with their band.",
+      "A return to normal life and social activities post-vaccination."
+    ],
+    "key_facts": [
+      "Has been staying home since March due to COVID.",
+      "Plays musical instruments.",
+      "Was part of a band before COVID.",
+      "Has few friends they can talk to.",
+      "Believes 2020 was the worst year they have ever seen.",
+      "Is hopeful vaccinations will bring things back to normal in a few months."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"A person who has been staying home since March due to COVID-19. They play musical instruments and were part of a band before the pandemic.\",\n  \"self_view_of_problem\": \"They state they are 'getting very depressed' from staying home due to COVID, and that not being able to play with the band contributes to the situation.\",\n  \"resistance_drivers\": [\"Skepticism about whether talking to friends would help with their depression.\", \"Uncertainty about the technical feasibility of playing music together online due to potential sound delays.\"],\n  \"ambivalence\": {\n    \"for_change\": \"They express hope that vaccinations will allow a return to normal and that they can get together with the band again. They are willing to try the therapist's suggestion of a Zoom meeting to play together.\",\n    \"against_change\": \"They are staying home and isolated, and are unsure how friends or online alternatives could effectively help their situation.\"\n  },\n  \"values_and_stakes\": [\"Playing music with their band.\", \"A return to normal life and social activities post-vaccination.\"],\n  \"key_facts\": [\"Has been staying home since March due to COVID.\", \"Plays musical instruments.\", \"Was part of a band before COVID.\", \"Has few friends they can talk to.\", \"Believes 2020 was the worst year they have ever seen.\", \"Is hopeful vaccinations will bring things back to normal in a few months.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_4",
+    "background": "She is a woman in a relationship with a boyfriend who has been lying about being divorced. They have been together for fifteen months, part-time living together for six months. She has two children, ages 6 and 9, and her boyfriend has four children, ages 5, 9, 11, and 13. Her boyfriend was furloughed in May.",
+    "self_view_of_problem": "She frames the problem as trying to decide if she can rebuild trust with her boyfriend after discovering he lied about his entire life, making their future impossible. She feels 'infinitely complicated' and doesn't know what to do, debating whether to stay.",
+    "resistance_drivers": [
+      "He treats her very well and is frantically trying to accommodate her now that she knows the truth.",
+      "He invests a lot of time and effort into their relationship.",
+      "She believes he loves her very much.",
+      "Breaking up would hurt her children, who see him as a growing father figure.",
+      "His children asked if they could come live with her, indicating attachment.",
+      "The situation is complicated by the length of the relationship (15 months) and part-time cohabitation.",
+      "She feels her emotions are clouding her judgment, calling them 'stupid emotions'."
+    ],
+    "ambivalence": {
+      "for_change": "She agrees with the therapist's implied advice that she deserves better and fears he won't change. She acknowledges the situation is damaging for everyone and that dragging feet on divorce may mean it never happens.",
+      "against_change": "She is considering giving him time to prove himself now that he's 'backed into a corner.' She notes he didn't make the lie up just for her; he was living the 'divorced dad' lie to many people, which she finds 'interesting' and possibly mitigating."
+    },
+    "values_and_stakes": [
+      "Her children's well-being and not wanting to hurt them.",
+      "The stability and father-figure role her boyfriend provides for her kids.",
+      "The relationship itself, which she has invested in for 15 months.",
+      "Financial security, noting the boyfriend's wife likes the money and security he provided before furlough."
+    ],
+    "key_facts": [
+      "Boyfriend said he was divorced but is still legally married.",
+      "Found out three weeks ago that he and his wife are still living together.",
+      "They have been together for fifteen months, part-time living together for six.",
+      "Boyfriend brought his kids to her house two weeks ago to meet her kids.",
+      "Boyfriend and wife have been living separately in the same house for three years.",
+      "Wife knows about her and doesn't care, just wants money and security.",
+      "Boyfriend was furloughed in May.",
+      "She gave him an ultimatum, but it's 'too soon to tell' the outcome."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"She is a woman in a relationship with a boyfriend who has been lying about being divorced. They have been together for fifteen months, part-time living together for six months. She has two children, ages 6 and 9, and her boyfriend has four children, ages 5, 9, 11, and 13. Her boyfriend was furloughed in May.\",\n  \"self_view_of_problem\": \"She frames the problem as trying to decide if she can rebuild trust with her boyfriend after discovering he lied about his entire life, making their future impossible. She feels 'infinitely complicated' and doesn't know what to do, debating whether to stay.\",\n  \"resistance_drivers\": [\"He treats her very well and is frantically trying to accommodate her now that she knows the truth.\", \"He invests a lot of time and effort into their relationship.\", \"She believes he loves her very much.\", \"Breaking up would hurt her children, who see him as a growing father figure.\", \"His children asked if they could come live with her, indicating attachment.\", \"The situation is complicated by the length of the relationship (15 months) and part-time cohabitation.\", \"She feels her emotions are clouding her judgment, calling them 'stupid emotions'.\"],\n  \"ambivalence\": {\n    \"for_change\": \"She agrees with the therapist's implied advice that she deserves better and fears he won't change. She acknowledges the situation is damaging for everyone and that dragging feet on divorce may mean it never happens.\",\n    \"against_change\": \"She is considering giving him time to prove himself now that he's 'backed into a corner.' She notes he didn't make the lie up just for her; he was living the 'divorced dad' lie to many people, which she finds 'interesting' and possibly mitigating.\"\n  },\n  \"values_and_stakes\": [\"Her children's well-being and not wanting to hurt them.\", \"The stability and father-figure role her boyfriend provides for her kids.\", \"The relationship itself, which she has invested in for 15 months.\", \"Financial security, noting the boyfriend's wife likes the money and security he provided before furlough.\"],\n  \"key_facts\": [\"Boyfriend said he was divorced but is still legally married.\", \"Found out three weeks ago that he and his wife are still living together.\", \"They have been together for fifteen months, part-time living together for six.\", \"Boyfriend brought his kids to her house two weeks ago to meet her kids.\", \"Boyfriend and wife have been living separately in the same house for three years.\", \"Wife knows about her and doesn't care, just wants money and security.\", \"Boyfriend was furloughed in May.\", \"She gave him an ultimatum, but it's 'too soon to tell' the outcome.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_5",
+    "background": "This person is unemployed, has been out of work for nearly 9 months, and has savings that are almost depleted. They own a rental property that is currently loss-making and cannot be sold because it is 30% below market value.",
+    "self_view_of_problem": "They frame the problem as the uncertainty of the pandemic, unavailability of jobs, lack of success in getting jobs applied for, and no ease or comfort of an end being in sight. They also imply they are being penalized for working hard, saving, and investing.",
+    "resistance_drivers": [
+      "Resists declaring bankruptcy because it would cost '7 years of my future'",
+      "Resists selling the rental property because it would lead to bankruptcy from the mortgage lender"
+    ],
+    "ambivalence": {
+      "for_change": "They have tried applying for jobs below their usual level and have contacted employment agencies, indicating a motivation to find work.",
+      "against_change": "They are unwilling to sell the rental property or declare bankruptcy, as these options are seen as too costly to their future and financial identity."
+    },
+    "values_and_stakes": [
+      "Financial security and the value of working hard, saving, and investing",
+      "Avoiding bankruptcy and protecting their future prospects",
+      "Maintaining family support, which has diminished since losing their job"
+    ],
+    "key_facts": [
+      "Unemployed for nearly 9 months",
+      "Savings are almost depleted",
+      "Owns a rental property that is loss-making",
+      "Property is 30% below market value, so cannot sell it",
+      "Does not qualify for unemployment support due to savings and the property",
+      "Had to get rid of one car and other things to get by",
+      "Family is less supportive now compared to when they had a full-time job",
+      "Has tried applying for jobs below their usual level",
+      "Has tried employment agencies"
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"This person is unemployed, has been out of work for nearly 9 months, and has savings that are almost depleted. They own a rental property that is currently loss-making and cannot be sold because it is 30% below market value.\",\n  \"self_view_of_problem\": \"They frame the problem as the uncertainty of the pandemic, unavailability of jobs, lack of success in getting jobs applied for, and no ease or comfort of an end being in sight. They also imply they are being penalized for working hard, saving, and investing.\",\n  \"resistance_drivers\": [\n    \"Resists declaring bankruptcy because it would cost '7 years of my future'\",\n    \"Resists selling the rental property because it would lead to bankruptcy from the mortgage lender\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"They have tried applying for jobs below their usual level and have contacted employment agencies, indicating a motivation to find work.\",\n    \"against_change\": \"They are unwilling to sell the rental property or declare bankruptcy, as these options are seen as too costly to their future and financial identity.\"\n  },\n  \"values_and_stakes\": [\n    \"Financial security and the value of working hard, saving, and investing\",\n    \"Avoiding bankruptcy and protecting their future prospects\",\n    \"Maintaining family support, which has diminished since losing their job\"\n  ],\n  \"key_facts\": [\n    \"Unemployed for nearly 9 months\",\n    \"Savings are almost depleted\",\n    \"Owns a rental property that is loss-making\",\n    \"Property is 30% below market value, so cannot sell it\",\n    \"Does not qualify for unemployment support due to savings and the property\",\n    \"Had to get rid of one car and other things to get by\",\n    \"Family is less supportive now compared to when they had a full-time job\",\n    \"Has tried applying for jobs below their usual level\",\n    \"Has tried employment agencies\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_6",
+    "background": "The client has a main job but needs to work more due to a big increase in house expenses. They are looking for online jobs like Appen or similar gig work to supplement their income.",
+    "self_view_of_problem": "The client frames the problem as it being hard to find online jobs because it is so competitive, and they need to work more due to increased house expenses.",
+    "resistance_drivers": [
+      "They have applied to Appen multiple times and always get told there are no positions available, indicating repeated rejection or lack of opportunity as a barrier."
+    ],
+    "ambivalence": {
+      "for_change": "They acknowledge that free food from food banks always helps and would use one if they lost their main job, showing openness to external support under certain conditions.",
+      "against_change": "They have not used food banks despite financial pressure, implying reluctance or not seeing it as necessary while still employed."
+    },
+    "values_and_stakes": [
+      "Their main job, which they are protecting and do not want to lose.",
+      "The spirit of volunteering and people helping each other, which they endorse."
+    ],
+    "key_facts": [
+      "They have a main job.",
+      "House expenses have increased significantly.",
+      "They have applied to Appen a few times and been told no positions are available.",
+      "They have not used food banks.",
+      "They plan to get the vaccine.",
+      "They believe summer next year might be a turning point."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client has a main job but needs to work more due to a big increase in house expenses. They are looking for online jobs like Appen or similar gig work to supplement their income.\",\n  \"self_view_of_problem\": \"The client frames the problem as it being hard to find online jobs because it is so competitive, and they need to work more due to increased house expenses.\",\n  \"resistance_drivers\": [\"They have applied to Appen multiple times and always get told there are no positions available, indicating repeated rejection or lack of opportunity as a barrier.\"],\n  \"ambivalence\": {\n    \"for_change\": \"They acknowledge that free food from food banks always helps and would use one if they lost their main job, showing openness to external support under certain conditions.\",\n    \"against_change\": \"They have not used food banks despite financial pressure, implying reluctance or not seeing it as necessary while still employed.\"\n  },\n  \"values_and_stakes\": [\"Their main job, which they are protecting and do not want to lose.\", \"The spirit of volunteering and people helping each other, which they endorse.\"],\n  \"key_facts\": [\"They have a main job.\", \"House expenses have increased significantly.\", \"They have applied to Appen a few times and been told no positions are available.\", \"They have not used food banks.\", \"They plan to get the vaccine.\", \"They believe summer next year might be a turning point.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_7",
+    "background": "The client is a person experiencing the COVID-19 pandemic. They mention staying home to be safe and reading as a hobby.",
+    "self_view_of_problem": "The client frames the problem as having a hard time being motivated to do anything, which started with the pandemic. They imply it is caused by having to stay home for safety while seeing others not listen, leading to more people dying.",
+    "resistance_drivers": [],
+    "ambivalence": {
+      "for_change": "The client asks for suggestions to feel better and expresses willingness to try new activities like playing soccer or reading on their phone.",
+      "against_change": null
+    },
+    "values_and_stakes": [
+      "Staying safe during the pandemic",
+      "Reading and books"
+    ],
+    "key_facts": [
+      "The client states their lack of motivation started with the pandemic.",
+      "The client likes to read.",
+      "The client sees a cause as 'we have to stay home to be safe but other people don't listen and more people are dying because of it'.",
+      "The client is open to trying soccer as a suggested activity.",
+      "The client plans to use their phone to read."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is a person experiencing the COVID-19 pandemic. They mention staying home to be safe and reading as a hobby.\",\n  \"self_view_of_problem\": \"The client frames the problem as having a hard time being motivated to do anything, which started with the pandemic. They imply it is caused by having to stay home for safety while seeing others not listen, leading to more people dying.\",\n  \"resistance_drivers\": null,\n  \"ambivalence\": {\n    \"for_change\": \"The client asks for suggestions to feel better and expresses willingness to try new activities like playing soccer or reading on their phone.\",\n    \"against_change\": null\n  },\n  \"values_and_stakes\": [\"Staying safe during the pandemic\", \"Reading and books\"],\n  \"key_facts\": [\"The client states their lack of motivation started with the pandemic.\", \"The client likes to read.\", \"The client sees a cause as 'we have to stay home to be safe but other people don't listen and more people are dying because of it'.\", \"The client is open to trying soccer as a suggested activity.\", \"The client plans to use their phone to read.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_8",
+    "background": "The client works for a broad wide company and has accumulated a lot of debt, which they attribute to the COVID-19 situation.",
+    "self_view_of_problem": "The client frames the problem as being demotivated by their economic status, which hurts them a lot, and they are upset due to their financial career.",
+    "resistance_drivers": [
+      "They believe their job at a broad wide company means they will manage the loan payments, potentially reducing perceived urgency for additional steps like debt relief."
+    ],
+    "ambivalence": {
+      "for_change": "They actively sought a loan from a bank to address their debt situation.",
+      "against_change": "They ended the conversation abruptly when a debt relief program was suggested, indicating reluctance to explore that specific option."
+    },
+    "values_and_stakes": [
+      "Their financial career and economic status are important to them, as being demotivated by it hurts a lot."
+    ],
+    "key_facts": [
+      "The client has a lot of debts.",
+      "The debt accumulated because of the COVID-19 situation.",
+      "The client arranged a loan in a bank.",
+      "The client works in a broad wide company."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client works for a broad wide company and has accumulated a lot of debt, which they attribute to the COVID-19 situation.\",\n  \"self_view_of_problem\": \"The client frames the problem as being demotivated by their economic status, which hurts them a lot, and they are upset due to their financial career.\",\n  \"resistance_drivers\": [\"They believe their job at a broad wide company means they will manage the loan payments, potentially reducing perceived urgency for additional steps like debt relief.\"],\n  \"ambivalence\": {\n    \"for_change\": \"They actively sought a loan from a bank to address their debt situation.\",\n    \"against_change\": \"They ended the conversation abruptly when a debt relief program was suggested, indicating reluctance to explore that specific option.\"\n  },\n  \"values_and_stakes\": [\"Their financial career and economic status are important to them, as being demotivated by it hurts a lot.\"],\n  \"key_facts\": [\"The client has a lot of debts.\", \"The debt accumulated because of the COVID-19 situation.\", \"The client arranged a loan in a bank.\", \"The client works in a broad wide company.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_9",
+    "background": "He is a man who was in a six-and-a-half-year relationship with his girlfriend. Their relationship involved a niche fetish (pegging) and included threesomes with other women and men that she would bring home.",
+    "self_view_of_problem": "He states, 'I really blew it with my girlfriend, so she left me right before Christmas.' He frames the problem as his own fault for not agreeing to let her peg other guys, which led to the breakup, and now he is alone and depressed.",
+    "resistance_drivers": [
+      "He is protecting his preference for a domineering partner, stating 'I wanted her to be domineering, that is how I like it.'",
+      "He is resistant to being judged for his sexual preferences, pleading 'please don't judge me, I am very fragile right now.'"
+    ],
+    "ambivalence": {
+      "for_change": "He expresses willingness to change the original disagreement to get her back: 'I would let her peg those other guys if she wanted to, I just need to get her back in my life. I told her I would give her as many rimjobs that she requested.'",
+      "against_change": "He is unwilling to give up the dynamic where she was in control, stating he liked her being domineering and that the threesomes 'made me feel like she was in power.'"
+    },
+    "values_and_stakes": [
+      "His relationship with his girlfriend, which he describes as 'very solid like a rock.'",
+      "The sexual dynamic of pegging, which he highly values: 'I think I will miss the pegging the most. No one can do it better or harder than her.'"
+    ],
+    "key_facts": [
+      "The breakup happened nine days ago, right before Christmas.",
+      "He hasn't been able to sleep or eat very well since the breakup.",
+      "The relationship lasted six and a half years.",
+      "The biggest disagreement was that she wanted to start pegging other guys, and he said no.",
+      "Their relationship included threesomes with other women and men that she would bring home.",
+      "He identifies pegging as a 'niche fetish.'",
+      "He is a male."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"He is a man who was in a six-and-a-half-year relationship with his girlfriend. Their relationship involved a niche fetish (pegging) and included threesomes with other women and men that she would bring home.\",\n  \"self_view_of_problem\": \"He states, 'I really blew it with my girlfriend, so she left me right before Christmas.' He frames the problem as his own fault for not agreeing to let her peg other guys, which led to the breakup, and now he is alone and depressed.\",\n  \"resistance_drivers\": [\"He is protecting his preference for a domineering partner, stating 'I wanted her to be domineering, that is how I like it.'\", \"He is resistant to being judged for his sexual preferences, pleading 'please don't judge me, I am very fragile right now.'\"],\n  \"ambivalence\": {\n    \"for_change\": \"He expresses willingness to change the original disagreement to get her back: 'I would let her peg those other guys if she wanted to, I just need to get her back in my life. I told her I would give her as many rimjobs that she requested.'\",\n    \"against_change\": \"He is unwilling to give up the dynamic where she was in control, stating he liked her being domineering and that the threesomes 'made me feel like she was in power.'\"\n  },\n  \"values_and_stakes\": [\"His relationship with his girlfriend, which he describes as 'very solid like a rock.'\", \"The sexual dynamic of pegging, which he highly values: 'I think I will miss the pegging the most. No one can do it better or harder than her.'\"],\n  \"key_facts\": [\"The breakup happened nine days ago, right before Christmas.\", \"He hasn't been able to sleep or eat very well since the breakup.\", \"The relationship lasted six and a half years.\", \"The biggest disagreement was that she wanted to start pegging other guys, and he said no.\", \"Their relationship included threesomes with other women and men that she would bring home.\", \"He identifies pegging as a 'niche fetish.'\", \"He is a male.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_10",
+    "background": "Mother of two small children (an autistic toddler and an 8-year-old) who was recently abandoned by her cheating spouse. She is now a single parent dealing with the upheaval of her marriage ending.",
+    "self_view_of_problem": "Her life has been completely upheaved by a cheating spouse who abandoned her and their children. She frames staying in the marriage as a flaw, having stayed so the children would have both parents, and now worries about being able to teach and raise them on her own.",
+    "resistance_drivers": [
+      "Feeling overwhelmed and always tired as a mother of two small children",
+      "Children feeling insecure and sticking close to her since their father left, limiting her free time and energy"
+    ],
+    "ambivalence": {
+      "for_change": "Expresses hope that she will be able to teach and raise the children on her own, acknowledging it may be good for them to have just her rather than both parents in a flawed marriage.",
+      "against_change": "Implies she stayed in the marriage for the children's sake (so they would have both parents), suggesting lingering attachment to the idea of a two-parent family or fear of single parenthood."
+    },
+    "values_and_stakes": [
+      "Her children's well-being and security",
+      "Being able to teach and raise her children properly as a single parent",
+      "Moments of peace and free time when the children are occupied"
+    ],
+    "key_facts": [
+      "Has two children: an autistic toddler and an 8-year-old",
+      "Spouse cheated and abandoned the family",
+      "Children feel insecure since their father left and stick close to her",
+      "Toddler plays with Woody and Bo Peep dolls while watching Shrek",
+      "8-year-old is engrossed in his cellphone",
+      "Describes staying in the marriage so children would have both parents as a flaw"
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "```json\n{\n    \"background\": \"Mother of two small children (an autistic toddler and an 8-year-old) who was recently abandoned by her cheating spouse. She is now a single parent dealing with the upheaval of her marriage ending.\",\n    \"self_view_of_problem\": \"Her life has been completely upheaved by a cheating spouse who abandoned her and their children. She frames staying in the marriage as a flaw, having stayed so the children would have both parents, and now worries about being able to teach and raise them on her own.\",\n    \"resistance_drivers\": [\n        \"Feeling overwhelmed and always tired as a mother of two small children\",\n        \"Children feeling insecure and sticking close to her since their father left, limiting her free time and energy\"\n    ],\n    \"ambivalence\": {\n        \"for_change\": \"Expresses hope that she will be able to teach and raise the children on her own, acknowledging it may be good for them to have just her rather than both parents in a flawed marriage.\",\n        \"against_change\": \"Implies she stayed in the marriage for the children's sake (so they would have both parents), suggesting lingering attachment to the idea of a two-parent family or fear of single parenthood.\"\n    },\n    \"values_and_stakes\": [\n        \"Her children's well-being and security\",\n        \"Being able to teach and raise her children properly as a single parent\",\n        \"Moments of peace and free time when the children are occupied\"\n    ],\n    \"key_facts\": [\n        \"Has two children: an autistic toddler and an 8-year-old\",\n        \"Spouse cheated and abandoned the family\",\n        \"Children feel insecure since their father left and stick close to her\",\n        \"Toddler plays with Woody and Bo Peep dolls while watching Shrek\",\n        \"8-year-old is engrossed in his cellphone\",\n        \"Describes staying in the marriage so children would have both parents as a flaw\"\n    ]\n}\n```",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_11",
+    "background": "He is a program analyst who was working in an IT company and is now trying to find a new job. He has been looking for a long time without success.",
+    "self_view_of_problem": "He frames the problem as a prolonged, unsuccessful job search that is causing him stress and depression, stating 'I am really having hard time to get one' and 'I am feeling depressed by trying again and again, never happened with me before.' He attributes the difficulty to external factors like 'recession or might be COVID.'",
+    "resistance_drivers": [
+      "He rejects alternative job suggestions like Uber or dog walking due to lack of skill or experience ('I am not a good driver', 'I don't have any pet so no experience with it').",
+      "He is financially secure ('I am not worried financially'), which may reduce urgency for drastic change."
+    ],
+    "ambivalence": {
+      "for_change": "He is actively trying to find a job and is willing to search ('I would definitely do search').",
+      "against_change": "He feels demotivated and depressed by repeated failure, which saps his energy to continue trying."
+    },
+    "values_and_stakes": [
+      "His career in IT, which he loves ('I love my career').",
+      "His prior professional identity and success as a program analyst, which this prolonged failure contrasts with."
+    ],
+    "key_facts": [
+      "He worked as a program analyst in an IT company.",
+      "He has been trying to find a new job for a long time with no success.",
+      "He attributes the lack of success to recession or COVID.",
+      "He is not worried financially.",
+      "He is feeling depressed by trying again and again.",
+      "This situation of prolonged job search failure has never happened to him before.",
+      "There are recreational parks and trails near him."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"He is a program analyst who was working in an IT company and is now trying to find a new job. He has been looking for a long time without success.\",\n  \"self_view_of_problem\": \"He frames the problem as a prolonged, unsuccessful job search that is causing him stress and depression, stating 'I am really having hard time to get one' and 'I am feeling depressed by trying again and again, never happened with me before.' He attributes the difficulty to external factors like 'recession or might be COVID.'\",\n  \"resistance_drivers\": [\n    \"He rejects alternative job suggestions like Uber or dog walking due to lack of skill or experience ('I am not a good driver', 'I don't have any pet so no experience with it').\",\n    \"He is financially secure ('I am not worried financially'), which may reduce urgency for drastic change.\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"He is actively trying to find a job and is willing to search ('I would definitely do search').\",\n    \"against_change\": \"He feels demotivated and depressed by repeated failure, which saps his energy to continue trying.\"\n  },\n  \"values_and_stakes\": [\n    \"His career in IT, which he loves ('I love my career').\",\n    \"His prior professional identity and success as a program analyst, which this prolonged failure contrasts with.\"\n  ],\n  \"key_facts\": [\n    \"He worked as a program analyst in an IT company.\",\n    \"He has been trying to find a new job for a long time with no success.\",\n    \"He attributes the lack of success to recession or COVID.\",\n    \"He is not worried financially.\",\n    \"He is feeling depressed by trying again and again.\",\n    \"This situation of prolonged job search failure has never happened to him before.\",\n    \"There are recreational parks and trails near him.\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_12",
+    "background": "She is married, with children who are no longer kids. She does not drink and drive. She has a husband who drinks too much when he goes out and hangs with obnoxious people.",
+    "self_view_of_problem": "She frames the problem as not knowing how to tell her husband she is lonely and wants out of the marriage. She says she has turned the situation in every direction and is not able to find a solution.",
+    "resistance_drivers": [
+      "Her husband brushes things off and tells her it's just in her head, which makes her doubt herself.",
+      "Her husband says he has no problems and that she has them, which makes her doubt herself.",
+      "She thinks when he acts these ways it's because she is not pretty enough or has a few pounds too much."
+    ],
+    "ambivalence": {
+      "for_change": "She wants to get some self-esteem again and likes the idea of seeing a counselor for herself to help with self-care and possibly ending the marriage.",
+      "against_change": "She doubts her husband will talk to a marriage counselor and says all it does is make her doubt herself."
+    },
+    "values_and_stakes": [
+      "Her self-esteem and sense of self-worth.",
+      "Her safety and principle of not drinking and drive."
+    ],
+    "key_facts": [
+      "She has tried to discuss her loneliness with her husband before.",
+      "Her husband tells her it's just in her head.",
+      "Her husband drinks too much when he goes out.",
+      "She does not go out with him because she does not drink and drive.",
+      "Her husband hangs with some obnoxious people.",
+      "Her husband would go to sleep on a date night at home.",
+      "Her husband says they are no kids anymore that need to go on a date because they are married.",
+      "She wants marriage counseling but doubts he will talk.",
+      "She thinks when he acts these ways it's because she is not pretty enough or has a few pounds too much."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"She is married, with children who are no longer kids. She does not drink and drive. She has a husband who drinks too much when he goes out and hangs with obnoxious people.\",\n  \"self_view_of_problem\": \"She frames the problem as not knowing how to tell her husband she is lonely and wants out of the marriage. She says she has turned the situation in every direction and is not able to find a solution.\",\n  \"resistance_drivers\": [\"Her husband brushes things off and tells her it's just in her head, which makes her doubt herself.\", \"Her husband says he has no problems and that she has them, which makes her doubt herself.\", \"She thinks when he acts these ways it's because she is not pretty enough or has a few pounds too much.\"],\n  \"ambivalence\": {\n    \"for_change\": \"She wants to get some self-esteem again and likes the idea of seeing a counselor for herself to help with self-care and possibly ending the marriage.\",\n    \"against_change\": \"She doubts her husband will talk to a marriage counselor and says all it does is make her doubt herself.\"\n  },\n  \"values_and_stakes\": [\"Her self-esteem and sense of self-worth.\", \"Her safety and principle of not drinking and drive.\"],\n  \"key_facts\": [\"She has tried to discuss her loneliness with her husband before.\", \"Her husband tells her it's just in her head.\", \"Her husband drinks too much when he goes out.\", \"She does not go out with him because she does not drink and drive.\", \"Her husband hangs with some obnoxious people.\", \"Her husband would go to sleep on a date night at home.\", \"Her husband says they are no kids anymore that need to go on a date because they are married.\", \"She wants marriage counseling but doubts he will talk.\", \"She thinks when he acts these ways it's because she is not pretty enough or has a few pounds too much.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_13",
+    "background": "A person whose family is scattered across the country (Seattle, Georgia, PA). They are teaching themselves piano and stenography for possible future employment as a stenographer, and they enjoy reading novels.",
+    "self_view_of_problem": "Feeling down because they are alone for the holidays, with no nearby friends available this weekend as they all went away.",
+    "resistance_drivers": [
+      "Believes they are not the only one with no plans this weekend, suggesting a normalization of their situation."
+    ],
+    "ambivalence": {
+      "for_change": "Acknowledges they could occupy their time with things they need or want to do to distract themselves.",
+      "against_change": "Implies the situation is not unique or particularly severe by stating 'I'm sure I'm not the only one with no plans this weekend.'"
+    },
+    "values_and_stakes": [
+      "Their stenography work and personal dictionary, which requires careful backup to avoid loss.",
+      "Their self-driven learning pursuits (piano, stenography)."
+    ],
+    "key_facts": [
+      "Three nearby friends went away for the holidays.",
+      "Family lives in Seattle, Georgia, and PA.",
+      "Teaching themselves piano.",
+      "Teaching themselves stenography for possible future employment.",
+      "Hits DRAT in one stroke to produce 'Did there come a time' on the machine's LCD.",
+      "Personal dictionary for stenography is backed up to cloud or separate drive.",
+      "This is not their first holiday alone."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "```json\n{\n    \"background\": \"A person whose family is scattered across the country (Seattle, Georgia, PA). They are teaching themselves piano and stenography for possible future employment as a stenographer, and they enjoy reading novels.\",\n    \"self_view_of_problem\": \"Feeling down because they are alone for the holidays, with no nearby friends available this weekend as they all went away.\",\n    \"resistance_drivers\": [\"Believes they are not the only one with no plans this weekend, suggesting a normalization of their situation.\"],\n    \"ambivalence\": {\n        \"for_change\": \"Acknowledges they could occupy their time with things they need or want to do to distract themselves.\",\n        \"against_change\": \"Implies the situation is not unique or particularly severe by stating 'I'm sure I'm not the only one with no plans this weekend.'\"\n    },\n    \"values_and_stakes\": [\"Their stenography work and personal dictionary, which requires careful backup to avoid loss.\", \"Their self-driven learning pursuits (piano, stenography).\"],\n    \"key_facts\": [\"Three nearby friends went away for the holidays.\", \"Family lives in Seattle, Georgia, and PA.\", \"Teaching themselves piano.\", \"Teaching themselves stenography for possible future employment.\", \"Hits DRAT in one stroke to produce 'Did there come a time' on the machine's LCD.\", \"Personal dictionary for stenography is backed up to cloud or separate drive.\", \"This is not their first holiday alone.\"]\n}\n```",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_14",
+    "background": "A person who recently had friends over at their place, where an argument broke out.",
+    "self_view_of_problem": "The client sees the problem as their friends targeting them without reason after they tried to stop a fight, and they feel these friends are not true friends.",
+    "resistance_drivers": [
+      "Feeling unfairly targeted by friends after trying to intervene in an argument.",
+      "Believing the friends made a mess without any reason, leading to a desire to cut off communication."
+    ],
+    "ambivalence": {
+      "for_change": "The client acknowledges they should give friends time to realize their mistakes and considers implementing the therapist's suggestions.",
+      "against_change": "The client feels like not talking to their friends and states they will not talk to them, resisting reconciliation efforts."
+    },
+    "values_and_stakes": [
+      "Having true friends who do not unfairly target them.",
+      "Maintaining a peaceful environment at their own place."
+    ],
+    "key_facts": [
+      "There was an argument between two of the client's friends at the client's place.",
+      "The client tried to stop the fight by saying loudly, \"Stop all this nonsense at my place.\"",
+      "After the client intervened, all friends started targeting the client.",
+      "The client feels the friends are not true friends.",
+      "The client plans not to talk to their friends."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"A person who recently had friends over at their place, where an argument broke out.\",\n  \"self_view_of_problem\": \"The client sees the problem as their friends targeting them without reason after they tried to stop a fight, and they feel these friends are not true friends.\",\n  \"resistance_drivers\": [\n    \"Feeling unfairly targeted by friends after trying to intervene in an argument.\",\n    \"Believing the friends made a mess without any reason, leading to a desire to cut off communication.\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"The client acknowledges they should give friends time to realize their mistakes and considers implementing the therapist's suggestions.\",\n    \"against_change\": \"The client feels like not talking to their friends and states they will not talk to them, resisting reconciliation efforts.\"\n  },\n  \"values_and_stakes\": [\n    \"Having true friends who do not unfairly target them.\",\n    \"Maintaining a peaceful environment at their own place.\"\n  ],\n  \"key_facts\": [\n    \"There was an argument between two of the client's friends at the client's place.\",\n    \"The client tried to stop the fight by saying loudly, \\\"Stop all this nonsense at my place.\\\"\",\n    \"After the client intervened, all friends started targeting the client.\",\n    \"The client feels the friends are not true friends.\",\n    \"The client plans not to talk to their friends.\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_15",
+    "background": "The client recently lost their job as a server in a restaurant about two weeks ago due to Covid-19. They have no other formal job training and own a car.",
+    "self_view_of_problem": "They frame the problem as being scared because they lost their job and can't find a new one, and initially saw their situation as hopeless.",
+    "resistance_drivers": [
+      "They express uncertainty about what else they can do besides restaurant work.",
+      "They wonder about the safety of food delivery work."
+    ],
+    "ambivalence": {
+      "for_change": "They are actively seeking help and information, and feel the therapist has shown them their situation is not hopeless.",
+      "against_change": "They were initially reluctant to try therapy or seeking help online."
+    },
+    "values_and_stakes": [
+      "Their health and safety, as indicated by concern over delivery job safety and interest in vitamins for protection.",
+      "Finding a way to make money and regain employment."
+    ],
+    "key_facts": [
+      "Lost job as a server 2 weeks ago due to Covid-19.",
+      "Has a car.",
+      "Allergic to dogs and cats.",
+      "Has never used job boards before.",
+      "Is considering food delivery jobs like Grub Hub and Uber Eats.",
+      "Was reluctant to try therapy at first."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client recently lost their job as a server in a restaurant about two weeks ago due to Covid-19. They have no other formal job training and own a car.\",\n  \"self_view_of_problem\": \"They frame the problem as being scared because they lost their job and can't find a new one, and initially saw their situation as hopeless.\",\n  \"resistance_drivers\": [\"They express uncertainty about what else they can do besides restaurant work.\", \"They wonder about the safety of food delivery work.\"],\n  \"ambivalence\": {\n    \"for_change\": \"They are actively seeking help and information, and feel the therapist has shown them their situation is not hopeless.\",\n    \"against_change\": \"They were initially reluctant to try therapy or seeking help online.\"\n  },\n  \"values_and_stakes\": [\"Their health and safety, as indicated by concern over delivery job safety and interest in vitamins for protection.\", \"Finding a way to make money and regain employment.\"],\n  \"key_facts\": [\"Lost job as a server 2 weeks ago due to Covid-19.\", \"Has a car.\", \"Allergic to dogs and cats.\", \"Has never used job boards before.\", \"Is considering food delivery jobs like Grub Hub and Uber Eats.\", \"Was reluctant to try therapy at first.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_16",
+    "background": "This person is employed but facing potential layoff at their company, which has already implemented cut-offs and is now moving to layoffs. They are actively worried about job security and seeking new employment.",
+    "self_view_of_problem": "The client frames the problem as a serious layoff situation at their company that they didn't believe could happen to them, and now they are scared about how to secure a new job.",
+    "resistance_drivers": [
+      "Fear and confusion about where to start looking for a new job, feeling overwhelmed by the process.",
+      "Being scared by the daily rate of other people losing jobs, which increases anxiety and paralysis."
+    ],
+    "ambivalence": {
+      "for_change": "Expresses determination to keep trying until securing a new job and will not rest, showing motivation to act.",
+      "against_change": "Implies disbelief and shock that this layoff could happen to them, suggesting a resistance to accepting the reality and the need to change job situations abruptly."
+    },
+    "values_and_stakes": [
+      "Their job and financial security, as the layoff threat directly impacts their livelihood.",
+      "Health and safety, as they acknowledge the importance of staying healthy during tough times."
+    ],
+    "key_facts": [
+      "The client's company is implementing layoffs after previously having cut-offs.",
+      "The client is scared about how to secure a new job.",
+      "The client didn't believe a layoff could happen to them.",
+      "The client is confused about where to start looking for a new job.",
+      "The client notes that a lot of people are losing jobs daily, which scares them.",
+      "The client commits to keep trying until they secure a new job and will not rest."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"This person is employed but facing potential layoff at their company, which has already implemented cut-offs and is now moving to layoffs. They are actively worried about job security and seeking new employment.\",\n  \"self_view_of_problem\": \"The client frames the problem as a serious layoff situation at their company that they didn't believe could happen to them, and now they are scared about how to secure a new job.\",\n  \"resistance_drivers\": [\"Fear and confusion about where to start looking for a new job, feeling overwhelmed by the process.\", \"Being scared by the daily rate of other people losing jobs, which increases anxiety and paralysis.\"],\n  \"ambivalence\": {\n    \"for_change\": \"Expresses determination to keep trying until securing a new job and will not rest, showing motivation to act.\",\n    \"against_change\": \"Implies disbelief and shock that this layoff could happen to them, suggesting a resistance to accepting the reality and the need to change job situations abruptly.\"\n  },\n  \"values_and_stakes\": [\"Their job and financial security, as the layoff threat directly impacts their livelihood.\", \"Health and safety, as they acknowledge the importance of staying healthy during tough times.\"],\n  \"key_facts\": [\"The client's company is implementing layoffs after previously having cut-offs.\", \"The client is scared about how to secure a new job.\", \"The client didn't believe a layoff could happen to them.\", \"The client is confused about where to start looking for a new job.\", \"The client notes that a lot of people are losing jobs daily, which scares them.\", \"The client commits to keep trying until they secure a new job and will not rest.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_17",
+    "background": "The client is employed but facing a pay cut and potential layoff due to the COVID-19 pandemic. They are concerned about securing another job.",
+    "self_view_of_problem": "The client frames the problem as being scared about a layoff from their job, exacerbated by the pandemic causing pay cuts and now layoffs, and they are worried about how to secure another job.",
+    "resistance_drivers": [
+      "The client expresses disbelief and fear about the situation, stating 'I don't even dream about this at all I don't believed it is happening', which may indicate a resistance to fully confronting or acting on the reality of the job loss."
+    ],
+    "ambivalence": {
+      "for_change": "The client acknowledges the need to secure another job and considers polishing their resume and asking around online, saying 'That what I was thinking about'.",
+      "against_change": "The client is scared and overwhelmed by the layoff situation and the competitive job market, noting 'It is not easy my friend!' and that 'A lot of people are losing their jobs every day by day that one a lone is caring', which may pull them away from proactive steps."
+    },
+    "values_and_stakes": [
+      "Their job and financial security are important, as they are scared about layoffs and pay cuts.",
+      "Maintaining stability and avoiding job loss is a key concern."
+    ],
+    "key_facts": [
+      "The client is facing a pay cut due to the pandemic.",
+      "The client is scared about a potential layoff from their job.",
+      "The client is worried about how to secure another job.",
+      "The client acknowledges that many people are losing jobs daily.",
+      "The client considers polishing their resume and asking around online for job opportunities."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is employed but facing a pay cut and potential layoff due to the COVID-19 pandemic. They are concerned about securing another job.\",\n  \"self_view_of_problem\": \"The client frames the problem as being scared about a layoff from their job, exacerbated by the pandemic causing pay cuts and now layoffs, and they are worried about how to secure another job.\",\n  \"resistance_drivers\": [\"The client expresses disbelief and fear about the situation, stating 'I don't even dream about this at all I don't believed it is happening', which may indicate a resistance to fully confronting or acting on the reality of the job loss.\"],\n  \"ambivalence\": {\n    \"for_change\": \"The client acknowledges the need to secure another job and considers polishing their resume and asking around online, saying 'That what I was thinking about'.\",\n    \"against_change\": \"The client is scared and overwhelmed by the layoff situation and the competitive job market, noting 'It is not easy my friend!' and that 'A lot of people are losing their jobs every day by day that one a lone is caring', which may pull them away from proactive steps.\"\n  },\n  \"values_and_stakes\": [\"Their job and financial security are important, as they are scared about layoffs and pay cuts.\", \"Maintaining stability and avoiding job loss is a key concern.\"],\n  \"key_facts\": [\"The client is facing a pay cut due to the pandemic.\", \"The client is scared about a potential layoff from their job.\", \"The client is worried about how to secure another job.\", \"The client acknowledges that many people are losing jobs daily.\", \"The client considers polishing their resume and asking around online for job opportunities.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_18",
+    "background": "This person is employed and works from home due to COVID. They miss going to their workplace and seeing coworkers.",
+    "self_view_of_problem": "They state they are depressed staying at home due to COVID. They frame the problem as being caused by the restrictions of the pandemic, not by an internal issue.",
+    "resistance_drivers": [],
+    "ambivalence": {
+      "for_change": "They express a strong desire for the pandemic to be over so they can return to their office, see coworkers, and go to their favorite bar.",
+      "against_change": "They do not express anything pulling them away from change; they are eager for the situation to change."
+    },
+    "values_and_stakes": [
+      "Their work and office environment",
+      "Social connection with coworkers",
+      "Going out to their favorite bar"
+    ],
+    "key_facts": [
+      "Is depressed staying at home due to COVID",
+      "Prefers going to work over working from home",
+      "Wants to go to their favorite bar and have a drink",
+      "Wants to see coworkers again",
+      "Hopes the pandemic will be over soon",
+      "Is interested in when a vaccine might be available",
+      "Considers buying a party ticket in advance for potential savings"
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"This person is employed and works from home due to COVID. They miss going to their workplace and seeing coworkers.\",\n  \"self_view_of_problem\": \"They state they are depressed staying at home due to COVID. They frame the problem as being caused by the restrictions of the pandemic, not by an internal issue.\",\n  \"resistance_drivers\": null,\n  \"ambivalence\": {\n    \"for_change\": \"They express a strong desire for the pandemic to be over so they can return to their office, see coworkers, and go to their favorite bar.\",\n    \"against_change\": \"They do not express anything pulling them away from change; they are eager for the situation to change.\"\n  },\n  \"values_and_stakes\": [\"Their work and office environment\", \"Social connection with coworkers\", \"Going out to their favorite bar\"],\n  \"key_facts\": [\"Is depressed staying at home due to COVID\", \"Prefers going to work over working from home\", \"Wants to go to their favorite bar and have a drink\", \"Wants to see coworkers again\", \"Hopes the pandemic will be over soon\", \"Is interested in when a vaccine might be available\", \"Considers buying a party ticket in advance for potential savings\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_19",
+    "background": "The client is a person experiencing persistent sadness and hopelessness, likely in a post-COVID context, who sleeps a lot.",
+    "self_view_of_problem": "The client defines the problem as an overall sadness they 'can't seem to shake' and a 'hopeless feeling' that persists during the day.",
+    "resistance_drivers": [
+      "The client has not tried suggested coping strategies like classical music before, indicating a potential lack of initiative or experimentation."
+    ],
+    "ambivalence": {
+      "for_change": "The client expresses hope they will feel happy after COVID, and is willing to try the therapist's music suggestion.",
+      "against_change": "The client finds comfort and escape in sleeping, stating they sleep 'probably too much' and that sleeping feels good."
+    },
+    "values_and_stakes": [
+      "The client values feeling okay and not being disturbed, as indicated by their openness to instrumental music that won't 'disturb' them."
+    ],
+    "key_facts": [
+      "The client feels sad during the day and can't make it go away.",
+      "The client sleeps 'probably too much'.",
+      "The client feels a hopeless feeling.",
+      "The client hopes they will feel happy after COVID."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is a person experiencing persistent sadness and hopelessness, likely in a post-COVID context, who sleeps a lot.\",\n  \"self_view_of_problem\": \"The client defines the problem as an overall sadness they 'can't seem to shake' and a 'hopeless feeling' that persists during the day.\",\n  \"resistance_drivers\": [\"The client has not tried suggested coping strategies like classical music before, indicating a potential lack of initiative or experimentation.\"],\n  \"ambivalence\": {\n    \"for_change\": \"The client expresses hope they will feel happy after COVID, and is willing to try the therapist's music suggestion.\",\n    \"against_change\": \"The client finds comfort and escape in sleeping, stating they sleep 'probably too much' and that sleeping feels good.\"\n  },\n  \"values_and_stakes\": [\"The client values feeling okay and not being disturbed, as indicated by their openness to instrumental music that won't 'disturb' them.\"],\n  \"key_facts\": [\"The client feels sad during the day and can't make it go away.\", \"The client sleeps 'probably too much'.\", \"The client feels a hopeless feeling.\", \"The client hopes they will feel happy after COVID.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_20",
+    "background": "The client is a man who recently broke up with his girlfriend after a four-year relationship. He is currently feeling very sad and lonely.",
+    "self_view_of_problem": "He frames the problem as his girlfriend leaving him after a fight where she accused him of neglecting her, though he feels he spent as much time with her as he could while also needing to spend time with his family.",
+    "resistance_drivers": [
+      "He is actively considering using alcohol to cope with his feelings, asking if drinking will help.",
+      "He maintains a secret Facebook account to continue watching his ex, indicating a resistance to letting go.",
+      "He expresses a belief that men cannot do without a woman, which may reinforce his focus on getting her back rather than moving on."
+    ],
+    "ambivalence": {
+      "for_change": "He acknowledges feeling very sad and lonely and asks for advice on what to do, indicating some openness to guidance.",
+      "against_change": "He wants to drink to forget about her and is using a secret account to monitor her, with the hope of getting her back at the right time, showing a strong pull toward maintaining the connection and avoiding the pain of the breakup."
+    },
+    "values_and_stakes": [
+      "His four-year relationship with his girlfriend, which he says he loved.",
+      "His family, as he mentions needing to spend time with them."
+    ],
+    "key_facts": [
+      "He had a huge fight with his girlfriend and she left him.",
+      "The relationship lasted four years.",
+      "He hasn't talked to her in a month.",
+      "He is considering drinking alcohol to cope.",
+      "He maintains a secret Facebook account to watch his ex."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is a man who recently broke up with his girlfriend after a four-year relationship. He is currently feeling very sad and lonely.\",\n  \"self_view_of_problem\": \"He frames the problem as his girlfriend leaving him after a fight where she accused him of neglecting her, though he feels he spent as much time with her as he could while also needing to spend time with his family.\",\n  \"resistance_drivers\": [\"He is actively considering using alcohol to cope with his feelings, asking if drinking will help.\", \"He maintains a secret Facebook account to continue watching his ex, indicating a resistance to letting go.\", \"He expresses a belief that men cannot do without a woman, which may reinforce his focus on getting her back rather than moving on.\"],\n  \"ambivalence\": {\n    \"for_change\": \"He acknowledges feeling very sad and lonely and asks for advice on what to do, indicating some openness to guidance.\",\n    \"against_change\": \"He wants to drink to forget about her and is using a secret account to monitor her, with the hope of getting her back at the right time, showing a strong pull toward maintaining the connection and avoiding the pain of the breakup.\"\n  },\n  \"values_and_stakes\": [\"His four-year relationship with his girlfriend, which he says he loved.\", \"His family, as he mentions needing to spend time with them.\"],\n  \"key_facts\": [\"He had a huge fight with his girlfriend and she left him.\", \"The relationship lasted four years.\", \"He hasn't talked to her in a month.\", \"He is considering drinking alcohol to cope.\", \"He maintains a secret Facebook account to watch his ex.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_21",
+    "background": "This person lives in the country and has a 13-year-old dog. They have family in a nursing home without computer access, and extended family they normally see during the holidays.",
+    "self_view_of_problem": "The client frames the problem as depression caused by not being able to see friends and family in person during the Covid pandemic, which is especially hard during the holidays. They state it 'breaks my heart' not to see nursing home family for months.",
+    "resistance_drivers": [
+      "They feel that messaging and calling are 'just not the same' as in-person contact like hugs, implying a belief that remote alternatives are inadequate substitutes."
+    ],
+    "ambivalence": {
+      "for_change": "They are motivated to feel better, seek advice, and try activities like finding a funny podcast or comedy series to counteract sadness. They agree it's important to remember 'bad things don't last forever' and that staying safe is important to be here to celebrate later.",
+      "against_change": "They express a sense of guilt about feeling happy when there is so much sadness in the world, which may pull them away from actively pursuing happiness."
+    },
+    "values_and_stakes": [
+      "Close relationships with family and dear friends",
+      "The companionship of their long-term pet dog",
+      "Connection with nature and the ability to take walks in the country"
+    ],
+    "key_facts": [
+      "Has been having depression due to not seeing friends and family during the pandemic",
+      "Messages and calls family but finds it not the same as in-person hugs",
+      "Has family in a nursing home without computer access",
+      "Hasn't seen nursing home family in several months",
+      "This is the first year not spending holidays with extended family",
+      "Has a 13-year-old dog that is a cuddle buddy",
+      "Lives in the country and can go for nice walks",
+      "Plans to try watching or listening to something funny to feel better",
+      "Feels guilty about being happy given world sadness",
+      "Believes staying safe is important to be here to celebrate after the pandemic"
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"This person lives in the country and has a 13-year-old dog. They have family in a nursing home without computer access, and extended family they normally see during the holidays.\",\n  \"self_view_of_problem\": \"The client frames the problem as depression caused by not being able to see friends and family in person during the Covid pandemic, which is especially hard during the holidays. They state it 'breaks my heart' not to see nursing home family for months.\",\n  \"resistance_drivers\": [\"They feel that messaging and calling are 'just not the same' as in-person contact like hugs, implying a belief that remote alternatives are inadequate substitutes.\"],\n  \"ambivalence\": {\n    \"for_change\": \"They are motivated to feel better, seek advice, and try activities like finding a funny podcast or comedy series to counteract sadness. They agree it's important to remember 'bad things don't last forever' and that staying safe is important to be here to celebrate later.\",\n    \"against_change\": \"They express a sense of guilt about feeling happy when there is so much sadness in the world, which may pull them away from actively pursuing happiness.\"\n  },\n  \"values_and_stakes\": [\"Close relationships with family and dear friends\", \"The companionship of their long-term pet dog\", \"Connection with nature and the ability to take walks in the country\"],\n  \"key_facts\": [\"Has been having depression due to not seeing friends and family during the pandemic\", \"Messages and calls family but finds it not the same as in-person hugs\", \"Has family in a nursing home without computer access\", \"Hasn't seen nursing home family in several months\", \"This is the first year not spending holidays with extended family\", \"Has a 13-year-old dog that is a cuddle buddy\", \"Lives in the country and can go for nice walks\", \"Plans to try watching or listening to something funny to feel better\", \"Feels guilty about being happy given world sadness\", \"Believes staying safe is important to be here to celebrate after the pandemic\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_22",
+    "background": "The client is someone who broke up with their partner a long time ago because the partner cheated. They are now being harassed by this ex-partner, who contacts their friends and family and posts about them on social media.",
+    "self_view_of_problem": "The client frames the problem as their ex-partner harassing them and not stopping, which is hard to ignore and forces them to avoid things they enjoy, like going online.",
+    "resistance_drivers": [
+      "The ex-partner's persistent behavior, including creating new accounts to circumvent blocks, makes the client feel the ex 'really will not give up'.",
+      "Authorities and others have told the client there is nothing they can do because they don't consider the behavior dangerous or criminal, leading to frustration and a sense of helplessness."
+    ],
+    "ambivalence": {
+      "for_change": "The client wants the harassment to stop and is actively documenting incidents, encouraging friends to block the ex, and is open to sending a formal letter to end it 'once and for all'.",
+      "against_change": "The client has confronted the ex in person, which led to a dramatic meltdown where the ex expressed not wanting to lose them, potentially complicating direct action due to emotional fallout."
+    },
+    "values_and_stakes": [
+      "Their relationships with friends and family, whom the ex is contacting.",
+      "Their ability to enjoy online activities and maintain peace without harassment."
+    ],
+    "key_facts": [
+      "The breakup occurred because the ex cheated.",
+      "The ex contacts the client's friends and family and posts about them on social media.",
+      "The client documents the harassment and tries to avoid going online.",
+      "The client has reported the harassment but was told nothing can be done because it's not seen as dangerous or criminal.",
+      "The client confronted the ex in person, resulting in a dramatic meltdown from the ex.",
+      "The client has encouraged friends to block the ex, but new accounts keep appearing.",
+      "The harassment has been ongoing for at least 6 months.",
+      "The harassment usually happens every weekend."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is someone who broke up with their partner a long time ago because the partner cheated. They are now being harassed by this ex-partner, who contacts their friends and family and posts about them on social media.\",\n  \"self_view_of_problem\": \"The client frames the problem as their ex-partner harassing them and not stopping, which is hard to ignore and forces them to avoid things they enjoy, like going online.\",\n  \"resistance_drivers\": [\n    \"The ex-partner's persistent behavior, including creating new accounts to circumvent blocks, makes the client feel the ex 'really will not give up'.\",\n    \"Authorities and others have told the client there is nothing they can do because they don't consider the behavior dangerous or criminal, leading to frustration and a sense of helplessness.\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"The client wants the harassment to stop and is actively documenting incidents, encouraging friends to block the ex, and is open to sending a formal letter to end it 'once and for all'.\",\n    \"against_change\": \"The client has confronted the ex in person, which led to a dramatic meltdown where the ex expressed not wanting to lose them, potentially complicating direct action due to emotional fallout.\"\n  },\n  \"values_and_stakes\": [\n    \"Their relationships with friends and family, whom the ex is contacting.\",\n    \"Their ability to enjoy online activities and maintain peace without harassment.\"\n  ],\n  \"key_facts\": [\n    \"The breakup occurred because the ex cheated.\",\n    \"The ex contacts the client's friends and family and posts about them on social media.\",\n    \"The client documents the harassment and tries to avoid going online.\",\n    \"The client has reported the harassment but was told nothing can be done because it's not seen as dangerous or criminal.\",\n    \"The client confronted the ex in person, resulting in a dramatic meltdown from the ex.\",\n    \"The client has encouraged friends to block the ex, but new accounts keep appearing.\",\n    \"The harassment has been ongoing for at least 6 months.\",\n    \"The harassment usually happens every weekend.\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_23",
+    "background": "The client is a college student about to start their next semester next month. They are taking an honors calculus course required for their degree goal.",
+    "self_view_of_problem": "The client frames the problem as being very scared and frightened about the upcoming honors calculus class, worried they will not do well because they only got a B in an easier high school calculus course a couple years ago.",
+    "resistance_drivers": [
+      "The client believes the campus is closed due to the pandemic, limiting access to revision courses.",
+      "The client notes that online tutors are almost always busy, suggesting a perceived lack of available support."
+    ],
+    "ambivalence": {
+      "for_change": "The client acknowledges the therapist's advice to work on it for confidence is good and says they'll try it.",
+      "against_change": "The client expresses fear and worry about the class, implying a reluctance to engage due to anticipated difficulty and past performance."
+    },
+    "values_and_stakes": [
+      "Their degree goal, which requires passing the calculus course."
+    ],
+    "key_facts": [
+      "The client's next college semester starts next month.",
+      "They have to take an honors calculus course.",
+      "They took an easy calculus course in high school a couple years ago and got a B.",
+      "The campus is closed due to the pandemic.",
+      "Online tutors are almost always busy.",
+      "None of their friends are taking the class or have ever taken calculus."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is a college student about to start their next semester next month. They are taking an honors calculus course required for their degree goal.\",\n  \"self_view_of_problem\": \"The client frames the problem as being very scared and frightened about the upcoming honors calculus class, worried they will not do well because they only got a B in an easier high school calculus course a couple years ago.\",\n  \"resistance_drivers\": [\"The client believes the campus is closed due to the pandemic, limiting access to revision courses.\", \"The client notes that online tutors are almost always busy, suggesting a perceived lack of available support.\"],\n  \"ambivalence\": {\n    \"for_change\": \"The client acknowledges the therapist's advice to work on it for confidence is good and says they'll try it.\",\n    \"against_change\": \"The client expresses fear and worry about the class, implying a reluctance to engage due to anticipated difficulty and past performance.\"\n  },\n  \"values_and_stakes\": [\"Their degree goal, which requires passing the calculus course.\"],\n  \"key_facts\": [\"The client's next college semester starts next month.\", \"They have to take an honors calculus course.\", \"They took an easy calculus course in high school a couple years ago and got a B.\", \"The campus is closed due to the pandemic.\", \"Online tutors are almost always busy.\", \"None of their friends are taking the class or have ever taken calculus.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_24",
+    "background": "The client lost their job due to COVID-19 after working hard for the company for five years. They are unable to pay rent and hospital fees, and have sought help from friends and relatives and applied for jobs online without positive results.",
+    "self_view_of_problem": "The client frames the problem as being unable to satisfy their needs, pay rent and hospital fees, and feeling cornered and helpless with all doors closed. They state they have lost hope and cannot come over the situation.",
+    "resistance_drivers": [
+      "They feel all opportunities are closed and they are cornered and helpless, which may make them resistant to believing change is possible.",
+      "They have lost hope, which likely reduces their motivation to continue trying."
+    ],
+    "ambivalence": {
+      "for_change": "They have actively sought help from friends and relatives and applied for jobs online, showing a desire to improve their situation.",
+      "against_change": "They express a sense of hopelessness and helplessness, stating they cannot come over the situation and have lost hope, which pulls them away from engaging in further change efforts."
+    },
+    "values_and_stakes": [
+      "Their ability to satisfy their basic needs like paying rent and hospital fees.",
+      "Their job and financial stability, having worked hard for five years.",
+      "Support from friends and relatives, as they have asked them for help."
+    ],
+    "key_facts": [
+      "Lost job due to COVID-19.",
+      "Worked for the company for five years.",
+      "Unable to pay rent and hospital fees.",
+      "Asked help from friends and relatives.",
+      "Applied for jobs online.",
+      "Has not received any positive results from job applications.",
+      "Has not slept.",
+      "Feels cornered and helpless.",
+      "Has lost hope."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client lost their job due to COVID-19 after working hard for the company for five years. They are unable to pay rent and hospital fees, and have sought help from friends and relatives and applied for jobs online without positive results.\",\n  \"self_view_of_problem\": \"The client frames the problem as being unable to satisfy their needs, pay rent and hospital fees, and feeling cornered and helpless with all doors closed. They state they have lost hope and cannot come over the situation.\",\n  \"resistance_drivers\": [\"They feel all opportunities are closed and they are cornered and helpless, which may make them resistant to believing change is possible.\", \"They have lost hope, which likely reduces their motivation to continue trying.\"],\n  \"ambivalence\": {\n    \"for_change\": \"They have actively sought help from friends and relatives and applied for jobs online, showing a desire to improve their situation.\",\n    \"against_change\": \"They express a sense of hopelessness and helplessness, stating they cannot come over the situation and have lost hope, which pulls them away from engaging in further change efforts.\"\n  },\n  \"values_and_stakes\": [\"Their ability to satisfy their basic needs like paying rent and hospital fees.\", \"Their job and financial stability, having worked hard for five years.\", \"Support from friends and relatives, as they have asked them for help.\"],\n  \"key_facts\": [\"Lost job due to COVID-19.\", \"Worked for the company for five years.\", \"Unable to pay rent and hospital fees.\", \"Asked help from friends and relatives.\", \"Applied for jobs online.\", \"Has not received any positive results from job applications.\", \"Has not slept.\", \"Feels cornered and helpless.\", \"Has lost hope.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_25",
+    "background": "The client is a student who just finished a semester. They are stuck at home due to COVID.",
+    "self_view_of_problem": "The client frames their problem as feeling depressed and sad with the year ending, specifically due to COVID not being resolved yet and being stuck at home.",
+    "resistance_drivers": [
+      "The client has not done anything different than usual while staying at home, indicating a lack of initiative or change in routine."
+    ],
+    "ambivalence": {
+      "for_change": "The client expresses openness to trying new activities like creating YouTube videos after a suggestion.",
+      "against_change": "The client's current routine is mainly just watching YouTube videos, which they have not deviated from."
+    },
+    "values_and_stakes": [],
+    "key_facts": [
+      "The client just finished the semester.",
+      "The client is stuck at home due to COVID.",
+      "The client's main activity in spare time is watching YouTube videos.",
+      "The client has not looked into online resources for hobbies before.",
+      "The client might try creating videos for YouTube."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is a student who just finished a semester. They are stuck at home due to COVID.\",\n  \"self_view_of_problem\": \"The client frames their problem as feeling depressed and sad with the year ending, specifically due to COVID not being resolved yet and being stuck at home.\",\n  \"resistance_drivers\": [\"The client has not done anything different than usual while staying at home, indicating a lack of initiative or change in routine.\"],\n  \"ambivalence\": {\n    \"for_change\": \"The client expresses openness to trying new activities like creating YouTube videos after a suggestion.\",\n    \"against_change\": \"The client's current routine is mainly just watching YouTube videos, which they have not deviated from.\"\n  },\n  \"values_and_stakes\": null,\n  \"key_facts\": [\"The client just finished the semester.\", \"The client is stuck at home due to COVID.\", \"The client's main activity in spare time is watching YouTube videos.\", \"The client has not looked into online resources for hobbies before.\", \"The client might try creating videos for YouTube.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_26",
+    "background": "The client is a person who was in a three-year relationship that ended two days ago when their girlfriend broke up with them. They have a few friends and someone they describe as a 'well wisher'.",
+    "self_view_of_problem": "The client frames the problem as being 'very sad' about the breakup, stating 'I taught that she was my everything hereafter' and feeling that 'the fate plays a great game upon me'. They say they don't know how to overcome this kind of sadness.",
+    "resistance_drivers": [
+      "They feel embarrassed about the breakup happening to them.",
+      "They resist telling friends about the breakup because they believe it will make their friends sad."
+    ],
+    "ambivalence": {
+      "for_change": "They want to overcome the sadness and 'start a new life', and they are considering strategies like gym workouts to help.",
+      "against_change": "They are protecting their friends from sadness by not telling them, and they initially feel unable to concentrate on activities to take their mind off the pain."
+    },
+    "values_and_stakes": [
+      "Their friends' emotional well-being (not wanting to make them sad).",
+      "Their relationship with their 'well wisher'.",
+      "Their desire to be strong on their emotions."
+    ],
+    "key_facts": [
+      "Girlfriend broke up with client two days ago.",
+      "The relationship lasted three years.",
+      "Client has a few friends.",
+      "Client has someone they call a 'well wisher'.",
+      "Client cannot concentrate on activities.",
+      "Client feels embarrassed about the breakup.",
+      "Client is considering gym workouts as a strategy."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is a person who was in a three-year relationship that ended two days ago when their girlfriend broke up with them. They have a few friends and someone they describe as a 'well wisher'.\",\n  \"self_view_of_problem\": \"The client frames the problem as being 'very sad' about the breakup, stating 'I taught that she was my everything hereafter' and feeling that 'the fate plays a great game upon me'. They say they don't know how to overcome this kind of sadness.\",\n  \"resistance_drivers\": [\"They feel embarrassed about the breakup happening to them.\", \"They resist telling friends about the breakup because they believe it will make their friends sad.\"],\n  \"ambivalence\": {\n    \"for_change\": \"They want to overcome the sadness and 'start a new life', and they are considering strategies like gym workouts to help.\",\n    \"against_change\": \"They are protecting their friends from sadness by not telling them, and they initially feel unable to concentrate on activities to take their mind off the pain.\"\n  },\n  \"values_and_stakes\": [\"Their friends' emotional well-being (not wanting to make them sad).\", \"Their relationship with their 'well wisher'.\", \"Their desire to be strong on their emotions.\"],\n  \"key_facts\": [\"Girlfriend broke up with client two days ago.\", \"The relationship lasted three years.\", \"Client has a few friends.\", \"Client has someone they call a 'well wisher'.\", \"Client cannot concentrate on activities.\", \"Client feels embarrassed about the breakup.\", \"Client is considering gym workouts as a strategy.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_27",
+    "background": "Works as an assistant manager at a restaurant. Their manager was fired, and the company asked them to take over the position without a pay raise, then skipped the promotion and hired a new manager instead.",
+    "self_view_of_problem": "The client frames the problem as being upset with the company and themselves for having to work there. They see the new manager as useless and unappreciative of their efforts.",
+    "resistance_drivers": [
+      "Cannot quit because they have bills to pay and it would be hard to find another job right now.",
+      "Finds it hard to fit in job searching or journaling because they are always working."
+    ],
+    "ambivalence": {
+      "for_change": "They have looked at job sites and plan to update their resume. They feel encouraged and believe they can regain control by focusing on solutions.",
+      "against_change": "They feel stuck due to financial obligations and the difficulty of the job market, and they express frustration that leads to thoughts of violence (wanting to punch the new manager)."
+    },
+    "values_and_stakes": [
+      "Financial stability to pay bills",
+      "Being appreciated for their efforts and knowledge at work"
+    ],
+    "key_facts": [
+      "Works as an assistant manager at a restaurant.",
+      "Manager was fired; company asked client to take over without a raise, then hired a new manager instead.",
+      "Bites their tongue more than once a day due to the new manager's opinions.",
+      "Used to journal when younger but stopped when started working.",
+      "Has looked at job sites and plans to update their resume."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"Works as an assistant manager at a restaurant. Their manager was fired, and the company asked them to take over the position without a pay raise, then skipped the promotion and hired a new manager instead.\",\n  \"self_view_of_problem\": \"The client frames the problem as being upset with the company and themselves for having to work there. They see the new manager as useless and unappreciative of their efforts.\",\n  \"resistance_drivers\": [\"Cannot quit because they have bills to pay and it would be hard to find another job right now.\", \"Finds it hard to fit in job searching or journaling because they are always working.\"],\n  \"ambivalence\": {\n    \"for_change\": \"They have looked at job sites and plan to update their resume. They feel encouraged and believe they can regain control by focusing on solutions.\",\n    \"against_change\": \"They feel stuck due to financial obligations and the difficulty of the job market, and they express frustration that leads to thoughts of violence (wanting to punch the new manager).\"\n  },\n  \"values_and_stakes\": [\"Financial stability to pay bills\", \"Being appreciated for their efforts and knowledge at work\"],\n  \"key_facts\": [\"Works as an assistant manager at a restaurant.\", \"Manager was fired; company asked client to take over without a raise, then hired a new manager instead.\", \"Bites their tongue more than once a day due to the new manager's opinions.\", \"Used to journal when younger but stopped when started working.\", \"Has looked at job sites and plans to update their resume.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_28",
+    "background": "The client is a person who cannot hang out with friends in person due to COVID-19 because their friends are high risk.",
+    "self_view_of_problem": "The client feels sad and misses hanging out with friends in person, and sees video calls as not really the same.",
+    "resistance_drivers": [
+      "The client believes video calls are an inadequate substitute for in-person interaction, implying resistance to fully adopting that coping method."
+    ],
+    "ambivalence": {
+      "for_change": "The client is open to finding a new hobby that isn't social and expresses interest in suggestions like online games with friends.",
+      "against_change": "The client is protecting the value of in-person social connection and is reluctant to fully accept remote substitutes as equivalent."
+    },
+    "values_and_stakes": [
+      "Their friendships and in-person connection with friends."
+    ],
+    "key_facts": [
+      "Cannot hang out with friends in person due to COVID-19.",
+      "Friends are high risk.",
+      "Misses friends a lot.",
+      "Does video calls occasionally.",
+      "Finds video calls not the same as in-person.",
+      "Is considering finding a new hobby that isn't social.",
+      "Expressed that online games with friends sound fun.",
+      "Found therapist's specific task examples (like drinking 4 glasses of water at once) interesting."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is a person who cannot hang out with friends in person due to COVID-19 because their friends are high risk.\",\n  \"self_view_of_problem\": \"The client feels sad and misses hanging out with friends in person, and sees video calls as not really the same.\",\n  \"resistance_drivers\": [\"The client believes video calls are an inadequate substitute for in-person interaction, implying resistance to fully adopting that coping method.\"],\n  \"ambivalence\": {\n    \"for_change\": \"The client is open to finding a new hobby that isn't social and expresses interest in suggestions like online games with friends.\",\n    \"against_change\": \"The client is protecting the value of in-person social connection and is reluctant to fully accept remote substitutes as equivalent.\"\n  },\n  \"values_and_stakes\": [\"Their friendships and in-person connection with friends.\"],\n  \"key_facts\": [\"Cannot hang out with friends in person due to COVID-19.\", \"Friends are high risk.\", \"Misses friends a lot.\", \"Does video calls occasionally.\", \"Finds video calls not the same as in-person.\", \"Is considering finding a new hobby that isn't social.\", \"Expressed that online games with friends sound fun.\", \"Found therapist's specific task examples (like drinking 4 glasses of water at once) interesting.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_29",
+    "background": "The client is a person who recently experienced a breakup with their boyfriend, who left without explanation. They are currently feeling depressed and alone.",
+    "self_view_of_problem": "The client frames the problem as being unable to get over the breakup, feeling depressed and alone because their boyfriend left without explanation, and struggling with unresolved emotions and missing him.",
+    "resistance_drivers": [
+      "Wants to keep photos of the ex-boyfriend as a way to hold onto the relationship.",
+      "Does not want to leave the ex-boyfriend behind or stop thinking about him completely.",
+      "Feels the breakup ended in an unresolved way, making it hard to find closure."
+    ],
+    "ambivalence": {
+      "for_change": "Logically acknowledges that if the breakup was going to happen, it was going to happen, and expresses a desire to feel better and get over the breakup.",
+      "against_change": "Misses the ex-boyfriend and does not want to leave him behind, indicating attachment to the past relationship and reluctance to fully let go."
+    },
+    "values_and_stakes": [
+      "The relationship with the ex-boyfriend, which she cared about deeply.",
+      "Memories and photos of the ex-boyfriend, which she wants to preserve."
+    ],
+    "key_facts": [
+      "Boyfriend left without providing an explanation.",
+      "Client feels depressed and alone after the breakup.",
+      "Client thinks about the ex-boyfriend all the time.",
+      "Client wants to keep photos of the ex-boyfriend.",
+      "Client acknowledges logically that the breakup was inevitable."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is a person who recently experienced a breakup with their boyfriend, who left without explanation. They are currently feeling depressed and alone.\",\n  \"self_view_of_problem\": \"The client frames the problem as being unable to get over the breakup, feeling depressed and alone because their boyfriend left without explanation, and struggling with unresolved emotions and missing him.\",\n  \"resistance_drivers\": [\"Wants to keep photos of the ex-boyfriend as a way to hold onto the relationship.\", \"Does not want to leave the ex-boyfriend behind or stop thinking about him completely.\", \"Feels the breakup ended in an unresolved way, making it hard to find closure.\"],\n  \"ambivalence\": {\n    \"for_change\": \"Logically acknowledges that if the breakup was going to happen, it was going to happen, and expresses a desire to feel better and get over the breakup.\",\n    \"against_change\": \"Misses the ex-boyfriend and does not want to leave him behind, indicating attachment to the past relationship and reluctance to fully let go.\"\n  },\n  \"values_and_stakes\": [\"The relationship with the ex-boyfriend, which she cared about deeply.\", \"Memories and photos of the ex-boyfriend, which she wants to preserve.\"],\n  \"key_facts\": [\"Boyfriend left without providing an explanation.\", \"Client feels depressed and alone after the breakup.\", \"Client thinks about the ex-boyfriend all the time.\", \"Client wants to keep photos of the ex-boyfriend.\", \"Client acknowledges logically that the breakup was inevitable.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_30",
+    "background": "She is a married woman with two school-aged children. She works from home and her husband also works from home. Her 11-year-old Pomeranian dog recently passed away.",
+    "self_view_of_problem": "She frames her problem as being overwhelmed by grief and loss, stating 'I am reeling with grief!' and 'It almost is too much to take....' She explicitly questions whether she should get another puppy right away.",
+    "resistance_drivers": [
+      "Fear of experiencing another loss, as she is 'afraid to get another puppy' following the death of her dog and other recent losses.",
+      "A sense that her personal grief is selfish amidst a collective crisis, as she is 'trying not to be selfish with my feelings knowing everyone else is having a bad time too.'"
+    ],
+    "ambivalence": {
+      "for_change": "She feels very lonely without her dog and sees a new puppy as something that could fill a spot 'not filled by humans' and bring happiness. She is actively considering getting one or two puppies.",
+      "against_change": "She is fearful of getting another puppy, likely due to the pain of recent loss. She is also protecting herself from feeling selfish for focusing on her own grief when others are suffering."
+    },
+    "values_and_stakes": [
+      "Her family, including her husband and two children.",
+      "Her pets, which she watches over.",
+      "Her home as a place of peace and safety, as she plans to 'stay at home while working for peace of mind.'",
+      "Her best friend relationship with her deceased dog, who was her 'bestie.'"
+    ],
+    "key_facts": [
+      "Her 11-year-old Pomeranian died last week.",
+      "Her mother's new husband died three weeks ago from Corona.",
+      "Her best friend (a person) died yesterday of old age.",
+      "She works from home indefinitely and does not plan to return to an office.",
+      "Her children do school online.",
+      "Her previous Pomeranian did not 'work out' with her but had energy that was 'happiness' to her.",
+      "She is considering getting two Pomeranians this time."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"She is a married woman with two school-aged children. She works from home and her husband also works from home. Her 11-year-old Pomeranian dog recently passed away.\",\n  \"self_view_of_problem\": \"She frames her problem as being overwhelmed by grief and loss, stating 'I am reeling with grief!' and 'It almost is too much to take....' She explicitly questions whether she should get another puppy right away.\",\n  \"resistance_drivers\": [\"Fear of experiencing another loss, as she is 'afraid to get another puppy' following the death of her dog and other recent losses.\", \"A sense that her personal grief is selfish amidst a collective crisis, as she is 'trying not to be selfish with my feelings knowing everyone else is having a bad time too.'\"],\n  \"ambivalence\": {\n    \"for_change\": \"She feels very lonely without her dog and sees a new puppy as something that could fill a spot 'not filled by humans' and bring happiness. She is actively considering getting one or two puppies.\",\n    \"against_change\": \"She is fearful of getting another puppy, likely due to the pain of recent loss. She is also protecting herself from feeling selfish for focusing on her own grief when others are suffering.\"\n  },\n  \"values_and_stakes\": [\"Her family, including her husband and two children.\", \"Her pets, which she watches over.\", \"Her home as a place of peace and safety, as she plans to 'stay at home while working for peace of mind.'\", \"Her best friend relationship with her deceased dog, who was her 'bestie.'\"],\n  \"key_facts\": [\"Her 11-year-old Pomeranian died last week.\", \"Her mother's new husband died three weeks ago from Corona.\", \"Her best friend (a person) died yesterday of old age.\", \"She works from home indefinitely and does not plan to return to an office.\", \"Her children do school online.\", \"Her previous Pomeranian did not 'work out' with her but had energy that was 'happiness' to her.\", \"She is considering getting two Pomeranians this time.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_31",
+    "background": "The client is between jobs and has no insurance. They have no family, and their girlfriend and best friend were their only close relationships.",
+    "self_view_of_problem": "The client frames the problem as losing his girlfriend to his best friend because he refused her request for a threesome, leaving him with no one in his life and feeling especially lonely during the holidays.",
+    "resistance_drivers": [
+      "He believes that agreeing to the threesome might be a way to get his girlfriend back, showing a focus on regaining the relationship rather than accepting the loss."
+    ],
+    "ambivalence": {
+      "for_change": "He acknowledges he might need help, possibly from a therapist, and suggests he might have 'Stockholm Syndrome,' indicating some recognition of unhealthy dynamics.",
+      "against_change": "He is considering having the threesome to win his girlfriend back, protecting the hope of reuniting with her and his best friend."
+    },
+    "values_and_stakes": [
+      "His relationship with his girlfriend, whom he was with for 7 years.",
+      "His friendship with his best friend, as they were his only family.",
+      "His personal boundaries, as he refused the threesome initially."
+    ],
+    "key_facts": [
+      "His girlfriend left him for his best friend.",
+      "They were together for 7 years.",
+      "He has no family.",
+      "He is between jobs and has no insurance.",
+      "His girlfriend wanted a threesome with his best friend, which he refused.",
+      "She made him watch them have sex once.",
+      "He is considering having a threesome to get her back.",
+      "He mentioned possibly having Stockholm Syndrome."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is between jobs and has no insurance. They have no family, and their girlfriend and best friend were their only close relationships.\",\n  \"self_view_of_problem\": \"The client frames the problem as losing his girlfriend to his best friend because he refused her request for a threesome, leaving him with no one in his life and feeling especially lonely during the holidays.\",\n  \"resistance_drivers\": [\"He believes that agreeing to the threesome might be a way to get his girlfriend back, showing a focus on regaining the relationship rather than accepting the loss.\"],\n  \"ambivalence\": {\n    \"for_change\": \"He acknowledges he might need help, possibly from a therapist, and suggests he might have 'Stockholm Syndrome,' indicating some recognition of unhealthy dynamics.\",\n    \"against_change\": \"He is considering having the threesome to win his girlfriend back, protecting the hope of reuniting with her and his best friend.\"\n  },\n  \"values_and_stakes\": [\"His relationship with his girlfriend, whom he was with for 7 years.\", \"His friendship with his best friend, as they were his only family.\", \"His personal boundaries, as he refused the threesome initially.\"],\n  \"key_facts\": [\"His girlfriend left him for his best friend.\", \"They were together for 7 years.\", \"He has no family.\", \"He is between jobs and has no insurance.\", \"His girlfriend wanted a threesome with his best friend, which he refused.\", \"She made him watch them have sex once.\", \"He is considering having a threesome to get her back.\", \"He mentioned possibly having Stockholm Syndrome.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_32",
+    "background": "The client is a person whose fiancé left them yesterday after being engaged for almost a year. They are currently not working until after the new year, and had planned to spend the holidays with their fiancé.",
+    "self_view_of_problem": "The client frames the problem as their fiancé pretending to be happy for a year and then leaving without warning, which they describe as a betrayal and a lie. They also see a problem in their family and friends not liking the fiancé and making things worse by telling them to just get over it.",
+    "resistance_drivers": [
+      "Feels family and friends are dismissive because they didn't like the fiancé, making it harder to seek their support.",
+      "Believes the fiancé's actions were a deliberate deception, which may fuel resistance to moving on or reframing the situation."
+    ],
+    "ambivalence": {
+      "for_change": "Wants to feel better and less depressed, and is open to talking to a friend for quality time and support.",
+      "against_change": "Struggles with the idea of 'getting over it' because they feel betrayed and don't want to dismiss their own feelings; also fears being alone during the holidays."
+    },
+    "values_and_stakes": [
+      "Having close, supportive friendships where they can share feelings and spend quality time.",
+      "Being understood and having their pain acknowledged by others, rather than being told how to feel."
+    ],
+    "key_facts": [
+      "Fiancé left yesterday after being engaged for almost a year.",
+      "Fiancé packed up all his stuff and said he didn't want to marry the client, calling the last year a lie.",
+      "Client does not go back to work until after the new year.",
+      "Client had planned to spend the next week at home with their fiancé.",
+      "Family and friends didn't like the fiancé and think the breakup is for the best."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is a person whose fiancé left them yesterday after being engaged for almost a year. They are currently not working until after the new year, and had planned to spend the holidays with their fiancé.\",\n  \"self_view_of_problem\": \"The client frames the problem as their fiancé pretending to be happy for a year and then leaving without warning, which they describe as a betrayal and a lie. They also see a problem in their family and friends not liking the fiancé and making things worse by telling them to just get over it.\",\n  \"resistance_drivers\": [\n    \"Feels family and friends are dismissive because they didn't like the fiancé, making it harder to seek their support.\",\n    \"Believes the fiancé's actions were a deliberate deception, which may fuel resistance to moving on or reframing the situation.\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"Wants to feel better and less depressed, and is open to talking to a friend for quality time and support.\",\n    \"against_change\": \"Struggles with the idea of 'getting over it' because they feel betrayed and don't want to dismiss their own feelings; also fears being alone during the holidays.\"\n  },\n  \"values_and_stakes\": [\n    \"Having close, supportive friendships where they can share feelings and spend quality time.\",\n    \"Being understood and having their pain acknowledged by others, rather than being told how to feel.\"\n  ],\n  \"key_facts\": [\n    \"Fiancé left yesterday after being engaged for almost a year.\",\n    \"Fiancé packed up all his stuff and said he didn't want to marry the client, calling the last year a lie.\",\n    \"Client does not go back to work until after the new year.\",\n    \"Client had planned to spend the next week at home with their fiancé.\",\n    \"Family and friends didn't like the fiancé and think the breakup is for the best.\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_33",
+    "background": "The client has a friend of 13 years who is 44 years old and has a short temper. The client is concerned about COVID-19 and protecting their family and others.",
+    "self_view_of_problem": "The client frames the problem as having a friend who is a 'conspiracy theorist' who became mad after being told to pull up her mask, and who the client sees as stubborn, careless, and dangerous to others due to her beliefs and behavior regarding COVID-19.",
+    "resistance_drivers": [
+      "The friend's stubbornness and refusal to believe COVID-19 is real until it struck close to home",
+      "The friend's short temper and tendency to lash out when confronted about safety measures",
+      "The friend's shifting conspiracy beliefs (initially fake for political reasons, then part of population control) that make her seem 'all over the place' and resistant to reason"
+    ],
+    "ambivalence": {
+      "for_change": "The client is willing to separate from the friend for the duration of the virus and cure to protect loved ones, stating 'I cannot talk to her again unless she agrees to get vaccinated.'",
+      "against_change": "The client values the 13-year friendship and expresses hurt and confusion over the conflict, saying 'I hate that but will do it' regarding parting ways, and plans to attempt to mend the relationship after the pandemic."
+    },
+    "values_and_stakes": [
+      "The 13-year friendship with this friend",
+      "The safety of the client's family and other people",
+      "Personal health and safety during the COVID-19 pandemic"
+    ],
+    "key_facts": [
+      "Friend is 44 years old",
+      "Friendship has lasted 13 years",
+      "Friend thought COVID-19 was fake until someone they knew caught it",
+      "Friend believes COVID-19 is part of population control",
+      "Friend has a short temper",
+      "Client told friend to pull up her mask while talking",
+      "Friend yelled at client in response",
+      "Client is willing to separate from friend until she gets vaccinated",
+      "Client plans to attempt to mend the relationship after the pandemic is over"
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client has a friend of 13 years who is 44 years old and has a short temper. The client is concerned about COVID-19 and protecting their family and others.\",\n  \"self_view_of_problem\": \"The client frames the problem as having a friend who is a 'conspiracy theorist' who became mad after being told to pull up her mask, and who the client sees as stubborn, careless, and dangerous to others due to her beliefs and behavior regarding COVID-19.\",\n  \"resistance_drivers\": [\"The friend's stubbornness and refusal to believe COVID-19 is real until it struck close to home\", \"The friend's short temper and tendency to lash out when confronted about safety measures\", \"The friend's shifting conspiracy beliefs (initially fake for political reasons, then part of population control) that make her seem 'all over the place' and resistant to reason\"],\n  \"ambivalence\": {\n    \"for_change\": \"The client is willing to separate from the friend for the duration of the virus and cure to protect loved ones, stating 'I cannot talk to her again unless she agrees to get vaccinated.'\",\n    \"against_change\": \"The client values the 13-year friendship and expresses hurt and confusion over the conflict, saying 'I hate that but will do it' regarding parting ways, and plans to attempt to mend the relationship after the pandemic.\"\n  },\n  \"values_and_stakes\": [\"The 13-year friendship with this friend\", \"The safety of the client's family and other people\", \"Personal health and safety during the COVID-19 pandemic\"],\n  \"key_facts\": [\"Friend is 44 years old\", \"Friendship has lasted 13 years\", \"Friend thought COVID-19 was fake until someone they knew caught it\", \"Friend believes COVID-19 is part of population control\", \"Friend has a short temper\", \"Client told friend to pull up her mask while talking\", \"Friend yelled at client in response\", \"Client is willing to separate from friend until she gets vaccinated\", \"Client plans to attempt to mend the relationship after the pandemic is over\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_34",
+    "background": "The client lost their home when their partner died because the partner had changed the will without the client's knowledge.",
+    "self_view_of_problem": "The client frames the problem as needing support for depression, wanting to feel like a good person again, and feeling like a failure and a useless person.",
+    "resistance_drivers": [
+      "The client expresses uncertainty about becoming whoever they want to be, stating 'I am not sure of that.'"
+    ],
+    "ambivalence": {
+      "for_change": "The client wants to feel hopeful again and to adjust to their situation.",
+      "against_change": "The client feels like a failure and a useless person, which may pull them away from believing change is possible."
+    },
+    "values_and_stakes": [
+      "Feeling like a good person again",
+      "Receiving help and care between people"
+    ],
+    "key_facts": [
+      "Client lost their home after partner's death due to an unknown will change.",
+      "Client states they are getting enough sleep, maybe too much.",
+      "Client typed 'useless person' but noted it was a wrong typing."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client lost their home when their partner died because the partner had changed the will without the client's knowledge.\",\n  \"self_view_of_problem\": \"The client frames the problem as needing support for depression, wanting to feel like a good person again, and feeling like a failure and a useless person.\",\n  \"resistance_drivers\": [\"The client expresses uncertainty about becoming whoever they want to be, stating 'I am not sure of that.'\"],\n  \"ambivalence\": {\n    \"for_change\": \"The client wants to feel hopeful again and to adjust to their situation.\",\n    \"against_change\": \"The client feels like a failure and a useless person, which may pull them away from believing change is possible.\"\n  },\n  \"values_and_stakes\": [\"Feeling like a good person again\", \"Receiving help and care between people\"],\n  \"key_facts\": [\"Client lost their home after partner's death due to an unknown will change.\", \"Client states they are getting enough sleep, maybe too much.\", \"Client typed 'useless person' but noted it was a wrong typing.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_35",
+    "background": "The client is in a 5-year relationship with his girlfriend, who now wants space and to rent a room on her own. He mentions money is tight around the holidays.",
+    "self_view_of_problem": "He frames the problem as his girlfriend wanting space after 5 years, which 'feels over,' and that it isn't fair because 'no one can just pick and choose when they want someone around.' He feels 'blindsided' by this.",
+    "resistance_drivers": [
+      "He feels the situation is unfair and that he shouldn't have to accommodate her wanting space while also not wanting to be away from him.",
+      "He has a history of being hospitalized due to his mental state, which may make him resistant to confronting difficult emotions or changes."
+    ],
+    "ambivalence": {
+      "for_change": "He states he will 'prioritize myself and hope it all works out' and is considering taking a long walk to focus on himself.",
+      "against_change": "He is protecting the 5-year relationship and the identity of being someone who 'take[s] such good care of her daughter,' as noted by her mother. He hopes to 'stay strong' and is willing to sleep on the couch to give her space, indicating a pull to maintain the connection."
+    },
+    "values_and_stakes": [
+      "His 5-year relationship with his girlfriend.",
+      "His self-image as a caring partner, validated by his girlfriend's mother.",
+      "His mental stability and avoiding a state low enough to require hospitalization."
+    ],
+    "key_facts": [
+      "His girlfriend wants space after 5 years and to rent a room on her own.",
+      "This conversation happened the morning of the session.",
+      "His coping mechanisms include eating a lot of food, smoking marijuana, and listening to emo pop music from the 2000s.",
+      "He has been hospitalized in the past due to his mental state.",
+      "Money is tight around the holidays.",
+      "He talked to his girlfriend an hour ago; she said she doesn't know what she wants or for how long, but doesn't want to be away from him right now.",
+      "Yesterday, his girlfriend's mother told him she was happy he takes such good care of her daughter."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is in a 5-year relationship with his girlfriend, who now wants space and to rent a room on her own. He mentions money is tight around the holidays.\",\n  \"self_view_of_problem\": \"He frames the problem as his girlfriend wanting space after 5 years, which 'feels over,' and that it isn't fair because 'no one can just pick and choose when they want someone around.' He feels 'blindsided' by this.\",\n  \"resistance_drivers\": [\"He feels the situation is unfair and that he shouldn't have to accommodate her wanting space while also not wanting to be away from him.\", \"He has a history of being hospitalized due to his mental state, which may make him resistant to confronting difficult emotions or changes.\"],\n  \"ambivalence\": {\n    \"for_change\": \"He states he will 'prioritize myself and hope it all works out' and is considering taking a long walk to focus on himself.\",\n    \"against_change\": \"He is protecting the 5-year relationship and the identity of being someone who 'take[s] such good care of her daughter,' as noted by her mother. He hopes to 'stay strong' and is willing to sleep on the couch to give her space, indicating a pull to maintain the connection.\"\n  },\n  \"values_and_stakes\": [\"His 5-year relationship with his girlfriend.\", \"His self-image as a caring partner, validated by his girlfriend's mother.\", \"His mental stability and avoiding a state low enough to require hospitalization.\"],\n  \"key_facts\": [\"His girlfriend wants space after 5 years and to rent a room on her own.\", \"This conversation happened the morning of the session.\", \"His coping mechanisms include eating a lot of food, smoking marijuana, and listening to emo pop music from the 2000s.\", \"He has been hospitalized in the past due to his mental state.\", \"Money is tight around the holidays.\", \"He talked to his girlfriend an hour ago; she said she doesn't know what she wants or for how long, but doesn't want to be away from him right now.\", \"Yesterday, his girlfriend's mother told him she was happy he takes such good care of her daughter.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_36",
+    "background": "The client is in a romantic relationship and is considering breaking up. They mention having a support group of their own.",
+    "self_view_of_problem": "The client frames the problem as being with someone who makes them feel alone, and that it's better to be alone than in that situation. They also imply a problem of missing the person their partner used to be, not the person they are now.",
+    "resistance_drivers": [
+      "They believe trusting the therapist again is their decision, but proving them wrong is the therapist's choice, indicating a guarded stance based on past letdowns.",
+      "They feel their current way of life was never chosen by them but was their 'bad luck,' suggesting a sense of external fate or victimization that can resist personal agency."
+    ],
+    "ambivalence": {
+      "for_change": "They state it is better to be alone than with someone who makes you feel alone, and endorse the idea of moving on from a toxic relationship.",
+      "against_change": "They had many reasons to give up on the therapist but still chose to stay, indicating a pattern of enduring difficult relationships despite reasons to leave."
+    },
+    "values_and_stakes": [
+      "Faith, defined as 'being okay no matter how things turn out.'",
+      "Trust in relationships.",
+      "The wisdom of not going back to an old love, likening it to rereading a book when you know the ending."
+    ],
+    "key_facts": [
+      "The client had a lot of reasons to give up on the therapist but still chose to stay.",
+      "The client says, 'pain is the only thing that's telling me i'am still alive.'",
+      "The client has a support group of their own.",
+      "The client references a belief: 'trust and let go, whoever is meant to be there, will still be there.'",
+      "The client mentions online shopping in a context that the therapist interprets as a potential form of therapy."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is in a romantic relationship and is considering breaking up. They mention having a support group of their own.\",\n  \"self_view_of_problem\": \"The client frames the problem as being with someone who makes them feel alone, and that it's better to be alone than in that situation. They also imply a problem of missing the person their partner used to be, not the person they are now.\",\n  \"resistance_drivers\": [\"They believe trusting the therapist again is their decision, but proving them wrong is the therapist's choice, indicating a guarded stance based on past letdowns.\", \"They feel their current way of life was never chosen by them but was their 'bad luck,' suggesting a sense of external fate or victimization that can resist personal agency.\"],\n  \"ambivalence\": {\n    \"for_change\": \"They state it is better to be alone than with someone who makes you feel alone, and endorse the idea of moving on from a toxic relationship.\",\n    \"against_change\": \"They had many reasons to give up on the therapist but still chose to stay, indicating a pattern of enduring difficult relationships despite reasons to leave.\"\n  },\n  \"values_and_stakes\": [\"Faith, defined as 'being okay no matter how things turn out.'\", \"Trust in relationships.\", \"The wisdom of not going back to an old love, likening it to rereading a book when you know the ending.\"],\n  \"key_facts\": [\"The client had a lot of reasons to give up on the therapist but still chose to stay.\", \"The client says, 'pain is the only thing that's telling me i'am still alive.'\", \"The client has a support group of their own.\", \"The client references a belief: 'trust and let go, whoever is meant to be there, will still be there.'\", \"The client mentions online shopping in a context that the therapist interprets as a potential form of therapy.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_37",
+    "background": "The client recently went through a breakup with their partner, which has left them feeling very depressed and stressed. They previously enjoyed going out to pubs at night and spending time with friends.",
+    "self_view_of_problem": "The client frames the problem as their depression being caused solely by the breakup, stating 'there is only thing for my depression is my break up i want to over come but i couldnot.'",
+    "resistance_drivers": [
+      "They believe a relationship requires adjustment from both sides, and that a one-sided relationship 'wont work at all', implying the breakup was necessary due to lack of mutual effort.",
+      "They are unwilling to share their negative mood with friends, stating 'i am not willing to share my negative mood with them,' which isolates them from potential support."
+    ],
+    "ambivalence": {
+      "for_change": "The client explicitly states 'i want to over come' their depression and is willing to try new activities like hobbies, walks, or classes as suggested.",
+      "against_change": "The client feels they 'cannot face' their friends in their current situation, indicating a resistance to social reconnection that might aid recovery."
+    },
+    "values_and_stakes": [
+      "Their friendships, as they mention enjoying time with friends and believe friends would accept them, but are protective of those relationships by not wanting to burden them with negativity.",
+      "The principle of mutual adjustment in a relationship, as they emphasize 'it must be both side adjusted' for a relationship to work."
+    ],
+    "key_facts": [
+      "The client had a breakup with their partner.",
+      "The client reports feeling 'very depressed' and facing 'lot of stress' due to the breakup.",
+      "The client previously enjoyed 'going out for night pub ,enjoying with friends'.",
+      "The client states they 'cannot face' their friends in their current situation.",
+      "The client is 'not willing to share my negative mood with them' (friends).",
+      "The client agrees to try new activities like hobbies, walks, or classes to overcome depression."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client recently went through a breakup with their partner, which has left them feeling very depressed and stressed. They previously enjoyed going out to pubs at night and spending time with friends.\",\n  \"self_view_of_problem\": \"The client frames the problem as their depression being caused solely by the breakup, stating 'there is only thing for my depression is my break up i want to over come but i couldnot.'\",\n  \"resistance_drivers\": [\"They believe a relationship requires adjustment from both sides, and that a one-sided relationship 'wont work at all', implying the breakup was necessary due to lack of mutual effort.\", \"They are unwilling to share their negative mood with friends, stating 'i am not willing to share my negative mood with them,' which isolates them from potential support.\"],\n  \"ambivalence\": {\n    \"for_change\": \"The client explicitly states 'i want to over come' their depression and is willing to try new activities like hobbies, walks, or classes as suggested.\",\n    \"against_change\": \"The client feels they 'cannot face' their friends in their current situation, indicating a resistance to social reconnection that might aid recovery.\"\n  },\n  \"values_and_stakes\": [\"Their friendships, as they mention enjoying time with friends and believe friends would accept them, but are protective of those relationships by not wanting to burden them with negativity.\", \"The principle of mutual adjustment in a relationship, as they emphasize 'it must be both side adjusted' for a relationship to work.\"],\n  \"key_facts\": [\"The client had a breakup with their partner.\", \"The client reports feeling 'very depressed' and facing 'lot of stress' due to the breakup.\", \"The client previously enjoyed 'going out for night pub ,enjoying with friends'.\", \"The client states they 'cannot face' their friends in their current situation.\", \"The client is 'not willing to share my negative mood with them' (friends).\", \"The client agrees to try new activities like hobbies, walks, or classes to overcome depression.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_38",
+    "background": "Dillon is a college student whose academic performance started strong but declined after the pandemic hit. His family is struggling financially, which has affected his academics. He is looking for a job to support both his family and his tuition.",
+    "self_view_of_problem": "The pandemic has placed me in a financial crisis and it has negatively impacted my academic standing. I haven't been doing well in my academics since the pandemic hit, and my family's financial struggles have greatly affected my academics.",
+    "resistance_drivers": [],
+    "ambivalence": {
+      "for_change": "I'm trying to find a steady job that can help support both my family and my tuition. Anything to help support my family and my academics during these trying times.",
+      "against_change": null
+    },
+    "values_and_stakes": [
+      "Supporting my family",
+      "Maintaining my academics",
+      "Finding a steady job to help with tuition"
+    ],
+    "key_facts": [
+      "College student",
+      "Started off really well in academics until the pandemic hit",
+      "Family is struggling financially",
+      "Looking for a steady job",
+      "Considering a part-time job at a local library on campus",
+      "Pandemic negatively impacted academic standing"
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "```json\n{\n    \"background\": \"Dillon is a college student whose academic performance started strong but declined after the pandemic hit. His family is struggling financially, which has affected his academics. He is looking for a job to support both his family and his tuition.\",\n    \"self_view_of_problem\": \"The pandemic has placed me in a financial crisis and it has negatively impacted my academic standing. I haven't been doing well in my academics since the pandemic hit, and my family's financial struggles have greatly affected my academics.\",\n    \"resistance_drivers\": null,\n    \"ambivalence\": {\n        \"for_change\": \"I'm trying to find a steady job that can help support both my family and my tuition. Anything to help support my family and my academics during these trying times.\",\n        \"against_change\": null\n    },\n    \"values_and_stakes\": [\"Supporting my family\", \"Maintaining my academics\", \"Finding a steady job to help with tuition\"],\n    \"key_facts\": [\"College student\", \"Started off really well in academics until the pandemic hit\", \"Family is struggling financially\", \"Looking for a steady job\", \"Considering a part-time job at a local library on campus\", \"Pandemic negatively impacted academic standing\"]\n}\n```",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_39",
+    "background": "This person was recently laid off due to COVID-19 and has been unemployed for the last 2 months. They are looking for a new job, preferably a managerial one, in their locality to stay close to their aged mother and avoid food issues.",
+    "self_view_of_problem": "The client frames the problem as not being able to find a job in their locality to avoid being distant from family and having food issues, and worries about sustaining themselves if this continues for another 3 months.",
+    "resistance_drivers": [
+      "They are restricting their job search to their locality to care for their aged mother and avoid food issues, which limits opportunities.",
+      "They feel anger toward their previous employer for not giving them time to switch over, which may be keeping them focused on the past."
+    ],
+    "ambivalence": {
+      "for_change": "They are actively preparing themselves by using break time to gain knowledge, sharpen skills, and read/view articles online to improve and concentrate on the future.",
+      "against_change": "They are unwilling to expand their job search beyond their locality because they need to look after their aged mother and avoid food issues."
+    },
+    "values_and_stakes": [
+      "Being close to family, especially to look after their aged mother.",
+      "Their faith in God, which they believe guides their situation.",
+      "Loyalty in employment, which they feel was not encouraged by their previous employer."
+    ],
+    "key_facts": [
+      "Laid off due to COVID-19.",
+      "Unemployed for 2 months.",
+      "Looking for a job in their locality.",
+      "Has an aged mother they need to look after.",
+      "Experiences food issues when distant.",
+      "Previously worked in a managerial role.",
+      "Feels anger toward previous employer for not giving 2 months to switch.",
+      "Uses break time to read articles and watch YouTube to sharpen skills.",
+      "Believes they are close to finding a job but doesn't know how many attempts it will take."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"This person was recently laid off due to COVID-19 and has been unemployed for the last 2 months. They are looking for a new job, preferably a managerial one, in their locality to stay close to their aged mother and avoid food issues.\",\n  \"self_view_of_problem\": \"The client frames the problem as not being able to find a job in their locality to avoid being distant from family and having food issues, and worries about sustaining themselves if this continues for another 3 months.\",\n  \"resistance_drivers\": [\"They are restricting their job search to their locality to care for their aged mother and avoid food issues, which limits opportunities.\", \"They feel anger toward their previous employer for not giving them time to switch over, which may be keeping them focused on the past.\"],\n  \"ambivalence\": {\n    \"for_change\": \"They are actively preparing themselves by using break time to gain knowledge, sharpen skills, and read/view articles online to improve and concentrate on the future.\",\n    \"against_change\": \"They are unwilling to expand their job search beyond their locality because they need to look after their aged mother and avoid food issues.\"\n  },\n  \"values_and_stakes\": [\"Being close to family, especially to look after their aged mother.\", \"Their faith in God, which they believe guides their situation.\", \"Loyalty in employment, which they feel was not encouraged by their previous employer.\"],\n  \"key_facts\": [\"Laid off due to COVID-19.\", \"Unemployed for 2 months.\", \"Looking for a job in their locality.\", \"Has an aged mother they need to look after.\", \"Experiences food issues when distant.\", \"Previously worked in a managerial role.\", \"Feels anger toward previous employer for not giving 2 months to switch.\", \"Uses break time to read articles and watch YouTube to sharpen skills.\", \"Believes they are close to finding a job but doesn't know how many attempts it will take.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_40",
+    "background": "She is a college student who had been dating her college boyfriend for almost a year. They broke up on their one-year anniversary, which was on Christmas.",
+    "self_view_of_problem": "She frames the problem as feeling down and sad because her boyfriend broke up with her on their anniversary, and she doesn't know what to do with herself right now. She implies the problem is the recent fighting and the breakup itself, not necessarily a deeper issue.",
+    "resistance_drivers": [
+      "She has a hard time focusing when she meditates, making it difficult to adopt that practice.",
+      "She is allergic to most incense, which prevents her from using that suggested stress-relief method."
+    ],
+    "ambivalence": {
+      "for_change": "She acknowledges she probably should have seen the breakup coming because they had been fighting a lot lately, and she thinks ending the relationship might be for the best.",
+      "against_change": "She is sad about the breakup because she really cared for him, he made her laugh easily, and for most of their time together the relationship was wonderful. She also wonders if taking time apart might lead to talking again, and mentions the possibility of counseling."
+    },
+    "values_and_stakes": [
+      "Her relationship with her boyfriend, which lasted a year and was her first long-term relationship.",
+      "The tradition of their anniversary, which involved ordering takeout, watching a movie, and exchanging presents."
+    ],
+    "key_facts": [
+      "Dated her college boyfriend for almost a year.",
+      "They had been fighting increasingly over the last few months.",
+      "He broke up with her on their one-year anniversary, which was Christmas.",
+      "The breakup happened after a huge fight on their college campus.",
+      "Past relationships were in high school and lasted only weeks or months.",
+      "The recent fights were over the smallest things.",
+      "He ended it because he said he couldn't take fighting anymore.",
+      "He gets upset very easily.",
+      "For most of their time together the relationship was wonderful and he made her laugh easily.",
+      "The rough period lasted two or three months.",
+      "They were supposed to order takeout, watch a movie, and exchange presents on their anniversary.",
+      "She has read about meditation but has a hard time focusing when she meditates.",
+      "She is allergic to most incense because strong scents make her sneeze or feel sick; candles are better for her.",
+      "She hasn't been in a long-term relationship like this before."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"She is a college student who had been dating her college boyfriend for almost a year. They broke up on their one-year anniversary, which was on Christmas.\",\n  \"self_view_of_problem\": \"She frames the problem as feeling down and sad because her boyfriend broke up with her on their anniversary, and she doesn't know what to do with herself right now. She implies the problem is the recent fighting and the breakup itself, not necessarily a deeper issue.\",\n  \"resistance_drivers\": [\n    \"She has a hard time focusing when she meditates, making it difficult to adopt that practice.\",\n    \"She is allergic to most incense, which prevents her from using that suggested stress-relief method.\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"She acknowledges she probably should have seen the breakup coming because they had been fighting a lot lately, and she thinks ending the relationship might be for the best.\",\n    \"against_change\": \"She is sad about the breakup because she really cared for him, he made her laugh easily, and for most of their time together the relationship was wonderful. She also wonders if taking time apart might lead to talking again, and mentions the possibility of counseling.\"\n  },\n  \"values_and_stakes\": [\n    \"Her relationship with her boyfriend, which lasted a year and was her first long-term relationship.\",\n    \"The tradition of their anniversary, which involved ordering takeout, watching a movie, and exchanging presents.\"\n  ],\n  \"key_facts\": [\n    \"Dated her college boyfriend for almost a year.\",\n    \"They had been fighting increasingly over the last few months.\",\n    \"He broke up with her on their one-year anniversary, which was Christmas.\",\n    \"The breakup happened after a huge fight on their college campus.\",\n    \"Past relationships were in high school and lasted only weeks or months.\",\n    \"The recent fights were over the smallest things.\",\n    \"He ended it because he said he couldn't take fighting anymore.\",\n    \"He gets upset very easily.\",\n    \"For most of their time together the relationship was wonderful and he made her laugh easily.\",\n    \"The rough period lasted two or three months.\",\n    \"They were supposed to order takeout, watch a movie, and exchange presents on their anniversary.\",\n    \"She has read about meditation but has a hard time focusing when she meditates.\",\n    \"She is allergic to most incense because strong scents make her sneeze or feel sick; candles are better for her.\",\n    \"She hasn't been in a long-term relationship like this before.\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_41",
+    "background": "The client quit their full-time job as an Administrative Assistant in August 2020 because their workplace did not follow state Covid-19 rules. They have been struggling to find a work-from-home job since then. They live alone, are not close to family geographically, and have very little financial assistance.",
+    "self_view_of_problem": "The client frames the problem as a lack of energy and difficulty doing almost anything lately, tied to the fact that all the activities they used to enjoy (Samba/Salsa dancing and stand-up comedy) involved live audiences and are now impossible, making it seem like there's no point in working if they can't perform.",
+    "resistance_drivers": [
+      "They dismiss practical advice like setting mini goals as not practical for them because they live alone, have to worry about paying bills, and have very little assistance.",
+      "They express skepticism about alternatives, noting that doing stand-up via 'ZOOM Shows' 'suck big ones'."
+    ],
+    "ambivalence": {
+      "for_change": "They are trying to find a work-from-home job and are trying to do Zoom shows, indicating some effort toward adaptation and income.",
+      "against_change": "They are protecting their identity as a performer and the fulfillment from live performance, unwilling to settle for work or activities that don't align with their passion, as they see no point in working if they can't dance or tell jokes."
+    },
+    "values_and_stakes": [
+      "Their passion for performing (Samba/Salsa dancing and stand-up comedy) and making a living from it.",
+      "Their independence and responsibility in living alone and paying their bills with little assistance.",
+      "Connection with family, as they made an effort to talk to them over the phone despite distance and tech limitations."
+    ],
+    "key_facts": [
+      "Quit job as Administrative Assistant in August 2020 due to workplace not following state Covid-19 rules.",
+      "Struggling to find a work-from-home job since August 2020.",
+      "Family lives a 5-hour plane ride away.",
+      "Was a Samba/Salsa dancer and started stand-up comedy in November 2019.",
+      "Does a lot of ZOOM shows but says they 'suck big ones'.",
+      "Lives alone and has very little financial assistance."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client quit their full-time job as an Administrative Assistant in August 2020 because their workplace did not follow state Covid-19 rules. They have been struggling to find a work-from-home job since then. They live alone, are not close to family geographically, and have very little financial assistance.\",\n  \"self_view_of_problem\": \"The client frames the problem as a lack of energy and difficulty doing almost anything lately, tied to the fact that all the activities they used to enjoy (Samba/Salsa dancing and stand-up comedy) involved live audiences and are now impossible, making it seem like there's no point in working if they can't perform.\",\n  \"resistance_drivers\": [\"They dismiss practical advice like setting mini goals as not practical for them because they live alone, have to worry about paying bills, and have very little assistance.\", \"They express skepticism about alternatives, noting that doing stand-up via 'ZOOM Shows' 'suck big ones'.\"],\n  \"ambivalence\": {\n    \"for_change\": \"They are trying to find a work-from-home job and are trying to do Zoom shows, indicating some effort toward adaptation and income.\",\n    \"against_change\": \"They are protecting their identity as a performer and the fulfillment from live performance, unwilling to settle for work or activities that don't align with their passion, as they see no point in working if they can't dance or tell jokes.\"\n  },\n  \"values_and_stakes\": [\"Their passion for performing (Samba/Salsa dancing and stand-up comedy) and making a living from it.\", \"Their independence and responsibility in living alone and paying their bills with little assistance.\", \"Connection with family, as they made an effort to talk to them over the phone despite distance and tech limitations.\"],\n  \"key_facts\": [\"Quit job as Administrative Assistant in August 2020 due to workplace not following state Covid-19 rules.\", \"Struggling to find a work-from-home job since August 2020.\", \"Family lives a 5-hour plane ride away.\", \"Was a Samba/Salsa dancer and started stand-up comedy in November 2019.\", \"Does a lot of ZOOM shows but says they 'suck big ones'.\", \"Lives alone and has very little financial assistance.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_42",
+    "background": "The client is in a relationship that has ended because their partner is moving abroad. They have been together for at most two years. The client's work platform does not allow them to go outside the country.",
+    "self_view_of_problem": "The client frames the problem as their partner leaving them to go abroad, and that their partner values his future more than the client. The client states they need time to forget.",
+    "resistance_drivers": [
+      "The client's work platform restricts them from leaving the country, making relocation impossible.",
+      "The partner has stated his future is more important than the client, indicating the client feels powerless to change the partner's decision."
+    ],
+    "ambivalence": {
+      "for_change": "The client acknowledges they need time to forget, implying a motivation to move on.",
+      "against_change": "The client states they are still loving him, indicating a strong emotional attachment and reluctance to let go of the relationship."
+    },
+    "values_and_stakes": [
+      "Their two-year relationship with their partner.",
+      "Their job or work platform, which is important enough to prevent them from moving abroad."
+    ],
+    "key_facts": [
+      "The client's partner is moving abroad.",
+      "The relationship lasted at most two years.",
+      "The client's work platform does not allow them to go outside the country.",
+      "The partner said his future is more important than the client.",
+      "The client has already talked to their partner about the situation."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is in a relationship that has ended because their partner is moving abroad. They have been together for at most two years. The client's work platform does not allow them to go outside the country.\",\n  \"self_view_of_problem\": \"The client frames the problem as their partner leaving them to go abroad, and that their partner values his future more than the client. The client states they need time to forget.\",\n  \"resistance_drivers\": [\"The client's work platform restricts them from leaving the country, making relocation impossible.\", \"The partner has stated his future is more important than the client, indicating the client feels powerless to change the partner's decision.\"],\n  \"ambivalence\": {\n    \"for_change\": \"The client acknowledges they need time to forget, implying a motivation to move on.\",\n    \"against_change\": \"The client states they are still loving him, indicating a strong emotional attachment and reluctance to let go of the relationship.\"\n  },\n  \"values_and_stakes\": [\"Their two-year relationship with their partner.\", \"Their job or work platform, which is important enough to prevent them from moving abroad.\"],\n  \"key_facts\": [\"The client's partner is moving abroad.\", \"The relationship lasted at most two years.\", \"The client's work platform does not allow them to go outside the country.\", \"The partner said his future is more important than the client.\", \"The client has already talked to their partner about the situation.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_43",
+    "background": "The client is an employee who has been given a work assignment during a holiday period. They have a team lead and supervisor, and work with teammates.",
+    "self_view_of_problem": "The client frames the problem as being unable to complete a project assigned during a holiday, and fears their team lead will scold them for not getting it done.",
+    "resistance_drivers": [
+      "The supervisor is unavailable during the holiday and does not take calls, making it difficult to seek guidance or request deadline changes."
+    ],
+    "ambivalence": {
+      "for_change": "The client considers reaching out to a teammate for help to overcome the project challenge.",
+      "against_change": "The client has not yet contacted a teammate and feels unable to complete the project on their own."
+    },
+    "values_and_stakes": [
+      "Maintaining good standing with their team lead to avoid being scolded.",
+      "Completing work assignments responsibly."
+    ],
+    "key_facts": [
+      "The client was given an assignment during a holiday.",
+      "The client cannot complete the project.",
+      "The team lead will definitely scold the client if the project is not done.",
+      "The supervisor does not take calls during the holiday.",
+      "The project deadline is after the holiday.",
+      "The client considers asking a teammate for help."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is an employee who has been given a work assignment during a holiday period. They have a team lead and supervisor, and work with teammates.\",\n  \"self_view_of_problem\": \"The client frames the problem as being unable to complete a project assigned during a holiday, and fears their team lead will scold them for not getting it done.\",\n  \"resistance_drivers\": [\"The supervisor is unavailable during the holiday and does not take calls, making it difficult to seek guidance or request deadline changes.\"],\n  \"ambivalence\": {\n    \"for_change\": \"The client considers reaching out to a teammate for help to overcome the project challenge.\",\n    \"against_change\": \"The client has not yet contacted a teammate and feels unable to complete the project on their own.\"\n  },\n  \"values_and_stakes\": [\"Maintaining good standing with their team lead to avoid being scolded.\", \"Completing work assignments responsibly.\"],\n  \"key_facts\": [\"The client was given an assignment during a holiday.\", \"The client cannot complete the project.\", \"The team lead will definitely scold the client if the project is not done.\", \"The supervisor does not take calls during the holiday.\", \"The project deadline is after the holiday.\", \"The client considers asking a teammate for help.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_44",
+    "background": "The client is a student who moved to attend school near where his girlfriend lives. He has been in a relationship with her for about three years.",
+    "self_view_of_problem": "The client frames the problem as his girlfriend becoming distant and the relationship potentially ending, especially after she decided to go to graduate school far away. He feels he put his life on hold for her and was 'thrown to the curve,' and fears this pattern will continue.",
+    "resistance_drivers": [
+      "He feels betrayed and that he wasted the last three years, which may make him resistant to initiating a conversation or moving on.",
+      "He doesn't know how to start a conversation with her about his feelings, indicating a barrier to addressing the issue directly."
+    ],
+    "ambivalence": {
+      "for_change": "He acknowledges the relationship may be ending and expresses a desire to get answers and move on with his life.",
+      "against_change": "He is very sad about the potential breakup and wishes they had talked about it a year ago, indicating a desire to salvage the relationship or avoid the loss."
+    },
+    "values_and_stakes": [
+      "His relationship with his girlfriend, which he has invested three years in.",
+      "His own happiness and the priority he places on it in relationships.",
+      "Avoiding the feeling of wasting time or making sacrifices that aren't reciprocated."
+    ],
+    "key_facts": [
+      "He moved to attend school near where his girlfriend lives.",
+      "His girlfriend informed him she is going to graduate school far away.",
+      "He uprooted his life for her about a year ago.",
+      "He has been in the relationship for about three years.",
+      "This is happening around Christmas."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is a student who moved to attend school near where his girlfriend lives. He has been in a relationship with her for about three years.\",\n  \"self_view_of_problem\": \"The client frames the problem as his girlfriend becoming distant and the relationship potentially ending, especially after she decided to go to graduate school far away. He feels he put his life on hold for her and was 'thrown to the curve,' and fears this pattern will continue.\",\n  \"resistance_drivers\": [\"He feels betrayed and that he wasted the last three years, which may make him resistant to initiating a conversation or moving on.\", \"He doesn't know how to start a conversation with her about his feelings, indicating a barrier to addressing the issue directly.\"],\n  \"ambivalence\": {\n    \"for_change\": \"He acknowledges the relationship may be ending and expresses a desire to get answers and move on with his life.\",\n    \"against_change\": \"He is very sad about the potential breakup and wishes they had talked about it a year ago, indicating a desire to salvage the relationship or avoid the loss.\"\n  },\n  \"values_and_stakes\": [\"His relationship with his girlfriend, which he has invested three years in.\", \"His own happiness and the priority he places on it in relationships.\", \"Avoiding the feeling of wasting time or making sacrifices that aren't reciprocated.\"],\n  \"key_facts\": [\"He moved to attend school near where his girlfriend lives.\", \"His girlfriend informed him she is going to graduate school far away.\", \"He uprooted his life for her about a year ago.\", \"He has been in the relationship for about three years.\", \"This is happening around Christmas.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_45",
+    "background": "The client is married. They are reflecting on friendships from high school and the transition to adulthood.",
+    "self_view_of_problem": "The client frames the problem as a sad but expected growing apart from a best friend who is a daily drug user and a 'fair weather friend', and whose behavior is destructive.",
+    "resistance_drivers": [
+      "The client feels they cannot even be a friend to this person anymore, suggesting a sense of futility in trying to maintain the connection.",
+      "The client has tried to get their friend clean and to work on a hobby together, but feels drugs have destroyed the friendship, indicating past efforts have failed."
+    ],
+    "ambivalence": {
+      "for_change": "The client states they feel much better after the conversation and does not want a life filled with people drinking and drugging.",
+      "against_change": "The client expresses sadness about the growing apart and mentions they kept trying to get their friend clean, showing a lingering desire to help and maintain the friendship."
+    },
+    "values_and_stakes": [
+      "Their marriage",
+      "Faith, as indicated by calling the year 'a call to faith'",
+      "Having friends who are not destructive and who share life goals"
+    ],
+    "key_facts": [
+      "The client's best friend is a daily drug user.",
+      "The friend deleted his Facebook and never talked to the client again.",
+      "Drugs destroyed the client's two best friends and killed one of them.",
+      "The client is married.",
+      "The client slowly stopped answering the friend's calls and texts.",
+      "The client tried to get the friend clean and to work on a hobby together."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is married. They are reflecting on friendships from high school and the transition to adulthood.\",\n  \"self_view_of_problem\": \"The client frames the problem as a sad but expected growing apart from a best friend who is a daily drug user and a 'fair weather friend', and whose behavior is destructive.\",\n  \"resistance_drivers\": [\n    \"The client feels they cannot even be a friend to this person anymore, suggesting a sense of futility in trying to maintain the connection.\",\n    \"The client has tried to get their friend clean and to work on a hobby together, but feels drugs have destroyed the friendship, indicating past efforts have failed.\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"The client states they feel much better after the conversation and does not want a life filled with people drinking and drugging.\",\n    \"against_change\": \"The client expresses sadness about the growing apart and mentions they kept trying to get their friend clean, showing a lingering desire to help and maintain the friendship.\"\n  },\n  \"values_and_stakes\": [\n    \"Their marriage\",\n    \"Faith, as indicated by calling the year 'a call to faith'\",\n    \"Having friends who are not destructive and who share life goals\"\n  ],\n  \"key_facts\": [\n    \"The client's best friend is a daily drug user.\",\n    \"The friend deleted his Facebook and never talked to the client again.\",\n    \"Drugs destroyed the client's two best friends and killed one of them.\",\n    \"The client is married.\",\n    \"The client slowly stopped answering the friend's calls and texts.\",\n    \"The client tried to get the friend clean and to work on a hobby together.\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_46",
+    "background": "The client is a caregiver who works a main job and also wants to do mTurk (online work). They enjoy baking, having made oatmeal cookies last week and using 2 cups of sugar and 2 sticks of butter in their baking.",
+    "self_view_of_problem": "The client states they would like to get an online job but it is very competitive, implying the problem is the difficulty of entering a competitive online job market.",
+    "resistance_drivers": [],
+    "ambivalence": {
+      "for_change": "They express a desire to get an online job, indicating motivation toward change for additional work or income.",
+      "against_change": "They mention being a caregiver and having a main job, implying existing responsibilities and time constraints that may pull them away from pursuing change."
+    },
+    "values_and_stakes": [
+      "Caregiving responsibilities",
+      "Baking as a enjoyed activity"
+    ],
+    "key_facts": [
+      "Wants an online job",
+      "Says online job market is very competitive",
+      "Is a caregiver",
+      "Has a main job",
+      "Wants to do mTurk",
+      "Made oatmeal cookies last week",
+      "Uses 2 cups of sugar and 2 sticks of butter in baking",
+      "Loves baking",
+      "Loves chocolate chip cookies"
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is a caregiver who works a main job and also wants to do mTurk (online work). They enjoy baking, having made oatmeal cookies last week and using 2 cups of sugar and 2 sticks of butter in their baking.\",\n  \"self_view_of_problem\": \"The client states they would like to get an online job but it is very competitive, implying the problem is the difficulty of entering a competitive online job market.\",\n  \"resistance_drivers\": null,\n  \"ambivalence\": {\n    \"for_change\": \"They express a desire to get an online job, indicating motivation toward change for additional work or income.\",\n    \"against_change\": \"They mention being a caregiver and having a main job, implying existing responsibilities and time constraints that may pull them away from pursuing change.\"\n  },\n  \"values_and_stakes\": [\"Caregiving responsibilities\", \"Baking as a enjoyed activity\"],\n  \"key_facts\": [\"Wants an online job\", \"Says online job market is very competitive\", \"Is a caregiver\", \"Has a main job\", \"Wants to do mTurk\", \"Made oatmeal cookies last week\", \"Uses 2 cups of sugar and 2 sticks of butter in baking\", \"Loves baking\", \"Loves chocolate chip cookies\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_47",
+    "background": "He is a man whose girlfriend of five days ago left him for her supervisor at work. He previously used call girls and prostitutes for short-term arrangements.",
+    "self_view_of_problem": "He frames the problem as his life being empty because 'the love of my life is no longer in my life' and that he 'let the best lady in the world get away.'",
+    "resistance_drivers": [],
+    "ambivalence": {
+      "for_change": "He wants an emotional connection with a woman, not just sexual encounters.",
+      "against_change": "He considers returning to call girls because 'they are easier to deal with' than pursuing a serious relationship."
+    },
+    "values_and_stakes": [
+      "Having a serious, emotionally connected relationship with a woman.",
+      "The intense and wild sexual experimentation he had with his ex-girlfriend."
+    ],
+    "key_facts": [
+      "His girlfriend left him five days ago.",
+      "She left him for her supervisor at work.",
+      "She previously told him the supervisor was sexually harassing her.",
+      "She said she likes being watched.",
+      "She told him to leave their apartment.",
+      "He told her to see a therapist.",
+      "This was his first serious relationship.",
+      "He has used call girls and prostitutes in the past, with arrangements lasting a weekend at most.",
+      "He submitted to her sexually, including being pegged, which was intense and a first for him."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"He is a man whose girlfriend of five days ago left him for her supervisor at work. He previously used call girls and prostitutes for short-term arrangements.\",\n  \"self_view_of_problem\": \"He frames the problem as his life being empty because 'the love of my life is no longer in my life' and that he 'let the best lady in the world get away.'\",\n  \"resistance_drivers\": null,\n  \"ambivalence\": {\n    \"for_change\": \"He wants an emotional connection with a woman, not just sexual encounters.\",\n    \"against_change\": \"He considers returning to call girls because 'they are easier to deal with' than pursuing a serious relationship.\"\n  },\n  \"values_and_stakes\": [\"Having a serious, emotionally connected relationship with a woman.\", \"The intense and wild sexual experimentation he had with his ex-girlfriend.\"],\n  \"key_facts\": [\"His girlfriend left him five days ago.\", \"She left him for her supervisor at work.\", \"She previously told him the supervisor was sexually harassing her.\", \"She said she likes being watched.\", \"She told him to leave their apartment.\", \"He told her to see a therapist.\", \"This was his first serious relationship.\", \"He has used call girls and prostitutes in the past, with arrangements lasting a weekend at most.\", \"He submitted to her sexually, including being pegged, which was intense and a first for him.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_48",
+    "background": "A person who participates in a friend group and has experienced a change in communication dynamics with one friend. They engage in prayers and studying texts of personal interest as part of their routine.",
+    "self_view_of_problem": "The client frames the problem as feeling excluded and not considered close enough to be trusted with personal issues, while other friends in the group are informed. They feel kept in the dark about a friend's problems.",
+    "resistance_drivers": [
+      "Belief that they were previously trusted but are not trusted now, creating a sense of personal rejection",
+      "Feeling that if others got to know about the issue, it should have been discussed with them too, suggesting an expectation of equal treatment"
+    ],
+    "ambivalence": {
+      "for_change": "Expresses loneliness when excluded and acknowledges the situation hurts, showing desire for closer connections.",
+      "against_change": "Has accepted the friend 'as it is' and is moving on with routine rather than confronting or changing the relationship dynamic."
+    },
+    "values_and_stakes": [
+      "Being considered a trusted confidant within friendships",
+      "Maintaining group harmony while feeling included",
+      "Personal spiritual practice through prayer and text study"
+    ],
+    "key_facts": [
+      "Friend stopped communicating suddenly",
+      "Other friends in the group were aware of the problems faced by the friend",
+      "Client learned about the issue through casual conversation with other friends",
+      "Client has started doing prayers and studying texts of interest",
+      "Client has accepted the friend as they are and is moving on with routine"
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "```json\n{\n    \"background\": \"A person who participates in a friend group and has experienced a change in communication dynamics with one friend. They engage in prayers and studying texts of personal interest as part of their routine.\",\n    \"self_view_of_problem\": \"The client frames the problem as feeling excluded and not considered close enough to be trusted with personal issues, while other friends in the group are informed. They feel kept in the dark about a friend's problems.\",\n    \"resistance_drivers\": [\"Belief that they were previously trusted but are not trusted now, creating a sense of personal rejection\", \"Feeling that if others got to know about the issue, it should have been discussed with them too, suggesting an expectation of equal treatment\"],\n    \"ambivalence\": {\n        \"for_change\": \"Expresses loneliness when excluded and acknowledges the situation hurts, showing desire for closer connections.\",\n        \"against_change\": \"Has accepted the friend 'as it is' and is moving on with routine rather than confronting or changing the relationship dynamic.\"\n    },\n    \"values_and_stakes\": [\"Being considered a trusted confidant within friendships\", \"Maintaining group harmony while feeling included\", \"Personal spiritual practice through prayer and text study\"],\n    \"key_facts\": [\"Friend stopped communicating suddenly\", \"Other friends in the group were aware of the problems faced by the friend\", \"Client learned about the issue through casual conversation with other friends\", \"Client has started doing prayers and studying texts of interest\", \"Client has accepted the friend as they are and is moving on with routine\"]\n}\n```",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "esconv_49",
+    "background": "A person from the USA looking for a side job, preferably work-from-home. They are a native speaker of a language other than English and do not feel they speak English perfectly. They express an interest in writing and self-publishing.",
+    "self_view_of_problem": "The client frames the problem as difficulty finding a decent online side job due to competition and low-paying options. They also mention being scared to go out, which limits job options like delivery services.",
+    "resistance_drivers": [
+      "Fear of going outside limits job options like Amazon delivery or rideshare.",
+      "Belief that their imperfect English disqualifies them from freelance English writing jobs.",
+      "Perception that self-publishing is complicated, based on a friend's experience."
+    ],
+    "ambivalence": {
+      "for_change": "Expresses interest in writing and self-publishing, saying 'writing is something I like' and 'I could write a book and self publish'.",
+      "against_change": "Expresses fear about going out for jobs and doubts about their English proficiency, which holds them back from certain opportunities."
+    },
+    "values_and_stakes": [
+      "Writing as an enjoyable activity.",
+      "Finding a decent-paying job, not just one that pays very little.",
+      "Working in their native language where they feel competent."
+    ],
+    "key_facts": [
+      "Looking for an online side job.",
+      "Has seen jobs paying about $3 an hour but not decent ones.",
+      "Is scared to go out.",
+      "Native language is not English; does not speak English perfectly.",
+      "Likes writing.",
+      "Has considered self-publishing a book.",
+      "Had a friend who published a book about nuclear bombs.",
+      "Heard self-publishing is a little complicated."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"A person from the USA looking for a side job, preferably work-from-home. They are a native speaker of a language other than English and do not feel they speak English perfectly. They express an interest in writing and self-publishing.\",\n  \"self_view_of_problem\": \"The client frames the problem as difficulty finding a decent online side job due to competition and low-paying options. They also mention being scared to go out, which limits job options like delivery services.\",\n  \"resistance_drivers\": [\"Fear of going outside limits job options like Amazon delivery or rideshare.\", \"Belief that their imperfect English disqualifies them from freelance English writing jobs.\", \"Perception that self-publishing is complicated, based on a friend's experience.\"],\n  \"ambivalence\": {\n    \"for_change\": \"Expresses interest in writing and self-publishing, saying 'writing is something I like' and 'I could write a book and self publish'.\", \"against_change\": \"Expresses fear about going out for jobs and doubts about their English proficiency, which holds them back from certain opportunities.\"\n  },\n  \"values_and_stakes\": [\"Writing as an enjoyable activity.\", \"Finding a decent-paying job, not just one that pays very little.\", \"Working in their native language where they feel competent.\"],\n  \"key_facts\": [\"Looking for an online side job.\", \"Has seen jobs paying about $3 an hour but not decent ones.\", \"Is scared to go out.\", \"Native language is not English; does not speak English perfectly.\", \"Likes writing.\", \"Has considered self-publishing a book.\", \"Had a friend who published a book about nuclear bombs.\", \"Heard self-publishing is a little complicated.\"]\n}",
+    "parse_error": ""
+  }
+]

@@ -1,0 +1,161 @@
+[
+  {
+    "sample_id": "annomi_0",
+    "background": "A woman who drinks wine at home to unwind, often while watching movies or taking a bath. She experiences depression and drinks sometimes when feeling down.",
+    "self_view_of_problem": "She acknowledges drinking more than she wants to, sometimes finishing a bottle in one night, and doesn't like the amount she drinks. She feels her drinking might relate to her depression, noting she sometimes feels worse after drinking.",
+    "resistance_drivers": [
+      "She finds drinking makes things 'more interesting' and less 'blur' when she's feeling down.",
+      "She is not ready to cut down to the guideline of seven drinks a week, considering it too restrictive."
+    ],
+    "ambivalence": {
+      "for_change": "She is ready to cut back to two drinks a night to avoid making her depression worse and because she doesn't like the amount she drinks.",
+      "against_change": "She uses alcohol to unwind and make evenings more interesting, especially when feeling down, and is hesitant to reduce to the recommended limit."
+    },
+    "values_and_stakes": [
+      "Managing her depression and not making it worse",
+      "Having ways to relax and unwind in the evenings, such as watching movies, reading, or taking a bath"
+    ],
+    "key_facts": [
+      "Drinks alcohol at least four times a week, usually three glasses of wine each time, totaling at least 12 drinks a week",
+      "Sometimes finishes a bottle of wine in one night",
+      "Drinks when feeling down to make things 'more interesting and not so blur'",
+      "Has felt guilty after drinking and sometimes feels worse after drinking",
+      "Rates her readiness to cut back on drinking as an 8 on a scale of 0 to 10",
+      "Goal is to cut back to two drinks a night, not the guideline of seven drinks per week",
+      "Identifies having less wine in the house as a strategy to help cut back"
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"A woman who drinks wine at home to unwind, often while watching movies or taking a bath. She experiences depression and drinks sometimes when feeling down.\",\n  \"self_view_of_problem\": \"She acknowledges drinking more than she wants to, sometimes finishing a bottle in one night, and doesn't like the amount she drinks. She feels her drinking might relate to her depression, noting she sometimes feels worse after drinking.\",\n  \"resistance_drivers\": [\n    \"She finds drinking makes things 'more interesting' and less 'blur' when she's feeling down.\",\n    \"She is not ready to cut down to the guideline of seven drinks a week, considering it too restrictive.\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"She is ready to cut back to two drinks a night to avoid making her depression worse and because she doesn't like the amount she drinks.\",\n    \"against_change\": \"She uses alcohol to unwind and make evenings more interesting, especially when feeling down, and is hesitant to reduce to the recommended limit.\"\n  },\n  \"values_and_stakes\": [\n    \"Managing her depression and not making it worse\",\n    \"Having ways to relax and unwind in the evenings, such as watching movies, reading, or taking a bath\"\n  ],\n  \"key_facts\": [\n    \"Drinks alcohol at least four times a week, usually three glasses of wine each time, totaling at least 12 drinks a week\",\n    \"Sometimes finishes a bottle of wine in one night\",\n    \"Drinks when feeling down to make things 'more interesting and not so blur'\",\n    \"Has felt guilty after drinking and sometimes feels worse after drinking\",\n    \"Rates her readiness to cut back on drinking as an 8 on a scale of 0 to 10\",\n    \"Goal is to cut back to two drinks a night, not the guideline of seven drinks per week\",\n    \"Identifies having less wine in the house as a strategy to help cut back\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "annomi_1",
+    "background": "This person is a patient being seen for ADHD. They drink alcohol two to three days a week, specifically on weekends, and typically have five or six beers, sometimes more, when going out with friends to a bar.",
+    "self_view_of_problem": "The client does not believe they have a drinking problem, stating 'it's not a problem for me' and defining problematic drinking as getting 'fallen down drunk' or drinking every night. They do not consider their drinking to be binge drinking because they don't 'chug a lot of beers in a row' but have drinks throughout the evening.",
+    "resistance_drivers": [
+      "They believe their drinking is normal and not problematic because it is social and controlled ('I have five or six beers when I go out with friends to a bar. It's not a problem for me').",
+      "They feel healthy and initially questioned the health risks associated with their level of drinking ('But I'm healthy. What health problems are you talking about?').",
+      "They define problematic drinking in a way that excludes their own behavior, comparing it to more extreme examples."
+    ],
+    "ambivalence": {
+      "for_change": "After learning about the health risks, the client acknowledges 'now that I know about the health risk, uh, I have something I gotta think about.' They also state that if they got sick from drinking, they might want to change.",
+      "against_change": "The client likes beer, enjoys how it tastes and how it makes them feel, and sees it as part of their social life with friends."
+    },
+    "values_and_stakes": [
+      "Their social life and time with friends at bars.",
+      "Their health, as they became concerned after learning about long-term risks.",
+      "Their sense of control and normalcy regarding their drinking habits."
+    ],
+    "key_facts": [
+      "Uses alcohol two to three days a week, only on weekends.",
+      "Typically has five or six drinks per occasion, sometimes a couple more.",
+      "Drinks beer when going out with friends to a bar.",
+      "Does not get 'fallen down drunk' or 'sloppy drunk'.",
+      "Does not drink every night.",
+      "Does not chug beers in a row; has drinks throughout the evening.",
+      "Was unaware of the specific long-term health risks (heart disease, cancer, liver problems, mental health issues) associated with binge drinking.",
+      "Is a patient being seen for ADHD, with a three-month follow-up appointment scheduled."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"This person is a patient being seen for ADHD. They drink alcohol two to three days a week, specifically on weekends, and typically have five or six beers, sometimes more, when going out with friends to a bar.\",\n  \"self_view_of_problem\": \"The client does not believe they have a drinking problem, stating 'it's not a problem for me' and defining problematic drinking as getting 'fallen down drunk' or drinking every night. They do not consider their drinking to be binge drinking because they don't 'chug a lot of beers in a row' but have drinks throughout the evening.\",\n  \"resistance_drivers\": [\"They believe their drinking is normal and not problematic because it is social and controlled ('I have five or six beers when I go out with friends to a bar. It's not a problem for me').\", \"They feel healthy and initially questioned the health risks associated with their level of drinking ('But I'm healthy. What health problems are you talking about?').\", \"They define problematic drinking in a way that excludes their own behavior, comparing it to more extreme examples.\"],\n  \"ambivalence\": {\n    \"for_change\": \"After learning about the health risks, the client acknowledges 'now that I know about the health risk, uh, I have something I gotta think about.' They also state that if they got sick from drinking, they might want to change.\",\n    \"against_change\": \"The client likes beer, enjoys how it tastes and how it makes them feel, and sees it as part of their social life with friends.\"\n  },\n  \"values_and_stakes\": [\"Their social life and time with friends at bars.\", \"Their health, as they became concerned after learning about long-term risks.\", \"Their sense of control and normalcy regarding their drinking habits.\"],\n  \"key_facts\": [\"Uses alcohol two to three days a week, only on weekends.\", \"Typically has five or six drinks per occasion, sometimes a couple more.\", \"Drinks beer when going out with friends to a bar.\", \"Does not get 'fallen down drunk' or 'sloppy drunk'.\", \"Does not drink every night.\", \"Does not chug beers in a row; has drinks throughout the evening.\", \"Was unaware of the specific long-term health risks (heart disease, cancer, liver problems, mental health issues) associated with binge drinking.\", \"Is a patient being seen for ADHD, with a three-month follow-up appointment scheduled.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "annomi_10",
+    "background": "A person recently diagnosed with diabetes. Their doctor told them their blood glucose/A1C is very high and warned them about serious complications.",
+    "self_view_of_problem": "The client frames the problem as needing to learn how to manage their diabetes, which they describe as 'massive' and a 'huge amount of stuff to do'. They are scared by the doctor's warnings about serious health consequences.",
+    "resistance_drivers": [
+      "They feel overwhelmed by the scale of the required changes: taking medicine, dieting, losing weight, changing eating habits, and exercising.",
+      "They express uncertainty about their ability to do all that is required."
+    ],
+    "ambivalence": {
+      "for_change": "They are scared by the doctor's warnings about losing eyesight, feet, and other serious problems, which motivates them to learn management.",
+      "against_change": "They are uncertain they can do all the required changes and feel it's a huge amount of stuff, suggesting resistance to the effort and lifestyle overhaul."
+    },
+    "values_and_stakes": [
+      "Their physical health and avoiding serious complications like losing eyesight or feet."
+    ],
+    "key_facts": [
+      "Just got diagnosed with diabetes.",
+      "Their blood glucose/A1C is very high.",
+      "Doctor warned about losing eyesight, feet, and other serious problems.",
+      "The prescribed management includes taking medicine, dieting, losing weight, changing eating habits, and exercise."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"A person recently diagnosed with diabetes. Their doctor told them their blood glucose/A1C is very high and warned them about serious complications.\",\n  \"self_view_of_problem\": \"The client frames the problem as needing to learn how to manage their diabetes, which they describe as 'massive' and a 'huge amount of stuff to do'. They are scared by the doctor's warnings about serious health consequences.\",\n  \"resistance_drivers\": [\n    \"They feel overwhelmed by the scale of the required changes: taking medicine, dieting, losing weight, changing eating habits, and exercising.\",\n    \"They express uncertainty about their ability to do all that is required.\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"They are scared by the doctor's warnings about losing eyesight, feet, and other serious problems, which motivates them to learn management.\",\n    \"against_change\": \"They are uncertain they can do all the required changes and feel it's a huge amount of stuff, suggesting resistance to the effort and lifestyle overhaul.\"\n  },\n  \"values_and_stakes\": [\n    \"Their physical health and avoiding serious complications like losing eyesight or feet.\"\n  ],\n  \"key_facts\": [\n    \"Just got diagnosed with diabetes.\",\n    \"Their blood glucose/A1C is very high.\",\n    \"Doctor warned about losing eyesight, feet, and other serious problems.\",\n    \"The prescribed management includes taking medicine, dieting, losing weight, changing eating habits, and exercise.\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "annomi_100",
+    "background": "This person is a Middle Eastern man with a felony conviction (class one felony for possession, non-violent) from about seven years ago. He has gone back to school and earned a degree, aiming for corporate or professional work. He is currently starting his own event planning business (wedding/corporate event transportation and logistics) while continuing his education.",
+    "self_view_of_problem": "The client frames the problem as his criminal history blocking him from becoming 'a good productive member of society' and causing overwhelming frustration, anger, and depression because employers reject him despite his qualifications. He sees it as a 'life sentence' that makes him consider 'going back to what I know' (crime/destructive behavior) because he can only get low-wage jobs otherwise.",
+    "resistance_drivers": [
+      "Belief that being upfront about his felony early in the hiring process will lead to immediate rejection ('Probably get booted out right away').",
+      "Experience that jobs which don't care about his record are 'dead end jobs' or not the professional work he wants, making early disclosure seem pointless for his goals.",
+      "Perception that advocacy groups for felons are politically charged, racially biased, ineffective, and only lead to low-quality job matches.",
+      "Advice from others (like his brother) to hide the conviction until later in the process, reinforcing a strategy of avoidance.",
+      "Belief that the system is stacked against him due to post-9/11 security measures and inaccurate background checks, making individual effort feel futile."
+    ],
+    "ambivalence": {
+      "for_change": "He wants to stay on the right path, be productive, and use his degree. He values honesty and wants to avoid destructive behavior. He is actively trying solutions: going to school, starting a business, researching expungement/advocacy, and considering the therapist's suggestion to disclose his record earlier to avoid wasted hope.",
+      "against_change": "He is protecting himself from the pain of rejection after investing hope in interviews. He is unwilling to settle for low-wage jobs he feels overqualified for ('burger flipper'). He resists early disclosure because it feels like surrendering a chance at professional jobs and contradicts his belief that he can win people over in person."
+    },
+    "values_and_stakes": [
+      "Being a 'good productive member of society'",
+      "Honesty in his interactions",
+      "Using his education and skills in professional/corporate work",
+      "His self-employment/entrepreneurship (event planning business)",
+      "Staying clean from his past lifestyle (substance abuse/crime)",
+      "Maintaining his mental health and composure to 'get ahead'",
+      "Family/connection (brother tries to help him get jobs)"
+    ],
+    "key_facts": [
+      "Has a class one felony conviction for possession (non-violent) from about 7 years ago.",
+      "The felony is expungable only via governor's clemency/pardon, not sealable.",
+      "He has a degree and wants corporate/professional work.",
+      "He interviews well and often feels a job offer is imminent until the background check.",
+      "He has run his own background check to see what employers will find.",
+      "He is starting an event planning business (transportation, hotel bookings for weddings/corporate events).",
+      "He is Middle Eastern and perceives racial bias in some systems.",
+      "He mentions anger and depression resurfacing due to job rejections.",
+      "He has researched advocacy groups and found them unhelpful so far.",
+      "His brother set up an interview where he was likely to be offered a job until the background check."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"This person is a Middle Eastern man with a felony conviction (class one felony for possession, non-violent) from about seven years ago. He has gone back to school and earned a degree, aiming for corporate or professional work. He is currently starting his own event planning business (wedding/corporate event transportation and logistics) while continuing his education.\",\n  \"self_view_of_problem\": \"The client frames the problem as his criminal history blocking him from becoming 'a good productive member of society' and causing overwhelming frustration, anger, and depression because employers reject him despite his qualifications. He sees it as a 'life sentence' that makes him consider 'going back to what I know' (crime/destructive behavior) because he can only get low-wage jobs otherwise.\",\n  \"resistance_drivers\": [\n    \"Belief that being upfront about his felony early in the hiring process will lead to immediate rejection ('Probably get booted out right away').\",\n    \"Experience that jobs which don't care about his record are 'dead end jobs' or not the professional work he wants, making early disclosure seem pointless for his goals.\",\n    \"Perception that advocacy groups for felons are politically charged, racially biased, ineffective, and only lead to low-quality job matches.\",\n    \"Advice from others (like his brother) to hide the conviction until later in the process, reinforcing a strategy of avoidance.\",\n    \"Belief that the system is stacked against him due to post-9/11 security measures and inaccurate background checks, making individual effort feel futile.\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"He wants to stay on the right path, be productive, and use his degree. He values honesty and wants to avoid destructive behavior. He is actively trying solutions: going to school, starting a business, researching expungement/advocacy, and considering the therapist's suggestion to disclose his record earlier to avoid wasted hope.\",\n    \"against_change\": \"He is protecting himself from the pain of rejection after investing hope in interviews. He is unwilling to settle for low-wage jobs he feels overqualified for ('burger flipper'). He resists early disclosure because it feels like surrendering a chance at professional jobs and contradicts his belief that he can win people over in person.\"\n  },\n  \"values_and_stakes\": [\n    \"Being a 'good productive member of society'\",\n    \"Honesty in his interactions\",\n    \"Using his education and skills in professional/corporate work\",\n    \"His self-employment/entrepreneurship (event planning business)\",\n    \"Staying clean from his past lifestyle (substance abuse/crime)\",\n    \"Maintaining his mental health and composure to 'get ahead'\",\n    \"Family/connection (brother tries to help him get jobs)\"\n  ],\n  \"key_facts\": [\n    \"Has a class one felony conviction for possession (non-violent) from about 7 years ago.\",\n    \"The felony is expungable only via governor's clemency/pardon, not sealable.\",\n    \"He has a degree and wants corporate/professional work.\",\n    \"He interviews well and often feels a job offer is imminent until the background check.\",\n    \"He has run his own background check to see what employers will find.\",\n    \"He is starting an event planning business (transportation, hotel bookings for weddings/corporate events).\",\n    \"He is Middle Eastern and perceives racial bias in some systems.\",\n    \"He mentions anger and depression resurfacing due to job rejections.\",\n    \"He has researched advocacy groups and found them unhelpful so far.\",\n    \"His brother set up an interview where he was likely to be offered a job until the background check.\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "annomi_101",
+    "background": "Jill is a divorced woman who moved to Portland after her divorce. She goes to a local pub to drink wine, typically four times a week.",
+    "self_view_of_problem": "She initially says, 'I don't think it's that much of a problem,' but after learning drinking can affect blood pressure, she says, 'Well, then I guess that could be a problem.'",
+    "resistance_drivers": [
+      "She believes seven drinks a week 'doesn't seem like that much' and questions the medical standard.",
+      "She attributes increased drinking to life changes (divorce, move) but minimizes it as 'a little' and not a major problem.",
+      "She states, 'I don't think I need to quit,' indicating resistance to abstinence."
+    ],
+    "ambivalence": {
+      "for_change": "She acknowledges drinking might be related to her blood pressure problems and recalls falling after drinking, admitting it 'probably didn't help.' She also notes her son says she drinks too much and finds the label 'harmful' scary.",
+      "against_change": "She values the social routine of going to the pub and is unwilling to give up drinking entirely, only considering cutting back."
+    },
+    "values_and_stakes": [
+      "Her relationship with her son, who expresses concern about her drinking.",
+      "Her health, specifically managing her blood pressure.",
+      "Her social life and routine of going to the local pub."
+    ],
+    "key_facts": [
+      "Drinks wine mostly.",
+      "Goes to a pub down the street.",
+      "Drinks four times a week.",
+      "Typically drinks 3-5 glasses of wine per night, up to 6 on weekends.",
+      "Got divorced and moved to Portland.",
+      "Fell earlier this year on her way home from the bar and hurt her shoulder.",
+      "Son tells her she's drinking too much.",
+      "Rates readiness to cut back as a 6 on a 0-10 scale.",
+      "Aims to drink less than 3 drinks per night and less than 7 per week."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"Jill is a divorced woman who moved to Portland after her divorce. She goes to a local pub to drink wine, typically four times a week.\",\n  \"self_view_of_problem\": \"She initially says, 'I don't think it's that much of a problem,' but after learning drinking can affect blood pressure, she says, 'Well, then I guess that could be a problem.'\",\n  \"resistance_drivers\": [\n    \"She believes seven drinks a week 'doesn't seem like that much' and questions the medical standard.\",\n    \"She attributes increased drinking to life changes (divorce, move) but minimizes it as 'a little' and not a major problem.\",\n    \"She states, 'I don't think I need to quit,' indicating resistance to abstinence.\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"She acknowledges drinking might be related to her blood pressure problems and recalls falling after drinking, admitting it 'probably didn't help.' She also notes her son says she drinks too much and finds the label 'harmful' scary.\",\n    \"against_change\": \"She values the social routine of going to the pub and is unwilling to give up drinking entirely, only considering cutting back.\"\n  },\n  \"values_and_stakes\": [\n    \"Her relationship with her son, who expresses concern about her drinking.\",\n    \"Her health, specifically managing her blood pressure.\",\n    \"Her social life and routine of going to the local pub.\"\n  ],\n  \"key_facts\": [\n    \"Drinks wine mostly.\",\n    \"Goes to a pub down the street.\",\n    \"Drinks four times a week.\",\n    \"Typically drinks 3-5 glasses of wine per night, up to 6 on weekends.\",\n    \"Got divorced and moved to Portland.\",\n    \"Fell earlier this year on her way home from the bar and hurt her shoulder.\",\n    \"Son tells her she's drinking too much.\",\n    \"Rates readiness to cut back as a 6 on a 0-10 scale.\",\n    \"Aims to drink less than 3 drinks per night and less than 7 per week.\"\n  ]\n}",
+    "parse_error": ""
+  }
+]

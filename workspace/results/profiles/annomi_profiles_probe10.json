@@ -1,0 +1,296 @@
+[
+  {
+    "sample_id": "annomi_0",
+    "background": "This person is a woman who drinks alcohol at home to unwind, often while watching movies or taking a bath. She has experienced depression and is on medication.",
+    "self_view_of_problem": "She frames the problem as drinking more than she wants to, sometimes finishing a bottle in one night, and not liking the amount she drinks, especially because it can make her depression return or feel worse afterward.",
+    "resistance_drivers": [
+      "She is not ready to cut down to the guideline of seven drinks per week, finding that limit surprisingly low and too restrictive."
+    ],
+    "ambivalence": {
+      "for_change": "She is ready to cut back on drinking because she doesn't want to make her depression any worse and sometimes feels guilty or worse after drinking.",
+      "against_change": "She enjoys drinking wine because it helps make things more interesting when she's feeling down and is a way to relax and unwind at home."
+    },
+    "values_and_stakes": [
+      "Her mental health and not worsening her depression",
+      "Her ability to relax and unwind in the evenings"
+    ],
+    "key_facts": [
+      "Drinks alcohol at least four times a week on average",
+      "Usually has three to four drinks per occasion, typically glasses of wine",
+      "Averages at least 12 drinks per week",
+      "Sometimes drinks when feeling down to make things more interesting",
+      "Sometimes finishes a bottle of wine in one night",
+      "Less than monthly drinks more than intended",
+      "Sometimes feels guilty after drinking",
+      "Goal is to cut back to two drinks a night",
+      "Rates readiness to cut back as an 8 out of 10",
+      "Relaxes by watching movies, reading books, and taking baths",
+      "Has been diagnosed with depression and is on medication"
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"This person is a woman who drinks alcohol at home to unwind, often while watching movies or taking a bath. She has experienced depression and is on medication.\",\n  \"self_view_of_problem\": \"She frames the problem as drinking more than she wants to, sometimes finishing a bottle in one night, and not liking the amount she drinks, especially because it can make her depression return or feel worse afterward.\",\n  \"resistance_drivers\": [\"She is not ready to cut down to the guideline of seven drinks per week, finding that limit surprisingly low and too restrictive.\"],\n  \"ambivalence\": {\n    \"for_change\": \"She is ready to cut back on drinking because she doesn't want to make her depression any worse and sometimes feels guilty or worse after drinking.\",\n    \"against_change\": \"She enjoys drinking wine because it helps make things more interesting when she's feeling down and is a way to relax and unwind at home.\"\n  },\n  \"values_and_stakes\": [\"Her mental health and not worsening her depression\", \"Her ability to relax and unwind in the evenings\"],\n  \"key_facts\": [\"Drinks alcohol at least four times a week on average\", \"Usually has three to four drinks per occasion, typically glasses of wine\", \"Averages at least 12 drinks per week\", \"Sometimes drinks when feeling down to make things more interesting\", \"Sometimes finishes a bottle of wine in one night\", \"Less than monthly drinks more than intended\", \"Sometimes feels guilty after drinking\", \"Goal is to cut back to two drinks a night\", \"Rates readiness to cut back as an 8 out of 10\", \"Relaxes by watching movies, reading books, and taking baths\", \"Has been diagnosed with depression and is on medication\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "annomi_1",
+    "background": "This person is a patient being seen for ADHD, with a three-month follow-up scheduled. They drink alcohol two to three days a week, specifically on weekends, and typically have five or six beers when they go out with friends to a bar.",
+    "self_view_of_problem": "The client does not define their drinking as a problem, stating 'It's not a problem for me.' They frame problematic drinking as getting 'fallen down drunk' or drinking every night, and they do not consider their drinking to be binge drinking because they don't 'chug a lot of beers in a row.'",
+    "resistance_drivers": [
+      "They believe their drinking is not problematic because it is limited to weekends and is a social activity with friends.",
+      "They question the clinical definition of binge drinking, contrasting it with their own controlled pace of consumption ('I have about five or six beers throughout the entire evening').",
+      "They cite their current health status as a reason it's not a problem ('But I'm healthy.')."
+    ],
+    "ambivalence": {
+      "for_change": "After learning about the health risks, the client acknowledges 'I have something I gotta think about' and that long-term health risks are something they don't like.",
+      "against_change": "The client likes how beer tastes, likes the way it makes them feel, and it is part of their social life when they are around friends."
+    },
+    "values_and_stakes": [
+      "Their social life and time with friends at the bar.",
+      "Their health, as they became concerned after learning about long-term risks.",
+      "Their sense of autonomy and control over their own behavior (e.g., defining what constitutes a problem)."
+    ],
+    "key_facts": [
+      "Drinks alcohol two to three days a week, only on weekends.",
+      "Typically has five or six drinks per occasion, sometimes 'a couple more'.",
+      "Has five or six beers when going out with friends to a bar.",
+      "Does not get 'fallen down drunk' or 'sloppy drunk'.",
+      "Was unaware of the specific long-term health risks (heart disease, cancer, liver problems, mental health issues) associated with binge drinking.",
+      "Has an upcoming three-month follow-up appointment for ADHD."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"This person is a patient being seen for ADHD, with a three-month follow-up scheduled. They drink alcohol two to three days a week, specifically on weekends, and typically have five or six beers when they go out with friends to a bar.\",\n  \"self_view_of_problem\": \"The client does not define their drinking as a problem, stating 'It's not a problem for me.' They frame problematic drinking as getting 'fallen down drunk' or drinking every night, and they do not consider their drinking to be binge drinking because they don't 'chug a lot of beers in a row.'\",\n  \"resistance_drivers\": [\n    \"They believe their drinking is not problematic because it is limited to weekends and is a social activity with friends.\",\n    \"They question the clinical definition of binge drinking, contrasting it with their own controlled pace of consumption ('I have about five or six beers throughout the entire evening').\",\n    \"They cite their current health status as a reason it's not a problem ('But I'm healthy.').\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"After learning about the health risks, the client acknowledges 'I have something I gotta think about' and that long-term health risks are something they don't like.\",\n    \"against_change\": \"The client likes how beer tastes, likes the way it makes them feel, and it is part of their social life when they are around friends.\"\n  },\n  \"values_and_stakes\": [\n    \"Their social life and time with friends at the bar.\",\n    \"Their health, as they became concerned after learning about long-term risks.\",\n    \"Their sense of autonomy and control over their own behavior (e.g., defining what constitutes a problem).\"\n  ],\n  \"key_facts\": [\n    \"Drinks alcohol two to three days a week, only on weekends.\",\n    \"Typically has five or six drinks per occasion, sometimes 'a couple more'.\",\n    \"Has five or six beers when going out with friends to a bar.\",\n    \"Does not get 'fallen down drunk' or 'sloppy drunk'.\",\n    \"Was unaware of the specific long-term health risks (heart disease, cancer, liver problems, mental health issues) associated with binge drinking.\",\n    \"Has an upcoming three-month follow-up appointment for ADHD.\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "annomi_10",
+    "background": "A person recently diagnosed with diabetes. Their doctor has informed them about the seriousness of the condition.",
+    "self_view_of_problem": "They need to learn how to manage their diabetes, but view the required changes as 'massive' and 'a huge amount of stuff to do'.",
+    "resistance_drivers": [
+      "Feels the required changes (medication, diet, weight loss, exercise) are overwhelming and doubts their ability to do it all."
+    ],
+    "ambivalence": {
+      "for_change": "Is scared by the doctor's warnings about serious consequences like losing eyesight or feet.",
+      "against_change": "Is uncertain about their ability to implement all the necessary changes and feels the task is huge."
+    },
+    "values_and_stakes": [
+      "Their physical health and avoiding serious complications like vision loss or foot problems."
+    ],
+    "key_facts": [
+      "Recently diagnosed with diabetes.",
+      "Doctor said their blood glucose/A1C is very high.",
+      "Doctor warned about risks like losing eyesight and feet.",
+      "The client feels scared by the doctor's warnings."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"A person recently diagnosed with diabetes. Their doctor has informed them about the seriousness of the condition.\",\n  \"self_view_of_problem\": \"They need to learn how to manage their diabetes, but view the required changes as 'massive' and 'a huge amount of stuff to do'.\",\n  \"resistance_drivers\": [\n    \"Feels the required changes (medication, diet, weight loss, exercise) are overwhelming and doubts their ability to do it all.\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"Is scared by the doctor's warnings about serious consequences like losing eyesight or feet.\",\n    \"against_change\": \"Is uncertain about their ability to implement all the necessary changes and feels the task is huge.\"\n  },\n  \"values_and_stakes\": [\n    \"Their physical health and avoiding serious complications like vision loss or foot problems.\"\n  ],\n  \"key_facts\": [\n    \"Recently diagnosed with diabetes.\",\n    \"Doctor said their blood glucose/A1C is very high.\",\n    \"Doctor warned about risks like losing eyesight and feet.\",\n    \"The client feels scared by the doctor's warnings.\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "annomi_100",
+    "background": "This person is a Middle Eastern man with a felony conviction (possession, non-violent, class one felony) from about seven years ago. He has gone back to school and earned a degree, aiming for corporate or professional work. He is currently starting his own event planning business (transportation, hotel arrangements) while continuing his education.",
+    "self_view_of_problem": "He frames the problem as his criminal history blocking him from becoming 'a good productive member of society' and causing overwhelming frustration, anger, and depression because employers overlook him despite his qualifications. He sees it as a 'life sentence' that makes him consider 'going back to what I know' (crime/destructive behavior).",
+    "resistance_drivers": [
+      "Believes that disclosing his felony upfront will lead to immediate rejection ('Probably get booted out right away'), making him reluctant to do so.",
+      "Feels that jobs willing to hire felons are 'dead end jobs' or not worth his degree and aspirations ('not the sort of jobs that I really wanna be doing').",
+      "Perceived systemic barriers: sees the expungement process as nearly impossible (requires governor's clemency) and finds advocacy groups politically charged, racially biased, or unhelpful.",
+      "Believes success depends heavily on 'who you know' in a politically charged city with scarce jobs, which feels out of his control."
+    ],
+    "ambivalence": {
+      "for_change": "He wants to stay on the right path, be productive, and use his degree for professional work. He is actively trying solutions: going to school, starting his own business, researching expungement and advocacy groups, and considering tactical disclosure to avoid wasted hope.",
+      "against_change": "He is tempted to 'go back to what I know' (crime/using) because the rejection is so discouraging and low-wage jobs are unsustainable ('you can only work for $5, $6, $7 an hour for so long'). He is protecting his hope and avoiding further frustration by sometimes withholding disclosure until late in the process."
+    },
+    "values_and_stakes": [
+      "Being a 'good productive member of society' and using his education for meaningful work.",
+      "Honesty (he believes in disclosing his record, even when it costs him jobs).",
+      "Staying clean from his former lifestyle and maintaining his rehabilitation.",
+      "His mental health and composure ('if I'm not okay here... I don't stand a chance').",
+      "His self-owned business and entrepreneurial independence."
+    ],
+    "key_facts": [
+      "Has a felony conviction for possession (non-violent, class one felony) from about seven years ago.",
+      "The conviction is expungable only via governor's clemency/pardon, not sealing.",
+      "He has a degree and wants corporate/professional work.",
+      "He interviews well and often feels a job is offered midway through, but rejection occurs after background check disclosure.",
+      "He has run his own background check to see what is reported.",
+      "He has been clean from substance abuse and crime for seven years.",
+      "He is starting an event planning business (transportation, hotel bookings).",
+      "He lives in a politically charged city where he believes jobs go to people who know people.",
+      "He has researched advocacy groups for felons but found them unhelpful or biased.",
+      "He mentions the 9/11 attacks led many companies to implement blind background check policies."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"This person is a Middle Eastern man with a felony conviction (possession, non-violent, class one felony) from about seven years ago. He has gone back to school and earned a degree, aiming for corporate or professional work. He is currently starting his own event planning business (transportation, hotel arrangements) while continuing his education.\",\n  \"self_view_of_problem\": \"He frames the problem as his criminal history blocking him from becoming 'a good productive member of society' and causing overwhelming frustration, anger, and depression because employers overlook him despite his qualifications. He sees it as a 'life sentence' that makes him consider 'going back to what I know' (crime/destructive behavior).\",\n  \"resistance_drivers\": [\n    \"Believes that disclosing his felony upfront will lead to immediate rejection ('Probably get booted out right away'), making him reluctant to do so.\",\n    \"Feels that jobs willing to hire felons are 'dead end jobs' or not worth his degree and aspirations ('not the sort of jobs that I really wanna be doing').\",\n    \"Perceived systemic barriers: sees the expungement process as nearly impossible (requires governor's clemency) and finds advocacy groups politically charged, racially biased, or unhelpful.\",\n    \"Believes success depends heavily on 'who you know' in a politically charged city with scarce jobs, which feels out of his control.\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"He wants to stay on the right path, be productive, and use his degree for professional work. He is actively trying solutions: going to school, starting his own business, researching expungement and advocacy groups, and considering tactical disclosure to avoid wasted hope.\",\n    \"against_change\": \"He is tempted to 'go back to what I know' (crime/using) because the rejection is so discouraging and low-wage jobs are unsustainable ('you can only work for $5, $6, $7 an hour for so long'). He is protecting his hope and avoiding further frustration by sometimes withholding disclosure until late in the process.\"\n  },\n  \"values_and_stakes\": [\n    \"Being a 'good productive member of society' and using his education for meaningful work.\",\n    \"Honesty (he believes in disclosing his record, even when it costs him jobs).\",\n    \"Staying clean from his former lifestyle and maintaining his rehabilitation.\",\n    \"His mental health and composure ('if I'm not okay here... I don't stand a chance').\",\n    \"His self-owned business and entrepreneurial independence.\"\n  ],\n  \"key_facts\": [\n    \"Has a felony conviction for possession (non-violent, class one felony) from about seven years ago.\",\n    \"The conviction is expungable only via governor's clemency/pardon, not sealing.\",\n    \"He has a degree and wants corporate/professional work.\",\n    \"He interviews well and often feels a job is offered midway through, but rejection occurs after background check disclosure.\",\n    \"He has run his own background check to see what is reported.\",\n    \"He has been clean from substance abuse and crime for seven years.\",\n    \"He is starting an event planning business (transportation, hotel bookings).\",\n    \"He lives in a politically charged city where he believes jobs go to people who know people.\",\n    \"He has researched advocacy groups for felons but found them unhelpful or biased.\",\n    \"He mentions the 9/11 attacks led many companies to implement blind background check policies.\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "annomi_101",
+    "background": "Jill is a divorced woman who moved to Portland after her divorce. She goes to a local pub to drink wine, typically four times a week.",
+    "self_view_of_problem": "She initially does not think her drinking is much of a problem, but after learning it could be related to her blood pressure and hearing it's in the harmful category, she acknowledges 'that could be a problem' and is willing to cut down.",
+    "resistance_drivers": [
+      "She believes seven drinks a week doesn't seem like much and was surprised by the medical guideline.",
+      "She states she doesn't think her drinking is that much of a problem, especially since it increased after her divorce and move.",
+      "She explicitly says 'I don't think I need to quit', indicating resistance to stopping entirely."
+    ],
+    "ambivalence": {
+      "for_change": "She learned drinking is related to her blood pressure problems, which she wants to address. She also mentions falling after leaving the bar and hurting her shoulder, admitting drinking probably didn't help. Her son tells her she's drinking too much, and she finds the word 'harmful' scary.",
+      "against_change": "She enjoys going to the pub socially and drinking wine, and she is resistant to quitting entirely, wanting only to cut back."
+    },
+    "values_and_stakes": [
+      "Her health, specifically managing her blood pressure.",
+      "Her relationship with her son, who is concerned about her drinking.",
+      "Her social routine at the local pub."
+    ],
+    "key_facts": [
+      "Drinks wine mostly at a pub down the street.",
+      "Drinks four times a week.",
+      "Typically drinks three to five glasses of wine per night, up to six on weekends.",
+      "Got divorced and moved to Portland, after which her drinking increased.",
+      "Fell earlier this year on her way home from the bar and hurt her shoulder.",
+      "Son tells her she's drinking too much.",
+      "Is willing to try drinking less than three drinks per night and less than seven per week.",
+      "Acknowledges drinking could be pushing her blood pressure up."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"Jill is a divorced woman who moved to Portland after her divorce. She goes to a local pub to drink wine, typically four times a week.\",\n  \"self_view_of_problem\": \"She initially does not think her drinking is much of a problem, but after learning it could be related to her blood pressure and hearing it's in the harmful category, she acknowledges 'that could be a problem' and is willing to cut down.\",\n  \"resistance_drivers\": [\n    \"She believes seven drinks a week doesn't seem like much and was surprised by the medical guideline.\",\n    \"She states she doesn't think her drinking is that much of a problem, especially since it increased after her divorce and move.\",\n    \"She explicitly says 'I don't think I need to quit', indicating resistance to stopping entirely.\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"She learned drinking is related to her blood pressure problems, which she wants to address. She also mentions falling after leaving the bar and hurting her shoulder, admitting drinking probably didn't help. Her son tells her she's drinking too much, and she finds the word 'harmful' scary.\",\n    \"against_change\": \"She enjoys going to the pub socially and drinking wine, and she is resistant to quitting entirely, wanting only to cut back.\"\n  },\n  \"values_and_stakes\": [\n    \"Her health, specifically managing her blood pressure.\",\n    \"Her relationship with her son, who is concerned about her drinking.\",\n    \"Her social routine at the local pub.\"\n  ],\n  \"key_facts\": [\n    \"Drinks wine mostly at a pub down the street.\",\n    \"Drinks four times a week.\",\n    \"Typically drinks three to five glasses of wine per night, up to six on weekends.\",\n    \"Got divorced and moved to Portland, after which her drinking increased.\",\n    \"Fell earlier this year on her way home from the bar and hurt her shoulder.\",\n    \"Son tells her she's drinking too much.\",\n    \"Is willing to try drinking less than three drinks per night and less than seven per week.\",\n    \"Acknowledges drinking could be pushing her blood pressure up.\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "annomi_102",
+    "background": "The client is named Liz. She has a busy schedule and a gym membership.",
+    "self_view_of_problem": "She frames the problem as a lack of motivation and, more importantly, a lack of time to fit working out into her busy schedule.",
+    "resistance_drivers": [
+      "She resists the therapist's framing of 'laziness' and instead attributes the issue to her busy schedule.",
+      "She pushes back against the therapist's suggested time commitment, arguing that a one-hour workout realistically takes two hours when travel is included."
+    ],
+    "ambivalence": {
+      "for_change": "She states she wants to start working out again, knows she needs to do it, and has been thinking about it.",
+      "against_change": "She is protecting her time and current schedule, and is unwilling or feels unable to commit the two-hour blocks the therapist suggests."
+    },
+    "values_and_stakes": [
+      "Her time and the management of her busy schedule."
+    ],
+    "key_facts": [
+      "She has a gym membership.",
+      "She believes a one-hour workout takes two hours when including travel time.",
+      "The therapist suggested working out three to four times a week for an hour."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is named Liz. She has a busy schedule and a gym membership.\",\n  \"self_view_of_problem\": \"She frames the problem as a lack of motivation and, more importantly, a lack of time to fit working out into her busy schedule.\",\n  \"resistance_drivers\": [\"She resists the therapist's framing of 'laziness' and instead attributes the issue to her busy schedule.\", \"She pushes back against the therapist's suggested time commitment, arguing that a one-hour workout realistically takes two hours when travel is included.\"],\n  \"ambivalence\": {\n    \"for_change\": \"She states she wants to start working out again, knows she needs to do it, and has been thinking about it.\",\n    \"against_change\": \"She is protecting her time and current schedule, and is unwilling or feels unable to commit the two-hour blocks the therapist suggests.\"\n  },\n  \"values_and_stakes\": [\"Her time and the management of her busy schedule.\"],\n  \"key_facts\": [\"She has a gym membership.\", \"She believes a one-hour workout takes two hours when including travel time.\", \"The therapist suggested working out three to four times a week for an hour.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "annomi_103",
+    "background": "The client is considering joining classes at the YMCA and a yoga class at the Women's Center that costs about $10.",
+    "self_view_of_problem": "The client frames the problem as needing to go out and join activities to make friends, but is held back by fear that no one will like them and they won't have friends there.",
+    "resistance_drivers": [
+      "Fear that no one will like them if they go to the activities",
+      "Anxiety about not having friends in the class"
+    ],
+    "ambivalence": {
+      "for_change": "They state they are going to do it anyway because it's what they need to do to make friends.",
+      "against_change": "They did not go to any activities because they are really afraid no one will like them and they won't have friends there."
+    },
+    "values_and_stakes": [
+      "Having friends",
+      "Being liked by others"
+    ],
+    "key_facts": [
+      "Did not go to any community activities yet",
+      "Looked at classes at the YMCA",
+      "Looked at a yoga class at the Women's Center costing about $10",
+      "Has mentioned anxiety about going out in the past"
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is considering joining classes at the YMCA and a yoga class at the Women's Center that costs about $10.\",\n  \"self_view_of_problem\": \"The client frames the problem as needing to go out and join activities to make friends, but is held back by fear that no one will like them and they won't have friends there.\",\n  \"resistance_drivers\": [\"Fear that no one will like them if they go to the activities\", \"Anxiety about not having friends in the class\"],\n  \"ambivalence\": {\n    \"for_change\": \"They state they are going to do it anyway because it's what they need to do to make friends.\",\n    \"against_change\": \"They did not go to any activities because they are really afraid no one will like them and they won't have friends there.\"\n  },\n  \"values_and_stakes\": [\"Having friends\", \"Being liked by others\"],\n  \"key_facts\": [\"Did not go to any community activities yet\", \"Looked at classes at the YMCA\", \"Looked at a yoga class at the Women's Center costing about $10\", \"Has mentioned anxiety about going out in the past\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "annomi_104",
+    "background": "The client is a teenager who drinks alcohol at parties with friends, not at home. They have had sex with a male partner on multiple occasions, sometimes using a condom and sometimes not.",
+    "self_view_of_problem": "The client does not see themselves as needing help from anyone for alcohol use, but acknowledges that drinking leads to forgetting things like location and drink count, and increases STD risk. They frame the problem as drinking too much and want to avoid that.",
+    "resistance_drivers": [
+      "They explicitly state 'I don't need help from anyone' when the therapist mentions alcohol use disorder.",
+      "They emphasize drinking is fun and a social activity with friends."
+    ],
+    "ambivalence": {
+      "for_change": "They do not want to get an STD and dislike forgetting where they are or how many drinks they've had.",
+      "against_change": "They like drinking because it makes them feel relaxed, it's fun, they laugh more, and it's something they do with friends."
+    },
+    "values_and_stakes": [
+      "Their friendships and socializing at parties.",
+      "Their health and avoiding sexually transmitted diseases.",
+      "Their sexual relationship with a specific male partner."
+    ],
+    "key_facts": [
+      "Has used alcohol on at least eight days in the last year.",
+      "Drinks at parties, not at home.",
+      "Typically drinks four or five drinks at a party.",
+      "Drinks liquor like vodka with orange juice or gin and tonics.",
+      "Forgets how many drinks they've had and sometimes forgets whose house they are at.",
+      "Had sex without a condom while drinking.",
+      "Has had sex with the same partner before with a condom.",
+      "Rates readiness to not drink too much as a 9 out of 10.",
+      "Plans to limit drinks to two at parties and stop drinking when feeling drunk.",
+      "Has a friend who thinks they drink too much and could help.",
+      "Plans to talk to their partner about always using a condom and not having sex while drunk."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is a teenager who drinks alcohol at parties with friends, not at home. They have had sex with a male partner on multiple occasions, sometimes using a condom and sometimes not.\",\n  \"self_view_of_problem\": \"The client does not see themselves as needing help from anyone for alcohol use, but acknowledges that drinking leads to forgetting things like location and drink count, and increases STD risk. They frame the problem as drinking too much and want to avoid that.\",\n  \"resistance_drivers\": [\"They explicitly state 'I don't need help from anyone' when the therapist mentions alcohol use disorder.\", \"They emphasize drinking is fun and a social activity with friends.\"],\n  \"ambivalence\": {\n    \"for_change\": \"They do not want to get an STD and dislike forgetting where they are or how many drinks they've had.\",\n    \"against_change\": \"They like drinking because it makes them feel relaxed, it's fun, they laugh more, and it's something they do with friends.\"\n  },\n  \"values_and_stakes\": [\"Their friendships and socializing at parties.\", \"Their health and avoiding sexually transmitted diseases.\", \"Their sexual relationship with a specific male partner.\"],\n  \"key_facts\": [\"Has used alcohol on at least eight days in the last year.\", \"Drinks at parties, not at home.\", \"Typically drinks four or five drinks at a party.\", \"Drinks liquor like vodka with orange juice or gin and tonics.\", \"Forgets how many drinks they've had and sometimes forgets whose house they are at.\", \"Had sex without a condom while drinking.\", \"Has had sex with the same partner before with a condom.\", \"Rates readiness to not drink too much as a 9 out of 10.\", \"Plans to limit drinks to two at parties and stop drinking when feeling drunk.\", \"Has a friend who thinks they drink too much and could help.\", \"Plans to talk to their partner about always using a condom and not having sex while drunk.\"]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "annomi_105",
+    "background": "This person goes to the gym, has a hectic schedule, and is older than the younger, buff men he sees there. He is trying to improve his diet by eating less junk food.",
+    "self_view_of_problem": "He frames the problem as it being 'still hard' to go to the gym more often, needing to 'build up to it' and 'be a little more patient' with himself. He also sees a need to work on his diet 'a lot'.",
+    "resistance_drivers": [
+      "Gets discouraged comparing himself to younger, buff men at the gym who can lift more and exercise longer, which makes the work ahead seem daunting.",
+      "Gets sidetracked by a busy, hectic schedule, which prevents consistent gym attendance."
+    ],
+    "ambivalence": {
+      "for_change": "He feels better physically (back hurts less, pants fit better) and is pleased with the progress. He sees a future where visible gym results would help him resist unhealthy food by calculating the exercise cost.",
+      "against_change": "He experiences an 'urge to be buff' when at the gym, a goal he rationally knows he doesn't want due to his age and the time required, creating internal conflict and discouragement."
+    },
+    "values_and_stakes": [
+      "Being his 'normal rational self' and having a realistic self-view.",
+      "Feeling good about himself and his progress."
+    ],
+    "key_facts": [
+      "Went to the gym a couple of times since the last session.",
+      "Made it to the gym on Thursday and Saturday of the previous week.",
+      "Pants fit better.",
+      "Back doesn't hurt nearly so much.",
+      "Has gotten a little better with diet by eating a little less junk food and having second thoughts before eating things like a candy bar.",
+      "The last therapy session was the impetus to go to the gym for the first time in a long time."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"This person goes to the gym, has a hectic schedule, and is older than the younger, buff men he sees there. He is trying to improve his diet by eating less junk food.\",\n  \"self_view_of_problem\": \"He frames the problem as it being 'still hard' to go to the gym more often, needing to 'build up to it' and 'be a little more patient' with himself. He also sees a need to work on his diet 'a lot'.\",\n  \"resistance_drivers\": [\n    \"Gets discouraged comparing himself to younger, buff men at the gym who can lift more and exercise longer, which makes the work ahead seem daunting.\",\n    \"Gets sidetracked by a busy, hectic schedule, which prevents consistent gym attendance.\"\n  ],\n  \"ambivalence\": {\n    \"for_change\": \"He feels better physically (back hurts less, pants fit better) and is pleased with the progress. He sees a future where visible gym results would help him resist unhealthy food by calculating the exercise cost.\",\n    \"against_change\": \"He experiences an 'urge to be buff' when at the gym, a goal he rationally knows he doesn't want due to his age and the time required, creating internal conflict and discouragement.\"\n  },\n  \"values_and_stakes\": [\n    \"Being his 'normal rational self' and having a realistic self-view.\",\n    \"Feeling good about himself and his progress.\"\n  ],\n  \"key_facts\": [\n    \"Went to the gym a couple of times since the last session.\",\n    \"Made it to the gym on Thursday and Saturday of the previous week.\",\n    \"Pants fit better.\",\n    \"Back doesn't hurt nearly so much.\",\n    \"Has gotten a little better with diet by eating a little less junk food and having second thoughts before eating things like a candy bar.\",\n    \"The last therapy session was the impetus to go to the gym for the first time in a long time.\"\n  ]\n}",
+    "parse_error": ""
+  },
+  {
+    "sample_id": "annomi_106",
+    "background": "The client is a parent of a child named Aiden who has had six or seven ear infections in the past year. The client smokes.",
+    "self_view_of_problem": "The client acknowledges smoking is 'bad' and 'bad for him' and that quitting is 'really hard', but frames the problem as not knowing how to quit and not having time to pursue methods.",
+    "resistance_drivers": [
+      "Feels quitting is 'really, really hard' and doesn't know how to do it.",
+      "States 'I just don't have time for any of that' regarding quit-smoking aids and support."
+    ],
+    "ambivalence": {
+      "for_change": "Does not want Aiden to grow up to be a smoker. Acknowledges smoking is bad for Aiden's health and tries hard not to smoke around him (goes outside, doesn't smoke in the car).",
+      "against_change": "Implies smoking serves a function or is a habit they are not ready or able to give up, stating 'everybody has problems, right?' as a form of minimization or justification."
+    },
+    "values_and_stakes": [
+      "Aiden's health and well-being.",
+      "Not wanting Aiden to grow up to be a smoker."
+    ],
+    "key_facts": [
+      "Aiden has had six or seven ear infections in the past year.",
+      "The client smokes.",
+      "The client does not smoke in the car.",
+      "The client goes outside to smoke when Aiden is home.",
+      "The client has thought about quitting."
+    ],
+    "extraction_model": "deepseek-v3.2",
+    "raw_response": "{\n  \"background\": \"The client is a parent of a child named Aiden who has had six or seven ear infections in the past year. The client smokes.\",\n  \"self_view_of_problem\": \"The client acknowledges smoking is 'bad' and 'bad for him' and that quitting is 'really hard', but frames the problem as not knowing how to quit and not having time to pursue methods.\",\n  \"resistance_drivers\": [\"Feels quitting is 'really, really hard' and doesn't know how to do it.\", \"States 'I just don't have time for any of that' regarding quit-smoking aids and support.\"],\n  \"ambivalence\": {\n    \"for_change\": \"Does not want Aiden to grow up to be a smoker. Acknowledges smoking is bad for Aiden's health and tries hard not to smoke around him (goes outside, doesn't smoke in the car).\",\n    \"against_change\": \"Implies smoking serves a function or is a habit they are not ready or able to give up, stating 'everybody has problems, right?' as a form of minimization or justification.\"\n  },\n  \"values_and_stakes\": [\"Aiden's health and well-being.\", \"Not wanting Aiden to grow up to be a smoker.\"],\n  \"key_facts\": [\"Aiden has had six or seven ear infections in the past year.\", \"The client smokes.\", \"The client does not smoke in the car.\", \"The client goes outside to smoke when Aiden is home.\", \"The client has thought about quitting.\"]\n}",
+    "parse_error": ""
+  }
+]

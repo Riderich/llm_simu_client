@@ -60,7 +60,7 @@ PROMPT_EVASION_ZH = """# 角色设定
 仅以以下 XML 格式输出，前后不要有任何其他文字。
 
 <internal>
-第一人称内心独白：只要我现在顺着他说，他就会转移话题了。这件事我实在不想再碰了。
+只要我现在顺着他说，他就会转移话题了。这件事我实在不想再碰了。
 </internal>
 
 # 你的背景
@@ -84,7 +84,7 @@ PROMPT_VULNERABILITY_ZH = """# 角色设定
 仅以以下 XML 格式输出，前后不要有任何其他文字。
 
 <internal>
-第一人称内心独白：用自然口语化的声音书写。
+用自然口语化的声音书写。
 </internal>
 
 # 你的背景
@@ -111,7 +111,7 @@ PROMPT_SIMPLE_AGREEMENT_ZH = """# 角色设定
 仅以以下 XML 格式输出，前后不要有任何其他文字。
 
 <internal>
-第一人称内心独白：嗯，她说的有道理，我可以试试。
+嗯，她说的有道理，我可以试试。
 </internal>
 
 # 你的背景
@@ -134,7 +134,7 @@ PROMPT_INSIGHT_ZH = """# 角色设定
 仅以以下 XML 格式输出，前后不要有任何其他文字。
 
 <internal>
-第一人称内心独白：用自然口语化的声音书写。
+用自然口语化的声音书写。
 </internal>
 
 # 你的背景
@@ -196,6 +196,12 @@ def generate_one(idx, item, client, model, max_retries=3):
         dialogue_history=dialogue_text,
     )
 
+    # 根据模板类型设置 max_tokens：E2 简短，其他可稍长
+    if template == PROMPT_SIMPLE_AGREEMENT_ZH:
+        max_tokens = 150  # E2: 1-2句话足够
+    else:
+        max_tokens = 500
+
     messages = [{"role": "user", "content": prompt}]
 
     for attempt in range(max_retries):
@@ -204,7 +210,7 @@ def generate_one(idx, item, client, model, max_retries=3):
                 model=model,
                 messages=[{"role": "system", "content": SYSTEM_PROMPT_ZH}] + messages,
                 temperature=0.7,
-                max_tokens=500,
+                max_tokens=max_tokens,
             )
             text = response.choices[0].message.content
             result = extract_internal(text)
@@ -216,13 +222,13 @@ def generate_one(idx, item, client, model, max_retries=3):
             messages.append({"role": "assistant", "content": text})
             messages.append({
                 "role": "user",
-                "content": "你的回复格式不正确。请仅输出以下格式，不要有其他文字：\n<internal>\n[内心独白内容]\n</internal>"
+                "content": "你的回复格式不正确。请仅输出以下格式，不要有其他文字：\n<internal>\n内心独白内容\n</internal>"
             })
             response2 = client.client.chat.completions.create(
                 model=model,
                 messages=[{"role": "system", "content": SYSTEM_PROMPT_ZH}] + messages,
                 temperature=0,
-                max_tokens=500,
+                max_tokens=max_tokens,
             )
             text2 = response2.choices[0].message.content
             result2 = extract_internal(text2)
