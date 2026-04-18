@@ -1,11 +1,11 @@
 """
-ExTES：`extes_resistance_fine.json` 中 fine_category=Unknown 的样本，对比
+ExTES：`extes/resist_fine.json` 中 fine_category=Unknown 的样本，对比
 
 - **原先（落盘）**：该文件中保存的 fine_label / fine_category（均为历史推理结果）
 - **旧 prompt 现场**：含 (A1) 代号 + `###` 模板（与改版前 esconv 细标脚本风格一致）
 - **新 prompt 现场**：`scripts/psychfire_resistance_fine_prompt.py` 统一提示词 + `【】` 模板
 
-上下文与来访者句：`extes_binary.json`。
+上下文与来访者句：`extes/binary.json`。
 
 用法（在 workspace 目录下或任意目录均可，路径已写死）：
   CUDA_VISIBLE_DEVICES=5 python scripts/archive/one_off/extes_unknown_fine_prompt_compare.py
@@ -27,11 +27,11 @@ if str(_SCRIPTS) not in sys.path:
 from psychfire_resistance_fine_prompt import build_resistance_fine_user_prompt
 
 WORKSPACE = Path("/data5/zxj/llm_simu_client/workspace")
-FINE_PATH = WORKSPACE / "results" / "extes_resistance_fine.json"
-BINARY_PATH = WORKSPACE / "results" / "extes_binary.json"
+FINE_PATH = WORKSPACE / "results" / "extes" / "resist_fine.json"
+BINARY_PATH = WORKSPACE / "results" / "extes" / "binary.json"
 MODEL_PATH = "/data5/zxj/llm_simu_client/ClientResistance-Model-Share/only_resistance_share_model"
-OUT_JSON = WORKSPACE / "results" / "extes_unknown_prompt_compare.json"
-OUT_MD = WORKSPACE / "results" / "extes_unknown_prompt_compare.md"
+OUT_JSON = WORKSPACE / "results" / "extes" / "experiments" / "prompt_compare.json"
+OUT_MD = WORKSPACE / "results" / "extes" / "experiments" / "prompt_compare.md"
 
 LABELS_MAP = {
     "争辩-挑战": "A1",

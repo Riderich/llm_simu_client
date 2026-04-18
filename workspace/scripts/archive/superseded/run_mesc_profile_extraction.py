@@ -4,7 +4,7 @@ run_mesc_profile_extraction.py
 Re-extract MESC Background Profiles from the **clean** source
 (MESC_from_csv.json, no visual contamination).
 
-Replaces workspace/results/profiles/mesc_profiles_v3b.json.
+Replaces workspace/results/profiles/mesc.json.
 
 The original profiles were extracted from MESC_merged.json (contaminated),
 causing ~60/1019 profiles to contain visual-model descriptions
@@ -38,7 +38,7 @@ from profile_pipeline.types import TranscriptSample
 
 # ── Config ────────────────────────────────────────────────────────────────────
 SOURCE_PATH = REPO / "workspace/dataset/MESC_from_csv.json"
-OUTPUT_PATH = REPO / "workspace/results/profiles/mesc_profiles_v3b.json"
+OUTPUT_PATH = REPO / "workspace/results/profiles/mesc.json"
 MODEL       = "gpt-5.4-mini"       # yunwu.ai relay
 SAVE_EVERY  = 20                   # checkpoint frequency
 SLEEP_BETWEEN = 0.3               # seconds between API calls

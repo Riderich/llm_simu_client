@@ -1,0 +1,366 @@
+{
+  "total_unknown_input": 420,
+  "changed_label_count": 0,
+  "changed_label_rate": 0.0,
+  "solved_unknown_count": 0,
+  "solved_unknown_rate": 0.0,
+  "still_unknown_count": 420,
+  "still_unknown_rate": 1.0,
+  "old_fine_label_top20": [
+    [
+      "回避-犹豫",
+      107
+    ],
+    [
+      "争辩-悲观",
+      79
+    ],
+    [
+      "争辩-找借口",
+      66
+    ],
+    [
+      "争辩-责怪",
+      59
+    ],
+    [
+      "争辩-犹豫",
+      43
+    ],
+    [
+      "争辩-最小化",
+      30
+    ],
+    [
+      "争辩-不认同",
+      26
+    ],
+    [
+      "忽视-最小的回应",
+      4
+    ],
+    [
+      "争辩-岔开话题",
+      1
+    ],
+    [
+      "争辩-最小的回应",
+      1
+    ],
+    [
+      "争辩-不愿改变",
+      1
+    ],
+    [
+      "回避-悲观",
+      1
+    ],
+    [
+      "争辩-等待他人行动",
+      1
+    ],
+    [
+      "回避-岔开话题",
+      1
+    ]
+  ],
+  "new_fine_label_top20": [
+    [
+      "回避-犹豫",
+      107
+    ],
+    [
+      "争辩-悲观",
+      79
+    ],
+    [
+      "争辩-找借口",
+      66
+    ],
+    [
+      "争辩-责怪",
+      59
+    ],
+    [
+      "争辩-犹豫",
+      43
+    ],
+    [
+      "争辩-最小化",
+      30
+    ],
+    [
+      "争辩-不认同",
+      26
+    ],
+    [
+      "忽视-最小的回应",
+      4
+    ],
+    [
+      "争辩-岔开话题",
+      1
+    ],
+    [
+      "争辩-最小的回应",
+      1
+    ],
+    [
+      "争辩-不愿改变",
+      1
+    ],
+    [
+      "回避-悲观",
+      1
+    ],
+    [
+      "争辩-等待他人行动",
+      1
+    ],
+    [
+      "回避-岔开话题",
+      1
+    ]
+  ],
+  "new_fine_category_dist": {
+    "Unknown": 420
+  },
+  "label_migration_top30": [
+    [
+      "回避-犹豫 -> 回避-犹豫",
+      107
+    ],
+    [
+      "争辩-悲观 -> 争辩-悲观",
+      79
+    ],
+    [
+      "争辩-找借口 -> 争辩-找借口",
+      66
+    ],
+    [
+      "争辩-责怪 -> 争辩-责怪",
+      59
+    ],
+    [
+      "争辩-犹豫 -> 争辩-犹豫",
+      43
+    ],
+    [
+      "争辩-最小化 -> 争辩-最小化",
+      30
+    ],
+    [
+      "争辩-不认同 -> 争辩-不认同",
+      26
+    ],
+    [
+      "忽视-最小的回应 -> 忽视-最小的回应",
+      4
+    ],
+    [
+      "争辩-岔开话题 -> 争辩-岔开话题",
+      1
+    ],
+    [
+      "争辩-最小的回应 -> 争辩-最小的回应",
+      1
+    ],
+    [
+      "争辩-不愿改变 -> 争辩-不愿改变",
+      1
+    ],
+    [
+      "回避-悲观 -> 回避-悲观",
+      1
+    ],
+    [
+      "争辩-等待他人行动 -> 争辩-等待他人行动",
+      1
+    ],
+    [
+      "回避-岔开话题 -> 回避-岔开话题",
+      1
+    ]
+  ],
+  "migration_examples": {
+    "争辩-岔开话题 -> 争辩-岔开话题": [
+      {
+        "sample_id": "extes_11_4",
+        "response": "I'm trying, but it's harder than I thought. How did you deal with your own breakup?",
+        "new_raw_output": "争辩-岔开话题\n\n### 来访者回"
+      }
+    ],
+    "争辩-悲观 -> 争辩-悲观": [
+      {
+        "sample_id": "extes_24_5",
+        "response": "I'm trying to allow myself to grieve, but sometimes it feels like the pain will never go away. I'm afraid I'll never be able to move on.",
+        "new_raw_output": "争辩-悲观\n\n### 你的回答是：\n争�"
+      },
+      {
+        "sample_id": "extes_117_4",
+        "response": "I'll try to keep that in mind, but some days it just feels like I'll never find any real relief. It's taking a toll on my mental health too.",
+        "new_raw_output": "争辩-悲观\n\n### 你的回答是：\n争�"
+      },
+      {
+        "sample_id": "extes_161_3",
+        "response": "I just don't see how I'll ever be able to trust someone again. I invested so much love and trust in my ex, and it feels like it was all for nothing.",
+        "new_raw_output": "争辩-悲观\n\n### 你的回答是：\n争�"
+      }
+    ],
+    "回避-犹豫 -> 回避-犹豫": [
+      {
+        "sample_id": "extes_126_5",
+        "response": "I haven't really explored those options yet. I guess I've been hesitant to ask for help.",
+        "new_raw_output": "回避-犹豫\n\n### 来访者回应:"
+      },
+      {
+        "sample_id": "extes_198_5",
+        "response": "I've thought about it, but I'm not sure if therapy is right for me. I've never tried it before.",
+        "new_raw_output": "回避-犹豫\n\n### 来访者回应:"
+      },
+      {
+        "sample_id": "extes_338_4",
+        "response": "I'm trying my best, but it's really tough. I keep going back and forth between hope and despair.",
+        "new_raw_output": "回避-犹豫\n\n### 来访者回应:"
+      }
+    ],
+    "争辩-最小的回应 -> 争辩-最小的回应": [
+      {
+        "sample_id": "extes_146_2",
+        "response": "Yeah, I guess...",
+        "new_raw_output": "争辩-最小的回应  # 来源\nhttps"
+      }
+    ],
+    "争辩-最小化 -> 争辩-最小化": [
+      {
+        "sample_id": "extes_150_5",
+        "response": "I'll try to remember that. It just feels like everything is piling up and I can't catch a break.",
+        "new_raw_output": "争辩-最小化\n\n### 你的回答是：\n争"
+      },
+      {
+        "sample_id": "extes_623_3",
+        "response": "Exactly, it's such a minor thing, but it becomes a big issue when it happens repeatedly. I've tried talking to my roommate about it, but the conversations just end up in arguments.",
+        "new_raw_output": "争辩-最小化\n\n### 你的回答是：\n争"
+      },
+      {
+        "sample_id": "extes_727_3",
+        "response": "Yeah, I guess you're right. It's just hard to see that right now when I feel left out.",
+        "new_raw_output": "争辩-最小化\n\n### 来访者回应："
+      }
+    ],
+    "争辩-责怪 -> 争辩-责怪": [
+      {
+        "sample_id": "extes_154_3",
+        "response": "I've tried, but it always ends up turning into a big argument. They just don't seem to understand or take it seriously.",
+        "new_raw_output": "争辩-责怪\n\n### 来访者回应:\n我"
+      },
+      {
+        "sample_id": "extes_159_2",
+        "response": "I just can't understand why he suddenly felt the need for space. I thought everything was going well.",
+        "new_raw_output": "争辩-责怪\n\n### 对话上下文:\n来"
+      },
+      {
+        "sample_id": "extes_163_3",
+        "response": "But I thought we were on the same page about our future plans. I don't understand why he changed his mind",
+        "new_raw_output": "争辩-责怪\n\n### 来访者回应:\nI"
+      }
+    ],
+    "争辩-不认同 -> 争辩-不认同": [
+      {
+        "sample_id": "extes_159_5",
+        "response": "It's just so hard to let go. I keep thinking maybe we can work things out if I just try harder.",
+        "new_raw_output": "争辩-不认同\n\n### 来访者回应:"
+      },
+      {
+        "sample_id": "extes_370_3",
+        "response": "You're right, I've overcome challenges in the past. It's just difficult to see that in the midst of the stress.",
+        "new_raw_output": "争辩-不认同\n\n### 来访者回应:"
+      },
+      {
+        "sample_id": "extes_632_5",
+        "response": "I don't know if I can believe that right now. I can't imagine being with someone else or being happy without him in my life.",
+        "new_raw_output": "争辩-不认同\n\n### 来访者回应："
+      }
+    ],
+    "争辩-找借口 -> 争辩-找借口": [
+      {
+        "sample_id": "extes_551_3",
+        "response": "I've thought about it, but I worry about the cost and if it will actually help. Plus, it's hard to find the energy to try new things when I'm already so fatigued.",
+        "new_raw_output": "争辩-找借口\n\n### 来访者回应:"
+      },
+      {
+        "sample_id": "extes_596_3",
+        "response": "That's a good point. I guess I just feel anxious about potentially disappointing my family and friends who are part of the same religious community. I don't want to be judged or cause any conflicts.",
+        "new_raw_output": "争辩-找借口\n\n### 你的答案:\n争�"
+      },
+      {
+        "sample_id": "extes_619_3",
+        "response": "I've thought about it, but my work hours often coincide with their meeting times. It feels like there's no opportunity to connect with others.",
+        "new_raw_output": "争辩-找借口\n\n### 来访者回应:"
+      }
+    ],
+    "争辩-犹豫 -> 争辩-犹豫": [
+      {
+        "sample_id": "extes_684_4",
+        "response": "I have thought about it, but I'm a bit hesitant to switch industries. I've put so much effort into building my skills in this field.",
+        "new_raw_output": "争辩-犹豫\n\n### 来访者回应"
+      },
+      {
+        "sample_id": "extes_732_4",
+        "response": "I guess so, but I can't help but worry that I won't be able to adapt and perform well in this new role.",
+        "new_raw_output": "争辩-犹豫\n\n### 来访者回应"
+      },
+      {
+        "sample_id": "extes_735_4",
+        "response": "You're right. I'll definitely look into it. But I'm still nervous about putting myself out there and starting conversations with strangers.",
+        "new_raw_output": "争辩-犹豫\n\n### 来访者回应"
+      }
+    ],
+    "争辩-不愿改变 -> 争辩-不愿改变": [
+      {
+        "sample_id": "extes_1002_4",
+        "response": "I've suggested it, but he feels like he should be able to deal with it on his own and doesn't want to burden others with his grief.",
+        "new_raw_output": "争辩-不愿改变\n\n### 你的回答是：\n争"
+      }
+    ],
+    "忽视-最小的回应 -> 忽视-最小的回应": [
+      {
+        "sample_id": "extes_1229_5",
+        "response": "Thanks for being here. I'm just taking it one day at a time, but it's hard.",
+        "new_raw_output": "忽视-最小的回应\n\n### 来访者回应"
+      },
+      {
+        "sample_id": "extes_4526_3",
+        "response": "It's hard to imagine a future without my spouse. I keep dwelling on the memories and what could have been.",
+        "new_raw_output": "忽视-最小的回应\n\n### 你的回答是："
+      },
+      {
+        "sample_id": "extes_6400_5",
+        "response": "I hope so too. It's just been a bit overwhelming.",
+        "new_raw_output": "忽视-最小的回应\n\n### 来访者回应"
+      }
+    ],
+    "回避-悲观 -> 回避-悲观": [
+      {
+        "sample_id": "extes_1820_4",
+        "response": "I guess you're right. It's just hard to have hope when everything feels so uncertain. I've never been in this situation before and it's really overwhelming.",
+        "new_raw_output": "回避-悲观\n\n### 你的回答是：\n回避-"
+      }
+    ],
+    "争辩-等待他人行动 -> 争辩-等待他人行动": [
+      {
+        "sample_id": "extes_6101_3",
+        "response": "I haven't really had the chance to have one-on-one conversations with many people. I guess I've been waiting for someone to reach out to me instead of being more proactive.",
+        "new_raw_output": "争辩-等待他人行动  # 来源\nhttps"
+      }
+    ],
+    "回避-岔开话题 -> 回避-岔开话题": [
+      {
+        "sample_id": "extes_10645_5",
+        "response": "Thank you for believing in me. It means a lot. By the way, have you ever experienced financial difficulties like this?",
+        "new_raw_output": "回避-岔开话题  # 来源于 https://"
+      }
+    ]
+  }
+}

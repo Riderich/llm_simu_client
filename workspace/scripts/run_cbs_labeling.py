@@ -4,9 +4,9 @@ run_cbs_labeling.py
 Unified entry point for CBS 2-8 cooperation sub-type labeling via Qwen API.
 
 Replaces:
-  annomi_coop_cbs.py   (input: annomi_full_binary_recap.json → binary_label==合作)
-  esconv_coop_cbs.py   (input: esconv_resistance.json → binary_label==合作)
-  mesc_coop_cbs.py     (input: mesc_binary_clean.json  → binary_label==合作)
+  annomi_coop_cbs.py   (input: labeled/annomi_binary.json → binary_label==合作)
+  esconv_coop_cbs.py   (input: labeled/esconv_utterances.json → binary_label==合作)
+  mesc_coop_cbs.py     (input: labeled/mesc_binary.json → binary_label==合作)
 
 Usage (from repo root):
   python workspace/scripts/run_cbs_labeling.py --dataset annomi
@@ -68,22 +68,22 @@ CBS_CATEGORIES: list[str] = [
 
 _DATASET_CONFIGS: dict[str, dict[str, Any]] = {
     "annomi": {
-        "input":          REPO / "workspace/results/annomi_full_binary_recap.json",
-        "output":         REPO / "workspace/results/annomi_coop.json",
+        "input":          REPO / "workspace/results/labeled/annomi_binary.json",
+        "output":         REPO / "workspace/results/labeled/annomi_coop.json",
         "filter_field":   "binary_label",
         "response_field": "response",
         "context_field":  "context",
     },
     "esconv": {
-        "input":          REPO / "workspace/results/esconv_resistance.json",
-        "output":         REPO / "workspace/results/esconv_coop.json",
+        "input":          REPO / "workspace/results/labeled/esconv_utterances.json",
+        "output":         REPO / "workspace/results/labeled/esconv_coop.json",
         "filter_field":   "binary_label",
         "response_field": "response",
         "context_field":  "context",
     },
     "mesc": {
-        "input":          REPO / "workspace/results/mesc_binary_clean.json",
-        "output":         REPO / "workspace/results/mesc_coop.json",
+        "input":          REPO / "workspace/results/labeled/mesc_binary.json",
+        "output":         REPO / "workspace/results/labeled/mesc_coop_all.json",
         "filter_field":   "binary_label",
         "response_field": "response",
         "context_field":  "context",

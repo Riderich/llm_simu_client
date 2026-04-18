@@ -71,7 +71,7 @@ cd workspace
 python scripts/run_binary_resistance_classification.py \
     --data-format annomi \
     --input data/processed/AnnoMI-full.json \
-    --output results/annomi_full_binary_recap.json \
+    --output results/labeled/annomi_binary.json \
     --gpu 4
 ```
 

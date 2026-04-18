@@ -56,24 +56,24 @@ _DEFAULT_MODEL_PATH = str(
 
 _DATASET_CONFIGS: dict[str, dict[str, Any]] = {
     "annomi": {
-        "input":          REPO / "workspace/results/annomi_full_binary_recap.json",
-        "output":         REPO / "workspace/results/annomi_resistance.json",
+        "input":          REPO / "workspace/results/labeled/annomi_binary.json",
+        "output":         REPO / "workspace/results/labeled/annomi_resist.json",
         "filter_field":   "binary_label",
         "filter_value":   "阻抗",
         "response_field": "response",
         "context_field":  "context",
     },
     "esconv": {
-        "input":          REPO / "workspace/results/esconv_resistance.json",
-        "output":         REPO / "workspace/results/esconv_resistance_fine.json",
+        "input":          REPO / "workspace/results/labeled/esconv_resist.json",
+        "output":         REPO / "workspace/results/labeled/esconv_resist.json",
         "filter_field":   "binary_label",
         "filter_value":   "阻抗",
         "response_field": "response",
         "context_field":  "context",
     },
     "mesc": {
-        "input":          REPO / "workspace/results/mesc_binary_clean.json",
-        "output":         REPO / "workspace/results/mesc_resistance.json",
+        "input":          REPO / "workspace/results/labeled/mesc_binary.json",
+        "output":         REPO / "workspace/results/labeled/mesc_resist_legacy.json",
         "filter_field":   "binary_label",
         "filter_value":   "阻抗",
         "response_field": "response",

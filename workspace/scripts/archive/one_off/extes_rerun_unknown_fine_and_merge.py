@@ -1,5 +1,5 @@
 """
-将 extes_resistance_fine.json 中 fine_category=Unknown 的条目，用
+将 extes/resist_fine.json 中 fine_category=Unknown 的条目，用
 scripts/psychfire_resistance_fine_prompt.py 中的统一提示词全量重跑细标，
 并写回同一 JSON。运行前会复制一份备份到 results/。
 """
@@ -21,8 +21,8 @@ if str(_SCRIPTS) not in sys.path:
 from psychfire_resistance_fine_prompt import build_resistance_fine_user_prompt
 
 WORKSPACE = Path("/data5/zxj/llm_simu_client/workspace")
-FINE_PATH = WORKSPACE / "results" / "extes_resistance_fine.json"
-BINARY_PATH = WORKSPACE / "results" / "extes_binary.json"
+FINE_PATH = WORKSPACE / "results" / "extes" / "resist_fine.json"
+BINARY_PATH = WORKSPACE / "results" / "extes" / "binary.json"
 MODEL_PATH = "/data5/zxj/llm_simu_client/ClientResistance-Model-Share/only_resistance_share_model"
 SAVE_EVERY = 80
 

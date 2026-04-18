@@ -14,7 +14,7 @@ Supported datasets:  mesc | esconv | annomi | recap
 
 Background (nohup):
   nohup python -u workspace/scripts/run_profile_extraction.py --dataset mesc \
-      > workspace/results/profiles/logs/mesc_v3b_rerun.log 2>&1 &
+      > workspace/results/logs/profiles/mesc_rerun.log 2>&1 &
 """
 
 from __future__ import annotations
@@ -41,10 +41,10 @@ from profile_pipeline.loaders import load_dataset
 # ── Default output paths per dataset ─────────────────────────────────────
 
 _DEFAULT_OUTPUTS: dict[str, Path] = {
-    "mesc":   REPO / "workspace/results/profiles/mesc_profiles_v3b.json",
-    "esconv": REPO / "workspace/results/profiles/esconv_profiles_v1.json",
-    "annomi": REPO / "workspace/results/profiles/annomi_profiles_v1.json",
-    "recap":  REPO / "workspace/results/profiles/recap_profiles_v1.json",
+    "mesc":   REPO / "workspace/results/profiles/mesc.json",
+    "esconv": REPO / "workspace/results/profiles/esconv.json",
+    "annomi": REPO / "workspace/results/profiles/annomi.json",
+    "recap":  REPO / "workspace/results/profiles/recap_dedup.json",
 }
 
 # ── Default model ─────────────────────────────────────────────────────────

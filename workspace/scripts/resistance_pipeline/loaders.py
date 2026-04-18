@@ -6,9 +6,9 @@ Produces Sample lists suitable for TransformersBinaryClassifier.
 
 Supported formats
 ─────────────────
-  annomi_full – annomi_full_binary_recap.json  (all client utterances)
-  mesc        – mesc_binary_clean.json         (balanced client utterances)
-  extes       – extes_binary.json              (all client utterances)
+  annomi_full – labeled/annomi_binary.json     (all client utterances)
+  mesc        – labeled/mesc_binary.json       (balanced client utterances)
+  extes       – extes/binary.json              (all client utterances)
 
 Each loader formats the conversation context as a single string and isolates
 the target client utterance as the response field.
@@ -89,7 +89,7 @@ def load_annomi_full(
     max_turns: int = 4,
     max_samples: int | None = None,
 ) -> list[Sample]:
-    src = Path(path) if path else REPO / "workspace/results/annomi_full_binary_recap.json"
+    src = Path(path) if path else REPO / "workspace/results/labeled/annomi_binary.json"
     return _load_generic(src, max_turns=max_turns, max_samples=max_samples)
 
 
@@ -99,7 +99,7 @@ def load_mesc(
     max_turns: int = 4,
     max_samples: int | None = None,
 ) -> list[Sample]:
-    src = Path(path) if path else REPO / "workspace/results/mesc_binary_clean.json"
+    src = Path(path) if path else REPO / "workspace/results/labeled/mesc_binary.json"
     return _load_generic(src, max_turns=max_turns, max_samples=max_samples)
 
 
@@ -109,5 +109,5 @@ def load_extes(
     max_turns: int = 4,
     max_samples: int | None = None,
 ) -> list[Sample]:
-    src = Path(path) if path else REPO / "workspace/results/extes_binary.json"
+    src = Path(path) if path else REPO / "workspace/results/extes/binary.json"
     return _load_generic(src, max_turns=max_turns, max_samples=max_samples)

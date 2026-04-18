@@ -41,6 +41,9 @@ Sample-id format (ESConv / MESC-old): "{dialogue_id}_{full_dialog_position}"
 AnnoMI format: "annomi_{transcript_id}_{client_turn_index}"
 MESC new format: "mesc_{dialogue_id}_{client_turn_index}"
 
+Outputs (under workspace/results/):
+  views/esconv.json | views/mesc.json | views/annomi.json
+
 Usage:
   python data_scripts/build_character_view.py --dataset esconv
   python data_scripts/build_character_view.py --dataset mesc
@@ -60,9 +63,9 @@ DATASET = REPO / "workspace/dataset"
 CONFIGS = {
     "esconv": {
         "dialogue_path": DATASET / "ESConv.json",
-        "resistance_path": RESULTS / "esconv_resistance.json",
-        "coop_path":       RESULTS / "esconv_coop.json",
-        "output_path":     RESULTS / "esconv_character_view.json",
+        "resistance_path": RESULTS / "labeled/esconv_resist.json",
+        "coop_path":       RESULTS / "labeled/esconv_coop.json",
+        "output_path":     RESULTS / "views/esconv.json",
         "client_speaker":  "seeker",
         "therapist_speaker": "supporter",
         "id_format": "pos",       # sample_id = "{cumulative_prefix}_{turn_pos}"
@@ -70,12 +73,10 @@ CONFIGS = {
     },
     "mesc": {
         "dialogue_path": DATASET / "MESC_from_csv.json",
-        # Fine-grained files will be added once binary + fine-grained jobs complete.
-        # For now, use binary_clean for binary label (no fine_label available yet).
-        "resistance_path": RESULTS / "mesc_resistance_clean.json",
-        "coop_path":       RESULTS / "mesc_coop_clean.json",
-        "binary_path":     RESULTS / "mesc_binary_clean.json",   # fallback binary labels
-        "output_path":     RESULTS / "mesc_character_view.json",
+        "resistance_path": RESULTS / "labeled/mesc_resist.json",
+        "coop_path":       RESULTS / "labeled/mesc_coop.json",
+        "binary_path":     RESULTS / "labeled/mesc_binary.json",
+        "output_path":     RESULTS / "views/mesc.json",
         "client_speaker":  "user",
         "therapist_speaker": "sys",
         "id_format": "turn_idx",  # sample_id = "mesc_{dlg_id}_{client_turn_index}"
@@ -83,9 +84,9 @@ CONFIGS = {
     },
     "annomi": {
         "dialogue_path": REPO / "data/processed/AnnoMI-full.json",
-        "resistance_path": RESULTS / "annomi_resistance.json",
-        "coop_path":       RESULTS / "annomi_coop.json",
-        "output_path":     RESULTS / "annomi_character_view.json",
+        "resistance_path": RESULTS / "labeled/annomi_resist.json",
+        "coop_path":       RESULTS / "labeled/annomi_coop.json",
+        "output_path":     RESULTS / "views/annomi.json",
         "client_speaker":  "client",
         "therapist_speaker": "therapist",
         "id_format": "annomi",

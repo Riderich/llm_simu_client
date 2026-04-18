@@ -13,9 +13,9 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 MODEL_PATH = "/data5/zxj/llm_simu_client/ClientResistance-Model-Share/only_resistance_share_model"
-FINE_PATH = Path("/data5/zxj/llm_simu_client/workspace/results/extes_resistance_fine.json")
-BINARY_PATH = Path("/data5/zxj/llm_simu_client/workspace/results/extes_binary.json")
-OUT_PATH = Path("/data5/zxj/llm_simu_client/workspace/results/extes_unknown_two_line_smoketest.json")
+FINE_PATH = Path("/data5/zxj/llm_simu_client/workspace/results/extes/resist_fine.json")
+BINARY_PATH = Path("/data5/zxj/llm_simu_client/workspace/results/extes/binary.json")
+OUT_PATH = Path("/data5/zxj/llm_simu_client/workspace/results/extes/experiments/two_line_smoketest.json")
 
 # 与仓库内细标脚本一致（仅中文键）
 LABELS_MAP = {

@@ -1,0 +1,3782 @@
+[
+  {
+    "sample_id": "extes_11_4",
+    "old_fine_label": "争辩-岔开话题",
+    "new_fine_label": "争辩-岔开话题",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_24_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_117_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_126_5",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_146_2",
+    "old_fine_label": "争辩-最小的回应",
+    "new_fine_label": "争辩-最小的回应",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_150_5",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_154_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_159_2",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_159_5",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_161_3",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_161_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_163_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_198_5",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_338_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_345_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_353_4",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_355_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_370_3",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_379_6",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_401_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_494_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_543_2",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_551_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_596_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_619_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_620_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_623_3",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_632_5",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_662_5",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_677_3",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_684_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_696_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_699_3",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_727_3",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_732_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_735_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_807_6",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_846_5",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_847_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_861_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_862_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_866_5",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_876_4",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_881_5",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_915_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_924_3",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_933_4",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_938_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_942_3",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_944_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_949_6",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1002_4",
+    "old_fine_label": "争辩-不愿改变",
+    "new_fine_label": "争辩-不愿改变",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1006_4",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1008_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1042_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1045_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1148_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1158_2",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1188_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1189_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1215_5",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1229_5",
+    "old_fine_label": "忽视-最小的回应",
+    "new_fine_label": "忽视-最小的回应",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1240_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1250_2",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1275_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1285_7",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1368_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1370_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1405_4",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1406_5",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1407_4",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1425_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1449_4",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1479_4",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1503_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1516_4",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1517_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1572_4",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1656_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1766_5",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1779_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1820_4",
+    "old_fine_label": "回避-悲观",
+    "new_fine_label": "回避-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1824_3",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1877_3",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1888_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1893_6",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1903_5",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1939_5",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1997_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_1999_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2036_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2039_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2050_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2075_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2079_4",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2154_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2177_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2288_4",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2302_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2322_4",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2345_4",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2383_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2392_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2422_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2436_7",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2517_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2517_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2528_5",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2533_2",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2534_6",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2535_4",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2602_4",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2630_2",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2636_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2661_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2692_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2706_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2756_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2767_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2783_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_2998_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3068_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3069_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3089_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3091_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3098_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3104_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3192_4",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3272_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3302_3",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3302_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3305_5",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3309_6",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3321_5",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3388_5",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3394_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3460_6",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3504_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3534_4",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3583_4",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3621_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3685_3",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3742_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3768_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3818_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3834_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3872_7",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_3876_4",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4008_4",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4016_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4027_3",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4037_2",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4040_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4076_4",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4093_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4094_3",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4155_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4158_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4206_2",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4268_3",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4286_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4341_4",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4369_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4423_4",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4508_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4516_2",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4526_3",
+    "old_fine_label": "忽视-最小的回应",
+    "new_fine_label": "忽视-最小的回应",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4548_5",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4553_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4567_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4573_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4603_8",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4612_4",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4619_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4672_5",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4684_4",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4685_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4690_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4697_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4707_4",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4709_4",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4728_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4744_3",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4790_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4851_6",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4853_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4873_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4875_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4880_2",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4883_2",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4884_2",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4901_3",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4902_3",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4904_3",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4905_3",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_4945_5",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5017_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5021_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5059_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5060_2",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5061_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5063_3",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5071_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5178_6",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5248_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5250_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5329_3",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5342_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5346_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5457_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5493_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5562_6",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5590_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5600_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5652_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5704_2",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5770_2",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5773_2",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5836_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5885_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5899_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5902_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5916_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5925_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5964_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5964_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5968_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_5979_4",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6054_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6058_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6101_3",
+    "old_fine_label": "争辩-等待他人行动",
+    "new_fine_label": "争辩-等待他人行动",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6108_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6147_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6184_4",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6207_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6220_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6251_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6267_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6281_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6301_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6312_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6315_3",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6318_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6329_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6370_4",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6372_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6384_2",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6400_5",
+    "old_fine_label": "忽视-最小的回应",
+    "new_fine_label": "忽视-最小的回应",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6412_3",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6445_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6459_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6500_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6646_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6704_5",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6710_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6752_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6815_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6818_3",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6870_5",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6871_5",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6886_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6887_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6916_2",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6937_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6968_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_6975_2",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7024_2",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7081_3",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7166_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7172_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7216_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7223_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7257_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7269_4",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7284_5",
+    "old_fine_label": "忽视-最小的回应",
+    "new_fine_label": "忽视-最小的回应",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7321_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7352_4",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7377_5",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7452_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7461_2",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7523_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7566_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7596_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7692_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7768_4",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7792_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7810_6",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7836_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7853_5",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7907_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_7964_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8038_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8092_5",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8101_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8102_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8225_6",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8280_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8291_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8328_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8345_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8415_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8458_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8460_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8538_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8671_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8871_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8914_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8960_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8981_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_8987_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9037_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9061_3",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9100_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9111_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9200_2",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9261_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9311_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9322_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9343_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9345_4",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9350_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9363_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9391_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9422_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9434_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9472_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9483_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9491_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9494_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9510_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9515_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9544_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9559_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9594_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9612_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9624_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9640_3",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9641_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9642_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9642_6",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9667_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9702_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9710_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9722_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9808_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9831_2",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9837_3",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9841_2",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9929_7",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9940_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9972_8",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9973_5",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_9987_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10008_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10027_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10091_5",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10117_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10131_3",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10131_4",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10134_5",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10150_2",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10166_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10201_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10297_3",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10298_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10299_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10303_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10318_5",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10325_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10380_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10421_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10425_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10436_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10438_5",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10441_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10445_5",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10453_4",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10458_5",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10459_5",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10473_5",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10474_5",
+    "old_fine_label": "争辩-不认同",
+    "new_fine_label": "争辩-不认同",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10486_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10498_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10499_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10508_5",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10552_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10595_5",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10597_3",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10602_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10605_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10606_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10612_4",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10630_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10637_4",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10645_5",
+    "old_fine_label": "回避-岔开话题",
+    "new_fine_label": "回避-岔开话题",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10673_3",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10690_4",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10701_4",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10750_3",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10760_4",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10761_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10762_4",
+    "old_fine_label": "争辩-犹豫",
+    "new_fine_label": "争辩-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10764_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10892_5",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10895_4",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10909_4",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10925_2",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10946_4",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10948_3",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10951_4",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10969_4",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10990_3",
+    "old_fine_label": "争辩-悲观",
+    "new_fine_label": "争辩-悲观",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_10997_2",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_11089_3",
+    "old_fine_label": "争辩-最小化",
+    "new_fine_label": "争辩-最小化",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_11105_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_11106_4",
+    "old_fine_label": "回避-犹豫",
+    "new_fine_label": "回避-犹豫",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_11133_4",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_11134_3",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_11139_5",
+    "old_fine_label": "争辩-找借口",
+    "new_fine_label": "争辩-找借口",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  },
+  {
+    "sample_id": "extes_11164_4",
+    "old_fine_label": "争辩-责怪",
+    "new_fine_label": "争辩-责怪",
+    "old_fine_category": "Unknown",
+    "new_fine_category": "Unknown",
+    "changed": false,
+    "solved_unknown": false
+  }
+]

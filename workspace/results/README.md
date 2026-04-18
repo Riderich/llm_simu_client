@@ -1,101 +1,89 @@
-# workspace/results 目录说明
+# `workspace/results/` 产出说明
 
-> 心理咨询模拟患者项目 - 数据结果目录
-
----
-
-## 目录结构
-
-```
-results/
-├── README.md                          # 本文件
-│
-├── 🎯 核心产出文件（直接使用）
-│   ├── esconv_resistance_fine_full.json    # ESConv 阻抗细粒度标注 (5,609条)
-│   ├── mesc_resistance_fine.json           # MESC 阻抗细粒度标注 (1,608条)
-│   ├── esconv_coop_cbs_full.json           # ESConv 合作 CBS 分类 (13,763条)
-│   ├── mesc_coop_cbs.json                  # MESC 合作 CBS 分类 (16,828条)
-│   └── recap_coop_cbs.json                 # RECAP 合作 CBS 映射 (1,000条)
-│
-├── 💭 im_related/                         # Inner Monologue 相关文件
-│   ├── inner_monologue_dataset.json        # AnnoMI 的 IM 数据集 (153条)
-│   ├── cooperation_im_test.json            # 合作样本 IM 测试
-│   ├── recap_im_test.json                  # RECAP IM 测试
-│   ├── verify_inner_monologue.json         # IM 验证结果
-│   └── inner_monologue_run_log.txt         # IM 生成运行日志
-│
-├── 🔧 archive/                            # 中间过程文件
-│   └── ...                                 # 粗分类、utterance级别等中间结果
-│
-├── 🧪 test_archive/                       # 测试验证文件
-│   └── ...                                 # VLLM测试、模型验证等
-│
-└── 📊 reports_archive/                    # 历史分析报告
-    └── ...                                 # 早期测试分析报告
-```
+心理咨询模拟患者项目：**平表标注、对话视图、Profile、CoT、RECAP/ExTES 实验** 的统一输出根目录。  
+命名规则：**子目录按用途分栏**；文件名 = `{数据集}_{内容}`，避免版本号堆在文件名里（版本记在 Git 与本文）。
 
 ---
 
-## 核心产出文件
+## 目录一览
 
-### 阻抗细粒度标注 (PsyFIRE 13类)
-
-| 文件 | 样本数 | 来源 | 分类体系 | 准确率 |
-|------|--------|------|----------|--------|
-| `esconv_resistance.json` | 5,609 | ESConv 模拟危机咨询 | PsyFIRE 13类 | 100% |
-| `mesc_resistance.json` | 1,608 | MESC 真实电影咨询 | PsyFIRE 13类 | 100% |
-
-### 合作样本分类 (CBS 2-8)
-
-| 文件 | 样本数 | 来源 | 分类体系 | 说明 |
-|------|--------|------|----------|------|
-| `esconv_coop.json` | 13,763 | ESConv | CBS 2-8 类 | API分类 |
-| `mesc_coop.json` | 16,828 | MESC | CBS 2-8 类 | API分类 |
-| `recap_coop.json` | 1,000 | RECAP | CBS 2-8 类 | deepseek-v3.2 |
+| 目录 | 含义 |
+|------|------|
+| **`labeled/`** | **平表**：一行一样本（二分类 / PsyFIRE 阻抗 / CBS 合作等），供训练与统计。 |
+| **`views/`** | **整段对话视图**：按 `character_id` 聚合，轮级带标签（与平表可对齐）。 |
+| **`cot/`** | **内心独白（CoT）** 生成结果。 |
+| **`profiles/`** | **来访者 Background Profile**（LLM 抽取）。 |
+| **`recap/`** | RECAP 专项：整段对话、重标队列与日志。 |
+| **`extes/`** | ExTES 专项：`binary.json`（大文件，见 `.gitignore`）、`resist_fine.json`、`experiments/` 下消融与对比。 |
+| **`reports/`** | 抽检与 spotcheck 说明（Markdown）。 |
+| **`logs/`** | 跑批日志（含 `logs/profiles/`）。 |
 
 ---
 
-## 数据结构
+## 核心文件速查
 
-### 阻抗标注文件
+### 平表 `labeled/`
 
-```json
-{
-  "fine_category": "A1",        // 细分类别代码
-  "category": "争辩",            // 父类别
-  "subcategory": "挑战",         // 子类别
-  "text": "...",                 // 原始文本
-  "conversation_id": "...",      // 对话ID
-  "utterance_idx": 5            // 轮次索引
-}
-```
+| 文件 | 内容 |
+|------|------|
+| `annomi_binary.json` | AnnoMI 全量二分类（来访者 utterance 级） |
+| `annomi_resist.json` / `annomi_coop.json` | 阻抗 PsyFIRE / 合作 CBS |
+| `esconv_utterances.json` | ESConv 全量 utterance + 二分类，供 CBS 脚本筛「合作」 |
+| `esconv_resist.json` / `esconv_coop.json` | ESConv 阻抗细粒度 / CBS（合作侧） |
+| `mesc_binary.json` | MESC 平衡二分类子集 |
+| `mesc_resist.json` | MESC 阻抗 PsyFIRE（与 `views/mesc.json` 一致，**主统计用**） |
+| `mesc_resist_legacy.json` | 旧流水线局部跑出的阻抗平表（条数可能偏少） |
+| `mesc_coop.json` | 自视图导出的合作 CBS（与 fine 对齐） |
+| `mesc_coop_all.json` | 历史全量 CBS API 跑批（条数多） |
+| `recap_resist.json` / `recap_coop.json` | RECAP 阻抗映射 / 合作 CBS（抽样） |
 
-### 合作分类文件
+### 对话视图 `views/`
 
-```json
-{
-  "cbs_type": "CBS4-叙述",       // CBS 类型
-  "text": "...",                 // 原始文本
-  "dialogue_id": "..."          // 对话ID
-}
-```
+| 文件 | 内容 |
+|------|------|
+| `annomi.json` / `esconv.json` / `mesc.json` | 各数据集整段对话 + 轮级标签 |
+
+### 其它
+
+| 路径 | 内容 |
+|------|------|
+| `cot/{annomi,esconv,mesc}.json` | CoT 样本 |
+| `profiles/{annomi,esconv,mesc,recap,recap_dedup}.json` | Profile；`recap_dedup` 为按 dialogue 去重后的推荐版本 |
+| `recap/dialogues.json` | RECAP 全量对话 + 部分句有标签 |
+| `extes/resist_fine.json` | ExTES 阻抗细粒度 |
+| `extes/binary.json` | ExTES 二分类平表（~129MB，**不提交 Git**） |
 
 ---
 
-## 使用建议
+## 旧文件名对照（迁移用）
 
-1. **模型训练**：直接使用核心产出文件
-2. **数据分析**：参考 `notes/数据集细粒度分布统计.md`
-3. **问题排查**：如需查看中间过程，检查 `archive/` 目录
-4. **IM生成**：相关文件在 `im_related/` 目录
+| 旧名 | 新名 |
+|------|------|
+| `annomi_full_binary_recap.json` | `labeled/annomi_binary.json` |
+| `annomi_character_view.json` | `views/annomi.json` |
+| `esconv_character_view.json` | `views/esconv.json` |
+| `mesc_character_view.json` / `mesc_fine_labeled.json`（曾重复） | `views/mesc.json`（唯一） |
+| `mesc_binary_clean.json` | `labeled/mesc_binary.json` |
+| `recap_dialogues_fine.json` | `recap/dialogues.json` |
+| `extes_binary.json` | `extes/binary.json` |
+| `extes_resistance_fine.json` | `extes/resist_fine.json` |
+| `profiles/*_profiles_v3b*.json` | `profiles/{annomi,esconv,mesc,recap,recap_dedup}.json` |
+| `*_cot.json`（根目录） | `cot/*.json` |
+
+---
+
+## 维护脚本
+
+| 脚本 | 作用 |
+|------|------|
+| `data_scripts/build_character_view.py` | 从 `labeled/` 合并生成 `views/*.json` |
+| `data_scripts/export_mesc_labeled_flat.py` | 从 `views/mesc.json` 导出 `labeled/mesc_resist.json` / `mesc_coop.json` |
+| `data_scripts/export_esconv_utterances_flat.py` | 生成 `labeled/esconv_utterances.json` |
 
 ---
 
 ## 更新记录
 
-| 日期 | 更新内容 |
-|------|---------|
-| 2026-04-01 | JSON文件名统一简化，RECAP改用deepseek-v3.2分类 |
-| 2026-03-31 | 目录清理，添加 RECAP CBS 映射分类，整理核心产出 |
-| 2026-03-26 | 完成 ESConv/MESC 细粒度标注 |
-| 2026-03-19 | 完成 RECAP 数据处理 |
+| 日期 | 内容 |
+|------|------|
+| 2026-04-18 | 目录化（labeled/views/cot/…）、缩短文件名、合并重复 MESC 视图、ExTES 归入 `extes/` |

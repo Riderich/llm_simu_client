@@ -14,12 +14,12 @@ from psychfire_resistance_fine_prompt import build_resistance_fine_user_prompt
 
 
 MODEL_PATH = "/data5/zxj/llm_simu_client/ClientResistance-Model-Share/only_resistance_share_model"
-FINE_PATH = Path("/data5/zxj/llm_simu_client/workspace/results/extes_resistance_fine.json")
-BINARY_PATH = Path("/data5/zxj/llm_simu_client/workspace/results/extes_binary.json")
+FINE_PATH = Path("/data5/zxj/llm_simu_client/workspace/results/extes/resist_fine.json")
+BINARY_PATH = Path("/data5/zxj/llm_simu_client/workspace/results/extes/binary.json")
 
-RERUN_OUT = Path("/data5/zxj/llm_simu_client/workspace/results/extes_unknown_420_rerun.json")
-COMPARE_OUT = Path("/data5/zxj/llm_simu_client/workspace/results/extes_unknown_420_compare.json")
-SUMMARY_OUT = Path("/data5/zxj/llm_simu_client/workspace/results/extes_unknown_420_analysis.json")
+RERUN_OUT = Path("/data5/zxj/llm_simu_client/workspace/results/extes/experiments/420_rerun.json")
+COMPARE_OUT = Path("/data5/zxj/llm_simu_client/workspace/results/extes/experiments/420_compare.json")
+SUMMARY_OUT = Path("/data5/zxj/llm_simu_client/workspace/results/extes/experiments/420_analysis.json")
 
 LABELS_MAP = {
     "争辩-挑战": "A1",
