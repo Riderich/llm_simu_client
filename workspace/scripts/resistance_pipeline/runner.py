@@ -5,13 +5,15 @@ from dataclasses import asdict
 
 from .inference import TransformersBinaryClassifier
 from .io_utils import existing_id_set, load_existing_results, write_json
-from .loaders import filter_unprocessed, load_annomi_full, load_extes
+from .loaders import filter_unprocessed, load_annomi_full, load_extes, load_mesc
 from .types import Sample
 
 
 def load_samples(data_format: str, input_path: str, max_turns: int, max_samples: int | None) -> list[Sample]:
     if data_format == "annomi_full":
         return load_annomi_full(input_path, max_turns=max_turns, max_samples=max_samples)
+    if data_format == "mesc":
+        return load_mesc(input_path, max_turns=max_turns, max_samples=max_samples)
     if data_format == "extes":
         return load_extes(input_path, max_turns=max_turns, max_samples=max_samples)
     raise ValueError(f"Unsupported data format: {data_format}")

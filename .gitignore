@@ -63,6 +63,9 @@ data/raw/AnnoMI/
 workspace/results/archive/
 workspace/results/profiles/logs/
 
+# GitHub 单文件硬上限 100MB
+workspace/results/extes_binary.json
+
 # venv
 .venv/
 

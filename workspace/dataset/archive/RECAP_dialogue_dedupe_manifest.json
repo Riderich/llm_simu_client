@@ -1,0 +1,2839 @@
+{
+  "input_rows": 5154,
+  "output_rows": 4929,
+  "groups": 4929,
+  "dropped_rows": 225,
+  "label_conflict_groups": 47,
+  "dropped": [
+    {
+      "index": 4518,
+      "dialogue_id": 1,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1
+    },
+    {
+      "index": 1339,
+      "dialogue_id": 4,
+      "label": [
+        "阻抗",
+        "B6-否认-犹豫"
+      ],
+      "keeper_index": 4
+    },
+    {
+      "index": 1471,
+      "dialogue_id": 4,
+      "label": [
+        "合作",
+        "CBS4-叙述"
+      ],
+      "keeper_index": 4
+    },
+    {
+      "index": 413,
+      "dialogue_id": 8,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 8
+    },
+    {
+      "index": 1047,
+      "dialogue_id": 8,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 8
+    },
+    {
+      "index": 1611,
+      "dialogue_id": 15,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 15
+    },
+    {
+      "index": 3770,
+      "dialogue_id": 17,
+      "label": [
+        "阻抗",
+        "B1-否认-责怪"
+      ],
+      "keeper_index": 17
+    },
+    {
+      "index": 2173,
+      "dialogue_id": 25,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 25
+    },
+    {
+      "index": 4124,
+      "dialogue_id": 28,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 28
+    },
+    {
+      "index": 3303,
+      "dialogue_id": 36,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 36
+    },
+    {
+      "index": 625,
+      "dialogue_id": 43,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 43
+    },
+    {
+      "index": 3301,
+      "dialogue_id": 46,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 46
+    },
+    {
+      "index": 2363,
+      "dialogue_id": 51,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 51
+    },
+    {
+      "index": 3332,
+      "dialogue_id": 60,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 60
+    },
+    {
+      "index": 4820,
+      "dialogue_id": 60,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 60
+    },
+    {
+      "index": 181,
+      "dialogue_id": 120,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 120
+    },
+    {
+      "index": 4926,
+      "dialogue_id": 125,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 125
+    },
+    {
+      "index": 3098,
+      "dialogue_id": 126,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 126
+    },
+    {
+      "index": 1866,
+      "dialogue_id": 140,
+      "label": [
+        "阻抗",
+        "B1-否认-责怪"
+      ],
+      "keeper_index": 140
+    },
+    {
+      "index": 3604,
+      "dialogue_id": 140,
+      "label": [
+        "阻抗",
+        "B1-否认-责怪"
+      ],
+      "keeper_index": 140
+    },
+    {
+      "index": 2049,
+      "dialogue_id": 143,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 143
+    },
+    {
+      "index": 2542,
+      "dialogue_id": 164,
+      "label": [
+        "阻抗",
+        "B6-否认-犹豫"
+      ],
+      "keeper_index": 164
+    },
+    {
+      "index": 4758,
+      "dialogue_id": 165,
+      "label": [
+        "阻抗",
+        "B1-否认-责怪"
+      ],
+      "keeper_index": 165
+    },
+    {
+      "index": 3275,
+      "dialogue_id": 166,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 166
+    },
+    {
+      "index": 3212,
+      "dialogue_id": 169,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 169
+    },
+    {
+      "index": 2570,
+      "dialogue_id": 190,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 191
+    },
+    {
+      "index": 3067,
+      "dialogue_id": 202,
+      "label": [
+        "阻抗",
+        "D1-忽视-不关注"
+      ],
+      "keeper_index": 203
+    },
+    {
+      "index": 858,
+      "dialogue_id": 209,
+      "label": [
+        "阻抗",
+        "B6-否认-犹豫"
+      ],
+      "keeper_index": 210
+    },
+    {
+      "index": 2303,
+      "dialogue_id": 224,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 225
+    },
+    {
+      "index": 5069,
+      "dialogue_id": 236,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 237
+    },
+    {
+      "index": 1249,
+      "dialogue_id": 256,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 257
+    },
+    {
+      "index": 4005,
+      "dialogue_id": 275,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 276
+    },
+    {
+      "index": 2295,
+      "dialogue_id": 278,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 279
+    },
+    {
+      "index": 2872,
+      "dialogue_id": 288,
+      "label": [
+        "阻抗",
+        "B6-否认-犹豫"
+      ],
+      "keeper_index": 289
+    },
+    {
+      "index": 3651,
+      "dialogue_id": 294,
+      "label": [
+        "阻抗",
+        "B3-否认-找借口"
+      ],
+      "keeper_index": 295
+    },
+    {
+      "index": 4838,
+      "dialogue_id": 297,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 298
+    },
+    {
+      "index": 5014,
+      "dialogue_id": 337,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 338
+    },
+    {
+      "index": 2572,
+      "dialogue_id": 342,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 343
+    },
+    {
+      "index": 2985,
+      "dialogue_id": 367,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 368
+    },
+    {
+      "index": 3710,
+      "dialogue_id": 367,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 368
+    },
+    {
+      "index": 2387,
+      "dialogue_id": 379,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 380
+    },
+    {
+      "index": 2629,
+      "dialogue_id": 405,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 406
+    },
+    {
+      "index": 3571,
+      "dialogue_id": 419,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 421
+    },
+    {
+      "index": 2925,
+      "dialogue_id": 426,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 428
+    },
+    {
+      "index": 2734,
+      "dialogue_id": 428,
+      "label": [
+        "阻抗",
+        "D2-忽视-岔开话题"
+      ],
+      "keeper_index": 430
+    },
+    {
+      "index": 4929,
+      "dialogue_id": 430,
+      "label": [
+        "阻抗",
+        "B1-否认-责怪"
+      ],
+      "keeper_index": 432
+    },
+    {
+      "index": 2446,
+      "dialogue_id": 435,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 437
+    },
+    {
+      "index": 1571,
+      "dialogue_id": 442,
+      "label": [
+        "阻抗",
+        "B1-否认-责怪"
+      ],
+      "keeper_index": 444
+    },
+    {
+      "index": 3337,
+      "dialogue_id": 442,
+      "label": [
+        "阻抗",
+        "B1-否认-责怪"
+      ],
+      "keeper_index": 444
+    },
+    {
+      "index": 1578,
+      "dialogue_id": 462,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 464
+    },
+    {
+      "index": 3894,
+      "dialogue_id": 469,
+      "label": [
+        "阻抗",
+        "B7-否认-不愿改变"
+      ],
+      "keeper_index": 471
+    },
+    {
+      "index": 2249,
+      "dialogue_id": 471,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 473
+    },
+    {
+      "index": 1050,
+      "dialogue_id": 473,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 475
+    },
+    {
+      "index": 1783,
+      "dialogue_id": 495,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 497
+    },
+    {
+      "index": 1210,
+      "dialogue_id": 504,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 506
+    },
+    {
+      "index": 4680,
+      "dialogue_id": 505,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 507
+    },
+    {
+      "index": 2361,
+      "dialogue_id": 509,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 511
+    },
+    {
+      "index": 3717,
+      "dialogue_id": 514,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 516
+    },
+    {
+      "index": 2435,
+      "dialogue_id": 530,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 532
+    },
+    {
+      "index": 4953,
+      "dialogue_id": 541,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 543
+    },
+    {
+      "index": 3330,
+      "dialogue_id": 550,
+      "label": [
+        "阻抗",
+        "B3-否认-找借口"
+      ],
+      "keeper_index": 552
+    },
+    {
+      "index": 973,
+      "dialogue_id": 560,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 562
+    },
+    {
+      "index": 2732,
+      "dialogue_id": 562,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 564
+    },
+    {
+      "index": 999,
+      "dialogue_id": 568,
+      "label": [
+        "阻抗",
+        "B1-否认-责怪"
+      ],
+      "keeper_index": 570
+    },
+    {
+      "index": 3689,
+      "dialogue_id": 570,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 572
+    },
+    {
+      "index": 1007,
+      "dialogue_id": 587,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 589
+    },
+    {
+      "index": 1772,
+      "dialogue_id": 631,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 634
+    },
+    {
+      "index": 4105,
+      "dialogue_id": 635,
+      "label": [
+        "阻抗",
+        "B2-否认-不认同"
+      ],
+      "keeper_index": 638
+    },
+    {
+      "index": 771,
+      "dialogue_id": 642,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 645
+    },
+    {
+      "index": 4249,
+      "dialogue_id": 671,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 674
+    },
+    {
+      "index": 3902,
+      "dialogue_id": 680,
+      "label": [
+        "阻抗",
+        "C1-回避-最小回应"
+      ],
+      "keeper_index": 683
+    },
+    {
+      "index": 4090,
+      "dialogue_id": 722,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 725
+    },
+    {
+      "index": 5112,
+      "dialogue_id": 724,
+      "label": [
+        "阻抗",
+        "B3-否认-找借口"
+      ],
+      "keeper_index": 727
+    },
+    {
+      "index": 4302,
+      "dialogue_id": 745,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 748
+    },
+    {
+      "index": 2002,
+      "dialogue_id": 748,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 751
+    },
+    {
+      "index": 1196,
+      "dialogue_id": 779,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 783
+    },
+    {
+      "index": 1862,
+      "dialogue_id": 804,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 808
+    },
+    {
+      "index": 2939,
+      "dialogue_id": 838,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 842
+    },
+    {
+      "index": 1909,
+      "dialogue_id": 857,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 862
+    },
+    {
+      "index": 2263,
+      "dialogue_id": 871,
+      "label": [
+        "阻抗",
+        "B7-否认-不愿改变"
+      ],
+      "keeper_index": 876
+    },
+    {
+      "index": 4994,
+      "dialogue_id": 884,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 889
+    },
+    {
+      "index": 3300,
+      "dialogue_id": 892,
+      "label": [
+        "阻抗",
+        "B1-否认-责怪"
+      ],
+      "keeper_index": 897
+    },
+    {
+      "index": 2169,
+      "dialogue_id": 902,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 907
+    },
+    {
+      "index": 5122,
+      "dialogue_id": 906,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 911
+    },
+    {
+      "index": 1482,
+      "dialogue_id": 937,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 942
+    },
+    {
+      "index": 2614,
+      "dialogue_id": 959,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 964
+    },
+    {
+      "index": 2166,
+      "dialogue_id": 993,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 1000
+    },
+    {
+      "index": 3416,
+      "dialogue_id": 993,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 1000
+    },
+    {
+      "index": 3793,
+      "dialogue_id": 1006,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 1014
+    },
+    {
+      "index": 3315,
+      "dialogue_id": 1019,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 1027
+    },
+    {
+      "index": 2007,
+      "dialogue_id": 1024,
+      "label": [
+        "阻抗",
+        "D2-忽视-岔开话题"
+      ],
+      "keeper_index": 1032
+    },
+    {
+      "index": 3144,
+      "dialogue_id": 1040,
+      "label": [
+        "阻抗",
+        "D2-忽视-岔开话题"
+      ],
+      "keeper_index": 1049
+    },
+    {
+      "index": 2340,
+      "dialogue_id": 1071,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 1081
+    },
+    {
+      "index": 4191,
+      "dialogue_id": 1105,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1115
+    },
+    {
+      "index": 1237,
+      "dialogue_id": 1114,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 1124
+    },
+    {
+      "index": 2593,
+      "dialogue_id": 1123,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1133
+    },
+    {
+      "index": 4107,
+      "dialogue_id": 1124,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 1134
+    },
+    {
+      "index": 2153,
+      "dialogue_id": 1152,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1162
+    },
+    {
+      "index": 3454,
+      "dialogue_id": 1155,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 1165
+    },
+    {
+      "index": 1965,
+      "dialogue_id": 1161,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 1171
+    },
+    {
+      "index": 3801,
+      "dialogue_id": 1163,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 1173
+    },
+    {
+      "index": 4505,
+      "dialogue_id": 1174,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1184
+    },
+    {
+      "index": 1845,
+      "dialogue_id": 1228,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1241
+    },
+    {
+      "index": 2225,
+      "dialogue_id": 1252,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 1266
+    },
+    {
+      "index": 4102,
+      "dialogue_id": 1261,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1275
+    },
+    {
+      "index": 4313,
+      "dialogue_id": 1265,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1279
+    },
+    {
+      "index": 1720,
+      "dialogue_id": 1320,
+      "label": [
+        "阻抗",
+        "B6-否认-犹豫"
+      ],
+      "keeper_index": 1334
+    },
+    {
+      "index": 1685,
+      "dialogue_id": 1332,
+      "label": [
+        "阻抗",
+        "B7-否认-不愿改变"
+      ],
+      "keeper_index": 1347
+    },
+    {
+      "index": 2233,
+      "dialogue_id": 1378,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1393
+    },
+    {
+      "index": 4239,
+      "dialogue_id": 1386,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 1401
+    },
+    {
+      "index": 2364,
+      "dialogue_id": 1392,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1407
+    },
+    {
+      "index": 2474,
+      "dialogue_id": 1393,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1408
+    },
+    {
+      "index": 2484,
+      "dialogue_id": 1408,
+      "label": [
+        "阻抗",
+        "D2-忽视-岔开话题"
+      ],
+      "keeper_index": 1423
+    },
+    {
+      "index": 4595,
+      "dialogue_id": 1432,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 1447
+    },
+    {
+      "index": 3055,
+      "dialogue_id": 1447,
+      "label": [
+        "阻抗",
+        "D1-忽视-不关注"
+      ],
+      "keeper_index": 1462
+    },
+    {
+      "index": 4076,
+      "dialogue_id": 1451,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1466
+    },
+    {
+      "index": 2794,
+      "dialogue_id": 1528,
+      "label": [
+        "阻抗",
+        "B1-否认-责怪"
+      ],
+      "keeper_index": 1545
+    },
+    {
+      "index": 4201,
+      "dialogue_id": 1544,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 1561
+    },
+    {
+      "index": 2843,
+      "dialogue_id": 1568,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 1587
+    },
+    {
+      "index": 4607,
+      "dialogue_id": 1616,
+      "label": [
+        "阻抗",
+        "B7-否认-不愿改变"
+      ],
+      "keeper_index": 1636
+    },
+    {
+      "index": 3185,
+      "dialogue_id": 1617,
+      "label": [
+        "阻抗",
+        "B6-否认-犹豫"
+      ],
+      "keeper_index": 1637
+    },
+    {
+      "index": 3190,
+      "dialogue_id": 1625,
+      "label": [
+        "阻抗",
+        "B6-否认-犹豫"
+      ],
+      "keeper_index": 1645
+    },
+    {
+      "index": 2353,
+      "dialogue_id": 1632,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 1652
+    },
+    {
+      "index": 2290,
+      "dialogue_id": 1646,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 1666
+    },
+    {
+      "index": 4237,
+      "dialogue_id": 1655,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 1675
+    },
+    {
+      "index": 4380,
+      "dialogue_id": 1685,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 1706
+    },
+    {
+      "index": 3593,
+      "dialogue_id": 1702,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 1724
+    },
+    {
+      "index": 4233,
+      "dialogue_id": 1722,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 1744
+    },
+    {
+      "index": 1844,
+      "dialogue_id": 1737,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 1759
+    },
+    {
+      "index": 2928,
+      "dialogue_id": 1739,
+      "label": [
+        "阻抗",
+        "D2-忽视-岔开话题"
+      ],
+      "keeper_index": 1761
+    },
+    {
+      "index": 4236,
+      "dialogue_id": 1751,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 1774
+    },
+    {
+      "index": 2234,
+      "dialogue_id": 1784,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 1808
+    },
+    {
+      "index": 3233,
+      "dialogue_id": 1839,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1867
+    },
+    {
+      "index": 3040,
+      "dialogue_id": 1846,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 1874
+    },
+    {
+      "index": 3992,
+      "dialogue_id": 1857,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1885
+    },
+    {
+      "index": 1979,
+      "dialogue_id": 1869,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1897
+    },
+    {
+      "index": 4134,
+      "dialogue_id": 1869,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1897
+    },
+    {
+      "index": 4114,
+      "dialogue_id": 1898,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 1927
+    },
+    {
+      "index": 2720,
+      "dialogue_id": 1901,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 1930
+    },
+    {
+      "index": 4139,
+      "dialogue_id": 1986,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 2019
+    },
+    {
+      "index": 3924,
+      "dialogue_id": 1987,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 2020
+    },
+    {
+      "index": 4350,
+      "dialogue_id": 1989,
+      "label": [
+        "阻抗",
+        "C1-回避-最小回应"
+      ],
+      "keeper_index": 2022
+    },
+    {
+      "index": 4464,
+      "dialogue_id": 2006,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 2039
+    },
+    {
+      "index": 4917,
+      "dialogue_id": 2022,
+      "label": [
+        "阻抗",
+        "B3-否认-找借口"
+      ],
+      "keeper_index": 2056
+    },
+    {
+      "index": 2320,
+      "dialogue_id": 2054,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 2088
+    },
+    {
+      "index": 4719,
+      "dialogue_id": 2061,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 2095
+    },
+    {
+      "index": 4751,
+      "dialogue_id": 2069,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 2103
+    },
+    {
+      "index": 3931,
+      "dialogue_id": 2070,
+      "label": [
+        "阻抗",
+        "B1-否认-责怪"
+      ],
+      "keeper_index": 2104
+    },
+    {
+      "index": 3286,
+      "dialogue_id": 2081,
+      "label": [
+        "阻抗",
+        "D2-忽视-岔开话题"
+      ],
+      "keeper_index": 2115
+    },
+    {
+      "index": 2858,
+      "dialogue_id": 2109,
+      "label": [
+        "阻抗",
+        "B6-否认-犹豫"
+      ],
+      "keeper_index": 2143
+    },
+    {
+      "index": 3342,
+      "dialogue_id": 2122,
+      "label": [
+        "阻抗",
+        "B3-否认-找借口"
+      ],
+      "keeper_index": 2157
+    },
+    {
+      "index": 2491,
+      "dialogue_id": 2159,
+      "label": [
+        "阻抗",
+        "D1-忽视-不关注"
+      ],
+      "keeper_index": 2197
+    },
+    {
+      "index": 4945,
+      "dialogue_id": 2170,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 2208
+    },
+    {
+      "index": 3896,
+      "dialogue_id": 2243,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 2286
+    },
+    {
+      "index": 4035,
+      "dialogue_id": 2248,
+      "label": [
+        "阻抗",
+        "B1-否认-责怪"
+      ],
+      "keeper_index": 2292
+    },
+    {
+      "index": 4034,
+      "dialogue_id": 2281,
+      "label": [
+        "阻抗",
+        "B7-否认-不愿改变"
+      ],
+      "keeper_index": 2328
+    },
+    {
+      "index": 4452,
+      "dialogue_id": 2335,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 2388
+    },
+    {
+      "index": 4924,
+      "dialogue_id": 2340,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 2393
+    },
+    {
+      "index": 4961,
+      "dialogue_id": 2362,
+      "label": [
+        "阻抗",
+        "D2-忽视-岔开话题"
+      ],
+      "keeper_index": 2415
+    },
+    {
+      "index": 4822,
+      "dialogue_id": 2366,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 2419
+    },
+    {
+      "index": 2721,
+      "dialogue_id": 2371,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 2424
+    },
+    {
+      "index": 4639,
+      "dialogue_id": 2371,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 2424
+    },
+    {
+      "index": 2870,
+      "dialogue_id": 2396,
+      "label": [
+        "阻抗",
+        "B6-否认-犹豫"
+      ],
+      "keeper_index": 2451
+    },
+    {
+      "index": 3122,
+      "dialogue_id": 2440,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 2498
+    },
+    {
+      "index": 3814,
+      "dialogue_id": 2451,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 2509
+    },
+    {
+      "index": 4746,
+      "dialogue_id": 2455,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 2513
+    },
+    {
+      "index": 4189,
+      "dialogue_id": 2461,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 2519
+    },
+    {
+      "index": 2691,
+      "dialogue_id": 2470,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 2528
+    },
+    {
+      "index": 3264,
+      "dialogue_id": 2484,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 2543
+    },
+    {
+      "index": 3640,
+      "dialogue_id": 2499,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 2558
+    },
+    {
+      "index": 4212,
+      "dialogue_id": 2504,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 2563
+    },
+    {
+      "index": 3430,
+      "dialogue_id": 2521,
+      "label": [
+        "阻抗",
+        "B7-否认-不愿改变"
+      ],
+      "keeper_index": 2582
+    },
+    {
+      "index": 4839,
+      "dialogue_id": 2545,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 2607
+    },
+    {
+      "index": 4942,
+      "dialogue_id": 2567,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 2631
+    },
+    {
+      "index": 3577,
+      "dialogue_id": 2577,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 2641
+    },
+    {
+      "index": 3638,
+      "dialogue_id": 2612,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 2676
+    },
+    {
+      "index": 4671,
+      "dialogue_id": 2666,
+      "label": [
+        "阻抗",
+        "B6-否认-犹豫"
+      ],
+      "keeper_index": 2735
+    },
+    {
+      "index": 4342,
+      "dialogue_id": 2700,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 2769
+    },
+    {
+      "index": 2879,
+      "dialogue_id": 2709,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 2778
+    },
+    {
+      "index": 3524,
+      "dialogue_id": 2716,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 2785
+    },
+    {
+      "index": 3096,
+      "dialogue_id": 2748,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 2818
+    },
+    {
+      "index": 4850,
+      "dialogue_id": 2753,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 2823
+    },
+    {
+      "index": 3935,
+      "dialogue_id": 2768,
+      "label": [
+        "阻抗",
+        "D2-忽视-岔开话题"
+      ],
+      "keeper_index": 2838
+    },
+    {
+      "index": 4858,
+      "dialogue_id": 2789,
+      "label": [
+        "阻抗",
+        "B6-否认-犹豫"
+      ],
+      "keeper_index": 2861
+    },
+    {
+      "index": 3915,
+      "dialogue_id": 2810,
+      "label": [
+        "阻抗",
+        "B6-否认-犹豫"
+      ],
+      "keeper_index": 2885
+    },
+    {
+      "index": 3764,
+      "dialogue_id": 2813,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 2888
+    },
+    {
+      "index": 3058,
+      "dialogue_id": 2817,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 2892
+    },
+    {
+      "index": 3183,
+      "dialogue_id": 2888,
+      "label": [
+        "阻抗",
+        "B2-否认-不认同"
+      ],
+      "keeper_index": 2966
+    },
+    {
+      "index": 3738,
+      "dialogue_id": 2895,
+      "label": [
+        "阻抗",
+        "B6-否认-犹豫"
+      ],
+      "keeper_index": 2973
+    },
+    {
+      "index": 4606,
+      "dialogue_id": 2911,
+      "label": [
+        "阻抗",
+        "B1-否认-责怪"
+      ],
+      "keeper_index": 2990
+    },
+    {
+      "index": 4675,
+      "dialogue_id": 2973,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 3053
+    },
+    {
+      "index": 4878,
+      "dialogue_id": 2981,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 3063
+    },
+    {
+      "index": 3476,
+      "dialogue_id": 3070,
+      "label": [
+        "阻抗",
+        "B4-否认-最小化"
+      ],
+      "keeper_index": 3157
+    },
+    {
+      "index": 3706,
+      "dialogue_id": 3087,
+      "label": [
+        "阻抗",
+        "B1-否认-责怪"
+      ],
+      "keeper_index": 3174
+    },
+    {
+      "index": 4920,
+      "dialogue_id": 3089,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 3176
+    },
+    {
+      "index": 3182,
+      "dialogue_id": 3092,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 3179
+    },
+    {
+      "index": 3812,
+      "dialogue_id": 3108,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 3199
+    },
+    {
+      "index": 3779,
+      "dialogue_id": 3142,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 3235
+    },
+    {
+      "index": 4575,
+      "dialogue_id": 3165,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 3258
+    },
+    {
+      "index": 4649,
+      "dialogue_id": 3196,
+      "label": [
+        "阻抗",
+        "D2-忽视-岔开话题"
+      ],
+      "keeper_index": 3292
+    },
+    {
+      "index": 4861,
+      "dialogue_id": 3200,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 3296
+    },
+    {
+      "index": 4445,
+      "dialogue_id": 3224,
+      "label": [
+        "阻抗",
+        "D1-忽视-不关注"
+      ],
+      "keeper_index": 3324
+    },
+    {
+      "index": 4441,
+      "dialogue_id": 3245,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 3349
+    },
+    {
+      "index": 3697,
+      "dialogue_id": 3265,
+      "label": [
+        "阻抗",
+        "B1-否认-责怪"
+      ],
+      "keeper_index": 3369
+    },
+    {
+      "index": 3866,
+      "dialogue_id": 3297,
+      "label": [
+        "阻抗",
+        "A1-争辩-挑战"
+      ],
+      "keeper_index": 3401
+    },
+    {
+      "index": 4461,
+      "dialogue_id": 3306,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 3410
+    },
+    {
+      "index": 3506,
+      "dialogue_id": 3320,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 3425
+    },
+    {
+      "index": 4866,
+      "dialogue_id": 3331,
+      "label": [
+        "合作",
+        "CBS2-认同"
+      ],
+      "keeper_index": 3437
+    },
+    {
+      "index": 4726,
+      "dialogue_id": 3332,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 3438
+    },
+    {
+      "index": 3600,
+      "dialogue_id": 3405,
+      "label": [
+        "阻抗",
+        "D2-忽视-岔开话题"
+      ],
+      "keeper_index": 3514
+    },
+    {
+      "index": 4271,
+      "dialogue_id": 3591,
+      "label": [
+        "阻抗",
+        "C2-回避-界限设定"
+      ],
+      "keeper_index": 3713
+    },
+    {
+      "index": 4521,
+      "dialogue_id": 3623,
+      "label": [
+        "阻抗",
+        "B6-否认-犹豫"
+      ],
+      "keeper_index": 3747
+    },
+    {
+      "index": 4496,
+      "dialogue_id": 3767,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 3901
+    },
+    {
+      "index": 5005,
+      "dialogue_id": 3995,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 4147
+    },
+    {
+      "index": 4691,
+      "dialogue_id": 4024,
+      "label": [
+        "阻抗",
+        "B7-否认-不愿改变"
+      ],
+      "keeper_index": 4176
+    },
+    {
+      "index": 4717,
+      "dialogue_id": 4057,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 4213
+    },
+    {
+      "index": 4363,
+      "dialogue_id": 4068,
+      "label": [
+        "阻抗",
+        "B1-否认-责怪"
+      ],
+      "keeper_index": 4224
+    },
+    {
+      "index": 4478,
+      "dialogue_id": 4071,
+      "label": [
+        "阻抗",
+        "D2-忽视-岔开话题"
+      ],
+      "keeper_index": 4227
+    },
+    {
+      "index": 5041,
+      "dialogue_id": 4090,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 4251
+    },
+    {
+      "index": 5066,
+      "dialogue_id": 4093,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 4254
+    },
+    {
+      "index": 4755,
+      "dialogue_id": 4203,
+      "label": [
+        "阻抗",
+        "C1-回避-最小回应"
+      ],
+      "keeper_index": 4370
+    },
+    {
+      "index": 4548,
+      "dialogue_id": 4362,
+      "label": [
+        "阻抗",
+        "D2-忽视-岔开话题"
+      ],
+      "keeper_index": 4540
+    },
+    {
+      "index": 4891,
+      "dialogue_id": 4416,
+      "label": [
+        "阻抗",
+        "B6-否认-犹豫"
+      ],
+      "keeper_index": 4597
+    },
+    {
+      "index": 4930,
+      "dialogue_id": 4493,
+      "label": [
+        "阻抗",
+        "A2-争辩-贬低"
+      ],
+      "keeper_index": 4681
+    },
+    {
+      "index": 4825,
+      "dialogue_id": 4589,
+      "label": [
+        "阻抗",
+        "B5-否认-悲观"
+      ],
+      "keeper_index": 4785
+    }
+  ],
+  "label_conflicts": [
+    {
+      "keeper_index": 4,
+      "group_indices": [
+        4,
+        1339,
+        1471
+      ],
+      "labels": [
+        [
+          "合作",
+          "CBS4-叙述"
+        ],
+        [
+          "阻抗",
+          "B6-否认-犹豫"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 46,
+      "group_indices": [
+        46,
+        3301
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B4-否认-最小化"
+        ],
+        [
+          "阻抗",
+          "C2-回避-界限设定"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 51,
+      "group_indices": [
+        51,
+        2363
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 126,
+      "group_indices": [
+        126,
+        3098
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 203,
+      "group_indices": [
+        203,
+        3067
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B5-否认-悲观"
+        ],
+        [
+          "阻抗",
+          "D1-忽视-不关注"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 276,
+      "group_indices": [
+        276,
+        4005
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 368,
+      "group_indices": [
+        368,
+        2985,
+        3710
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 406,
+      "group_indices": [
+        406,
+        2629
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B5-否认-悲观"
+        ],
+        [
+          "阻抗",
+          "B7-否认-不愿改变"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 506,
+      "group_indices": [
+        506,
+        1210
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 507,
+      "group_indices": [
+        507,
+        4680
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 511,
+      "group_indices": [
+        511,
+        2361
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 516,
+      "group_indices": [
+        516,
+        3717
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 564,
+      "group_indices": [
+        564,
+        2732
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 572,
+      "group_indices": [
+        572,
+        3689
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B2-否认-不认同"
+        ],
+        [
+          "阻抗",
+          "B4-否认-最小化"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 638,
+      "group_indices": [
+        638,
+        4105
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B2-否认-不认同"
+        ],
+        [
+          "阻抗",
+          "B5-否认-悲观"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 808,
+      "group_indices": [
+        808,
+        1862
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 842,
+      "group_indices": [
+        842,
+        2939
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B6-否认-犹豫"
+        ],
+        [
+          "阻抗",
+          "C2-回避-界限设定"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 876,
+      "group_indices": [
+        876,
+        2263
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B6-否认-犹豫"
+        ],
+        [
+          "阻抗",
+          "B7-否认-不愿改变"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 1032,
+      "group_indices": [
+        1032,
+        2007
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "D1-忽视-不关注"
+        ],
+        [
+          "阻抗",
+          "D2-忽视-岔开话题"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 1049,
+      "group_indices": [
+        1049,
+        3144
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "D1-忽视-不关注"
+        ],
+        [
+          "阻抗",
+          "D2-忽视-岔开话题"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 1124,
+      "group_indices": [
+        1124,
+        1237
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B2-否认-不认同"
+        ],
+        [
+          "阻抗",
+          "B5-否认-悲观"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 1133,
+      "group_indices": [
+        1133,
+        2593
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 1134,
+      "group_indices": [
+        1134,
+        4107
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "C2-回避-界限设定"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 1184,
+      "group_indices": [
+        1184,
+        4505
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 1266,
+      "group_indices": [
+        1266,
+        2225
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B1-否认-责怪"
+        ],
+        [
+          "阻抗",
+          "B5-否认-悲观"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 1401,
+      "group_indices": [
+        1401,
+        4239
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "C2-回避-界限设定"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 1408,
+      "group_indices": [
+        1408,
+        2474
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 1462,
+      "group_indices": [
+        1462,
+        3055
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B5-否认-悲观"
+        ],
+        [
+          "阻抗",
+          "D1-忽视-不关注"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 1466,
+      "group_indices": [
+        1466,
+        4076
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 1724,
+      "group_indices": [
+        1724,
+        3593
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B3-否认-找借口"
+        ],
+        [
+          "阻抗",
+          "B5-否认-悲观"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 1874,
+      "group_indices": [
+        1874,
+        3040
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B5-否认-悲观"
+        ],
+        [
+          "阻抗",
+          "B7-否认-不愿改变"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 1897,
+      "group_indices": [
+        1897,
+        1979,
+        4134
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 1927,
+      "group_indices": [
+        1927,
+        4114
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B4-否认-最小化"
+        ],
+        [
+          "阻抗",
+          "C2-回避-界限设定"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 2039,
+      "group_indices": [
+        2039,
+        4464
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B4-否认-最小化"
+        ],
+        [
+          "阻抗",
+          "B5-否认-悲观"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 2157,
+      "group_indices": [
+        2157,
+        3342
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B1-否认-责怪"
+        ],
+        [
+          "阻抗",
+          "B3-否认-找借口"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 2328,
+      "group_indices": [
+        2328,
+        4034
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B7-否认-不愿改变"
+        ],
+        [
+          "阻抗",
+          "C2-回避-界限设定"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 2424,
+      "group_indices": [
+        2424,
+        2721,
+        4639
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 2513,
+      "group_indices": [
+        2513,
+        4746
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 2838,
+      "group_indices": [
+        2838,
+        3935
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "D2-忽视-岔开话题"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 2966,
+      "group_indices": [
+        2966,
+        3183
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B2-否认-不认同"
+        ],
+        [
+          "阻抗",
+          "B5-否认-悲观"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 3258,
+      "group_indices": [
+        3258,
+        4575
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ],
+        [
+          "阻抗",
+          "D2-忽视-岔开话题"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 3296,
+      "group_indices": [
+        3296,
+        4861
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 3324,
+      "group_indices": [
+        3324,
+        4445
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "D1-忽视-不关注"
+        ],
+        [
+          "阻抗",
+          "D2-忽视-岔开话题"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 4176,
+      "group_indices": [
+        4176,
+        4691
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B6-否认-犹豫"
+        ],
+        [
+          "阻抗",
+          "B7-否认-不愿改变"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 4254,
+      "group_indices": [
+        4254,
+        5066
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A1-争辩-挑战"
+        ],
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 4370,
+      "group_indices": [
+        4370,
+        4755
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "B6-否认-犹豫"
+        ],
+        [
+          "阻抗",
+          "C1-回避-最小回应"
+        ]
+      ]
+    },
+    {
+      "keeper_index": 4540,
+      "group_indices": [
+        4540,
+        4548
+      ],
+      "labels": [
+        [
+          "阻抗",
+          "A2-争辩-贬低"
+        ],
+        [
+          "阻抗",
+          "D2-忽视-岔开话题"
+        ]
+      ]
+    }
+  ]
+}

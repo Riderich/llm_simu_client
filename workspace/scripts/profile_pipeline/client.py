@@ -4,10 +4,23 @@ import os
 import time
 from typing import Final
 
+from pathlib import Path
+
 from dotenv import load_dotenv
 from openai import OpenAI, APIError, RateLimitError
 
-load_dotenv()
+# Search for .env starting from this file's location up to the repo root,
+# so the client works regardless of the process's working directory.
+def _find_and_load_dotenv() -> None:
+    here = Path(__file__).resolve()
+    for parent in here.parents:
+        candidate = parent / ".env"
+        if candidate.exists():
+            load_dotenv(candidate)
+            return
+    load_dotenv()  # fallback: let python-dotenv search CWD as before
+
+_find_and_load_dotenv()
 
 # Model → (env_key, base_url) routing — mirrors workspace/src/context_inference.py
 _QWEN_KEY_ENV: Final = "QWEN_API_KEY"
@@ -56,16 +69,27 @@ class LLMClient:
         self.max_tokens = max_tokens
         self._client = _resolve_client(model, api_key, base_url)
 
-    def chat(self, system: str, user: str) -> str:
+    def chat(
+        self,
+        system: str,
+        user: str,
+        *,
+        temperature: float | None = None,
+        max_tokens: int | None = None,
+    ) -> str:
         """
         Call the model with a system + user message pair.
         Returns the assistant's response text.
+
+        ``temperature`` and ``max_tokens`` override instance defaults when given.
         Raises on non-retryable errors or after all retries are exhausted.
         """
         messages = [
             {"role": "system", "content": system},
             {"role": "user", "content": user},
         ]
+        _temp   = temperature if temperature is not None else self.temperature
+        _tokens = max_tokens  if max_tokens  is not None else self.max_tokens
 
         last_exc: Exception | None = None
         for attempt, delay in enumerate((*_RETRY_DELAYS, None), start=1):
@@ -73,8 +97,8 @@ class LLMClient:
                 response = self._client.chat.completions.create(
                     model=self.model,
                     messages=messages,
-                    temperature=self.temperature,
-                    max_tokens=self.max_tokens,
+                    temperature=_temp,
+                    max_tokens=_tokens,
                 )
                 return response.choices[0].message.content or ""
 

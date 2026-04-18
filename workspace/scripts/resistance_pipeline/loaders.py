@@ -1,103 +1,113 @@
+"""
+resistance_pipeline/loaders.py
+────────────────────────────────
+Dataset-specific loaders for the binary resistance classification pipeline.
+Produces Sample lists suitable for TransformersBinaryClassifier.
+
+Supported formats
+─────────────────
+  annomi_full – annomi_full_binary_recap.json  (all client utterances)
+  mesc        – mesc_binary_clean.json         (balanced client utterances)
+  extes       – extes_binary.json              (all client utterances)
+
+Each loader formats the conversation context as a single string and isolates
+the target client utterance as the response field.
+"""
+
 from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Iterable
+from typing import Any
 
 from .types import Sample
 
 
-def _tail_context(lines: list[str], max_turns: int) -> str:
-    if max_turns <= 0:
-        return "\n".join(lines)
-    return "\n".join(lines[-max_turns:])
+def _format_context(context: Any, max_turns: int = 4) -> str:
+    """Render a context field (list of dicts or plain string) to a string."""
+    if isinstance(context, str):
+        return context.strip()
+    if not isinstance(context, list):
+        return ""
+    lines: list[str] = []
+    for turn in context[-max_turns:]:
+        role = turn.get("speaker", turn.get("role", ""))
+        text = turn.get("content", turn.get("text", "")).strip()
+        if not text:
+            continue
+        if role in ("therapist", "supporter", "counselor", "sys"):
+            label = "咨询师"
+        elif role in ("client", "seeker", "user"):
+            label = "来访者"
+        else:
+            label = role
+        lines.append(f"{label}: {text}")
+    return "\n".join(lines)
 
 
-def load_annomi_full(path: str, max_turns: int = 6, max_samples: int | None = None) -> list[Sample]:
-    p = Path(path)
-    data = json.loads(p.read_text(encoding="utf-8"))
-    transcripts = data.get("transcripts", {})
+def filter_unprocessed(samples: list[Sample], seen: set[str]) -> list[Sample]:
+    """Remove already-processed samples (for resume support)."""
+    return [s for s in samples if s.sample_id not in seen]
 
+
+def _load_generic(
+    path: Path,
+    *,
+    response_field: str = "response",
+    context_field: str = "context",
+    max_turns: int = 4,
+    max_samples: int | None = None,
+) -> list[Sample]:
+    data: list[dict] = json.loads(path.read_text(encoding="utf-8"))
+    if max_samples is not None:
+        data = data[:max_samples]
     samples: list[Sample] = []
-    for transcript_id, payload in transcripts.items():
-        dialogue = payload.get("dialogue", [])
-        running_context: list[str] = []
-        client_turn_index = 0
-
-        for turn in dialogue:
-            role = turn.get("interlocutor", "")
-            text = (turn.get("utterance_text") or "").strip()
-            if not text:
-                continue
-
-            if role == "client":
-                if running_context:
-                    sample_id = f"annomi_{transcript_id}_{client_turn_index}"
-                    samples.append(
-                        Sample(
-                            sample_id=sample_id,
-                            context=_tail_context(running_context, max_turns),
-                            response=text,
-                            metadata={
-                                "dataset": "annomi_full",
-                                "transcript_id": transcript_id,
-                                "utterance_id": turn.get("utterance_id"),
-                                "timestamp": turn.get("timestamp"),
-                                "client_talk_type": turn.get("client_talk_type"),
-                            },
-                        )
-                    )
-                    if max_samples and len(samples) >= max_samples:
-                        return samples
-                client_turn_index += 1
-
-            speaker = "咨询师" if role == "therapist" else "来访者"
-            running_context.append(f"{speaker}：{text}")
-
+    for item in data:
+        sid = item.get("sample_id", "")
+        ctx = _format_context(item.get(context_field, ""), max_turns=max_turns)
+        resp = (item.get(response_field) or "").strip()
+        if not resp:
+            continue
+        samples.append(Sample(
+            sample_id=sid,
+            context=ctx,
+            response=resp,
+            metadata={k: v for k, v in item.items()
+                      if k not in (context_field, response_field, "sample_id")},
+        ))
     return samples
 
 
-def load_extes(path: str, max_turns: int = 6, max_samples: int | None = None) -> list[Sample]:
-    p = Path(path)
-    data = json.loads(p.read_text(encoding="utf-8"))
+# ── Public loaders ────────────────────────────────────────────────────────
 
-    samples: list[Sample] = []
-    for dialog_idx, item in enumerate(data):
-        turns = item.get("content", [])
-        running_context: list[str] = []
-        user_turn_index = 0
-
-        for turn in turns:
-            user_text = (turn.get("User") or "").strip()
-            ai_text = (turn.get("AI") or "").strip()
-
-            if user_text:
-                if running_context:
-                    sample_id = f"extes_{dialog_idx}_{user_turn_index}"
-                    samples.append(
-                        Sample(
-                            sample_id=sample_id,
-                            context=_tail_context(running_context, max_turns),
-                            response=user_text,
-                            metadata={
-                                "dataset": "extes",
-                                "dialog_index": dialog_idx,
-                                "scene": item.get("scene"),
-                                "description": item.get("description"),
-                            },
-                        )
-                    )
-                    if max_samples and len(samples) >= max_samples:
-                        return samples
-                running_context.append(f"来访者：{user_text}")
-                user_turn_index += 1
-
-            if ai_text:
-                running_context.append(f"咨询师：{ai_text}")
-
-    return samples
+REPO = Path(__file__).resolve().parents[3]
 
 
-def filter_unprocessed(samples: Iterable[Sample], seen_ids: set[str]) -> list[Sample]:
-    return [s for s in samples if s.sample_id not in seen_ids]
+def load_annomi_full(
+    path: str | None = None,
+    *,
+    max_turns: int = 4,
+    max_samples: int | None = None,
+) -> list[Sample]:
+    src = Path(path) if path else REPO / "workspace/results/annomi_full_binary_recap.json"
+    return _load_generic(src, max_turns=max_turns, max_samples=max_samples)
 
+
+def load_mesc(
+    path: str | None = None,
+    *,
+    max_turns: int = 4,
+    max_samples: int | None = None,
+) -> list[Sample]:
+    src = Path(path) if path else REPO / "workspace/results/mesc_binary_clean.json"
+    return _load_generic(src, max_turns=max_turns, max_samples=max_samples)
+
+
+def load_extes(
+    path: str | None = None,
+    *,
+    max_turns: int = 4,
+    max_samples: int | None = None,
+) -> list[Sample]:
+    src = Path(path) if path else REPO / "workspace/results/extes_binary.json"
+    return _load_generic(src, max_turns=max_turns, max_samples=max_samples)

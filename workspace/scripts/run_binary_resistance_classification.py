@@ -7,14 +7,14 @@ from resistance_pipeline.runner import run_binary_classification
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Structured binary resistance classification for AnnoMI-full / ExTES."
+        description="Structured binary resistance classification for AnnoMI-full / MESC / ExTES."
     )
     parser.add_argument("--input", required=True, help="Path to dataset JSON")
     parser.add_argument("--output", required=True, help="Path to output JSON")
     parser.add_argument(
         "--data-format",
         required=True,
-        choices=["annomi_full", "extes"],
+        choices=["annomi_full", "mesc", "extes"],
         help="Dataset format loader",
     )
     parser.add_argument(

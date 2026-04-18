@@ -30,44 +30,63 @@ with "(inferred)".
 4. Be specific and concrete. Never write vague phrases like \
 "has personal challenges".
 5. Return ONLY the JSON object. No explanation, no markdown fences.
+6. AVOID REDUNDANCY across fields: each field captures a different dimension. \
+Do not restate the same idea in multiple fields with different wording.
+7. AVOID REDUNDANCY within each list field: each item must capture a \
+DISTINCT, NON-OVERLAPPING aspect. If the same underlying mechanism or pattern \
+appears across multiple topics (e.g., client minimizes their drinking, their \
+isolation, and their anger), collapse it into ONE item that names the pattern \
+("uses minimization across multiple domains when confronted"), not three \
+instances of it. If two items feel similar, merge them.
+
+FIELD BOUNDARIES (critical — read before filling):
+- "resistance_drivers": HOW and WHEN resistance activates — the mechanism or \
+trigger (e.g., "deflects when therapist challenges self-image"). Name the \
+PATTERN, not each instance of it. NOT what they value. MAX 3 items.
+- "ambivalence.against_change": the INTERNAL EMOTIONAL PULL away from change \
+— fear, attachment, identity threat. NOT a list of valued things. 1 sentence.
+- "values_and_stakes": the CONCRETE OBJECTS AT RISK — specific relationships, \
+roles, or outcomes they would lose by changing. NOT the mechanism or feeling. \
+MAX 3 items.
+- "key_facts": only facts that predict the client's next response — skip \
+therapist statements, background trivia, and any fact that duplicates a \
+pattern already named in resistance_drivers. ONE sentence each. MAX 3 items.
 
 JSON SCHEMA:
 {{
-  "background": "<1-3 sentences: who this person is, their life situation — \
-occupation, family, circumstances. If not stated, infer from problem context \
-and prefix with '(inferred)'.>",
+  "background": "<1-2 sentences: who this person is — occupation, family, \
+life situation. If not stated, infer from problem context and prefix with \
+'(inferred)'.>",
 
   "self_view_of_problem": "<1-2 sentences: how the CLIENT defines or frames \
 the problem in their own reasoning and language. If not explicit, infer from \
 their emotional tone and behavior and prefix with '(inferred)'.>",
 
   "resistance_drivers": [
-    "<Concrete reason — from what they said or implied — that explains why \
-they push back or resist change. If no explicit resistance, infer likely \
-barriers given their situation and prefix with '(inferred)'.>",
-    "..."
+    "<trigger/mechanism 1 — how and when resistance activates. Prefix if inferred.>",
+    "<trigger/mechanism 2 — must differ from item 1. Omit if no second distinct mechanism.>",
+    "<trigger/mechanism 3 — must differ from items 1-2. Omit if no third distinct mechanism. STOP — max 3.>"
   ],
 
   "ambivalence": {{
-    "for_change": "<What pulls the client toward change — stated motivations, \
-fears about consequences, or admissions. If not expressed, infer a plausible \
-motivation and prefix with '(inferred)'.>",
-    "against_change": "<What pulls the client away from change — what they \
-protect or are unwilling to give up. If not expressed, infer from their \
-attachments and prefix with '(inferred)'.>"
+    "for_change": "<The internal pull toward change — a specific fear, desire, \
+or admission. 1 sentence. Prefix with '(inferred)' if not explicit.>",
+    "against_change": "<The internal pull away from change — a specific \
+emotional attachment or identity threat. 1 sentence. Prefix if inferred.>"
   }},
 
   "values_and_stakes": [
-    "<Specific relationship, identity, or thing this client cares about and \
-would not want to lose. If not stated, infer from context and prefix with \
-'(inferred)'.>",
-    "..."
+    "<concrete stake 1 — a specific thing/relationship/role at risk. Prefix if inferred.>",
+    "<concrete stake 2 — must differ from item 1. Omit if no second distinct stake.>",
+    "<concrete stake 3 — must differ from items 1-2. Omit if no third. STOP — max 3.>"
   ],
 
   "key_facts": [
-    "<Specific verifiable detail: a behavior, number, event, habit, or stated \
-fact from the transcript. Include at least one even if the conversation is short.>",
-    "..."
+    "<fact 1 — a specific event, number, or behavior that predicts next response. 1 sentence.>",
+    "<fact 2 — must predict something different from fact 1. Omit if no second distinct fact.>",
+    "<fact 3 — must predict something different from facts 1-2. Omit if no third. STOP — max 3. \
+No pattern summaries here (those belong in resistance_drivers). \
+No therapist statements. No background trivia.>"
   ]
 }}
 
@@ -96,38 +115,54 @@ USER_TEMPLATE_ZH = """\
 3. 使用来访者自己的表述方式——尤其是 "self_view_of_problem" 字段。
 4. 要具体、有细节，不要写"有个人问题"这类模糊表述。
 5. 只返回 JSON 对象本身，不要有任何解释或 markdown 代码块。
+6. 避免字段间内容重复：每个字段捕捉不同维度，不要用不同措辞在多个字段中表达同一个意思。
+7. 避免字段内部条目重叠：每个列表字段的每一条必须捕捉不同、互不重叠的方面。\
+如果同一个底层模式在多个话题上都有体现（如来访者对饮酒、孤独、愤怒都采取最小化应对），\
+则归并为一条描述该模式的总结（"面对质疑时惯用最小化应对"），而不是分别列出三个例子。\
+如果两条感觉相似，合并它们。
+
+字段边界（填写前必读）：
+- "resistance_drivers"：阻抗的触发机制——什么情境或咨询师的话激活阻抗，以及如何表现。\
+写出模式本身，而非模式的每一个实例。不要写来访者珍视什么。最多 3 条。
+- "ambivalence.against_change"：远离改变的内心情感力量——恐惧、依恋、认同威胁。\
+不是具体失去什么的列举。1 句话。
+- "values_and_stakes"：改变后将失去的具体对象——特定关系、角色或结果。\
+不是阻抗机制或情绪状态。最多 3 条。
+- "key_facts"：只列出能预测来访者下一句话的细节——跳过咨询师的陈述、无关背景细节、\
+以及 resistance_drivers 中已命名的模式的具体实例。每条一句话，最多 3 条。
 
 JSON 结构：
 {{
-  "background": "<1-3句：这个人是谁，生活处境如何——对话中提到的职业、家庭、生活状况。\
+  "background": "<1-2句：这个人是谁——职业、家庭、生活处境。\
 若未明确说明，请根据问题情境推断并加"（推断）"前缀。>",
 
   "self_view_of_problem": "<1-2句：来访者用自己的语言和逻辑如何定义或看待问题。\
 若未明确表达，请根据其情绪状态和行为推断并加"（推断）"前缀。>",
 
   "resistance_drivers": [
-    "<基于来访者实际说过或暗示的话，解释其为何抵抗或不愿改变。\
-若无明显阻抗，请根据其情境推断可能的阻碍并加"（推断）"前缀。>",
-    "..."
+    "<触发机制 1——什么情境或咨询师的话激活阻抗，以及如何表现。推断内容加（推断）前缀。>",
+    "<触发机制 2——必须与第 1 条不同。若无第二个独立机制则省略此条。>",
+    "<触发机制 3——必须与前两条不同。若无第三个则省略。停止——最多 3 条。>"
   ],
 
   "ambivalence": {{
-    "for_change": "<推动来访者走向改变的动机——包括明确表达的、隐含的，或对后果的担忧。\
-若未表达，请推断可能的改变动机并加"（推断）"前缀。>",
-    "against_change": "<阻碍来访者改变的原因——他们在保护或不愿放弃的东西。\
-若未表达，请根据其依恋和处境推断并加"（推断）"前缀。>"
+    "for_change": "<推动改变的内心力量——一种具体的恐惧、渴望或承认。1 句话。\
+若非明确表达请加（推断）前缀。>",
+    "against_change": "<阻碍改变的内心力量——一种具体的情感依恋或认同威胁。1 句话。\
+若非明确表达请加（推断）前缀。>"
   }},
 
   "values_and_stakes": [
-    "<对这位来访者真正重要的具体关系、身份认同或事物，他们不愿失去的。\
-若未明确说明，请根据情境推断并加"（推断）"前缀。>",
-    "..."
+    "<具体风险 1——改变后将失去的具体事物、关系或角色。推断内容加（推断）前缀。>",
+    "<具体风险 2——必须与第 1 条不同。若无第二个独立风险则省略。>",
+    "<具体风险 3——必须与前两条不同。若无第三个则省略。停止——最多 3 条。>"
   ],
 
   "key_facts": [
-    "<对话中可验证的具体细节：行为、数字、事件、习惯或陈述性事实。\
-即使对话较短，也至少列出一条。>",
-    "..."
+    "<关键事实 1——能预测来访者下一句话的具体事件、数字或行为。1 句话。>",
+    "<关键事实 2——必须预测与第 1 条不同的内容。若无则省略。>",
+    "<关键事实 3——必须预测与前两条不同的内容。若无则省略。停止——最多 3 条。\
+不写模式概括（属于 resistance_drivers）。不写咨询师陈述。不写无关背景细节。>"
   ]
 }}
 

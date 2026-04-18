@@ -10,6 +10,17 @@ from .types import Profile, TranscriptSample
 # Matches a JSON object possibly wrapped in ```json ... ``` fences
 _JSON_FENCE_RE = re.compile(r"```(?:json)?\s*(\{.*?\})\s*```", re.DOTALL)
 _JSON_BARE_RE = re.compile(r"\{.*\}", re.DOTALL)
+# LLMs often emit trailing commas before } or ] (invalid in strict JSON).
+_TRAILING_COMMA_RE = re.compile(r",\s*([}\]])")
+
+
+def _fix_trailing_commas(text: str) -> str:
+    """Remove JSON trailing commas (e.g. {\"a\": 1,}) until stable."""
+    prev = None
+    while prev != text:
+        prev = text
+        text = _TRAILING_COMMA_RE.sub(r"\1", text)
+    return text
 
 
 def _extract_json_text(raw: str) -> str:
@@ -68,6 +79,7 @@ def _parse_profile(sample_id: str, raw: str, model: str) -> Profile:
     """
     try:
         json_text = _extract_json_text(raw)
+        json_text = _fix_trailing_commas(json_text)
         parsed = json.loads(json_text)
         parsed = _normalize_fields(parsed)
         return Profile(
