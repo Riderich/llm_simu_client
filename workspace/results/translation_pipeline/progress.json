@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-05-02T13:54:30Z",
+  "updated_at": "2026-05-02T13:56:28Z",
+  "model": "deepseek-v4-flash",
+  "base_url": "https://api.deepseek.com/v1",
+  "processed_this_run": 35,
+  "total_to_process_this_run": 3434,
+  "stage1_lines": 35,
+  "stage2_lines": 35,
+  "stage3_lines": 35,
+  "last_sample_id": "esconv:esconv_1206:5",
+  "last_error": null
+}

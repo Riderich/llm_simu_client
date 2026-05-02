@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "turn_partition_ok": true,
+    "turn_partition": {
+      "turn_level": 14220,
+      "labeled_targets_plus_null_only": 14220
+    },
+    "review_queue_reference_ok": true,
+    "review_queue_missing_reference_count": 0,
+    "dialogue_cover_ok": true,
+    "full_dialogues_count": 4929,
+    "turn_level_unique_character_ids": 4929
+  },
+  "missing_review_refs_preview": []
+}

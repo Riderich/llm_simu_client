@@ -72,3 +72,6 @@ workspace/results/extes/binary.json
 *.pyc
 __pycache__/
 .DS_Store
+
+# 翻译管线运行时
+workspace/results/translation_pipeline/pid.txt

@@ -1,0 +1,166 @@
+{
+  "policy": {
+    "test_set": "all_recap_client_turns_retained",
+    "supplementary_datasets": [
+      "esconv",
+      "mesc",
+      "annomi"
+    ],
+    "balancing": {
+      "method": "per_label_cap_downsample",
+      "per_label_cap": 260
+    },
+    "translation_pipeline": [
+      "culture_specificity_judge",
+      "drop_culture_specific",
+      "en_to_zh_translation",
+      "manual_qc_sample_check"
+    ]
+  },
+  "splits": [
+    {
+      "name": "train_supplementary_balanced",
+      "size": 3085,
+      "binary_dist": {
+        "阻抗": 1904,
+        "合作": 1181
+      },
+      "label_code_top20": {
+        "A2": 234,
+        "CBS2": 234,
+        "CBS4": 234,
+        "C1": 234,
+        "A1": 234,
+        "CBS3": 234,
+        "CBS6": 234,
+        "B4": 223,
+        "B5": 214,
+        "CBS5": 202,
+        "B1": 186,
+        "B7": 155,
+        "C2": 115,
+        "B6": 91,
+        "B2": 73,
+        "D2": 62,
+        "B3": 48,
+        "D1": 35,
+        "CBS7": 27,
+        "CBS8": 16
+      }
+    },
+    {
+      "name": "val_supplementary_balanced",
+      "size": 349,
+      "binary_dist": {
+        "阻抗": 216,
+        "合作": 133
+      },
+      "label_code_top20": {
+        "A2": 26,
+        "C1": 26,
+        "CBS2": 26,
+        "CBS3": 26,
+        "CBS6": 26,
+        "CBS4": 26,
+        "A1": 26,
+        "B4": 25,
+        "B5": 24,
+        "CBS5": 23,
+        "B1": 21,
+        "B7": 18,
+        "C2": 13,
+        "B6": 11,
+        "B2": 9,
+        "D2": 7,
+        "B3": 6,
+        "CBS7": 4,
+        "D1": 4,
+        "CBS8": 2
+      }
+    },
+    {
+      "name": "test_recap_all_retained_turn_level",
+      "size": 14220,
+      "binary_dist": {
+        "None": 9291,
+        "阻抗": 3917,
+        "合作": 1012
+      },
+      "label_code_top20": {
+        "UNKNOWN": 9291,
+        "B2": 684,
+        "CBS4": 620,
+        "D2": 415,
+        "D1": 410,
+        "C1": 405,
+        "A2": 363,
+        "B5": 316,
+        "C2": 316,
+        "A1": 239,
+        "B6": 216,
+        "CBS2": 159,
+        "B1": 150,
+        "B7": 147,
+        "B3": 129,
+        "B4": 127,
+        "CBS7": 75,
+        "CBS6": 71,
+        "CBS5": 42,
+        "CBS8": 39
+      }
+    },
+    {
+      "name": "test_recap_labeled_targets",
+      "size": 4929,
+      "binary_dist": {
+        "阻抗": 3917,
+        "合作": 1012
+      },
+      "label_code_top20": {
+        "B2": 684,
+        "CBS4": 620,
+        "D2": 415,
+        "D1": 410,
+        "C1": 405,
+        "A2": 363,
+        "B5": 316,
+        "C2": 316,
+        "A1": 239,
+        "B6": 216,
+        "CBS2": 159,
+        "B1": 150,
+        "B7": 147,
+        "B3": 129,
+        "B4": 127,
+        "CBS7": 75,
+        "CBS6": 71,
+        "CBS5": 42,
+        "CBS8": 39,
+        "CBS3": 6
+      }
+    },
+    {
+      "name": "test_recap_context_only_null_labels",
+      "size": 9291,
+      "binary_dist": {
+        "None": 9291
+      },
+      "label_code_top20": {
+        "UNKNOWN": 9291
+      }
+    }
+  ],
+  "queues": {
+    "recap_non_resistance_review_count": 10303,
+    "translation_culture_judge_count": 3434,
+    "recap_full_dialogues_count": 4929
+  },
+  "notes": [
+    "RECAP full dialogues are retained in test_recap_full_dialogues_retained.json.",
+    "Turn-level files are derived views for scoring/filtering only.",
+    "Only test_recap_labeled_targets should be used as scoring/evaluation targets.",
+    "test_recap_context_only_null_labels should only be used as context carriers.",
+    "RECAP non-resistance queue includes binary_label != 阻抗 (including null).",
+    "translation_manual_qc_pool_template is intentionally empty before translation outputs exist."
+  ]
+}
