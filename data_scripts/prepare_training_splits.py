@@ -4,17 +4,24 @@ prepare_training_splits.py
 Build training/validation/test splits for SFT data preparation.
 
 Policy implemented from supervisor guidance:
-1) Test set comes from RECAP and is fully retained.
-2) Non-RECAP datasets are supplementary and used for train/val.
-3) Train/val should be label-balanced as much as possible.
-4) After split, prepare translation queues:
+1) RECAP is **never** in train/val: outputs stay under test-only JSON (full turn view + labeled targets + context-only rows).
+2) **Global 8:1:1** (default) uses union **T = |RECAP_labeled_targets| + |balanced_supplementary_pool|** only.
+   - **Labeled RECAP** = client turns with `binary_label` in (阻抗, 合作) — these are supervision/eval **units**.
+   - **Null / other labels** are context carriers only (`test_recap_context_only_null_labels.json`); they **do not** enter T.
+   - Target slots on T: train ≈ 0.8T, val ≈ 0.1T, test_total ≈ 0.1T. **Test** reserves space for **all labeled RECAP** first;
+     leftover test slots take held-out **supplementary** rows (`test_supplementary_balanced.json`). Remainder fills train/val.
+   - If |labeled RECAP| > test_total, exact 8:1:1 is **impossible**; fall back: no supplementary test fold, pool split 8:1 train/val only.
+3) Supplementary pool = **clinical COT only** (`cot/*.json`: profile + fine labels + real `<internal>` COT).
+   **ExtES** (`results/extes/`) is **not** merged here: it has no cooperation-side fine taxonomy, no profile, and no
+   annotated COT—using it in the same translation / 8:1:1 pipeline would be a category error.
+4) After split, prepare translation / review queues from that pool.
    - First pass: culture-specificity judgment required (LLM/manual later).
    - Second pass: only non-culture-specific items should be translated EN->ZH.
 5) Build a review queue for non-resistance items in RECAP test set.
 
 Usage:
   python data_scripts/prepare_training_splits.py
-  python data_scripts/prepare_training_splits.py --train-ratio 0.9 --per-label-cap 260
+  python data_scripts/prepare_training_splits.py --train-frac 0.8 --val-frac 0.1 --test-frac 0.1 --per-label-cap 260
 """
 
 from __future__ import annotations
@@ -89,41 +96,110 @@ def build_balanced_pool(
     per_label_cap: int,
     seed: int,
 ) -> list[dict[str, Any]]:
+    """Stratify by ``label_code`` (跨 esconv/mesc/annomi), shuffle, then cap per stratum.
+
+    ``per_label_cap <= 0`` means no truncation (keep all rows).
+    """
     by_label: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for r in rows:
         by_label[r["label_code"]].append(r)
 
     rnd = random.Random(seed)
     selected: list[dict[str, Any]] = []
-    for label, group in by_label.items():
+    for _label, group in by_label.items():
         rnd.shuffle(group)
-        k = min(len(group), per_label_cap)
+        if per_label_cap <= 0:
+            k = len(group)
+        else:
+            k = min(len(group), per_label_cap)
         selected.extend(group[:k])
     rnd.shuffle(selected)
     return selected
 
 
-def split_train_val(
-    rows: list[dict[str, Any]],
-    train_ratio: float,
+def split_balanced_cot_with_recap_in_test_union(
+    recap_labeled_targets: list[dict[str, Any]],
+    cot_balanced: list[dict[str, Any]],
+    train_frac: float,
+    val_frac: float,
+    test_frac: float,
     seed: int,
-) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
-    by_label: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    for r in rows:
-        by_label[r["label_code"]].append(r)
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]], dict[str, Any]]:
+    """
+    Global 8:1:1 on T = |recap_labeled_targets| + |cot|.
 
+    `recap_labeled_targets` must be only supervision/eval units (e.g. 阻抗/合作); context-only turns are excluded from T.
+
+    Returns (train_cot, val_cot, test_cot, feasibility_meta).
+    """
+    if abs(train_frac + val_frac + test_frac - 1.0) > 1e-5:
+        raise ValueError("train_frac + val_frac + test_frac must sum to 1.0")
+
+    R = len(recap_labeled_targets)
+    S = len(cot_balanced)
+    T = R + S
+    # Integer targets summing to T (same as (T*8)//10 style)
+    w_tr, w_va, w_te = train_frac, val_frac, test_frac
+    s = w_tr + w_va + w_te
+    n_train = int((T * w_tr) / s)
+    n_val = int((T * w_va) / s)
+    n_test_total = T - n_train - n_val
     rnd = random.Random(seed)
-    train: list[dict[str, Any]] = []
-    val: list[dict[str, Any]] = []
-    for _, group in by_label.items():
-        rnd.shuffle(group)
-        cut = int(len(group) * train_ratio)
-        cut = min(max(cut, 1), len(group))
-        train.extend(group[:cut])
-        val.extend(group[cut:])
-    rnd.shuffle(train)
-    rnd.shuffle(val)
-    return train, val
+    cot_pool = cot_balanced[:]
+    rnd.shuffle(cot_pool)
+
+    feasible = n_test_total >= R
+    meta: dict[str, Any] = {
+        "union_T": T,
+        "R_recap_labeled_targets_in_union": R,
+        "S_cot_balanced": S,
+        "target_train": n_train,
+        "target_val": n_val,
+        "target_test_slot_including_labeled_recap": n_test_total,
+        "feasible_exact_global_split_with_all_labeled_recap_in_test": feasible,
+    }
+
+    if not feasible:
+        # All COT → train+val only, ratio 8:1 within COT mass (no held-out COT test fold).
+        cot_test: list[dict[str, Any]] = []
+        L = len(cot_pool)
+        nt2 = (L * 8) // 9
+        nv2 = L - nt2
+        train = cot_pool[:nt2]
+        val = cot_pool[nt2 : nt2 + nv2]
+        meta["mode"] = "fallback_recap_exceeds_target_test_mass"
+        meta["cot_test_count"] = 0
+        meta["actual_global_train"] = len(train)
+        meta["actual_global_val"] = len(val)
+        meta["actual_global_test"] = R
+        meta["actual_train_frac"] = len(train) / T if T else 0.0
+        meta["actual_val_frac"] = len(val) / T if T else 0.0
+        meta["actual_test_frac"] = R / T if T else 0.0
+        meta["note_zh"] = (
+            "计入并集的「带标记 RECAP 监督目标」数量已超过总体的 test 槽位（默认 10%），"
+            "在「全部带标记 RECAP 必须落在 test」约束下无法同时满足全局 8:1:1；"
+            "已将全部 COT 按 8:1 拆入 train/val，且不划分 COT test 折。"
+            "无标记轮次仅作 context，本来就不计入并集。"
+        )
+        return train, val, cot_test, meta
+
+    k_cot_test = n_test_total - R
+    cot_test = cot_pool[:k_cot_test]
+    cot_rem = cot_pool[k_cot_test:]
+    assert len(cot_rem) == n_train + n_val
+    rnd2 = random.Random(seed + 911)
+    rnd2.shuffle(cot_rem)
+    train = cot_rem[:n_train]
+    val = cot_rem[n_train : n_train + n_val]
+    meta["mode"] = "global_union_8_1_1"
+    meta["cot_test_count"] = k_cot_test
+    meta["actual_global_train"] = len(train)
+    meta["actual_global_val"] = len(val)
+    meta["actual_global_test"] = R + len(cot_test)
+    meta["actual_train_frac"] = len(train) / T
+    meta["actual_val_frac"] = len(val) / T
+    meta["actual_test_frac"] = (R + len(cot_test)) / T
+    return train, val, cot_test, meta
 
 
 def _turns_before(dialogue: list[dict[str, Any]], turn_pos: int) -> list[dict[str, Any]]:
@@ -334,12 +410,29 @@ def build_consistency_report(out_dir: Path) -> dict[str, Any]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--train-ratio", type=float, default=0.9)
+    parser.add_argument(
+        "--train-frac",
+        type=float,
+        default=0.8,
+        help="全局 train 目标占比（RECAP∪COT 并集 T 上，与 val/test 之和为 1）。",
+    )
+    parser.add_argument(
+        "--val-frac",
+        type=float,
+        default=0.1,
+        help="全局 val 目标占比（同上）。",
+    )
+    parser.add_argument(
+        "--test-frac",
+        type=float,
+        default=0.1,
+        help="全局 test 槽占比；test 侧先容纳全部「带标记 RECAP」，剩余槽位再给 COT held-out。",
+    )
     parser.add_argument(
         "--per-label-cap",
         type=int,
         default=260,
-        help="Max samples per label from supplementary datasets.",
+        help="按 label_code 分层时每层上限（减轻大类碾压长尾）；<=0 表示不截断。",
     )
     parser.add_argument("--manual-qc-size", type=int, default=300)
     parser.add_argument("--seed", type=int, default=42)
@@ -347,12 +440,25 @@ def main() -> None:
 
     cot_rows = load_cot_samples()
     balanced_pool = build_balanced_pool(cot_rows, args.per_label_cap, args.seed)
-    train_rows, val_rows = split_train_val(balanced_pool, args.train_ratio, args.seed)
     recap_test_rows, recap_full_dialogues = build_recap_test_set()
     recap_labeled_targets, recap_context_only = split_recap_targets_and_context_only(recap_test_rows)
 
+    train_rows, val_rows, test_sup_rows, feas = split_balanced_cot_with_recap_in_test_union(
+        recap_labeled_targets,
+        balanced_pool,
+        args.train_frac,
+        args.val_frac,
+        args.test_frac,
+        args.seed,
+    )
+    feas = {
+        **feas,
+        "recap_client_turns_all_retained": len(recap_test_rows),
+        "recap_context_only_turns_excluded_from_union": len(recap_context_only),
+    }
+
     non_resistance_review = build_non_resistance_review_queue(recap_test_rows)
-    translation_judge_queue = build_translation_judge_queue(train_rows + val_rows)
+    translation_judge_queue = build_translation_judge_queue(train_rows + val_rows + test_sup_rows)
     # Placeholder: manual QC pool built from translated rows in the future.
     translation_manual_qc_pool = build_translation_manual_qc_pool(
         translated_rows=[],
@@ -363,6 +469,7 @@ def main() -> None:
     out = OUT_DIR
     _dump_json(out / "train_supplementary_balanced.json", train_rows)
     _dump_json(out / "val_supplementary_balanced.json", val_rows)
+    _dump_json(out / "test_supplementary_balanced.json", test_sup_rows)
     _dump_json(out / "test_recap_all_retained_turn_level.json", recap_test_rows)
     _dump_json(out / "test_recap_full_dialogues_retained.json", recap_full_dialogues)
     _dump_json(out / "test_recap_labeled_targets.json", recap_labeled_targets)
@@ -373,8 +480,12 @@ def main() -> None:
 
     report = {
         "policy": {
-            "test_set": "all_recap_client_turns_retained",
+            "union_definition": "|RECAP_labeled_targets| + |balanced_clinical_cot|; context-only RECAP turns excluded",
+            "target_global_fracs": [args.train_frac, args.val_frac, args.test_frac],
+            "recap_outputs": "full_turn_json + labeled_targets + context_only_null_labels (all test-side files)",
+            "cot_allocation": "fill_global_train_val_test_slots_after_reserving_recap_for_test",
             "supplementary_datasets": ["esconv", "mesc", "annomi"],
+            "extes_note": "results/extes/ excluded: no coop fine taxonomy, no profile, no COT—not same asset class as cot/*.json",
             "balancing": {
                 "method": "per_label_cap_downsample",
                 "per_label_cap": args.per_label_cap,
@@ -386,9 +497,11 @@ def main() -> None:
                 "manual_qc_sample_check",
             ],
         },
+        "feasibility": feas,
         "splits": [
             summarize("train_supplementary_balanced", train_rows),
             summarize("val_supplementary_balanced", val_rows),
+            summarize("test_supplementary_balanced", test_sup_rows),
             summarize("test_recap_all_retained_turn_level", recap_test_rows),
             summarize("test_recap_labeled_targets", recap_labeled_targets),
             summarize("test_recap_context_only_null_labels", recap_context_only),
@@ -399,6 +512,8 @@ def main() -> None:
             "recap_full_dialogues_count": len(recap_full_dialogues),
         },
         "notes": [
+            "8:1:1 union counts only labeled RECAP + COT; full turn JSON retains context-only rows for modeling.",
+            "Optional COT held-out rows: test_supplementary_balanced (only when global 8:1:1 is feasible).",
             "RECAP full dialogues are retained in test_recap_full_dialogues_retained.json.",
             "Turn-level files are derived views for scoring/filtering only.",
             "Only test_recap_labeled_targets should be used as scoring/evaluation targets.",

@@ -1,13 +1,13 @@
 {
-  "started_at": "2026-05-02T13:54:30Z",
-  "updated_at": "2026-05-02T13:56:28Z",
+  "started_at": "2026-05-03T05:51:29Z",
+  "finished_at": "2026-05-03T11:01:55Z",
   "model": "deepseek-v4-flash",
   "base_url": "https://api.deepseek.com/v1",
-  "processed_this_run": 35,
+  "workers": 4,
+  "processed_this_run": 3434,
   "total_to_process_this_run": 3434,
-  "stage1_lines": 35,
-  "stage2_lines": 35,
-  "stage3_lines": 35,
-  "last_sample_id": "esconv:esconv_1206:5",
-  "last_error": null
+  "stage1_lines": 3433,
+  "stage2_lines": 3433,
+  "stage3_lines": 3434,
+  "status": "completed"
 }
