@@ -4,24 +4,24 @@ prepare_training_splits.py
 Build training/validation/test splits for SFT data preparation.
 
 Policy implemented from supervisor guidance:
-1) RECAP is **never** in train/val: outputs stay under test-only JSON (full turn view + labeled targets + context-only rows).
-2) **Global 8:1:1** (default) uses union **T = |RECAP_labeled_targets| + |balanced_supplementary_pool|** only.
-   - **Labeled RECAP** = client turns with `binary_label` in (阻抗, 合作) — these are supervision/eval **units**.
-   - **Null / other labels** are context carriers only (`test_recap_context_only_null_labels.json`); they **do not** enter T.
-   - Target slots on T: train ≈ 0.8T, val ≈ 0.1T, test_total ≈ 0.1T. **Test** reserves space for **all labeled RECAP** first;
-     leftover test slots take held-out **supplementary** rows (`test_supplementary_balanced.json`). Remainder fills train/val.
-   - If |labeled RECAP| > test_total, exact 8:1:1 is **impossible**; fall back: no supplementary test fold, pool split 8:1 train/val only.
-3) Supplementary pool = **clinical COT only** (`cot/*.json`: profile + fine labels + real `<internal>` COT).
-   **ExtES** (`results/extes/`) is **not** merged here: it has no cooperation-side fine taxonomy, no profile, and no
-   annotated COT—using it in the same translation / 8:1:1 pipeline would be a category error.
-4) After split, prepare translation / review queues from that pool.
+1) **RECAP test holdout (default ~2000 监督轮)**：按 **完整对话** 抽样，直到「带 阻抗/合作 的来访轮」累计 **≥ --recap-test-labeled-min**
+   （当前数据每对话至多 1 条监督，故约等于抽满该条数的对话段）。**整段对话**进 test，含其内无标 context 轮。
+2) **其余 RECAP** 以 **整段对话** 为单位打乱后按 **8:1** 拆入 train/val（`train_recap_*` / `val_recap_*`），**绝不**把不同对话的轮次混洗成一条平铺列表。
+   **COT** 仍为 `train_supplementary_balanced` / `val_supplementary_balanced`；与 RECAP 的「混合」在 **batch/采样器** 层完成，不由本脚本拆对话。
+3) **Global 8:1:1 可行性**仍按 **T = |RECAP_test 内监督条数| + |balanced COT|** 计算。
+4) Supplementary pool = **clinical COT only** (`cot/*.json`: profile + fine labels + real `<internal>` COT).
+   **ExtES** (`results/extes/`) is **not** merged here: no coop fine taxonomy, no profile, no COT—not same asset class as cot/*.json.
+5) After split, prepare translation / review queues from that pool.
    - First pass: culture-specificity judgment required (LLM/manual later).
    - Second pass: only non-culture-specific items should be translated EN->ZH.
-5) Build a review queue for non-resistance items in RECAP test set.
+6) Build a review queue for non-resistance items in **RECAP test holdout** turn set.
 
 Usage:
   python data_scripts/prepare_training_splits.py
-  python data_scripts/prepare_training_splits.py --train-frac 0.8 --val-frac 0.1 --test-frac 0.1 --per-label-cap 260
+  python data_scripts/prepare_training_splits.py --recap-test-labeled-min 2000 --seed 42
+  python data_scripts/prepare_training_splits.py --recap-cot-path workspace/results/recap/recap_labeled_cot.json --strict-recap-cot
+
+RECAP COT 侧车由 ``data_scripts/generate_recap_labeled_cot.py`` 生成后再合并。
 """
 
 from __future__ import annotations
@@ -29,6 +29,7 @@ from __future__ import annotations
 import argparse
 import json
 import random
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
@@ -176,10 +177,10 @@ def split_balanced_cot_with_recap_in_test_union(
         meta["actual_val_frac"] = len(val) / T if T else 0.0
         meta["actual_test_frac"] = R / T if T else 0.0
         meta["note_zh"] = (
-            "计入并集的「带标记 RECAP 监督目标」数量已超过总体的 test 槽位（默认 10%），"
-            "在「全部带标记 RECAP 必须落在 test」约束下无法同时满足全局 8:1:1；"
+            "「RECAP test 内监督」条数已超过并集 T 下总体的 test 槽位（按 train/val/test 比例），"
+            "在「test 中 RECAP 监督必须全部落在 test 槽」约束下无法同时满足全局 8:1:1；"
             "已将全部 COT 按 8:1 拆入 train/val，且不划分 COT test 折。"
-            "无标记轮次仅作 context，本来就不计入并集。"
+            "train/val 中的 RECAP 余量以整段对话写入 train_recap_* / val_recap_*；COT 仍单独列出，训练时再做 batch 级混合。"
         )
         return train, val, cot_test, meta
 
@@ -220,37 +221,184 @@ def _last_therapist_utterance(dialogue: list[dict[str, Any]], turn_pos: int) -> 
     return ""
 
 
-def build_recap_test_set() -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
-    """
-    Returns:
-      - turn-level eval units (for scoring/filtering)
-      - full dialogues (for human review and context-preserving evaluation)
-    """
-    recaps = _load_json(RESULTS / "recap" / "dialogues.json")
-    test_rows: list[dict[str, Any]] = []
-    full_dialogues: list[dict[str, Any]] = []
+def load_recap_dialogues() -> list[dict[str, Any]]:
+    return _load_json(RESULTS / "recap" / "dialogues.json")
 
-    for dlg in recaps:
+
+PROFILE_USED_KEYS = (
+    "background",
+    "self_view_of_problem",
+    "resistance_drivers",
+    "ambivalence",
+    "values_and_stakes",
+    "key_facts",
+)
+
+
+def recap_profile_used_blob(record: dict[str, Any]) -> dict[str, Any]:
+    """Subset aligned with clinical COT ``profile_used`` (drop raw_response / metadata)."""
+    return {k: record[k] for k in PROFILE_USED_KEYS if k in record}
+
+
+def load_recap_profiles(path: Path) -> dict[str, dict[str, Any]]:
+    if not path.exists():
+        return {}
+    data = _load_json(path)
+    if not isinstance(data, list):
+        return {}
+    out: dict[str, dict[str, Any]] = {}
+    for item in data:
+        sid = item.get("sample_id")
+        if sid is not None:
+            out[str(sid)] = recap_profile_used_blob(item)
+    return out
+
+
+def load_recap_cot_map(path: Path) -> dict[str, dict[str, Any]]:
+    """Load COT sidecar: either a JSON object keyed by sample_id, or a list of rows with sample_id."""
+    if not path.exists():
+        return {}
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    if isinstance(raw, dict):
+        return {str(k): v for k, v in raw.items() if isinstance(v, dict)}
+    if isinstance(raw, list):
+        out: dict[str, dict[str, Any]] = {}
+        for item in raw:
+            if not isinstance(item, dict):
+                continue
+            sid = item.get("sample_id")
+            if sid:
+                out[str(sid)] = item
+        return out
+    return {}
+
+
+def dialogue_supervision_label(dlg: dict[str, Any]) -> str | None:
+    """First client turn with 阻抗/合作; RECAP schema typically has exactly one."""
+    for turn in dlg.get("dialogue", []):
+        if turn.get("speaker") != "client":
+            continue
+        bl = turn.get("binary_label")
+        if bl in ("阻抗", "合作"):
+            return str(bl)
+    return None
+
+
+def partition_recap_dialogues_for_test(
+    dialogues: list[dict[str, Any]],
+    min_labeled: int,
+    seed: int,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], dict[str, Any]]:
+    """
+    Whole dialogues into test until cumulative labeled client turns (阻抗/合作) >= min_labeled.
+    Stratify pick: round-robin from shuffled 阻抗-dialogues vs 合作-dialogues.
+    Dialogues with no supervision label go to remainder only.
+    """
+    imp: list[dict[str, Any]] = []
+    coop: list[dict[str, Any]] = []
+    no_label: list[dict[str, Any]] = []
+    for dlg in dialogues:
+        bl = dialogue_supervision_label(dlg)
+        if bl == "阻抗":
+            imp.append(dlg)
+        elif bl == "合作":
+            coop.append(dlg)
+        else:
+            no_label.append(dlg)
+
+    rnd = random.Random(seed)
+    rnd.shuffle(imp)
+    rnd.shuffle(coop)
+
+    test: list[dict[str, Any]] = []
+    i = j = 0
+    labeled = 0
+    while labeled < min_labeled:
+        took = False
+        if i < len(imp):
+            test.append(imp[i])
+            i += 1
+            labeled += 1
+            took = True
+        if labeled >= min_labeled:
+            break
+        if j < len(coop):
+            test.append(coop[j])
+            j += 1
+            labeled += 1
+            took = True
+        if not took:
+            break
+
+    test_ids = {d.get("character_id") for d in test}
+    remainder: list[dict[str, Any]] = []
+    for dlg in dialogues:
+        cid = dlg.get("character_id")
+        if cid in test_ids:
+            continue
+        remainder.append(dlg)
+    remainder.extend(no_label)
+    rnd.shuffle(remainder)
+
+    meta = {
+        "recap_test_labeled_min_requested": min_labeled,
+        "recap_test_dialogues": len(test),
+        "recap_test_labeled_turns_in_test": labeled,
+        "recap_remainder_dialogues": len(remainder),
+        "recap_dialogues_without_supervision_label": len(no_label),
+        "recap_test_binary_dist": dict(Counter(dialogue_supervision_label(d) for d in test if dialogue_supervision_label(d))),
+    }
+    return test, remainder, meta
+
+
+def build_turn_rows_from_dialogues(
+    dialogues: list[dict[str, Any]],
+    *,
+    profile_by_char: dict[str, dict[str, Any]] | None = None,
+    recap_cot_by_sample: dict[str, dict[str, Any]] | None = None,
+    count_cot_gaps: bool = True,
+) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    profile_by_char = profile_by_char or {}
+    recap_cot_by_sample = recap_cot_by_sample or {}
+    missing_chars: set[str] = set()
+    stats: dict[str, Any] = {
+        "recap_profile_missing_turn_rows": 0,
+        "recap_cot_missing_labeled": 0,
+        "recap_cot_filled_labeled": 0,
+    }
+    test_rows: list[dict[str, Any]] = []
+    for dlg in dialogues:
         dialogue = dlg.get("dialogue", [])
         char_id = dlg.get("character_id")
-        full_dialogues.append(
-            {
-                "source": "recap",
-                "character_id": char_id,
-                "dialogue_id": dlg.get("dialogue_id"),
-                "problem_type": dlg.get("problem_type"),
-                "situation": dlg.get("situation"),
-                "dialogue": dialogue,
-                "stats": dlg.get("stats", {}),
-            }
-        )
+        char_key = str(char_id) if char_id is not None else ""
+        profile_used = profile_by_char.get(char_key) if char_key else None
         for turn in dialogue:
             if turn.get("speaker") != "client":
                 continue
             turn_pos = turn.get("turn_pos", -1)
+            sample_id = f"recap:{char_id}:{turn_pos}"
+            if char_key and profile_used is None:
+                stats["recap_profile_missing_turn_rows"] += 1
+                missing_chars.add(char_key)
+
+            cot_hit = recap_cot_by_sample.get(sample_id) or {}
+            internal_val = cot_hit.get("internal")
+            internal = (internal_val or "").strip() if isinstance(internal_val, str) else None
+            if internal == "":
+                internal = None
+            raw_cot = cot_hit.get("raw_cot")
+            cot_prompt_key = cot_hit.get("cot_prompt_key")
+
+            bl = turn.get("binary_label")
+            if count_cot_gaps and bl in ("阻抗", "合作"):
+                if internal:
+                    stats["recap_cot_filled_labeled"] += 1
+                else:
+                    stats["recap_cot_missing_labeled"] += 1
+
             row = {
                 "source": "recap",
-                "sample_id": f"recap:{char_id}:{turn_pos}",
+                "sample_id": sample_id,
                 "character_id": char_id,
                 "turn_pos": turn_pos,
                 "binary_label": turn.get("binary_label"),
@@ -260,12 +408,74 @@ def build_recap_test_set() -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
                 "context": _turns_before(dialogue, turn_pos),
                 "therapist_turn": _last_therapist_utterance(dialogue, turn_pos),
                 "client_response": turn.get("text", ""),
-                # RECAP currently has no COT internal in this file.
-                "internal": None,
-                "profile_used": None,
+                "internal": internal,
+                "raw_cot": raw_cot if internal else None,
+                "cot_prompt_key": cot_prompt_key if internal else None,
+                "profile_used": profile_used,
             }
             test_rows.append(row)
-    return test_rows, full_dialogues
+    stats["recap_profile_missing_character_ids"] = sorted(missing_chars)
+    return test_rows, stats
+
+
+def build_full_dialogues_from_dialogues(
+    dialogues: list[dict[str, Any]],
+    *,
+    profile_by_char: dict[str, dict[str, Any]] | None = None,
+) -> list[dict[str, Any]]:
+    profile_by_char = profile_by_char or {}
+    out: list[dict[str, Any]] = []
+    for dlg in dialogues:
+        cid = dlg.get("character_id")
+        ck = str(cid) if cid is not None else ""
+        item: dict[str, Any] = {
+            "source": "recap",
+            "character_id": cid,
+            "dialogue_id": dlg.get("dialogue_id"),
+            "problem_type": dlg.get("problem_type"),
+            "situation": dlg.get("situation"),
+            "dialogue": dlg.get("dialogue", []),
+            "stats": dlg.get("stats", {}),
+        }
+        if ck:
+            item["profile_used"] = profile_by_char.get(ck)
+        else:
+            item["profile_used"] = None
+        out.append(item)
+    return out
+
+
+def build_recap_test_set(
+    dialogues: list[dict[str, Any]] | None = None,
+    *,
+    profile_by_char: dict[str, dict[str, Any]] | None = None,
+    recap_cot_by_sample: dict[str, dict[str, Any]] | None = None,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """All RECAP dialogues → turn rows + full dialogue list (legacy helper)."""
+    if dialogues is None:
+        dialogues = load_recap_dialogues()
+    rows, _stats = build_turn_rows_from_dialogues(
+        dialogues,
+        profile_by_char=profile_by_char,
+        recap_cot_by_sample=recap_cot_by_sample,
+        count_cot_gaps=False,
+    )
+    return rows, build_full_dialogues_from_dialogues(dialogues, profile_by_char=profile_by_char)
+
+
+def merge_turn_build_stats(a: dict[str, Any], b: dict[str, Any]) -> dict[str, Any]:
+    chars = set(a.get("recap_profile_missing_character_ids") or []) | set(
+        b.get("recap_profile_missing_character_ids") or []
+    )
+    return {
+        "recap_profile_missing_turn_rows": int(a.get("recap_profile_missing_turn_rows", 0))
+        + int(b.get("recap_profile_missing_turn_rows", 0)),
+        "recap_profile_missing_character_ids": sorted(chars),
+        "recap_cot_missing_labeled": int(a.get("recap_cot_missing_labeled", 0))
+        + int(b.get("recap_cot_missing_labeled", 0)),
+        "recap_cot_filled_labeled": int(a.get("recap_cot_filled_labeled", 0))
+        + int(b.get("recap_cot_filled_labeled", 0)),
+    }
 
 
 def split_recap_targets_and_context_only(
@@ -426,7 +636,13 @@ def main() -> None:
         "--test-frac",
         type=float,
         default=0.1,
-        help="全局 test 槽占比；test 侧先容纳全部「带标记 RECAP」，剩余槽位再给 COT held-out。",
+        help="全局 test 槽占比；test 槽先预留 RECAP_test 内监督条数，再给 COT held-out。",
+    )
+    parser.add_argument(
+        "--recap-test-labeled-min",
+        type=int,
+        default=2000,
+        help="RECAP test：按整段对话抽样，直至 阻抗/合作 监督轮累计≥该值（当前数据每对话 1 条监督时可略超）。",
     )
     parser.add_argument(
         "--per-label-cap",
@@ -436,12 +652,78 @@ def main() -> None:
     )
     parser.add_argument("--manual-qc-size", type=int, default=300)
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument(
+        "--recap-profile-path",
+        type=Path,
+        default=RESULTS / "profiles" / "recap.json",
+        help="RECAP profile 列表 JSON；sample_id 与 dialogues 的 character_id 对齐。",
+    )
+    parser.add_argument(
+        "--recap-cot-path",
+        type=Path,
+        default=RESULTS / "recap" / "recap_labeled_cot.json",
+        help="RECAP 监督轮 COT 侧车（对象键为 sample_id 或 list[dict]）；不存在则跳过 COT 且不统计缺失。",
+    )
+    parser.add_argument(
+        "--strict-recap-cot",
+        action="store_true",
+        help="当 --recap-cot-path 文件存在时，若仍有监督轮缺少 internal 则退出码 1。",
+    )
     args = parser.parse_args()
 
     cot_rows = load_cot_samples()
     balanced_pool = build_balanced_pool(cot_rows, args.per_label_cap, args.seed)
-    recap_test_rows, recap_full_dialogues = build_recap_test_set()
+
+    dialogues = load_recap_dialogues()
+    profile_by_char = load_recap_profiles(args.recap_profile_path)
+    recap_cot_path = args.recap_cot_path
+    recap_cot_loaded = recap_cot_path.exists()
+    recap_cot_by_sample = load_recap_cot_map(recap_cot_path) if recap_cot_loaded else {}
+    count_cot_gaps = recap_cot_loaded
+
+    test_dlgs, remainder_dlgs, part_meta = partition_recap_dialogues_for_test(
+        dialogues,
+        min_labeled=args.recap_test_labeled_min,
+        seed=args.seed,
+    )
+
+    recap_test_rows, st_test = build_turn_rows_from_dialogues(
+        test_dlgs,
+        profile_by_char=profile_by_char,
+        recap_cot_by_sample=recap_cot_by_sample,
+        count_cot_gaps=count_cot_gaps,
+    )
+    recap_full_dialogues = build_full_dialogues_from_dialogues(
+        test_dlgs, profile_by_char=profile_by_char
+    )
     recap_labeled_targets, recap_context_only = split_recap_targets_and_context_only(recap_test_rows)
+
+    rnd_dlg = random.Random(args.seed + 1337)
+    remainder_shuffled = remainder_dlgs[:]
+    rnd_dlg.shuffle(remainder_shuffled)
+    n_train_d = (len(remainder_shuffled) * 8) // 9 if remainder_shuffled else 0
+    train_recap_dlgs = remainder_shuffled[:n_train_d]
+    val_recap_dlgs = remainder_shuffled[n_train_d:]
+
+    train_recap_full = build_full_dialogues_from_dialogues(
+        train_recap_dlgs, profile_by_char=profile_by_char
+    )
+    val_recap_full = build_full_dialogues_from_dialogues(
+        val_recap_dlgs, profile_by_char=profile_by_char
+    )
+    train_recap_turn_rows, st_tr = build_turn_rows_from_dialogues(
+        train_recap_dlgs,
+        profile_by_char=profile_by_char,
+        recap_cot_by_sample=recap_cot_by_sample,
+        count_cot_gaps=count_cot_gaps,
+    )
+    val_recap_turn_rows, st_va = build_turn_rows_from_dialogues(
+        val_recap_dlgs,
+        profile_by_char=profile_by_char,
+        recap_cot_by_sample=recap_cot_by_sample,
+        count_cot_gaps=count_cot_gaps,
+    )
+    recap_turn_stats = merge_turn_build_stats(merge_turn_build_stats(st_test, st_tr), st_va)
 
     train_rows, val_rows, test_sup_rows, feas = split_balanced_cot_with_recap_in_test_union(
         recap_labeled_targets,
@@ -451,11 +733,34 @@ def main() -> None:
         args.test_frac,
         args.seed,
     )
+
     feas = {
         **feas,
-        "recap_client_turns_all_retained": len(recap_test_rows),
-        "recap_context_only_turns_excluded_from_union": len(recap_context_only),
+        "recap_partition": part_meta,
+        "recap_test_client_turns_total": len(recap_test_rows),
+        "recap_train_full_dialogues": len(train_recap_dlgs),
+        "recap_val_full_dialogues": len(val_recap_dlgs),
+        "recap_train_client_turns": len(train_recap_turn_rows),
+        "recap_val_client_turns": len(val_recap_turn_rows),
+        "recap_context_only_turns_in_test_only": len(recap_context_only),
+        "recap_profile_path": str(args.recap_profile_path),
+        "recap_profile_keys_loaded": len(profile_by_char),
+        "recap_turn_build_stats": recap_turn_stats,
+        "recap_cot_path": str(recap_cot_path),
+        "recap_cot_file_loaded": recap_cot_loaded,
     }
+
+    if args.strict_recap_cot and recap_cot_loaded:
+        miss = int(recap_turn_stats.get("recap_cot_missing_labeled", 0))
+        if miss > 0:
+            print(
+                json.dumps(
+                    {"error": "strict_recap_cot", "recap_cot_missing_labeled": miss},
+                    ensure_ascii=False,
+                ),
+                file=sys.stderr,
+            )
+            raise SystemExit(1)
 
     non_resistance_review = build_non_resistance_review_queue(recap_test_rows)
     translation_judge_queue = build_translation_judge_queue(train_rows + val_rows + test_sup_rows)
@@ -470,6 +775,10 @@ def main() -> None:
     _dump_json(out / "train_supplementary_balanced.json", train_rows)
     _dump_json(out / "val_supplementary_balanced.json", val_rows)
     _dump_json(out / "test_supplementary_balanced.json", test_sup_rows)
+    _dump_json(out / "train_recap_full_dialogues_retained.json", train_recap_full)
+    _dump_json(out / "val_recap_full_dialogues_retained.json", val_recap_full)
+    _dump_json(out / "train_recap_all_turn_level.json", train_recap_turn_rows)
+    _dump_json(out / "val_recap_all_turn_level.json", val_recap_turn_rows)
     _dump_json(out / "test_recap_all_retained_turn_level.json", recap_test_rows)
     _dump_json(out / "test_recap_full_dialogues_retained.json", recap_full_dialogues)
     _dump_json(out / "test_recap_labeled_targets.json", recap_labeled_targets)
@@ -480,10 +789,12 @@ def main() -> None:
 
     report = {
         "policy": {
-            "union_definition": "|RECAP_labeled_targets| + |balanced_clinical_cot|; context-only RECAP turns excluded",
+            "recap_test_holdout": "whole_dialogues_until_labeled_min",
+            "recap_test_labeled_min": args.recap_test_labeled_min,
+            "union_definition": "|RECAP_test_labeled_targets| + |balanced_clinical_cot|; RECAP train/val = whole dialogues in train_recap_* / val_recap_*",
             "target_global_fracs": [args.train_frac, args.val_frac, args.test_frac],
-            "recap_outputs": "full_turn_json + labeled_targets + context_only_null_labels (all test-side files)",
-            "cot_allocation": "fill_global_train_val_test_slots_after_reserving_recap_for_test",
+            "recap_outputs": "test_recap_* = holdout; remainder RECAP = train_recap_* + val_recap_* (dialogue-integrity preserved)",
+            "cot_allocation": "COT split vs RECAP_test for global 8:1:1 feasibility; COT lists separate from RECAP dialogue JSON",
             "supplementary_datasets": ["esconv", "mesc", "annomi"],
             "extes_note": "results/extes/ excluded: no coop fine taxonomy, no profile, no COT—not same asset class as cot/*.json",
             "balancing": {
@@ -499,9 +810,11 @@ def main() -> None:
         },
         "feasibility": feas,
         "splits": [
-            summarize("train_supplementary_balanced", train_rows),
-            summarize("val_supplementary_balanced", val_rows),
+            summarize("train_supplementary_balanced_cot_only", train_rows),
+            summarize("val_supplementary_balanced_cot_only", val_rows),
             summarize("test_supplementary_balanced", test_sup_rows),
+            summarize("train_recap_all_turn_level", train_recap_turn_rows),
+            summarize("val_recap_all_turn_level", val_recap_turn_rows),
             summarize("test_recap_all_retained_turn_level", recap_test_rows),
             summarize("test_recap_labeled_targets", recap_labeled_targets),
             summarize("test_recap_context_only_null_labels", recap_context_only),
@@ -509,16 +822,19 @@ def main() -> None:
         "queues": {
             "recap_non_resistance_review_count": len(non_resistance_review),
             "translation_culture_judge_count": len(translation_judge_queue),
-            "recap_full_dialogues_count": len(recap_full_dialogues),
+            "recap_full_dialogues_count_test_holdout": len(recap_full_dialogues),
+            "recap_full_dialogues_count_train": len(train_recap_full),
+            "recap_full_dialogues_count_val": len(val_recap_full),
         },
         "notes": [
-            "8:1:1 union counts only labeled RECAP + COT; full turn JSON retains context-only rows for modeling.",
+            "RECAP test = whole-dialogue holdout; labeled count ≈ recap_test_labeled_min.",
+            "Remainder RECAP: shuffle at **dialogue** level then 8:1 split → train_recap_full_dialogues_retained + val_recap_full_dialogues_retained (same inner structure as test_recap_full_*).",
+            "Turn-level convenience exports: train_recap_all_turn_level.json / val_recap_all_turn_level.json (turns only from dialogs in that split; dialogue order preserved within each dialog when iterating dialogues list).",
+            "COT remains train_supplementary_balanced / val_supplementary_balanced; mix RECAP+COT in the **dataloader** (e.g. interleaved batches), not by flattening turns.",
+            "8:1:1 feasibility uses |test_recap_labeled_targets| + |balanced COT| only.",
             "Optional COT held-out rows: test_supplementary_balanced (only when global 8:1:1 is feasible).",
-            "RECAP full dialogues are retained in test_recap_full_dialogues_retained.json.",
-            "Turn-level files are derived views for scoring/filtering only.",
-            "Only test_recap_labeled_targets should be used as scoring/evaluation targets.",
-            "test_recap_context_only_null_labels should only be used as context carriers.",
-            "RECAP non-resistance queue includes binary_label != 阻抗 (including null).",
+            "Only test_recap_labeled_targets should be used as primary RECAP test eval targets.",
+            "test_recap_context_only_null_labels are context carriers within the test holdout dialogues.",
             "translation_manual_qc_pool_template is intentionally empty before translation outputs exist.",
         ],
     }

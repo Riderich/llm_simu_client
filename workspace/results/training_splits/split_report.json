@@ -1,13 +1,15 @@
 {
   "policy": {
-    "union_definition": "|RECAP_labeled_targets| + |balanced_clinical_cot|; context-only RECAP turns excluded",
+    "recap_test_holdout": "whole_dialogues_until_labeled_min",
+    "recap_test_labeled_min": 2000,
+    "union_definition": "|RECAP_test_labeled_targets| + |balanced_clinical_cot|; RECAP train/val = whole dialogues in train_recap_* / val_recap_*",
     "target_global_fracs": [
       0.8,
       0.1,
       0.1
     ],
-    "recap_outputs": "full_turn_json + labeled_targets + context_only_null_labels (all test-side files)",
-    "cot_allocation": "fill_global_train_val_test_slots_after_reserving_recap_for_test",
+    "recap_outputs": "test_recap_* = holdout; remainder RECAP = train_recap_* + val_recap_* (dialogue-integrity preserved)",
+    "cot_allocation": "COT split vs RECAP_test for global 8:1:1 feasibility; COT lists separate from RECAP dialogue JSON",
     "supplementary_datasets": [
       "esconv",
       "mesc",
@@ -26,28 +28,53 @@
     ]
   },
   "feasibility": {
-    "union_T": 8363,
-    "R_recap_labeled_targets_in_union": 4929,
+    "union_T": 5434,
+    "R_recap_labeled_targets_in_union": 2000,
     "S_cot_balanced": 3434,
-    "target_train": 6690,
-    "target_val": 836,
-    "target_test_slot_including_labeled_recap": 837,
+    "target_train": 4347,
+    "target_val": 543,
+    "target_test_slot_including_labeled_recap": 544,
     "feasible_exact_global_split_with_all_labeled_recap_in_test": false,
     "mode": "fallback_recap_exceeds_target_test_mass",
     "cot_test_count": 0,
     "actual_global_train": 3052,
     "actual_global_val": 382,
-    "actual_global_test": 4929,
-    "actual_train_frac": 0.36494081071385864,
-    "actual_val_frac": 0.045677388496950855,
-    "actual_test_frac": 0.5893818007891904,
-    "note_zh": "计入并集的「带标记 RECAP 监督目标」数量已超过总体的 test 槽位（默认 10%），在「全部带标记 RECAP 必须落在 test」约束下无法同时满足全局 8:1:1；已将全部 COT 按 8:1 拆入 train/val，且不划分 COT test 折。无标记轮次仅作 context，本来就不计入并集。",
-    "recap_client_turns_all_retained": 14220,
-    "recap_context_only_turns_excluded_from_union": 9291
+    "actual_global_test": 2000,
+    "actual_train_frac": 0.5616488774383511,
+    "actual_val_frac": 0.07029812292970188,
+    "actual_test_frac": 0.368052999631947,
+    "note_zh": "「RECAP test 内监督」条数已超过并集 T 下总体的 test 槽位（按 train/val/test 比例），在「test 中 RECAP 监督必须全部落在 test 槽」约束下无法同时满足全局 8:1:1；已将全部 COT 按 8:1 拆入 train/val，且不划分 COT test 折。train/val 中的 RECAP 余量以整段对话写入 train_recap_* / val_recap_*；COT 仍单独列出，训练时再做 batch 级混合。",
+    "recap_partition": {
+      "recap_test_labeled_min_requested": 2000,
+      "recap_test_dialogues": 2000,
+      "recap_test_labeled_turns_in_test": 2000,
+      "recap_remainder_dialogues": 2929,
+      "recap_dialogues_without_supervision_label": 0,
+      "recap_test_binary_dist": {
+        "阻抗": 1000,
+        "合作": 1000
+      }
+    },
+    "recap_test_client_turns_total": 5749,
+    "recap_train_full_dialogues": 2603,
+    "recap_val_full_dialogues": 326,
+    "recap_train_client_turns": 7523,
+    "recap_val_client_turns": 948,
+    "recap_context_only_turns_in_test_only": 3749,
+    "recap_profile_path": "/data5/zxj/llm_simu_client/workspace/results/profiles/recap.json",
+    "recap_profile_keys_loaded": 5154,
+    "recap_turn_build_stats": {
+      "recap_profile_missing_turn_rows": 0,
+      "recap_profile_missing_character_ids": [],
+      "recap_cot_missing_labeled": 0,
+      "recap_cot_filled_labeled": 0
+    },
+    "recap_cot_path": "/data5/zxj/llm_simu_client/workspace/results/recap/recap_labeled_cot.json",
+    "recap_cot_file_loaded": false
   },
   "splits": [
     {
-      "name": "train_supplementary_balanced",
+      "name": "train_supplementary_balanced_cot_only",
       "size": 3052,
       "binary_dist": {
         "阻抗": 1904,
@@ -77,7 +104,7 @@
       }
     },
     {
-      "name": "val_supplementary_balanced",
+      "name": "val_supplementary_balanced_cot_only",
       "size": 382,
       "binary_dist": {
         "合作": 166,
@@ -113,90 +140,148 @@
       "label_code_top20": {}
     },
     {
-      "name": "test_recap_all_retained_turn_level",
-      "size": 14220,
+      "name": "train_recap_all_turn_level",
+      "size": 7523,
       "binary_dist": {
-        "None": 9291,
-        "阻抗": 3917,
-        "合作": 1012
+        "None": 4920,
+        "阻抗": 2592,
+        "合作": 11
       },
       "label_code_top20": {
-        "UNKNOWN": 9291,
-        "B2": 684,
-        "CBS4": 620,
-        "D2": 415,
-        "D1": 410,
-        "C1": 405,
-        "A2": 363,
-        "B5": 316,
-        "C2": 316,
-        "A1": 239,
-        "B6": 216,
+        "UNKNOWN": 4920,
+        "B2": 458,
+        "C1": 272,
+        "D1": 261,
+        "D2": 255,
+        "A2": 239,
+        "B5": 222,
+        "C2": 208,
+        "A1": 164,
+        "B6": 147,
+        "B1": 99,
+        "B7": 94,
+        "B3": 89,
+        "B4": 84,
+        "CBS4": 6,
+        "CBS7": 3,
+        "CBS5": 1,
+        "CBS6": 1
+      }
+    },
+    {
+      "name": "val_recap_all_turn_level",
+      "size": 948,
+      "binary_dist": {
+        "None": 622,
+        "阻抗": 325,
+        "合作": 1
+      },
+      "label_code_top20": {
+        "UNKNOWN": 622,
+        "B2": 56,
+        "D2": 45,
+        "D1": 37,
+        "C1": 33,
+        "C2": 28,
+        "A2": 21,
+        "B5": 19,
+        "B1": 19,
+        "B6": 19,
+        "B4": 14,
+        "A1": 13,
+        "B7": 12,
+        "B3": 9,
+        "CBS4": 1
+      }
+    },
+    {
+      "name": "test_recap_all_retained_turn_level",
+      "size": 5749,
+      "binary_dist": {
+        "None": 3749,
+        "阻抗": 1000,
+        "合作": 1000
+      },
+      "label_code_top20": {
+        "UNKNOWN": 3749,
+        "CBS4": 613,
+        "B2": 170,
         "CBS2": 159,
-        "B1": 150,
-        "B7": 147,
-        "B3": 129,
-        "B4": 127,
-        "CBS7": 75,
-        "CBS6": 71,
-        "CBS5": 42,
-        "CBS8": 39
+        "D2": 115,
+        "D1": 112,
+        "A2": 103,
+        "C1": 100,
+        "C2": 80,
+        "B5": 75,
+        "CBS7": 72,
+        "CBS6": 70,
+        "A1": 62,
+        "B6": 50,
+        "CBS5": 41,
+        "B7": 41,
+        "CBS8": 39,
+        "B1": 32,
+        "B3": 31,
+        "B4": 29
       }
     },
     {
       "name": "test_recap_labeled_targets",
-      "size": 4929,
+      "size": 2000,
       "binary_dist": {
-        "阻抗": 3917,
-        "合作": 1012
+        "阻抗": 1000,
+        "合作": 1000
       },
       "label_code_top20": {
-        "B2": 684,
-        "CBS4": 620,
-        "D2": 415,
-        "D1": 410,
-        "C1": 405,
-        "A2": 363,
-        "B5": 316,
-        "C2": 316,
-        "A1": 239,
-        "B6": 216,
+        "CBS4": 613,
+        "B2": 170,
         "CBS2": 159,
-        "B1": 150,
-        "B7": 147,
-        "B3": 129,
-        "B4": 127,
-        "CBS7": 75,
-        "CBS6": 71,
-        "CBS5": 42,
+        "D2": 115,
+        "D1": 112,
+        "A2": 103,
+        "C1": 100,
+        "C2": 80,
+        "B5": 75,
+        "CBS7": 72,
+        "CBS6": 70,
+        "A1": 62,
+        "B6": 50,
+        "CBS5": 41,
+        "B7": 41,
         "CBS8": 39,
+        "B1": 32,
+        "B3": 31,
+        "B4": 29,
         "CBS3": 6
       }
     },
     {
       "name": "test_recap_context_only_null_labels",
-      "size": 9291,
+      "size": 3749,
       "binary_dist": {
-        "None": 9291
+        "None": 3749
       },
       "label_code_top20": {
-        "UNKNOWN": 9291
+        "UNKNOWN": 3749
       }
     }
   ],
   "queues": {
-    "recap_non_resistance_review_count": 10303,
+    "recap_non_resistance_review_count": 4749,
     "translation_culture_judge_count": 3434,
-    "recap_full_dialogues_count": 4929
+    "recap_full_dialogues_count_test_holdout": 2000,
+    "recap_full_dialogues_count_train": 2603,
+    "recap_full_dialogues_count_val": 326
   },
   "notes": [
-    "8:1:1 union counts only labeled RECAP + COT; full turn JSON retains context-only rows for modeling.",
+    "RECAP test = whole-dialogue holdout; labeled count ≈ recap_test_labeled_min.",
+    "Remainder RECAP: shuffle at **dialogue** level then 8:1 split → train_recap_full_dialogues_retained + val_recap_full_dialogues_retained (same inner structure as test_recap_full_*).",
+    "Turn-level convenience exports: train_recap_all_turn_level.json / val_recap_all_turn_level.json (turns only from dialogs in that split; dialogue order preserved within each dialog when iterating dialogues list).",
+    "COT remains train_supplementary_balanced / val_supplementary_balanced; mix RECAP+COT in the **dataloader** (e.g. interleaved batches), not by flattening turns.",
+    "8:1:1 feasibility uses |test_recap_labeled_targets| + |balanced COT| only.",
     "Optional COT held-out rows: test_supplementary_balanced (only when global 8:1:1 is feasible).",
-    "RECAP full dialogues are retained in test_recap_full_dialogues_retained.json.",
-    "Turn-level files are derived views for scoring/filtering only.",
-    "Only test_recap_labeled_targets should be used as scoring/evaluation targets.",
-    "test_recap_context_only_null_labels should only be used as context carriers.",
-    "RECAP non-resistance queue includes binary_label != 阻抗 (including null).",
+    "Only test_recap_labeled_targets should be used as primary RECAP test eval targets.",
+    "test_recap_context_only_null_labels are context carriers within the test holdout dialogues.",
     "translation_manual_qc_pool_template is intentionally empty before translation outputs exist."
   ]
 }
