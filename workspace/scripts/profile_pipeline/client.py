@@ -27,22 +27,38 @@ _QWEN_KEY_ENV: Final = "QWEN_API_KEY"
 _QWEN_BASE: Final = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 _DEFAULT_KEY_ENV: Final = "OPENAI_API_KEY"
 _DEFAULT_BASE: Final = os.getenv("OPENAI_BASE_URL", "https://api.apiplus.org/v1")
+_DEEPSEEK_KEY_ENV: Final = "DEEPSEEK_API_KEY"
+_DEEPSEEK_BASE_ENV: Final = "DEEPSEEK_BASE_URL"
 
 _RETRY_DELAYS: Final[tuple[float, ...]] = (2.0, 5.0, 15.0)  # exponential backoff
 
 
+def _normalize_deepseek_base(url: str) -> str:
+    u = (url or "").strip().rstrip("/")
+    if not u:
+        return "https://api.deepseek.com/v1"
+    if u.endswith("/v1"):
+        return u
+    return f"{u}/v1"
+
+
 def _resolve_client(model: str, api_key: str | None, base_url: str | None) -> OpenAI:
     """Route model name to the right API endpoint and key."""
-    if model.lower().startswith("qwen"):
+    ml = model.lower()
+    if ml.startswith("qwen"):
         resolved_key = api_key or os.getenv(_QWEN_KEY_ENV) or os.getenv(_DEFAULT_KEY_ENV)
         resolved_base = base_url or _QWEN_BASE
+    elif ml.startswith("deepseek"):
+        resolved_key = api_key or os.getenv(_DEEPSEEK_KEY_ENV) or os.getenv(_DEFAULT_KEY_ENV)
+        resolved_base = base_url or _normalize_deepseek_base(os.getenv(_DEEPSEEK_BASE_ENV, ""))
     else:
         resolved_key = api_key or os.getenv(_DEFAULT_KEY_ENV)
         resolved_base = base_url or _DEFAULT_BASE
 
     if not resolved_key:
         raise EnvironmentError(
-            "No API key found. Set OPENAI_API_KEY or QWEN_API_KEY in your .env file."
+            "No API key found. For deepseek* models set DEEPSEEK_API_KEY; "
+            "otherwise OPENAI_API_KEY or QWEN_API_KEY in your .env file."
         )
     return OpenAI(api_key=resolved_key, base_url=resolved_base)
 
@@ -58,7 +74,7 @@ class LLMClient:
 
     def __init__(
         self,
-        model: str = "deepseek-v3.2",
+        model: str = "deepseek-v4-flash",
         api_key: str | None = None,
         base_url: str | None = None,
         temperature: float = 0.2,

@@ -5,9 +5,9 @@
 
 ---
 
-## 当前状态（2026-04-09）
+## 当前状态（2026-05-10）
 
-**阶段：Profile 生成 & AnnoMI 细粒度标注**
+**阶段：RECAP 监督轮 COT 已落地；ExtES 筛选与 COT、最终总装待做**
 
 | 任务 | 状态 |
 |------|------|
@@ -18,8 +18,10 @@
 | AnnoMI 细粒度标注（阻抗 A1-D2，1290条） | 🔄 后台运行（GPU 4） |
 | AnnoMI 细粒度标注（合作 CBS2-8，5418条） | 🔄 后台运行（Qwen API） |
 | AnnoMI Profile 生成（带标注版） | ⏳ 等标注完成后重跑 |
+| **RECAP**：`profiles/recap.json` → 训练行 `profile_used` | ✅ 已并入 `prepare_training_splits` 产出 |
+| **RECAP**：监督来访轮（阻抗/合作）`<internal>` COT | ✅ `recap/recap_labeled_cot.json`（4929 条）+ 划分 JSON 已合并字段 |
 
-**下一步**：标注完成 → 重跑 AnnoMI profile（`load_annomi` 已支持注入细粒度标注上下文） → 设计 COT 生成 pipeline
+**下一步（数据总装）**：ExtES 质量筛选子集 → ExtES 的 Profile / COT（或与现有标签对齐的弱 COT）→ 与 RECAP + 临床 `cot/*.json` 统一 schema 后写入最终训练包 / dataloader 采样策略（`prepare_training_splits` 当前仍**不**合并 ExtES，见脚本内 `extes_note`）。
 
 查看后台进度：
 ```bash
@@ -36,7 +38,7 @@ tail -3 workspace/results/profiles/logs/annomi_coop_nohup.log
 | ESConv | EN | ✅ 19,372 | ✅ 5,609 | ✅ 13,763 | ✅ 全量 |
 | MESC | EN | ✅ 18,436 | ✅ 1,608 | ✅ 16,828 | ✅ 全量 |
 | AnnoMI | EN | ✅ 6,708 | 🔄 1,290 | 🔄 5,418 | ⏳ 待重跑 |
-| RECAP | ZH | ✅ 5,154 | ✅ 4,154 | ✅ 1,000 | — |
+| RECAP | ZH | ✅ 5,154 | ✅ 4,154 | ✅ 1,000 | ✅ `profiles/recap.json`（与划分合并） |
 
 详细分布、文件路径 → [`数据集.md`](数据集.md)
 
@@ -60,6 +62,7 @@ tail -3 workspace/results/profiles/logs/annomi_coop_nohup.log
 | 日期 | 事件 |
 |------|------|
 | 2026-04-09 | AnnoMI 细粒度标注后台启动；notes 目录重构 |
+| 2026-05-10 | RECAP：`recap_labeled_cot.json` 全量生成；`prepare_training_splits` 合并 `profile_used` + `internal` / `raw_cot` / `cot_prompt_key` |
 | 2026-04-10 | [会议报告：Profile 设计与数据进展](meetings/会议报告_20260410.md) |
 | 2026-03-26 | ESConv / MESC / RECAP profile 全量生成完成 |
 | 2026-03-26 | ESConv + MESC 细粒度标注全量完成（100% 准确率）|
@@ -72,6 +75,7 @@ tail -3 workspace/results/profiles/logs/annomi_coop_nohup.log
 
 | 内容 | 路径 |
 |------|------|
+| 训练划分与 RECAP COT 批处理 | `data_scripts/prepare_training_splits.py`、`data_scripts/generate_recap_labeled_cot.py`（仓库根执行） |
 | 脚本 | `workspace/scripts/` |
 | 数据集 | `workspace/dataset/` |
 | 标注结果 | `workspace/results/` |

@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://local/mi_profile.schema.json",
+  "title": "MI_final_profile_zh",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["demographics", "focus_of_change", "mi_core", "style"],
+  "properties": {
+    "demographics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["age_band", "gender", "role_context", "social_situation_tags"],
+      "properties": {
+        "age_band": {
+          "type": "string",
+          "enum": ["child", "teen", "young_adult", "adult", "older_adult", "unknown"]
+        },
+        "gender": {
+          "type": "string",
+          "enum": ["female", "male", "nonbinary", "unknown", "prefer_not"]
+        },
+        "role_context": { "type": "string", "maxLength": 200 },
+        "social_situation_tags": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 5,
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "focus_of_change": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target_behavior_or_outcome"],
+      "properties": {
+        "target_behavior_or_outcome": { "type": "string", "maxLength": 400 },
+        "why_now": { "type": "string", "maxLength": 400 }
+      }
+    },
+    "mi_core": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ambivalence", "values_and_goals", "discord_profile"],
+      "properties": {
+        "ambivalence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["sustain_talk_themes", "change_talk_themes"],
+          "properties": {
+            "sustain_talk_themes": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 4,
+              "items": { "type": "string", "maxLength": 120 }
+            },
+            "change_talk_themes": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 4,
+              "items": { "type": "string", "maxLength": 120 }
+            }
+          }
+        },
+        "values_and_goals": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["core_values", "goals_in_life_or_role"],
+          "properties": {
+            "core_values": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 4,
+              "items": { "type": "string", "maxLength": 80 }
+            },
+            "goals_in_life_or_role": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 3,
+              "items": { "type": "string", "maxLength": 120 }
+            }
+          }
+        },
+        "discord_profile": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["sensitive_triggers"],
+          "properties": {
+            "sensitive_triggers": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 4,
+              "items": { "type": "string", "maxLength": 160 }
+            },
+            "preferred_engagement": {
+              "type": "array",
+              "maxItems": 3,
+              "items": { "type": "string", "maxLength": 160 }
+            }
+          }
+        }
+      }
+    },
+    "style": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["interaction_style"],
+      "properties": {
+        "interaction_style": {
+          "type": "string",
+          "enum": ["plain", "reserved", "verbose", "upset", "tangent", "pleasing", "mixed"]
+        },
+        "tone_note": { "type": "string", "maxLength": 200 }
+      }
+    }
+  }
+}

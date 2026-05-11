@@ -31,38 +31,14 @@ from typing import Any
 
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "workspace/scripts"))
+if str(REPO) not in sys.path:
+    sys.path.insert(0, str(REPO))
+
+from data_scripts.extes_pipeline.cbs_constants import CBS_CATEGORIES, CBS_SYSTEM_PROMPT
 
 from profile_pipeline.client import LLMClient  # reuse unified LLM client
 
-# ── CBS prompt & constants ────────────────────────────────────────────────
-
-CBS_SYSTEM_PROMPT = """你是心理咨询标注专家。对来访者话语进行CBS 2-8分类。
-
-## 类别定义 (Hill Client Behavior System)
-- CBS2-认同: 同意咨询师观点，或表示理解、认可
-- CBS3-请求: 寻求信息、建议或指导
-- CBS4-叙述: 陈述事实、事件或经历（无情感/认知加工）
-- CBS5-认知探索: 讨论想法、观点、意义或解释
-- CBS6-情感探索: 探索、表达或澄清情感体验
-- CBS7-领悟: 表达新理解、觉察或顿悟（"我明白了..."）
-- CBS8-改变: 表达改变的意愿或行为（"我会尝试..."）
-
-## 优先级 (高→低)
-改变 > 领悟 > 请求 > 情感探索 > 认知探索 > 认同 > 叙述
-
-## 规则
-- 结束语/告别语 → CBS2-认同
-- 单纯陈述事实 → CBS4-叙述
-- 涉及情感但无领悟 → CBS6-情感探索
-- 必须直接输出JSON，不要任何其他文字
-
-## 输出格式
-{"cbs_type": "CBS2-认同"} 或 {"cbs_type": "CBS3-请求"} 等"""
-
-CBS_CATEGORIES: list[str] = [
-    "CBS2-认同","CBS3-请求","CBS4-叙述",
-    "CBS5-认知探索","CBS6-情感探索","CBS7-领悟","CBS8-改变",
-]
+# CBS_SYSTEM_PROMPT / CBS_CATEGORIES live in data_scripts.extes_pipeline.cbs_constants (shared with ExtES local screen).
 
 # ── Default paths per dataset ─────────────────────────────────────────────
 
