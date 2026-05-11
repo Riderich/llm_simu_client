@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "criteria": {
+    "recap": "recap_labeled_cot 中存在非空 internal 的 character_id；从 dialogues.json 同 id 取全文 transcript",
+    "clinical_zh": "translation stage3 verdict in keep|revise 且 zh_final.internal_zh 非空；按 sample_id 中间段为 dialogue 键"
+  },
+  "counts_requested": {
+    "recap": 30,
+    "clinical_annomi": 8,
+    "clinical_esconv": 10,
+    "clinical_mesc": 10
+  },
+  "counts_actual": {
+    "recap": 30,
+    "clinical_annomi": 8,
+    "clinical_esconv": 10,
+    "clinical_mesc": 10
+  },
+  "recap_character_ids": [
+    "recap_1819",
+    "recap_1181",
+    "recap_3025",
+    "recap_2803",
+    "recap_2643",
+    "recap_2026",
+    "recap_1753",
+    "recap_583",
+    "recap_1639",
+    "recap_916",
+    "recap_4108",
+    "recap_1231",
+    "recap_1217",
+    "recap_1689",
+    "recap_261",
+    "recap_2712",
+    "recap_4723",
+    "recap_1193",
+    "recap_70",
+    "recap_2463",
+    "recap_580",
+    "recap_4090",
+    "recap_2622",
+    "recap_4309",
+    "recap_907",
+    "recap_3048",
+    "recap_1045",
+    "recap_2174",
+    "recap_4113",
+    "recap_3506"
+  ],
+  "clinical_dialogue_keys": {
+    "annomi": [
+      "annomi_14",
+      "annomi_119",
+      "annomi_127",
+      "annomi_76",
+      "annomi_21",
+      "annomi_111",
+      "annomi_11",
+      "annomi_27"
+    ],
+    "esconv": [
+      "esconv_1214",
+      "esconv_667",
+      "esconv_629",
+      "esconv_438",
+      "esconv_1093",
+      "esconv_903",
+      "esconv_1280",
+      "esconv_710",
+      "esconv_1170",
+      "esconv_511"
+    ],
+    "mesc": [
+      "mesc_858",
+      "mesc_845",
+      "mesc_551",
+      "mesc_795",
+      "mesc_344",
+      "mesc_941",
+      "mesc_178",
+      "mesc_146",
+      "mesc_892",
+      "mesc_390"
+    ]
+  }
+}

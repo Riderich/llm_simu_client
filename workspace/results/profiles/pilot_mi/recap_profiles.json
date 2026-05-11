@@ -1,0 +1,639 @@
+{
+  "selection": {
+    "env_file": "/data5/zxj/llm_simu_client/.env",
+    "source_manifest": "workspace/training_data/manifest.json",
+    "recap_dialogues_resolved": "workspace/results/recap/dialogues.json",
+    "seed": 42,
+    "max_dialogues": 10,
+    "min_client_turns": 2,
+    "chosen_count": 10,
+    "character_ids": [
+      "recap_1422",
+      "recap_308",
+      "recap_1516",
+      "recap_1062",
+      "recap_3730",
+      "recap_4214",
+      "recap_2193",
+      "recap_2013",
+      "recap_757",
+      "recap_2315"
+    ],
+    "dialogue_ids": [
+      1422,
+      308,
+      1516,
+      1062,
+      3730,
+      4214,
+      2193,
+      2013,
+      757,
+      2315
+    ]
+  },
+  "meta": {
+    "model": "deepseek-v4-flash",
+    "seed": 42,
+    "env_file": "/data5/zxj/llm_simu_client/.env",
+    "manifest": "workspace/training_data/manifest.json"
+  },
+  "items": [
+    {
+      "character_id": "recap_1422",
+      "dialogue_id": 1422,
+      "mi_profile": {
+        "demographics": {
+          "age_band": "unknown",
+          "gender": "unknown",
+          "role_context": "职场与人际关系困扰，习惯承担问题，讨好与害怕权威和朋友",
+          "social_situation_tags": [
+            "work",
+            "friendship",
+            "authority"
+          ]
+        },
+        "focus_of_change": {
+          "target_behavior_or_outcome": "改善职场人际关系，减少讨好与害怕，表达真实情绪",
+          "why_now": ""
+        },
+        "mi_core": {
+          "ambivalence": {
+            "sustain_talk_themes": [
+              "认为职场小团体无法改变",
+              "觉得位置分开等问题无解",
+              "主动忽略自己情绪，维持表面关系"
+            ],
+            "change_talk_themes": [
+              "承认自己主动忽略情绪并感到困扰",
+              "意识到讨好和害怕模式",
+              "对咨询师反馈表示认同，愿意探讨"
+            ]
+          },
+          "values_and_goals": {
+            "core_values": [
+              "关系和谐",
+              "避免冲突",
+              "承担责任"
+            ],
+            "goals_in_life_or_role": [
+              "职场中更好受",
+              "减少讨好和害怕",
+              "表达真实想法"
+            ]
+          },
+          "discord_profile": {
+            "sensitive_triggers": [
+              "被指出讨好和害怕模式时可能感到压力（inferred）",
+              "直接建议改变方式可能引发防御（inferred）"
+            ],
+            "preferred_engagement": [
+              "喜欢咨询师用肯定和总结引导",
+              "偏好开放式但聚焦具体情境的提问"
+            ]
+          }
+        },
+        "style": {
+          "interaction_style": "reserved",
+          "tone_note": "语气顺从、简短附和，尚未主动展开，需引导"
+        }
+      },
+      "raw_response": "{\n  \"demographics\": {\n    \"age_band\": \"unknown\",\n    \"gender\": \"unknown\",\n    \"role_context\": \"职场与人际关系困扰，习惯承担问题，讨好与害怕权威和朋友\",\n    \"social_situation_tags\": [\"work\", \"friendship\", \"authority\"]\n  },\n  \"focus_of_change\": {\n    \"target_behavior_or_outcome\": \"改善职场人际关系，减少讨好与害怕，表达真实情绪\",\n    \"why_now\": \"\"\n  },\n  \"mi_core\": {\n    \"ambivalence\": {\n      \"sustain_talk_themes\": [\n        \"认为职场小团体无法改变\",\n        \"觉得位置分开等问题无解\",\n        \"主动忽略自己情绪，维持表面关系\"\n      ],\n      \"change_talk_themes\": [\n        \"承认自己主动忽略情绪并感到困扰\",\n        \"意识到讨好和害怕模式\",\n        \"对咨询师反馈表示认同，愿意探讨\"\n      ]\n    },\n    \"values_and_goals\": {\n      \"core_values\": [\"关系和谐\", \"避免冲突\", \"承担责任\"],\n      \"goals_in_life_or_role\": [\"职场中更好受\", \"减少讨好和害怕\", \"表达真实想法\"]\n    },\n    \"discord_profile\": {\n      \"sensitive_triggers\": [\n        \"被指出讨好和害怕模式时可能感到压力（inferred）\",\n        \"直接建议改变方式可能引发防御（inferred）\"\n      ],\n      \"preferred_engagement\": [\n        \"喜欢咨询师用肯定和总结引导\",\n        \"偏好开放式但聚焦具体情境的提问\"\n      ]\n    }\n  },\n  \"style\": {\n    \"interaction_style\": \"reserved\",\n    \"tone_note\": \"语气顺从、简短附和，尚未主动展开，需引导\"\n  }\n}",
+      "parse_error": "",
+      "schema_errors": []
+    },
+    {
+      "character_id": "recap_308",
+      "dialogue_id": 308,
+      "mi_profile": {
+        "demographics": {
+          "age_band": "adult",
+          "gender": "unknown",
+          "role_context": "客户/用户，因系统更换无法完成退费",
+          "social_situation_tags": [
+            "consumer",
+            "finance",
+            "customer_service"
+          ]
+        },
+        "focus_of_change": {
+          "target_behavior_or_outcome": "成功退费，解决因系统更换导致的流程障碍",
+          "why_now": "当前退费请求被系统问题卡住，对方未提供替代方案，引发不满"
+        },
+        "mi_core": {
+          "ambivalence": {
+            "sustain_talk_themes": [
+              "认为责任在对方，自己不应再额外行动",
+              "愤怒情绪下倾向于拒绝主动沟通或尝试其他方法"
+            ],
+            "change_talk_themes": [
+              "希望退费成功，问题能实际解决",
+              "已表达需求，期待对方采取行动"
+            ]
+          },
+          "values_and_goals": {
+            "core_values": [
+              "公平",
+              "权利得到保障"
+            ],
+            "goals_in_life_or_role": "获得应得退款，维持自身权益不受损"
+          },
+          "discord_profile": {
+            "sensitive_triggers": [
+              "对方不主动解决、推诿或缺乏灵活替代方案",
+              "系统更新导致规则变化却不提前通知或提供补救"
+            ],
+            "preferred_engagement": [
+              "先被倾听和理解愤怒情绪",
+              "获得具体可行的解决承诺"
+            ]
+          }
+        },
+        "style": {
+          "interaction_style": "upset",
+          "tone_note": "愤怒中带疲惫，语气直接且不满"
+        }
+      },
+      "raw_response": "{\n  \"demographics\": {\n    \"age_band\": \"adult\",\n    \"gender\": \"unknown\",\n    \"role_context\": \"客户/用户，因系统更换无法完成退费\",\n    \"social_situation_tags\": [\"consumer\", \"finance\", \"customer_service\"]\n  },\n  \"focus_of_change\": {\n    \"target_behavior_or_outcome\": \"成功退费，解决因系统更换导致的流程障碍\",\n    \"why_now\": \"当前退费请求被系统问题卡住，对方未提供替代方案，引发不满\"\n  },\n  \"mi_core\": {\n    \"ambivalence\": {\n      \"sustain_talk_themes\": [\n        \"认为责任在对方，自己不应再额外行动\",\n        \"愤怒情绪下倾向于拒绝主动沟通或尝试其他方法\"\n      ],\n      \"change_talk_themes\": [\n        \"希望退费成功，问题能实际解决\",\n        \"已表达需求，期待对方采取行动\"\n      ]\n    },\n    \"values_and_goals\": {\n      \"core_values\": [\"公平\", \"权利得到保障\"],\n      \"goals_in_life_or_role\": \"获得应得退款，维持自身权益不受损\"\n    },\n    \"discord_profile\": {\n      \"sensitive_triggers\": [\n        \"对方不主动解决、推诿或缺乏灵活替代方案\",\n        \"系统更新导致规则变化却不提前通知或提供补救\"\n      ],\n      \"preferred_engagement\": [\"先被倾听和理解愤怒情绪\", \"获得具体可行的解决承诺\"]\n    }\n  },\n  \"style\": {\n    \"interaction_style\": \"upset\",\n    \"tone_note\": \"愤怒中带疲惫，语气直接且不满\"\n  }\n}",
+      "parse_error": "",
+      "schema_errors": []
+    },
+    {
+      "character_id": "recap_1516",
+      "dialogue_id": 1516,
+      "mi_profile": {
+        "demographics": {
+          "age_band": "young_adult",
+          "gender": "unknown",
+          "role_context": "心理健康求助者，面临生存危机",
+          "social_situation_tags": [
+            "mental_health",
+            "social_media",
+            "threat",
+            "safety"
+          ]
+        },
+        "focus_of_change": {
+          "target_behavior_or_outcome": "活下去、寻求线下咨询以缓解远程限制",
+          "why_now": "接到疑似威胁性骚扰电话，触发对安全的担忧和绝望感"
+        },
+        "mi_core": {
+          "ambivalence": {
+            "sustain_talk_themes": [
+              "对生命无望，看不到希望",
+              "愤怒、绝望，认为改变徒劳",
+              "怀疑多疑，担心被针对"
+            ],
+            "change_talk_themes": [
+              "承诺过活下去，愿意履行承诺",
+              "考虑线下咨询，接受需要改变方式",
+              "愿意谈论威胁性事件（骚扰电话）"
+            ]
+          },
+          "values_and_goals": {
+            "core_values": [
+              "生存、安全、希望（inferred）"
+            ],
+            "goals_in_life_or_role": [
+              "稳定心理状态、摆脱威胁感、能够信任环境（inferred）"
+            ]
+          },
+          "discord_profile": {
+            "sensitive_triggers": [
+              "被追问希望或未来时可能触发防御",
+              "提及远程咨询限制时可能感到被推离"
+            ],
+            "preferred_engagement": []
+          }
+        },
+        "style": {
+          "interaction_style": "upset",
+          "tone_note": "语气愤怒、绝望，带有自伤暗示和偏执倾向，但在承诺和行动上表现出矛盾"
+        }
+      },
+      "raw_response": "{\n  \"demographics\": {\n    \"age_band\": \"young_adult\",\n    \"gender\": \"unknown\",\n    \"role_context\": \"心理健康求助者，面临生存危机\",\n    \"social_situation_tags\": [\"mental_health\", \"social_media\", \"threat\", \"safety\"]\n  },\n  \"focus_of_change\": {\n    \"target_behavior_or_outcome\": \"活下去、寻求线下咨询以缓解远程限制\",\n    \"why_now\": \"接到疑似威胁性骚扰电话，触发对安全的担忧和绝望感\"\n  },\n  \"mi_core\": {\n    \"ambivalence\": {\n      \"sustain_talk_themes\": [\n        \"对生命无望，看不到希望\",\n        \"愤怒、绝望，认为改变徒劳\",\n        \"怀疑多疑，担心被针对\"\n      ],\n      \"change_talk_themes\": [\n        \"承诺过活下去，愿意履行承诺\",\n        \"考虑线下咨询，接受需要改变方式\",\n        \"愿意谈论威胁性事件（骚扰电话）\"\n      ]\n    },\n    \"values_and_goals\": {\n      \"core_values\": [\"生存、安全、希望（inferred）\"],\n      \"goals_in_life_or_role\": [\"稳定心理状态、摆脱威胁感、能够信任环境（inferred）\"]\n    },\n    \"discord_profile\": {\n      \"sensitive_triggers\": [\n        \"被追问希望或未来时可能触发防御\",\n        \"提及远程咨询限制时可能感到被推离\"\n      ],\n      \"preferred_engagement\": []\n    }\n  },\n  \"style\": {\n    \"interaction_style\": \"upset\",\n    \"tone_note\": \"语气愤怒、绝望，带有自伤暗示和偏执倾向，但在承诺和行动上表现出矛盾\"\n  }\n}",
+      "parse_error": "",
+      "schema_errors": []
+    },
+    {
+      "character_id": "recap_1062",
+      "dialogue_id": 1062,
+      "mi_profile": {
+        "demographics": {
+          "age_band": "young_adult",
+          "gender": "unknown",
+          "role_context": "经济拮据的旅行者，与父母有短暂矛盾（inferred）",
+          "social_situation_tags": [
+            "travel",
+            "family",
+            "financial"
+          ]
+        },
+        "focus_of_change": {
+          "target_behavior_or_outcome": "尚未明确指向具体改变目标，可能围绕与父母的经济依赖或关系模式（inferred）",
+          "why_now": ""
+        },
+        "mi_core": {
+          "ambivalence": {
+            "sustain_talk_themes": [
+              "维持与父母间的沉默或别扭状态（不好意思要钱）",
+              "坚持极低成本旅行（山东煎饼卷大葱、喝十几瓶矿泉水）",
+              "延续独自承受压抑而不求助的模式"
+            ],
+            "change_talk_themes": [
+              "通过高强度爬山释放压抑和生命力",
+              "主动采取行动（独自完成两日一夜登山行程）",
+              "渴望用有限资源体验自由（诠释三四百块能干什么）"
+            ]
+          },
+          "values_and_goals": {
+            "core_values": [
+              "自由",
+              "独立",
+              "坚韧"
+            ],
+            "goals_in_life_or_role": [
+              "低成本探索世界",
+              "证明自我能力（登顶、夜间攀爬）"
+            ]
+          },
+          "discord_profile": {
+            "sensitive_triggers": [
+              "被提及经济或依赖相关话题（父母知道吗）可能引发疏离感",
+              "被过度关心细节（如饿肚皮）可能触及自尊"
+            ],
+            "preferred_engagement": [
+              "以行动故事代替直接情感表达",
+              "喜欢用具体数字和事实来呈现经历"
+            ]
+          }
+        },
+        "style": {
+          "interaction_style": "plain",
+          "tone_note": "叙述简洁有力，略带诗意，情感包裹在事实描述中"
+        }
+      },
+      "raw_response": "{\n  \"demographics\": {\n    \"age_band\": \"young_adult\",\n    \"gender\": \"unknown\",\n    \"role_context\": \"经济拮据的旅行者，与父母有短暂矛盾（inferred）\",\n    \"social_situation_tags\": [\"travel\", \"family\", \"financial\"]\n  },\n  \"focus_of_change\": {\n    \"target_behavior_or_outcome\": \"尚未明确指向具体改变目标，可能围绕与父母的经济依赖或关系模式（inferred）\",\n    \"why_now\": \"\"\n  },\n  \"mi_core\": {\n    \"ambivalence\": {\n      \"sustain_talk_themes\": [\n        \"维持与父母间的沉默或别扭状态（不好意思要钱）\",\n        \"坚持极低成本旅行（山东煎饼卷大葱、喝十几瓶矿泉水）\",\n        \"延续独自承受压抑而不求助的模式\"\n      ],\n      \"change_talk_themes\": [\n        \"通过高强度爬山释放压抑和生命力\",\n        \"主动采取行动（独自完成两日一夜登山行程）\",\n        \"渴望用有限资源体验自由（诠释三四百块能干什么）\"\n      ]\n    },\n    \"values_and_goals\": {\n      \"core_values\": [\"自由\", \"独立\", \"坚韧\"],\n      \"goals_in_life_or_role\": [\"低成本探索世界\", \"证明自我能力（登顶、夜间攀爬）\"]\n    },\n    \"discord_profile\": {\n      \"sensitive_triggers\": [\n        \"被提及经济或依赖相关话题（父母知道吗）可能引发疏离感\",\n        \"被过度关心细节（如饿肚皮）可能触及自尊\"\n      ],\n      \"preferred_engagement\": [\"以行动故事代替直接情感表达\", \"喜欢用具体数字和事实来呈现经历\"]\n    }\n  },\n  \"style\": {\n    \"interaction_style\": \"plain\",\n    \"tone_note\": \"叙述简洁有力，略带诗意，情感包裹在事实描述中\"\n  }\n}",
+      "parse_error": "",
+      "schema_errors": []
+    },
+    {
+      "character_id": "recap_3730",
+      "dialogue_id": 3730,
+      "mi_profile": {
+        "demographics": {
+          "age_band": "young_adult",
+          "gender": "unknown",
+          "role_context": "休学中的学生，正在处理与前任咨询师的未完结关系",
+          "social_situation_tags": [
+            "school",
+            "therapy",
+            "relationships"
+          ]
+        },
+        "focus_of_change": {
+          "target_behavior_or_outcome": "是否要主动向已不回复的前任咨询师表达受伤感受，或就此放弃联系以自我保护",
+          "why_now": "前任咨询师已超过一周未回复，来访者感到被忽视和失望，冲突感加剧"
+        },
+        "mi_core": {
+          "ambivalence": {
+            "sustain_talk_themes": [
+              "认为自己不被对方喜欢，主动联系可能被拒绝或更伤心",
+              "休学后认为对方没有义务继续咨询关系，联系无意义",
+              "已经表达过‘先不咨询’且未获回应，再主动显得尴尬"
+            ],
+            "change_talk_themes": [
+              "仍然在意前任咨询师的回复（期望至少一句‘好的我知道了’）",
+              "咨询师建议表达受伤感受可能让心情平复",
+              "隐约希望对方能看见自己的失望，得到某种回应或解释"
+            ]
+          },
+          "values_and_goals": {
+            "core_values": [
+              "被尊重",
+              "被在乎",
+              "关系中的确认感"
+            ],
+            "goals_in_life_or_role": [
+              "平复咨询中留下的受伤情绪",
+              "获得或确认对方对自己的重视程度"
+            ]
+          },
+          "discord_profile": {
+            "sensitive_triggers": [
+              "他人（尤其是信任的咨询师）长时间不回应或冷淡",
+              "感到自己因休学或状态变化而被疏远、失去资格",
+              "直接暴露‘对方可能不喜欢自己’的可能性"
+            ],
+            "preferred_engagement": [
+              "需要被先理解并确认情绪的合理性，再被温和鼓励尝试表达",
+              "倾向于回避型回应（‘没什么好说的’），但内在仍有表达需求"
+            ]
+          }
+        },
+        "style": {
+          "interaction_style": "upset",
+          "tone_note": "语气中混合失望、受伤和轻微回避，偶尔显出自贬（‘她本来就没有义务’）"
+        }
+      },
+      "raw_response": "{\n  \"demographics\": {\n    \"age_band\": \"young_adult\",\n    \"gender\": \"unknown\",\n    \"role_context\": \"休学中的学生，正在处理与前任咨询师的未完结关系\",\n    \"social_situation_tags\": [\"school\", \"therapy\", \"relationships\"]\n  },\n  \"focus_of_change\": {\n    \"target_behavior_or_outcome\": \"是否要主动向已不回复的前任咨询师表达受伤感受，或就此放弃联系以自我保护\",\n    \"why_now\": \"前任咨询师已超过一周未回复，来访者感到被忽视和失望，冲突感加剧\"\n  },\n  \"mi_core\": {\n    \"ambivalence\": {\n      \"sustain_talk_themes\": [\n        \"认为自己不被对方喜欢，主动联系可能被拒绝或更伤心\",\n        \"休学后认为对方没有义务继续咨询关系，联系无意义\",\n        \"已经表达过‘先不咨询’且未获回应，再主动显得尴尬\"\n      ],\n      \"change_talk_themes\": [\n        \"仍然在意前任咨询师的回复（期望至少一句‘好的我知道了’）\",\n        \"咨询师建议表达受伤感受可能让心情平复\",\n        \"隐约希望对方能看见自己的失望，得到某种回应或解释\"\n      ]\n    },\n    \"values_and_goals\": {\n      \"core_values\": [\"被尊重\", \"被在乎\", \"关系中的确认感\"],\n      \"goals_in_life_or_role\": [\"平复咨询中留下的受伤情绪\", \"获得或确认对方对自己的重视程度\"]\n    },\n    \"discord_profile\": {\n      \"sensitive_triggers\": [\n        \"他人（尤其是信任的咨询师）长时间不回应或冷淡\",\n        \"感到自己因休学或状态变化而被疏远、失去资格\",\n        \"直接暴露‘对方可能不喜欢自己’的可能性\"\n      ],\n      \"preferred_engagement\": [\n        \"需要被先理解并确认情绪的合理性，再被温和鼓励尝试表达\",\n        \"倾向于回避型回应（‘没什么好说的’），但内在仍有表达需求\"\n      ]\n    }\n  },\n  \"style\": {\n    \"interaction_style\": \"upset\",\n    \"tone_note\": \"语气中混合失望、受伤和轻微回避，偶尔显出自贬（‘她本来就没有义务’）\"\n  }\n}",
+      "parse_error": "",
+      "schema_errors": []
+    },
+    {
+      "character_id": "recap_4214",
+      "dialogue_id": 4214,
+      "mi_profile": {
+        "demographics": {
+          "age_band": "adult",
+          "gender": "unknown",
+          "role_context": "曾在外工作、现与父母共同经营家庭农业的子女",
+          "social_situation_tags": [
+            "work",
+            "family",
+            "finance"
+          ]
+        },
+        "focus_of_change": {
+          "target_behavior_or_outcome": "未明确聚焦，当前处于等待草莓收获期，可能需决定是否继续投入农业或重返工作",
+          "why_now": "第一茬草莓即将上市，是观察投资回报的关键节点"
+        },
+        "mi_core": {
+          "ambivalence": {
+            "sustain_talk_themes": [
+              "已借出积蓄给父母买树苗设备，资金紧张，不愿再冒险",
+              "等待收成，保持现状观望"
+            ],
+            "change_talk_themes": [
+              "希望草莓收获能改善经济状况",
+              "愿意为家庭贡献经济支持，发现自己的价值"
+            ]
+          },
+          "values_and_goals": {
+            "core_values": [
+              "家庭责任",
+              "经济自立",
+              "信任父母共同事业"
+            ],
+            "goals_in_life_or_role": [
+              "通过农业合作让家庭生活更好",
+              "逐步收回借出的钱并积累自身财富"
+            ]
+          },
+          "discord_profile": {
+            "sensitive_triggers": [
+              "暂无触发抗拒的明显内容，但提及借钱给父母时用‘能拿出来就拿出来点了’可能隐含勉强"
+            ],
+            "preferred_engagement": [
+              "被认可为有贡献的家庭成员（咨询师正面反馈后语气缓和）"
+            ]
+          }
+        },
+        "style": {
+          "interaction_style": "plain",
+          "tone_note": "回答简短直接，不主动展开，无情绪起伏"
+        }
+      },
+      "raw_response": "{\n  \"demographics\": {\n    \"age_band\": \"adult\",\n    \"gender\": \"unknown\",\n    \"role_context\": \"曾在外工作、现与父母共同经营家庭农业的子女\",\n    \"social_situation_tags\": [\"work\", \"family\", \"finance\"]\n  },\n  \"focus_of_change\": {\n    \"target_behavior_or_outcome\": \"未明确聚焦，当前处于等待草莓收获期，可能需决定是否继续投入农业或重返工作\",\n    \"why_now\": \"第一茬草莓即将上市，是观察投资回报的关键节点\"\n  },\n  \"mi_core\": {\n    \"ambivalence\": {\n      \"sustain_talk_themes\": [\n        \"已借出积蓄给父母买树苗设备，资金紧张，不愿再冒险\",\n        \"等待收成，保持现状观望\"\n      ],\n      \"change_talk_themes\": [\n        \"希望草莓收获能改善经济状况\",\n        \"愿意为家庭贡献经济支持，发现自己的价值\"\n      ]\n    },\n    \"values_and_goals\": {\n      \"core_values\": [\"家庭责任\", \"经济自立\", \"信任父母共同事业\"],\n      \"goals_in_life_or_role\": [\"通过农业合作让家庭生活更好\", \"逐步收回借出的钱并积累自身财富\"]\n    },\n    \"discord_profile\": {\n      \"sensitive_triggers\": [\"暂无触发抗拒的明显内容，但提及借钱给父母时用‘能拿出来就拿出来点了’可能隐含勉强\"],\n      \"preferred_engagement\": [\"被认可为有贡献的家庭成员（咨询师正面反馈后语气缓和）\"]\n    }\n  },\n  \"style\": {\n    \"interaction_style\": \"plain\",\n    \"tone_note\": \"回答简短直接，不主动展开，无情绪起伏\"\n  }\n}",
+      "parse_error": "",
+      "schema_errors": [
+        "sensitive_triggers 至少 2 条"
+      ]
+    },
+    {
+      "character_id": "recap_2193",
+      "dialogue_id": 2193,
+      "mi_profile": {
+        "demographics": {
+          "age_band": "adult (inferred)",
+          "gender": "unknown",
+          "role_context": "处于友谊以上恋人未满的关系中，与亲近的朋友陷入僵持",
+          "social_situation_tags": [
+            "friendship",
+            "romantic_ambiguity",
+            "self_esteem"
+          ]
+        },
+        "focus_of_change": {
+          "target_behavior_or_outcome": "调整与朋友亲密接触的尺度，或处理对方不直接回应带来的挫败",
+          "why_now": "自尊心受伤，双方僵持不下"
+        },
+        "mi_core": {
+          "ambivalence": {
+            "sustain_talk_themes": [
+              "害怕被拒绝或失去现有关系",
+              "自尊心受伤导致不敢进一步行动",
+              "担心改变会打破当前平衡"
+            ],
+            "change_talk_themes": [
+              "想要身体亲密（亲亲抱抱）",
+              "渴望得到对方的情感回应",
+              "希望关系更明确或进一步"
+            ]
+          },
+          "values_and_goals": {
+            "core_values": [
+              "亲密连接",
+              "自尊与认可",
+              "情感回应"
+            ],
+            "goals_in_life_or_role": [
+              "找到合适的伴侣",
+              "建立平衡且相互回应的亲密关系"
+            ]
+          },
+          "discord_profile": {
+            "sensitive_triggers": [
+              "对方不直接回应自己的亲近需求",
+              "自己的情感付出没有得到同等回报",
+              "双方僵持、无法沟通的状态"
+            ],
+            "preferred_engagement": [
+              "愿意在安全氛围下谈论自己的渴望和恐惧（咨询师曾引导）"
+            ]
+          }
+        },
+        "style": {
+          "interaction_style": "upset",
+          "tone_note": "语气中透露出受伤、无奈和轻微抵触，语言简短且带有僵持感"
+        }
+      },
+      "raw_response": "{\n  \"demographics\": {\n    \"age_band\": \"adult (inferred)\",\n    \"gender\": \"unknown\",\n    \"role_context\": \"处于友谊以上恋人未满的关系中，与亲近的朋友陷入僵持\",\n    \"social_situation_tags\": [\"friendship\", \"romantic_ambiguity\", \"self_esteem\"]\n  },\n  \"focus_of_change\": {\n    \"target_behavior_or_outcome\": \"调整与朋友亲密接触的尺度，或处理对方不直接回应带来的挫败\",\n    \"why_now\": \"自尊心受伤，双方僵持不下\"\n  },\n  \"mi_core\": {\n    \"ambivalence\": {\n      \"sustain_talk_themes\": [\"害怕被拒绝或失去现有关系\", \"自尊心受伤导致不敢进一步行动\", \"担心改变会打破当前平衡\"],\n      \"change_talk_themes\": [\"想要身体亲密（亲亲抱抱）\", \"渴望得到对方的情感回应\", \"希望关系更明确或进一步\"]\n    },\n    \"values_and_goals\": {\n      \"core_values\": [\"亲密连接\", \"自尊与认可\", \"情感回应\"],\n      \"goals_in_life_or_role\": [\"找到合适的伴侣\", \"建立平衡且相互回应的亲密关系\"]\n    },\n    \"discord_profile\": {\n      \"sensitive_triggers\": [\"对方不直接回应自己的亲近需求\", \"自己的情感付出没有得到同等回报\", \"双方僵持、无法沟通的状态\"],\n      \"preferred_engagement\": [\"愿意在安全氛围下谈论自己的渴望和恐惧（咨询师曾引导）\"]\n    }\n  },\n  \"style\": {\n    \"interaction_style\": \"upset\",\n    \"tone_note\": \"语气中透露出受伤、无奈和轻微抵触，语言简短且带有僵持感\"\n  }\n}",
+      "parse_error": "",
+      "schema_errors": []
+    },
+    {
+      "character_id": "recap_2013",
+      "dialogue_id": 2013,
+      "mi_profile": {
+        "demographics": {
+          "age_band": "young_adult (inferred)",
+          "gender": "unknown",
+          "role_context": "未明确 (inferred)",
+          "social_situation_tags": [
+            "work",
+            "health",
+            "emotion"
+          ]
+        },
+        "focus_of_change": {
+          "target_behavior_or_outcome": "找到表达愤怒和不满情绪的适宜方式，而非转移注意力",
+          "why_now": "近期因忙碌和天气炎热中断了规律的跑步，情绪积压需要直接释放"
+        },
+        "mi_core": {
+          "ambivalence": {
+            "sustain_talk_themes": [
+              "想直接表达愤怒和不满，不想通过转移注意力来回避情绪",
+              "因忙和天热放弃跑步，缺乏动力恢复运动"
+            ],
+            "change_talk_themes": [
+              "曾通过规律跑步有效缓解情绪",
+              "会听音乐（轻缓或电音）来调节心情"
+            ]
+          },
+          "values_and_goals": {
+            "core_values": [
+              "真实表达情绪",
+              "不压抑感受"
+            ],
+            "goals_in_life_or_role": [
+              "在压力情境中找到直接释放情绪的出口",
+              "维持身心健康（通过运动或音乐）"
+            ]
+          },
+          "discord_profile": {
+            "sensitive_triggers": [
+              "被建议转移注意力时感到不被理解，认为这是在回避情绪"
+            ],
+            "preferred_engagement": [
+              "希望咨询师先共情其愤怒不满，而非直接给出应对方案"
+            ]
+          }
+        },
+        "style": {
+          "interaction_style": "upset",
+          "tone_note": "直接、坚定，带有明显不满，强调自身情绪处理的优先性"
+        }
+      },
+      "raw_response": "{\n  \"demographics\": {\n    \"age_band\": \"young_adult (inferred)\",\n    \"gender\": \"unknown\",\n    \"role_context\": \"未明确 (inferred)\",\n    \"social_situation_tags\": [\"work\", \"health\", \"emotion\"]\n  },\n  \"focus_of_change\": {\n    \"target_behavior_or_outcome\": \"找到表达愤怒和不满情绪的适宜方式，而非转移注意力\",\n    \"why_now\": \"近期因忙碌和天气炎热中断了规律的跑步，情绪积压需要直接释放\"\n  },\n  \"mi_core\": {\n    \"ambivalence\": {\n      \"sustain_talk_themes\": [\n        \"想直接表达愤怒和不满，不想通过转移注意力来回避情绪\",\n        \"因忙和天热放弃跑步，缺乏动力恢复运动\"\n      ],\n      \"change_talk_themes\": [\n        \"曾通过规律跑步有效缓解情绪\",\n        \"会听音乐（轻缓或电音）来调节心情\"\n      ]\n    },\n    \"values_and_goals\": {\n      \"core_values\": [\"真实表达情绪\", \"不压抑感受\"],\n      \"goals_in_life_or_role\": [\"在压力情境中找到直接释放情绪的出口\", \"维持身心健康（通过运动或音乐）\"]\n    },\n    \"discord_profile\": {\n      \"sensitive_triggers\": [\"被建议转移注意力时感到不被理解，认为这是在回避情绪\"],\n      \"preferred_engagement\": [\"希望咨询师先共情其愤怒不满，而非直接给出应对方案\"]\n    }\n  },\n  \"style\": {\n    \"interaction_style\": \"upset\",\n    \"tone_note\": \"直接、坚定，带有明显不满，强调自身情绪处理的优先性\"\n  }\n}",
+      "parse_error": "",
+      "schema_errors": [
+        "sensitive_triggers 至少 2 条"
+      ]
+    },
+    {
+      "character_id": "recap_757",
+      "dialogue_id": 757,
+      "mi_profile": {
+        "demographics": {
+          "age_band": "unknown",
+          "gender": "unknown",
+          "role_context": "来访者，身份未明确",
+          "social_situation_tags": []
+        },
+        "focus_of_change": {
+          "target_behavior_or_outcome": "未明确提及",
+          "why_now": ""
+        },
+        "mi_core": {
+          "ambivalence": {
+            "sustain_talk_themes": [
+              "对咨询师的沟通方式感到不满，认为其‘阴阳怪气’、‘莫名其妙’",
+              "倾向于以不合作态度回应（‘你认为是就是吧’）",
+              "维持当前防御性互动模式"
+            ],
+            "change_talk_themes": [
+              "隐含对真实、直接沟通的期待（因反感而被激发）(inferred)"
+            ]
+          },
+          "values_and_goals": {
+            "core_values": [],
+            "goals_in_life_or_role": []
+          },
+          "discord_profile": {
+            "sensitive_triggers": [
+              "咨询师直接追问评价来源或逻辑（‘具体说说’、‘怎样得出的结论’）",
+              "被认为带有嘲讽语气的回应（‘很会聊天？’、‘谢谢你’被解读为反讽）"
+            ],
+            "preferred_engagement": [
+              "希望咨询师避免反问或质疑式提问，采用更直接、非评判的表达"
+            ]
+          }
+        },
+        "style": {
+          "interaction_style": "upset",
+          "tone_note": "语气对抗、防御，对咨询过程明显不满"
+        }
+      },
+      "raw_response": "{\n  \"demographics\": {\n    \"age_band\": \"unknown\",\n    \"gender\": \"unknown\",\n    \"role_context\": \"来访者，身份未明确\",\n    \"social_situation_tags\": []\n  },\n  \"focus_of_change\": {\n    \"target_behavior_or_outcome\": \"未明确提及\",\n    \"why_now\": \"\"\n  },\n  \"mi_core\": {\n    \"ambivalence\": {\n      \"sustain_talk_themes\": [\n        \"对咨询师的沟通方式感到不满，认为其‘阴阳怪气’、‘莫名其妙’\",\n        \"倾向于以不合作态度回应（‘你认为是就是吧’）\",\n        \"维持当前防御性互动模式\"\n      ],\n      \"change_talk_themes\": [\n        \"隐含对真实、直接沟通的期待（因反感而被激发）(inferred)\"\n      ]\n    },\n    \"values_and_goals\": {\n      \"core_values\": [],\n      \"goals_in_life_or_role\": []\n    },\n    \"discord_profile\": {\n      \"sensitive_triggers\": [\n        \"咨询师直接追问评价来源或逻辑（‘具体说说’、‘怎样得出的结论’）\",\n        \"被认为带有嘲讽语气的回应（‘很会聊天？’、‘谢谢你’被解读为反讽）\"\n      ],\n      \"preferred_engagement\": [\n        \"希望咨询师避免反问或质疑式提问，采用更直接、非评判的表达\"\n      ]\n    }\n  },\n  \"style\": {\n    \"interaction_style\": \"upset\",\n    \"tone_note\": \"语气对抗、防御，对咨询过程明显不满\"\n  }\n}",
+      "parse_error": "",
+      "schema_errors": [
+        "social_situation_tags 应为 2～5 个"
+      ]
+    },
+    {
+      "character_id": "recap_2315",
+      "dialogue_id": 2315,
+      "mi_profile": {
+        "demographics": {
+          "age_band": "young_adult",
+          "gender": "unknown",
+          "role_context": "留守儿童、家庭暴力、校园暴力经历者，冷门专业转行中，疑似社恐",
+          "social_situation_tags": [
+            "work",
+            "family",
+            "education",
+            "social"
+          ]
+        },
+        "focus_of_change": {
+          "target_behavior_or_outcome": "恢复对事物的兴趣，摆脱应付状态，重拾内在活力",
+          "why_now": ""
+        },
+        "mi_core": {
+          "ambivalence": {
+            "sustain_talk_themes": [
+              "持续6-7年的空心、无趣状态已成为习惯",
+              "对一切都失去兴趣，只有应付心态",
+              "看不到希望，改变似乎难以启动"
+            ],
+            "change_talk_themes": [
+              "过去对看书、历史、天文、跆拳道有浓厚兴趣 (inferred)",
+              "主动寻求咨询，透露深层经历，隐含改变意愿",
+              "描述自己有‘冷门专业转行迷茫’，暗示已思考方向调整"
+            ]
+          },
+          "values_and_goals": {
+            "core_values": [
+              "知识探索",
+              "历史与天文的好奇心",
+              "身体活动（跆拳道）"
+            ],
+            "goals_in_life_or_role": [
+              "找回对事物的热情",
+              "适应或转出冷门专业",
+              "摆脱空心状态"
+            ]
+          },
+          "discord_profile": {
+            "sensitive_triggers": [
+              "直接深入其童年创伤（暴力、留守）时可能防御",
+              "被催促‘振作’或‘应该’类建议可能触发无力感"
+            ],
+            "preferred_engagement": [
+              "希望咨询师先认可其探索和觉察能力",
+              "倾向用自然平实的语言，而不是诊断性术语"
+            ]
+          }
+        },
+        "style": {
+          "interaction_style": "plain",
+          "tone_note": "直接陈述，夹杂清单式表达，语气平淡中隐含疲惫"
+        }
+      },
+      "raw_response": "{\n  \"demographics\": {\n    \"age_band\": \"young_adult\",\n    \"gender\": \"unknown\",\n    \"role_context\": \"留守儿童、家庭暴力、校园暴力经历者，冷门专业转行中，疑似社恐\",\n    \"social_situation_tags\": [\"work\", \"family\", \"education\", \"social\"]\n  },\n  \"focus_of_change\": {\n    \"target_behavior_or_outcome\": \"恢复对事物的兴趣，摆脱应付状态，重拾内在活力\",\n    \"why_now\": \"\"\n  },\n  \"mi_core\": {\n    \"ambivalence\": {\n      \"sustain_talk_themes\": [\n        \"持续6-7年的空心、无趣状态已成为习惯\",\n        \"对一切都失去兴趣，只有应付心态\",\n        \"看不到希望，改变似乎难以启动\"\n      ],\n      \"change_talk_themes\": [\n        \"过去对看书、历史、天文、跆拳道有浓厚兴趣 (inferred)\",\n        \"主动寻求咨询，透露深层经历，隐含改变意愿\",\n        \"描述自己有‘冷门专业转行迷茫’，暗示已思考方向调整\"\n      ]\n    },\n    \"values_and_goals\": {\n      \"core_values\": [\"知识探索\", \"历史与天文的好奇心\", \"身体活动（跆拳道）\"],\n      \"goals_in_life_or_role\": [\"找回对事物的热情\", \"适应或转出冷门专业\", \"摆脱空心状态\"\n      ]\n    },\n    \"discord_profile\": {\n      \"sensitive_triggers\": [\n        \"直接深入其童年创伤（暴力、留守）时可能防御\",\n        \"被催促‘振作’或‘应该’类建议可能触发无力感\"\n      ],\n      \"preferred_engagement\": [\n        \"希望咨询师先认可其探索和觉察能力\",\n        \"倾向用自然平实的语言，而不是诊断性术语\"\n      ]\n    }\n  },\n  \"style\": {\n    \"interaction_style\": \"plain\",\n    \"tone_note\": \"直接陈述，夹杂清单式表达，语气平淡中隐含疲惫\"\n  }\n}",
+      "parse_error": "",
+      "schema_errors": []
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "env_file": "/data5/zxj/llm_simu_client/.env",
+  "dialogues_source": {
+    "kind": "processed_rounds",
+    "rounds_dir": "workspace/training_data/processed/v1/rounds",
+    "stats": {
+      "files": [
+        "workspace/training_data/processed/v1/rounds/test_recap_all_retained.jsonl",
+        "workspace/training_data/processed/v1/rounds/test_recap_all_retained_turn_level.jsonl",
+        "workspace/training_data/processed/v1/rounds/test_recap_context_only_null_labels.jsonl",
+        "workspace/training_data/processed/v1/rounds/test_recap_labeled_targets.jsonl",
+        "workspace/training_data/processed/v1/rounds/train_recap_all_turn_level.jsonl",
+        "workspace/training_data/processed/v1/rounds/train_supplementary_balanced.jsonl",
+        "workspace/training_data/processed/v1/rounds/val_recap_all_turn_level.jsonl",
+        "workspace/training_data/processed/v1/rounds/val_supplementary_balanced.jsonl"
+      ],
+      "rows_total": 37623,
+      "roles_total": 6843,
+      "roles_kept": 6567
+    }
+  },
+  "seed": 42,
+  "max_dialogues": 3,
+  "min_client_turns": 2,
+  "chosen_count": 3,
+  "character_ids": [
+    "esconv:esconv_1106",
+    "recap:recap_2047",
+    "mesc:mesc_861"
+  ],
+  "dialogue_ids": [
+    "esconv:esconv_1106",
+    "recap:recap_2047",
+    "mesc:mesc_861"
+  ]
+}
