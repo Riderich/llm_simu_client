@@ -73,5 +73,18 @@ workspace/results/extes/binary.json
 __pycache__/
 .DS_Store
 
-# 翻译管线运行时
+# 运行时残留（pid / nohup / 临时 log）
+*.pid
+nohup.log
+
+# 各类大体积中间数据 / 实验产物
+workspace/dataset/extes_preliminary/
+workspace/dataset/extes_preliminary_*/
+workspace/results/extes/local_*.jsonl
+workspace/results/extes/local_screen_report.json
+workspace/results/extes/experiments/*.log
+workspace/results/extes/logs/
+workspace/results/recap/recap_labeled_cot_nohup.log
+workspace/results/translation_pipeline/nohup.log
 workspace/results/translation_pipeline/pid.txt
+workspace/results/logs/
