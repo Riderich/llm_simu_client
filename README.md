@@ -70,7 +70,7 @@ cp workspace/.env.example workspace/.env  # 填入 key
 cd workspace
 python scripts/run_binary_resistance_classification.py \
     --data-format annomi \
-    --input data/processed/AnnoMI-full.json \
+    --input dataset/AnnoMI-full.json \
     --output results/labeled/annomi_binary.json \
     --gpu 4
 ```
@@ -79,7 +79,7 @@ python scripts/run_binary_resistance_classification.py \
 
 ```bash
 python scripts/run_profile_extraction.py \
-    --input  data/processed/AnnoMI-full.json \
+    --input  dataset/AnnoMI-full.json \
     --output results/profiles/annomi_profiles_full.json \
     --data-format annomi          # 自动加载细粒度标注作为上下文
 ```

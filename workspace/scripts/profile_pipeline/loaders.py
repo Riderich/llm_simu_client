@@ -7,10 +7,10 @@ into a plain-text transcript consumed by the LLM.
 
 Supported datasets
 ──────────────────
-  mesc   – workspace/dataset/MESC_from_csv.json       (English, no vision noise)
-  esconv – workspace/dataset/ESConv.json               (English)
-  annomi – data/processed/AnnoMI-full.json             (English)
-  recap  – data/raw/ClientResistance_decrypted.json    (Chinese)
+  mesc   – workspace/dataset/MESC_from_csv.json                (English, no vision noise)
+  esconv – workspace/dataset/ESConv.json                         (English)
+  annomi – workspace/dataset/AnnoMI-full.json                    (English)
+  recap  – workspace/dataset/_raw/ClientResistance_decrypted.json (Chinese)
 """
 
 from __future__ import annotations
@@ -81,7 +81,7 @@ def load_esconv(path: Path | None = None) -> list[TranscriptSample]:
 
 def load_annomi(path: Path | None = None) -> list[TranscriptSample]:
     """Load AnnoMI transcripts."""
-    src = path or REPO / "data/processed/AnnoMI-full.json"
+    src = path or REPO / "workspace/dataset/AnnoMI-full.json"
     raw = json.loads(src.read_text(encoding="utf-8"))
     transcripts = raw.get("transcripts", {})
     samples: list[TranscriptSample] = []
@@ -114,7 +114,7 @@ def load_recap(path: Path | None = None) -> list[TranscriptSample]:
     Each item is a unique dialogue_id × target_utterance pair; we deduplicate
     on dialogue_id to get one transcript per dialogue.
     """
-    src = path or REPO / "data/raw/ClientResistance_decrypted.json"
+    src = path or REPO / "workspace/dataset/_raw/ClientResistance_decrypted.json"
     data = json.loads(src.read_text(encoding="utf-8"))
     seen: set[str] = set()
     samples: list[TranscriptSample] = []

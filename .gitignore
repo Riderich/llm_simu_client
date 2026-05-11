@@ -55,9 +55,9 @@ wandb/
 # 本地模型权重（30GB，不上传）
 ClientResistance-Model-Share/
 
-# Large datasets and raw files
-data/raw/RED/
-data/raw/AnnoMI/
+# Large raw datasets (live under workspace/dataset/_raw/ when present)
+workspace/dataset/_raw/RED/
+workspace/dataset/_raw/AnnoMI/
 
 # 中间过程大文件（>50MB）
 workspace/results/archive/
