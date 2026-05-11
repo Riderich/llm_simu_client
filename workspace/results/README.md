@@ -76,9 +76,13 @@
 
 | 脚本 | 作用 |
 |------|------|
-| `data_scripts/build_character_view.py` | 从 `labeled/` 合并生成 `views/*.json` |
-| `data_scripts/export_mesc_labeled_flat.py` | 从 `views/mesc.json` 导出 `labeled/mesc_resist.json` / `mesc_coop.json` |
-| `data_scripts/export_esconv_utterances_flat.py` | 生成 `labeled/esconv_utterances.json` |
+| `data_scripts/prepare_training_splits.py` | 从 `labeled/` / `views/` / `cot/` / `recap/` / `profiles/` 物化 `training_splits/` |
+| `data_scripts/generate_recap_labeled_cot.py` | RECAP 监督轮 `<internal>` COT 批生成（→ `recap/recap_labeled_cot.json`） |
+| `data_scripts/extract_mi_profile_pilot.py` | MI Profile 试点（→ `profiles/pilot_mi/`） |
+| `data_scripts/extes_audit_and_review_packet.py` | ExtES 审计 + 人工复核包（→ `extes/extes_*_report.md`） |
+| `workspace/scripts/run_profile_extraction.py` | Profile 抽取主入口（→ `profiles/*.json`） |
+
+历史的 `build_character_view.py` / `export_*_flat.py` 等已在 git 历史中归档；当前 `labeled/` 与 `views/` 文件直接作为快照维护。
 
 ---
 
@@ -86,4 +90,5 @@
 
 | 日期 | 内容 |
 |------|------|
+| 2026-05-11 | training_splits/ 重组（`_queues/` + `_reports/`）；MI Profile pilot 归入 `profiles/pilot_mi/` |
 | 2026-04-18 | 目录化（labeled/views/cot/…）、缩短文件名、合并重复 MESC 视图、ExTES 归入 `extes/` |
