@@ -28,7 +28,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "workspace/scripts"))
 
-from profile_pipeline.client import LLMClient
+from profile_pipeline import LLMClient  # re-exported, see workspace/src/llm_client.py
 from profile_pipeline.extractor import ProfileExtractor
 from profile_pipeline.io_utils import (
     existing_id_set,

@@ -36,7 +36,7 @@ if str(REPO) not in sys.path:
 
 from data_scripts.extes_pipeline.cbs_constants import CBS_CATEGORIES, CBS_SYSTEM_PROMPT
 
-from profile_pipeline.client import LLMClient  # reuse unified LLM client
+from profile_pipeline import LLMClient  # reuse unified LLM client (workspace/src/llm_client.py)
 
 # CBS_SYSTEM_PROMPT / CBS_CATEGORIES live in data_scripts.extes_pipeline.cbs_constants (shared with ExtES local screen).
 

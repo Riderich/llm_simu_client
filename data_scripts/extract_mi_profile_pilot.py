@@ -28,10 +28,9 @@ from dotenv import load_dotenv
 
 load_dotenv(REPO / ".env", override=False)
 
-SCRIPTS = REPO / "workspace" / "scripts"
-sys.path.insert(0, str(SCRIPTS))
+sys.path.insert(0, str(REPO / "workspace" / "src"))
 
-from profile_pipeline.client import LLMClient  # noqa: E402
+from llm_client import LLMClient  # noqa: E402
 
 
 def _extract_json(text: str) -> dict[str, Any]:

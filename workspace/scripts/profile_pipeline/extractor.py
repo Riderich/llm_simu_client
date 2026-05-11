@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import re
 
-from .client import LLMClient
+from llm_client import LLMClient  # workspace/src/llm_client.py (path injected by profile_pipeline/__init__.py)
 from .prompts import get_prompts
 from .types import Profile, TranscriptSample
 

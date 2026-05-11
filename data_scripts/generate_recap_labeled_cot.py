@@ -5,7 +5,7 @@
 输出 JSON 对象：键为 sample_id（``recap:{character_id}:{turn_pos}``），值含
 internal、raw_cot、cot_prompt_key 等。供 prepare_training_splits.py --recap-cot-path 合并。
 
-依赖：DEEPSEEK_API_KEY（见 workspace/src/deepseek_client.py）。
+依赖：DEEPSEEK_API_KEY（默认模型 deepseek-v4-flash；见 workspace/src/llm_client.py）。
 
 示例：
   python data_scripts/generate_recap_labeled_cot.py --max-items 5
@@ -27,7 +27,7 @@ from typing import Any
 REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO / "workspace" / "src"))
 
-from deepseek_client import DeepSeekClient  # noqa: E402
+from llm_client import LLMClient  # noqa: E402
 
 RESULTS = REPO / "workspace" / "results"
 DEFAULT_DIALOGUES = RESULTS / "recap" / "dialogues.json"
@@ -189,7 +189,7 @@ _write_lock = threading.Lock()
 
 
 def process_one(
-    client: DeepSeekClient,
+    client: LLMClient,
     row: dict[str, Any],
     profile_by_char: dict[str, dict[str, Any]],
     *,
@@ -210,10 +210,8 @@ def process_one(
     last_err = ""
     for attempt in range(max_retries):
         raw = client.chat(
-            [
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": user},
-            ],
+            SYSTEM_PROMPT,
+            user,
             temperature=0.25,
             max_tokens=2048,
         )
@@ -285,14 +283,14 @@ def main() -> None:
         return
 
     if args.workers <= 1:
-        client = DeepSeekClient()
+        client = LLMClient()
 
         def run_row(row: dict[str, Any]) -> dict[str, Any]:
             return process_one(client, row, profile_by_char, max_retries=args.max_retries)
     else:
 
         def run_row(row: dict[str, Any]) -> dict[str, Any]:
-            return process_one(DeepSeekClient(), row, profile_by_char, max_retries=args.max_retries)
+            return process_one(LLMClient(), row, profile_by_char, max_retries=args.max_retries)
 
     if args.workers <= 1:
         for row in pending:
