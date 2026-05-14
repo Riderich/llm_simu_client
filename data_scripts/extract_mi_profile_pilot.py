@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Pilot: extract MI-aligned final profiles from RECAP dialogues.
+Pilot: extract MI-aligned final profiles from whole-dialogue profile inputs.
 
 API 密钥：固定读取仓库根 `.env`（override=False）。
 
@@ -8,6 +8,14 @@ Usage (repo root):
   python3 data_scripts/extract_mi_profile_pilot.py --dry-run
   python3 data_scripts/extract_mi_profile_pilot.py --max-dialogues 10
   python3 data_scripts/extract_mi_profile_pilot.py --resume
+  python3 data_scripts/extract_mi_profile_pilot.py --all --workers 8 --resume --out-dir workspace/results/profiles/recap_mi_full
+
+``--workers`` 默认 4；checkpoint 中未完成槽位为 JSON ``null``，``--resume`` 会重试 ``null``、``parse_error`` 或缺少 ``mi_profile`` 的条目。
+
+产出文件名随数据源变化：默认取 ``--dialogues`` 的文件 stem，例如
+``profile_inputs/recap.json`` → ``recap_profiles.json`` / ``recap_selection.json``；
+``profile_inputs/annomi.json`` → ``annomi_profiles.json`` / ``annomi_selection.json``。
+可用 ``--source-name`` 覆盖 stem。
 """
 
 from __future__ import annotations
@@ -17,7 +25,9 @@ import json
 import random
 import re
 import sys
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
 
@@ -66,7 +76,14 @@ def _client_turns(dlg: dict[str, Any]) -> int:
 
 
 def _render_transcript(dlg: dict[str, Any]) -> str:
-    turns = sorted(dlg.get("dialogue", []), key=lambda t: t.get("turn_pos", 0))
+    raw_turns = list(dlg.get("dialogue", []))
+    if raw_turns and all(t.get("turn_pos") is not None for t in raw_turns):
+        try:
+            turns = sorted(raw_turns, key=lambda t: t["turn_pos"])
+        except TypeError:
+            turns = raw_turns
+    else:
+        turns = raw_turns
     lines: list[str] = []
     for t in turns:
         spk = t.get("speaker", "")
@@ -110,19 +127,43 @@ def _load_system_prompt() -> str:
     return p.read_text(encoding="utf-8").strip()
 
 
+def _item_extraction_ok(it: Any) -> bool:
+    return (
+        isinstance(it, dict)
+        and not it.get("parse_error")
+        and it.get("mi_profile") is not None
+    )
+
+
 def main() -> None:
-    ap = argparse.ArgumentParser(description="MI Profile pilot on RECAP dialogues; 使用仓库根 .env")
+    ap = argparse.ArgumentParser(description="MI Profile pilot on whole-dialogue profile inputs; 使用仓库根 .env")
     ap.add_argument(
+        "--dialogues",
         "--recap-dialogues",
+        dest="dialogues",
         type=Path,
-        default=REPO / "workspace/results/recap/dialogues.json",
-        help="RECAP 整段对话 JSON（列表）；默认 results 真源",
+        default=REPO / "workspace/results/profile_inputs/recap.json",
+        help=(
+            "整段对话 JSON（列表）；默认 profile_inputs/recap.json。"
+            "注意：profile_inputs 中 RECAP 为中文，annomi/esconv/mesc 目前为英文原文；"
+            "--recap-dialogues 为兼容旧参数。"
+        ),
     )
     ap.add_argument("--max-dialogues", type=int, default=10)
+    ap.add_argument(
+        "--all",
+        action="store_true",
+        help="处理筛选后 pool 中的全部对话（等价于 --max-dialogues=len(pool)，覆盖 --max-dialogues）",
+    )
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--min-client-turns", type=int, default=2)
     ap.add_argument("--model", default="deepseek-v4-flash")
     ap.add_argument("--sleep", type=float, default=0.35)
+    ap.add_argument(
+        "--source-name",
+        default=None,
+        help="输出文件前缀；默认取 --dialogues 的文件 stem（如 recap、annomi）",
+    )
     ap.add_argument(
         "--out-dir",
         type=Path,
@@ -131,46 +172,86 @@ def main() -> None:
     )
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--resume", action="store_true")
+    ap.add_argument(
+        "--workers",
+        type=int,
+        default=4,
+        help="并行线程数（I/O 型 API 调用）；1 等价于顺序执行",
+    )
+    ap.add_argument(
+        "--checkpoint-every",
+        type=int,
+        default=1,
+        metavar="N",
+        help="每完成 N 条对话写盘一次 checkpoint（含 null 占位）",
+    )
     args = ap.parse_args()
 
-    dlg_path = args.recap_dialogues.resolve()
+    try:
+        sys.stdout.reconfigure(line_buffering=True)  # type: ignore[attr-defined]
+    except (AttributeError, OSError):
+        pass
+
+    out_dir = args.out_dir.expanduser()
+    if not out_dir.is_absolute():
+        out_dir = (REPO / out_dir).resolve()
+    else:
+        out_dir = out_dir.resolve()
+
+    dlg_path = args.dialogues.resolve()
+    source_name = (args.source_name or dlg_path.stem or "profiles").strip()
+    if not source_name:
+        source_name = "profiles"
     dialogues = json.loads(dlg_path.read_text(encoding="utf-8"))
     source_meta: dict[str, Any] = {
-        "kind": "recap_dialogues",
+        "kind": "profile_input_dialogues",
         "path": str(dlg_path.relative_to(REPO)),
+        "source_name": source_name,
         "dialogues_total": len(dialogues),
     }
 
     pool = [d for d in dialogues if _client_turns(d) >= args.min_client_turns]
     rnd = random.Random(args.seed)
     rnd.shuffle(pool)
-    chosen = pool[: args.max_dialogues]
+    max_take = len(pool) if args.all else args.max_dialogues
+    chosen = pool[:max_take]
 
-    args.out_dir.mkdir(parents=True, exist_ok=True)
+    out_dir.mkdir(parents=True, exist_ok=True)
     selection = {
         "env_file": str((REPO / ".env").resolve()),
+        "source_name": source_name,
         "dialogues_source": source_meta,
         "seed": args.seed,
+        "all": args.all,
         "max_dialogues": args.max_dialogues,
+        "max_take_applied": len(chosen),
         "min_client_turns": args.min_client_turns,
         "chosen_count": len(chosen),
         "character_ids": [d.get("character_id") for d in chosen],
         "dialogue_ids": [d.get("dialogue_id") for d in chosen],
+        "output_profiles": f"{source_name}_profiles.json",
+        "output_selection": f"{source_name}_selection.json",
     }
-    sel_path = args.out_dir / "selection.json"
+    sel_path = out_dir / f"{source_name}_selection.json"
     sel_path.write_text(json.dumps(selection, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"[pilot] wrote {sel_path.relative_to(REPO)} ({len(chosen)} dialogues)")
+    print(f"[pilot] wrote {sel_path.relative_to(REPO)} ({len(chosen)} dialogues)", flush=True)
 
-    out_path = args.out_dir / "recap_profiles.json"
-    done: dict[str, dict[str, Any]] = {}
+    out_path = out_dir / f"{source_name}_profiles.json"
+    n = len(chosen)
+    items_out: list[dict[str, Any] | None] = [None] * n
+
     if args.resume and out_path.exists():
         prev = json.loads(out_path.read_text(encoding="utf-8"))
-        for it in prev.get("items", []):
-            cid = str(it.get("character_id", ""))
-            if cid and not it.get("parse_error") and it.get("mi_profile"):
-                done[cid] = it
-
-    items_out: list[dict[str, Any]] = []
+        raw = prev.get("items", [])
+        if len(raw) > n:
+            print(
+                f"[pilot] resume: truncating items {len(raw)} -> {n} (pool smaller than checkpoint)",
+                flush=True,
+            )
+        for i in range(min(len(raw), n)):
+            x = raw[i]
+            if isinstance(x, dict):
+                items_out[i] = x
 
     if args.dry_run:
         for d in chosen[:3]:
@@ -181,29 +262,48 @@ def main() -> None:
         return
 
     system = _load_system_prompt()
-    client = LLMClient(model=args.model, temperature=0.2, max_tokens=4096)
+    workers = max(1, int(args.workers))
+    ck_every = max(1, int(args.checkpoint_every))
+
+    todo = [i for i in range(n) if not _item_extraction_ok(items_out[i])]
+    if not todo:
+        print("[pilot] nothing to do (all items already ok)", flush=True)
+        return
+
+    tls = threading.local()
+    ck_lock = threading.Lock()
+    done_since_ckpt = 0
+
+    def _thread_client() -> LLMClient:
+        c = getattr(tls, "client", None)
+        if c is None:
+            c = LLMClient(model=args.model, temperature=0.2, max_tokens=4096)
+            tls.client = c
+        return c
 
     def _write_checkpoint() -> None:
         payload = {
             "meta": {
                 "model": args.model,
                 "seed": args.seed,
+                "source_name": source_name,
                 "env_file": str((REPO / ".env").resolve()),
                 "dialogues_source": source_meta,
+                "workers": workers,
+                "checkpoint_every": ck_every,
             },
             "items": items_out,
         }
         out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    for d in chosen:
+    def _process_index(i: int) -> None:
+        nonlocal done_since_ckpt
+        d = chosen[i]
         cid = str(d.get("character_id", ""))
-        if cid in done:
-            items_out.append(done[cid])
-            print(f"[skip] {cid} (resume)")
-            continue
         transcript = _render_transcript(d)
         user = (
-            "以下是同一来访者与咨询师的多轮中文逐字稿。请只依据已出现内容归纳 MI Profile，"
+            "以下是同一来访者与咨询师的多轮逐字稿（中文或英文均可）。"
+            "请只依据已出现内容归纳 MI Profile，自然语言字段统一用简体中文输出，"
             "输出单个 JSON 对象。\n\n【逐字稿开始】\n"
             f"{transcript}\n【逐字稿结束】"
         )
@@ -216,17 +316,35 @@ def main() -> None:
             "schema_errors": [],
         }
         try:
-            raw = client.chat(system, user)
-            item["raw_response"] = raw
-            obj = _extract_json(raw)
+            raw_resp = _thread_client().chat(system, user)
+            item["raw_response"] = raw_resp
+            obj = _extract_json(raw_resp)
             item["mi_profile"] = obj
             item["schema_errors"] = _validate_mi_profile(obj)
         except Exception as e:  # noqa: BLE001
             item["parse_error"] = repr(e)
-        items_out.append(item)
-        _write_checkpoint()
-        print(f"[pilot] {cid} parse_error={bool(item['parse_error'])} schema_errs={len(item['schema_errors'])}")
         time.sleep(args.sleep)
+        print(
+            f"[pilot] idx={i} {cid} parse_error={bool(item['parse_error'])} "
+            f"schema_errs={len(item['schema_errors'])}",
+            flush=True,
+        )
+        with ck_lock:
+            items_out[i] = item
+            done_since_ckpt += 1
+            if done_since_ckpt >= ck_every:
+                _write_checkpoint()
+                done_since_ckpt = 0
+
+    print(
+        f"[pilot] run {len(todo)}/{n} dialogues workers={workers} checkpoint_every={ck_every}",
+        flush=True,
+    )
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        futures = [ex.submit(_process_index, i) for i in todo]
+        for fut in as_completed(futures):
+            fut.result()
+    _write_checkpoint()
 
 
 if __name__ == "__main__":

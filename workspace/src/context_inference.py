@@ -5,8 +5,12 @@
 
 import json
 import os
+from typing import Any
+
 from openai import OpenAI
 from dotenv import load_dotenv
+
+from llm_client import build_deepseek_completion_extras
 
 # 加载.env文件
 load_dotenv()
@@ -78,13 +82,15 @@ class ContextInference:
         # 构建完整的消息列表
         messages = [{"role": "system", "content": system_prompt}] + context
 
-        # 调用API
-        response = self.client.chat.completions.create(
-            model=self.model,
-            messages=messages,
-            temperature=temperature,
-            max_tokens=max_tokens,
-        )
+        # 调用 API；DeepSeek 时与 llm_client 一致：extra_body.thinking + 可选 reasoning_effort
+        create_kwargs: dict[str, Any] = {
+            "model": self.model,
+            "messages": messages,
+            "temperature": temperature,
+            "max_tokens": max_tokens,
+        }
+        create_kwargs.update(build_deepseek_completion_extras(self.model))
+        response = self.client.chat.completions.create(**create_kwargs)
 
         return response.choices[0].message.content
 
